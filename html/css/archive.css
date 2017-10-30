@@ -90,10 +90,9 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .fc05{padding:0 0 10rem;min-height:1000px;overflow:hidden}
 .fc05 .header{padding:2.2rem 0;overflow:hidden}
 .fc05 .header .ng06{float:right}
-.fc05 .ng05{float:left}
-.fc05 .conBody{display:none;float:right;width:65.79%}
+.fc05 .ng05{float:left;width:31.6%}
+.fc05 .conBody{display:none;float:right;width:65%}
 .fc05.viewMode .conBody{display:block}
-.fc05.viewMode .ng05{width:15%}
 
 /* objects */
 
@@ -169,27 +168,24 @@ header.hd02 .lg01 a{background-image:url(../images/logo@2x.png)}
 header.hd02 .ng04 li{display:inline;margin:0 0 0 2.5rem}
 header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;font-weight:500;color:#666}
 
-.ng05{width:23%;border-top:1px solid #e6e6e6;position:relative}
-.ng05 > li{border-bottom:1px solid #e6e6e6}
+.ng05{position:relative}
+.ng05 > li{border-bottom:1px solid #e6e6e6;width:73%}
+.ng05 > li:first-child{border-top:1px solid #e6e6e6}
 .ng05 > li > a{display:block;padding:1rem;background:url(../images/bl_arr05.png) no-repeat;background-position:right 1.25rem top 1.3rem;font-weight:500}
-.ng05 > li > a:hover{text-decoration:none;color:#1e5eff}
+.ng05 > li > a:hover{text-decoration:none;color:#1e5eff;background-image:url(../images/bl_arr05_on.png)}
 .ng05 > li.on > a{background-image:url(../images/bl_arr05_on.png);color:#1e5eff;background-color:#f1f3f5;border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6}
-.ng05 > li > dl{display:none;position:absolute;top:-1px;left:110%;width:100%;border-top:1px solid #e6e6e6;background-color:#fff;transition:left 1s ease 0s}
+.ng05 > li > dl{display:none;position:absolute;top:0px;left:80%;width:73%;border-top:1px solid #e6e6e6;background-color:#fff}
 .ng05 > li > dl dt{border-bottom:1px solid #e6e6e6;padding:1.2rem;font-size:1.5rem;color:#333;font-weight:600}
 .ng05 > li > dl li{border-bottom:1px solid #e6e6e6}
 .ng05 > li > dl li a{display:block;padding:1rem;background:url(../images/bl_arr05.png) no-repeat;background-position:right 1.25rem top 1.3rem}
 .ng05 > li > dl li a strong{display:block;font-size:1rem;margin-bottom:1rem}
 .ng05 > li > dl li a em{display:block;font-size:0.875rem;line-height:1.3rem;margin-right:2rem}
-.ng05 > li > dl li a:hover{text-decoration:none;color:#1e5eff}
+.ng05 > li > dl li a:hover{text-decoration:none;background-image:url(../images/bl_arr05_on.png)}
+.ng05 > li > dl li a:hover strong{color:#1e5eff}
 .ng05 > li > dl li.on a{background-image:url(../images/bl_arr05_on.png);background-color:#f1f3f5}
 .ng05 > li > dl li.on a strong{color:#1e5eff}
-.ng05 > li.on > dl{display:block;transition:left 1s}
-.viewMode .ng05 > li.on > a{border-left:none;border-right:none;background-color:#1e5eff;color:#fff}
-.viewMode .ng05 > li > dl{left:55%;width:155%;border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6}
-.viewMode .ng05 > li > dl li a strong{margin-bottom:0}
-.viewMode .ng05 > li > dl li a em{display:none}
-.viewMode .ng05 > li > dl li.on a{background-color:#1e5eff;background-image:url(../images/bl_arr05_on2.png)}
-.viewMode .ng05 > li > dl li.on a strong{color:#fff}
+.ng05 > li.on > dl{display:block}
+.viewMode .ng05 > li > dl{border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6}
 
 
 .ng06 li{display:inline;font-size:0.875rem}

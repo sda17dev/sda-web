@@ -67,13 +67,45 @@ $(document).ready(function() {
 	$(".ng05>li>a").click(function(){
 		$(this).parent().siblings().removeClass("on");
 		$(this).parent().addClass("on");
-		$(".fc05").removeClass("viewMode");
+		
+		if($(".fc05").hasClass("viewMode")){
+			$(".fc05").removeClass("viewMode").removeClass("oneMode");
+			$(".fc05").addClass("twoMode");
+			var dl = $(this).siblings("dl");
+			dl.css({
+				left:"30%"
+			});
+			dl.animate({
+				left: "80%"
+			}, 500, function() {
+			});
+			
+		}else{
+			$(".fc05").removeClass("viewMode").removeClass("oneMode");
+			$(".fc05").addClass("twoMode");
+			$(this).siblings("dl").css({
+				left:"80%"
+			});
+		}
+		$(".ng05 li li").removeClass("on");
 		return false;
 	});
 	$(".ng05>li>dl li a").click(function(){
 		$(this).parent().siblings().removeClass("on");
 		$(this).parent().addClass("on");
-		if(!$(".fc05").hasClass("viewMode"))	$(".fc05").addClass("viewMode");
+		if($(".fc05").hasClass("twoMode")){
+			var dl = $(this).parentsUntil(".ng05>li","dl");
+			dl.animate({
+				left: "30%"
+			}, 500, function() {
+				$(".fc05").removeClass("twoMode").removeClass("oneMode");
+				$(".fc05").addClass("viewMode");			
+			});			
+		}else{
+			//$(".fc05").removeClass("twoMode").removeClass("oneMode");
+			$(".fc05").addClass("viewMode");						
+		}
+		
 		return false;
 	});
 	
