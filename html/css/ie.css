@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* ie7 */
+*:first-child+html header{}
+
+/* ie8 */
+@media \0screen {
+
+.lc02 li a span em{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80008180,endColorstr=#80008180)}
+	
+}
+
+/* all */
+.ib03 li a i{filter:alpha(opacity=50)}
+.lc02 li a:hover span em{filter:alpha(opacity=30)}
+
