@@ -6,27 +6,32 @@ Version:2.0
 var $ = jQuery;
 var header_height;
 var fontSize;
+var main_min_height = 640;
 
 $(window).resize(function() {
-	header_height = $("header").height();
 	fontSize = parseFloat($("html").css("fontSize"));
+	if(window.innerHeight >= main_min_height)
+		$("header.hd01").height(window.innerHeight);
+	else
+		$("header.hd01").height(main_min_height);
+	header_height = $("header").height();
 });
 
 $(window).scroll(function(e){
-	//메인화면 스크롤링
-	if ($("#main_wrap").hasClass("mainPage")){	//main
+	//헤더 고정
+	if ($("#main_wrap").hasClass("mainPage")){	//메인화면
 		if ($(window).scrollTop() > header_height){
 			$("header").removeClass("hd01");
 			$("header").addClass("hd02");
 			$("#main_wrap").addClass("scrolling");
-			$("#main-content").css("paddingTop",header_height + (fontSize * 6));
+			$("#main-content").css("paddingTop",header_height + (fontSize * 3));
 		} else{
 			$("header").removeClass("hd02");
 			$("header").addClass("hd01");
 			$("#main_wrap").removeClass("scrolling");
 			$("#main-content").css("paddingTop","3rem");
 		}
-	} else {		//sub
+	} else {		//서브화면
 		if ($(window).scrollTop() > 0){
 			$("#main_wrap").addClass("scrolling");
 			$("#main-content").css("paddingTop",header_height);
@@ -38,6 +43,10 @@ $(window).scroll(function(e){
 });
 
 $(document).ready(function() {
+	if(window.innerHeight >= main_min_height)
+		$("header.hd01").height(window.innerHeight);
+	else
+		$("header.hd01").height(main_min_height);
 	header_height = $("header").height();
 	fontSize = parseFloat($("html").css("fontSize"));
 	//폼요소 스타일링
@@ -61,6 +70,7 @@ $(document).ready(function() {
 	});
 	$(".cf02 .closeBtn").click(function(){
 		$("header").removeClass("searchMode");
+		return false;
 	});
 	
 	//관리자 메뉴
