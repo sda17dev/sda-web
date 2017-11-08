@@ -15,6 +15,10 @@ html{font-size:16px}
 .inner{max-width:1140px;margin:0 auto}
 }
 
+@media all and (min-width:1441px){
+header.hd01{background-size:100%}
+}
+
 /* main header */
 @media all and (max-height:760px){
 .hd01{font-size:11px}
@@ -31,8 +35,6 @@ header.hd01.searchMode .cf02{margin-bottom:4em}
 
 .ng04 li{margin-top:0.5em}
 .ng04 li a{font-size:2em;line-height:2em}
-header.hd02 .ng04 li{margin:0 0 0 2em}
-header.hd02 .ng04 li a{font-size:0.5em;line-height:0.5em}
 
 .cf02 fieldset input{height:3em;font-size:1.4em}
 .cf02 fieldset button{height:3em;font-size:1.4em;line-height:1.4em}
@@ -55,8 +57,6 @@ header.hd01.searchMode .cf02{margin-bottom:4em}
 
 .ng04 li{margin-top:0.5em}
 .ng04 li a{font-size:2em;line-height:2em}
-header.hd02 .ng04 li{margin:0 0 0 2em}
-header.hd02 .ng04 li a{font-size:0.5em;line-height:0.5em}
 
 .cf02 fieldset input{height:3em;font-size:1.4em}
 .cf02 fieldset button{height:3em;font-size:1.4em;line-height:1.4em}
