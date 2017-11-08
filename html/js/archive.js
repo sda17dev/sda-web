@@ -88,7 +88,7 @@ $(document).ready(function() {
 			});
 			dl.animate({
 				left: "80%"
-			}, 500, function() {
+			}, 300, function() {
 			});
 			
 		}else{
@@ -108,7 +108,7 @@ $(document).ready(function() {
 			var dl = $(this).parentsUntil(".ng05>li","dl");
 			dl.animate({
 				left: "30%"
-			}, 500, function() {
+			}, 300, function() {
 				$(".fc05").removeClass("twoMode").removeClass("oneMode");
 				$(".fc05").addClass("viewMode");			
 			});			
