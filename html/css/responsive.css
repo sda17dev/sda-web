@@ -3,6 +3,8 @@
 @media all and (max-width:960px){
 html{font-size:11px}
 .inner{margin:0 15px}
+.fc08 .conBody{width:auto;margin:0}
+.fc09{width:auto;margin:0}
 }
 
 @media all and (min-width:961px) and (max-width:1280px){

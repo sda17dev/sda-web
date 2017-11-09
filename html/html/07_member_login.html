@@ -26,17 +26,17 @@ window.onload = function() {
 </script>
 </head>
 <body>
-<div id="main_wrap" class="mainPage">
+<div id="main_wrap" class="subPage">
 	<div id="skip-link">
 		<a href="#main-content">컨텐츠 바로가기</a>
 	</div>
 	<div id="seoul-common-gnb"></div>
-	<header class="hd01" style="background-image:url(../images/bg_header_main.jpg)">
+	<header class="hd02">
 		<div class="inner2">
 		<div class="lg01"><a href="/">서울기록원</a></div>
 		<nav>
 			<menu>
-				<li class="news"><a href="#">뉴스</a></li>
+				<li class="news on"><a href="#">뉴스</a></li>
 				<li class="info"><a href="#">소개 및 안내</a></li>
 				<li class="explore"><a href="#">탐색</a></li>
 				<li class="search"><a href="#">검색</a></li>
@@ -61,97 +61,47 @@ window.onload = function() {
 		</nav>
 		</div>
 	</header>
-	<!-- 메인 컨텐츠 영역 -->
-    <div class="fc01" id="main-content">
+	<!-- 컨텐츠 영역 -->
+    <div class="fc08" id="main-content">
 		<div class="inner">
-			<!-- Guideline01 -->
-			<ul class="lc01">
-				<li class="l1">
-					<a href="#">
-						<em>서울 디지털 아카이브 사용 안내 ①</em>
-						<span>
-							<img src="../images/con_guid01.png" alt="연구자를 위한 안내"/>
-							<strong>연구자를 위한<br/>안내</strong>
-							<i></i>
-						</span>
-					</a>
-				</li>
-				<li class="l2">
-					<a href="#">
-						<em>서울 디지털 아카이브 사용 안내 ②</em>
-						<span>
-							<img src="../images/con_guid02.png" alt="기자 큐레이터 예술가"/>
-							<strong>기자, 큐레이터,<br/> 예술가</strong>
-							<i></i>
-						</span>
-					</a>
-				</li>
-				<li class="l3">
-					<a href="#">
-						<em>서울 디지털 아카이브 사용 안내 ③</em>
-						<span>
-							<img src="../images/con_guid03.png" alt="영구기록물을 이관한 공무원"/>
-							<strong>영구기록물을 이관한<br/>공무원</strong>
-							<i></i>
-						</span>
-					</a>
-				</li>
-				<li class="l4">
-					<a href="#">
-						<em>서울 디지털 아카이브 사용 안내 ④</em>
-						<span>
-							<img src="../images/con_guid04.png" alt="서울시민을 위한 기록찾기"/>
-							<strong>서울시민을 위한<br/>기록찾기</strong>
-							<i></i>
-						</span>
-					</a>
-				</li>
-			</ul>
-			<!-- //Guideline01 -->
-			<!-- Headline -->
-			<div class="fc02">
-				<div class="tc01 notice">
-					<h2>공지사항</h2>
-					<a class="conA" href="#">
-						<span class="thumb"><img src="../images/@tc01_01.png" alt="대체텍스트"/></span>
-						<b><em>[오픈]</em>1.0 오픈과 관련해 소스 공개합니다. 해당 GitHub 페이지를 참조하세요.</b>
-					</a>
-					<a class="more" href="#">자세히보기</a>
-				</div>
-				<div class="tc01 collect">
-					<h2>기록 이관과 수집</h2>
-					<a class="conA" href="#">
-						<span class="thumb"><img src="../images/@tc01_02.png" alt="대체텍스트"/></span>
-						<b><em>[기록이관]</em>사진아카이브 자료를 기존 공간에서 디지털 아카이브 엔진으로 이관했습니다. </b>
-					</a>
-					<a class="more" href="#">자세히보기</a>
-				</div>
-				<div class="tc01 prepare">
-					<h2>건축 및 과정</h2>
-					<a class="conA" href="#">
-						<span class="thumb"><img src="../images/@tc01_03.png" alt="대체텍스트"/></span>
-						<b><em>[건축]</em>항온, 항습을 위한 장치 마련했습니다. 이를 위한 관련 한 장치를 준비했습니다.</b>
-					</a>
-					<a class="more" href="#">자세히보기</a>
+			<div class="header">
+				<ul class="ng06">
+					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
+					<li class="current"><a href="#">로그인</a></li>
+				</ul>
+			</div>
+			<div class="conBody">
+				<h1 class="th02">로그인 / Login</h1>
+				<form class="cf05 login" action="" method="post">
+					<fieldset>
+						<p class="input">
+							<label for="login_email">이메일</label>
+							<input type="text" name="login_email" id="login_email"/>
+						</p>
+						<p class="input">
+							<label for="login_pw">비밀번호</label>
+							<input type="password" name="login_pw" id="login_pw" placeholder="숫자,영문 포함 8자 이상"/>
+						</p>
+						<p class="check">
+							<input type="checkbox" name="login_save" id="login_save"/>
+							<label for="login_save">아이디 자동저장</label>
+						</p>
+						<p class="submit">
+							<button class="btn01" type="submit">로그인</button>
+						</p>
+						<p class="facebook">
+							<a class="btn01" href="#">페이스북으로 로그인</a>
+						</p>
+					</fieldset>
+				</form>
+				<div class="tc04">
+					<p>처음 방문하시는 분은 회원가입을  통해 더 많은  사용자 메뉴를 사용할 수 있습니다. <br/>(회원가입을 하지 않아도, 기록을 조회하고, 다운로드 받는데 문제가 없습니다.)</p>
+					<a class="btn01" href="#">회원가입</a>
 				</div>
 			</div>
-			<!-- //Headline -->
 		</div>
 	</div>
-	<!-- //메인 컨텐츠 영역 -->		
-	<!-- Newsletter -->		
-	<form class="cf03" action="" method="post">
-		<dl>
-			<dt>서울기록원 오픈 준비 메일 수신하기</dt>
-			<dd>서울기록원의 오픈 준비 메일을 비정기적으로 받으실 수 있습니다.</dd>
-		</dl>
-		<fieldset>
-			<label for="letter_email">이메일주소</label>
-			<input type="email" name="letter_email" id="letter_email"/>
-			<button>이메일 수신</button>
-		</fieldset>
-	</form>
-	<!-- //Newsletter -->	
+	<!-- //컨텐츠 영역 -->		
 	<footer>
 		<div class="inner">
 			<div class="lg02"><a ref="#">서울기록원</a></div>

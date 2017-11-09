@@ -14,6 +14,7 @@
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
 <script type="text/javascript" src='../js/jquery-1.11.3.min.js'></script>
 <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="http://www.seoul.go.kr/seoulgnb/gnb.js"></script>
 <script type="text/javascript" src="../js/archive.js"></script>
 <script type="text/javascript">
@@ -61,7 +62,7 @@ window.onload = function() {
 		</div>
 	</header>
 	<!-- 컨텐츠 영역 -->
-    <div class="fc05" id="main-content">
+    <div class="fc05 viewMode" id="main-content">
 		<div class="inner">
 			<div class="header">
 				<ul class="ng06">
@@ -72,55 +73,27 @@ window.onload = function() {
 				</ul>
 			</div>
 			<ul class="ng05">
-				<li>
+				<li class="on">
 					<a href="#">회원정보</a>
-					<dl>
-						<dt>공지관리</dt>
+					<dl style="left:30%">
+						<dt>회원정보</dt>
 						<dd>
 							<ul>
 								<li>
 									<a href="#">
-										<strong>공지사항</strong>
+										<strong>정보</strong>
+										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
+									</a>
+								</li>
+								<li class="on">
+									<a href="#">
+										<strong>비밀번호 재성정</strong>
 										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<strong>기록이관과 수집</strong>
-										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<strong>건축과정</strong>
-										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
-									</a>
-								</li>
-							</ul>
-						</dd>
-					</dl>
-				</li>
-				<li>
-					<a href="#">기록</a>
-					<dl>
-						<dt>기록</dt>
-						<dd>
-							<ul>
-								<li>
-									<a href="#">
-										<strong>공지사항</strong>
-										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<strong>기록이관과 수집</strong>
-										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<strong>건축과정</strong>
+										<strong>로그아웃</strong>
 										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
 									</a>
 								</li>
@@ -136,19 +109,85 @@ window.onload = function() {
 							<ul>
 								<li>
 									<a href="#">
-										<strong>공지사항</strong>
+										<strong>통계</strong>
+										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
+									</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#">메인관리</a>
+					<dl>
+						<dt>메인관리</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="#">
+										<strong>메인 배너 관리</strong>
 										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<strong>기록이관과 수집</strong>
+										<strong>메인 컨텐츠 배너 관리</strong>
 										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<strong>건축과정</strong>
+										<strong>발행된 컬렉션/회원 컬렉션</strong>
+										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
+									</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#">관리자 관리</a>
+					<dl>
+						<dt>관리자 관리</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="#">
+										<strong>관리자 목록</strong>
+										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>관리자 권한 설정</strong>
+										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>관리자 업무 배치</strong>
+										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
+									</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#">F/A관리</a>
+					<dl>
+						<dt>F/A관리</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="#">
+										<strong>유형별 가이드 관리</strong>
+										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>리서치가이드 관리</strong>
 										<em>공지사항 설명글입니다. 공지사항 설명글입니다.</em>
 									</a>
 								</li>
@@ -158,16 +197,24 @@ window.onload = function() {
 				</li>
 			</ul>
 			<div class="conBody">
-				<h1 class="th02">기록 이관과 수집</h1>
-				<ul class="lc02">
-					<li class="l1">
-						<dl>
-							<dt><a href="#">강동구 둔촌동 일대</a></dt>
-							<dd class="date">1979-11-21</dd>
-							<dd class="sum">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-						</dl>
-					</li>
-				</ul>
+				<h1 class="th02">비밀번호 재설정</h1>
+				<div class="fc09">
+					<div class="tc04 tc04_01">
+						<p>가입할 때 사용한 이메일을 입력하세요.<br/>이메일로 비밀번호를 다시 설정하는 링크를 보내드립니다. </p>
+					</div>
+					
+					<form class="cf05 resetPassword" action="" method="post">
+						<fieldset>
+							<p class="input">
+								<label for="reset_email">이메일</label>
+								<input type="text" name="reset_email" id="reset_email"/>
+							</p>
+							<p class="submit">
+								<button class="btn01" type="submit">재설정 링크 발송하기</button>
+							</p>
+						</fieldset>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -181,36 +228,37 @@ window.onload = function() {
 			</ul>
 			<div class="ng02">
 				<dl>
-					<dt><a href="#">기록찾기</a></dt>
+					<dt><a href="#">소개 및 안내 </a></dt>
 					<dd>
 						<ul>
-							<li><a href="#">탐색</a></li>
-							<li><a href="#">검색결과 - 용산공원</a></li>
-							<li><a href="#">새로운용산공원 - 시리즈에 포함된 검색결과</a></li>
-							<li><a href="#">탐색 - 건축국 - 건축관련행정기록</a></li>
-							<li><a href="#">탐색 - 용산공원수집기록</a></li>
-							<li><a href="#">리서치 가이드</a></li>
+							<li><a href="#">서울기록원 소개</a></li>
+							<li><a href="#">칼럼</a></li>
+							<li><a href="#">공지</a></li>
+							<li><a href="#">사용자를 위한 안내</a></li>
+							<li><a href="#">개발자를 위한 안내</a></li>
+							<li><a href="#">일반문의</a></li>							
+							<li><a href="#">오류신고</a></li>
 						</ul>
 					</dd>
 				</dl>
 				<dl>
-					<dt><a href="#">컬렉션</a></dt>
+					<dt><a href="#">도구</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">기록 탐색</a></li>
+							<li><a href="#">기록 검색</a></li>
+							<li><a href="#">리서치가이드</a></li>							
+						</ul>
+					</dd>					
+				</dl>
+				<dl>
+					<dt><a href="#">컬렉션 및 전시</a></dt>
 					<dd>
 						<ul>
 							<li><a href="#">사진아카이브</a></li>
-							<li><a href="#">시민 컬렉션</a></li>
+							<li><a href="#">용산공원 특별 전시</a></li>
 						</ul>
-					</dd>
-				</dl>
-				<dl>
-					<dt><a href="#">소개 및 안내</a></dt>
-					<dd>
-						<ul>
-							<li><a href="#">소개</a></li>
-							<li><a href="#">공지사항</a></li>
-							<li><a href="#">일반문의</a></li>
-						</ul>
-					</dd>
+					</dd>					
 				</dl>
 			</div>	
 		</div>

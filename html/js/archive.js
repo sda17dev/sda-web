@@ -75,7 +75,10 @@ $(document).ready(function() {
 	});
 	
 	//관리자 메뉴
-	$(".ng05>li>a").click(function(){
+	var sub_height = $(".ng05>li.on dl dt").outerHeight() + $(".ng05>li.on dl dd").outerHeight();
+	if($(".ng05").outerHeight() < sub_height)	$(".ng05").css("height",sub_height);
+	
+	$(".ng05>li>a").click(function(){	//1depth menu click
 		$(this).parent().siblings().removeClass("on");
 		$(this).parent().addClass("on");
 		
@@ -99,9 +102,11 @@ $(document).ready(function() {
 			});
 		}
 		$(".ng05 li li").removeClass("on");
+		var sub_height = $(this).siblings("dl").find("dt").outerHeight() + $(this).siblings("dl").find("dd").outerHeight();
+		if($(".ng05").outerHeight() < sub_height)	$(".ng05").css("height",sub_height);
 		return false;
 	});
-	$(".ng05>li>dl li a").click(function(){
+	$(".ng05>li>dl li a").click(function(){	//2depth menu click
 		$(this).parent().siblings().removeClass("on");
 		$(this).parent().addClass("on");
 		if($(".fc05").hasClass("twoMode")){
@@ -114,14 +119,14 @@ $(document).ready(function() {
 			});			
 		}else{
 			//$(".fc05").removeClass("twoMode").removeClass("oneMode");
-			$(".fc05").addClass("viewMode");						
+			//$(".fc05").addClass("viewMode");						
 		}
 		
 		return false;
 	});
 	
-	
-	
+	//입력폼 유효성 검사
+	form_validation();
 	
 	
 	/*
@@ -145,4 +150,72 @@ $(document).ready(function() {
 	*/
 });
 
+function form_validation(){
+	$(".cf05.join").validate({
+		rules: {
+			join_email: {
+				required: true,
+				email: true
+			},
+			join_pw: {
+				required: true,
+				minlength: 8
+			},
+			join_pw2: {
+				equalTo: "#join_pw"
+			},
+			join_agree1: "required",
+			join_agree2: "required"
+		},
+		messages: {
+			join_email: "올바른 이메일 주소를 입력하세요",
+			join_pw: "적절한 비밀번호를 입력하세요",
+			join_pw2: "입력한 비밀번호가 일치하지 않습니다",
+			join_agree1: "[동의 필요]",
+			join_agree2: "[동의 필요]"
+		}
+	});
+	$(".cf05.login").validate({
+		rules: {
+			login_email: {
+				required: true,
+				email: true
+			},
+			login_pw: {
+				required: true,
+				minlength: 8
+			}
+		},
+		messages: {
+			login_email: "올바른 이메일 주소를 입력하세요",
+			login_pw: "적절한 비밀번호를 입력하세요"
+		}
+	});
+	$(".cf05.resetPassword").validate({
+		rules: {
+			reset_email: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			reset_email: "올바른 이메일 주소를 입력하세요"
+		}
+	});
+	$(".cf05.resetPassword2").validate({
+		rules: {
+			reset_pw: {
+				required: true,
+				minlength: 8
+			},
+			reset_pw2: {
+				equalTo: "#reset_pw"
+			}
+		},
+		messages: {
+			reset_pw: "적절한 비밀번호를 입력하세요",
+			reset_pw2: "입력한 비밀번호가 일치하지 않습니다"
+		}
+	});
+}
 
