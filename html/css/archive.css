@@ -20,7 +20,10 @@ ul,ol,menu{list-style:none}
 em,address{font-style:normal}
 a{text-decoration:none;color:#666}
 a:hover,a:active{text-decoration:underline}
-
+input[type=text],
+input[type=password],
+input[type=email]{font-size:1rem;height:2.125rem;text-indent:0.625rem;border:1px solid #e6e6e6;box-sizing:border-box}
+textarea{font-size:1rem;padding:1rem;border:1px solid #e6e6e6;box-sizing:border-box}
 /* Layout */
 #main-content{clear:both}
 #skip_contents{width:100%;}
@@ -129,10 +132,18 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 
 .fc09{width:555px;margin:0 auto}
 
+.fc10{padding:0.9375rem 0;overflow:hidden}
+.fc10 .leftF{float:left}
+.fc10 .rightF{float:right}
+
 /* objects */
 
-.btn01{display:inline-block;height:3.125rem;line-height:3.125rem;text-align:center;background-color:#3a67ae;border:none;box-sizing:border-box;color:#fff;font-size:1.125rem;cursor:pointer;padding:0 2rem}
+.btn01{display:inline-block;height:3.125rem;line-height:3.125rem;text-align:center;background-color:#1e5eff;border:none;box-sizing:border-box;color:#fff;font-size:1.125rem;cursor:pointer;padding:0 2rem}
 .btn01:hover{background-color:#333 !important;text-decoration:none}
+.btn01_01{height:2.25rem;line-height:2.25rem}
+.btn02{display:inline-block;height:3.125rem;line-height:3.125rem;text-align:center;background-color:#e1e3e6;border:none;box-sizing:border-box;color:#333;border:1px solid #b3b3b3;font-size:1.125rem;cursor:pointer;padding:0 2rem}
+.btn02:hover{background-color:#333 !important;text-decoration:none;color:#fff}
+.btn02_01{height:2.25rem;line-height:2.25rem;font-size:1rem}
 
 .cf02 fieldset label{display:none}
 .cf02 fieldset input{display:inline-block;height:4.9375rem;width:43%;vertical-align:top;border:none;margin-right:2.5%;margin-left:-4px;font-size:1.75rem;background-color:transparent;border-bottom:3px solid #fff;box-sizing:border-box;color:#fff}
@@ -181,14 +192,42 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .cf05 p.check span label.error{color:#1e5eff}
 .cf05 p.submit button{background-color:#1e5eff;width:100%}
 .cf05 p.facebook a{background-color:#3a67ae;width:100%}
-
-
 .cf05.join p.check{border-top:1px solid #ccc;border-bottom:1px solid #ccc}
 .cf05.join p.facebook{margin-bottom:0}
 .cf05.login p.facebook{margin-bottom:0}
 .cf05.login p.check{border-bottom:1px solid #ccc;text-align:left;padding-left:20%;height:1.875rem;line-height:0.875rem}
 .cf05.resetPassword p.submit,
 .cf05.resetPassword2 p.submit{border-top:1px solid #ccc;padding-top:1.25rem;margin-bottom:0}
+
+.cf06{text-align:center;padding-bottom:30px;border-bottom:1px solid #ccc}
+.cf06 label{display:none}
+.cf06  input{display:inline-block;height:3.125rem;width:50%;vertical-align:top;margin-right:1%;margin-left:-4px;font-size:1rem;background-color:transparent;border:1px solid #ccc;box-sizing:border-box;color:#333;text-indent:1rem}
+.cf06  button{display:inline-block;width:23%;vertical-align:top;margin-left:-4px}
+
+.cf07 fieldset{border-top:2px solid #ccc;border-bottom:1px solid #ccc;margin-bottom:1.25rem}
+.cf07 dl{border-bottom:1px solid #ccc;display:table;width:100%}
+.cf07 dl dt{display:table-cell;width:20%;padding:0 1.3rem}
+.cf07 dl dt label{font-weight:600}
+.cf07 dl dd{display:table-cell;padding:0.6rem 1.3rem;font-size:0.875rem}
+.cf07 dl.input input{width:100%}
+.cf07 dl.input label.error{display:block;font-weight:normal;width:auto;height:auto;color:#1e5eff;line-height:1.5rem}
+.cf07 dl.input input.error{border-color:#ff6600;background-color:#fffaf0}
+.cf07 dl.textarea label.error{display:block;font-weight:normal;width:auto;height:auto;color:#1e5eff;line-height:1.5rem}
+.cf07 dl.textarea textarea.error{border-color:#ff6600;background-color:#fffaf0}
+.cf07 dl.check span{display:inline-block;min-width:5.625rem;height:2.25rem;line-height:2.25rem}
+.cf07 dl.check span input{margin-right:0.1875rem}
+.cf07 dl.file input[type=file]{visibility:hidden;position:absolute}
+.cf07 dl.file .fake span{display:inline-block;border:1px solid #e6e6e6;height:2.125rem;line-height:2.125rem;width:70%;vertical-align:top;margin-right:2%;box-sizing:border-box;padding:0 0.625rem}
+.cf07 dl.file .fake a{width:28%;height:2.125rem;line-height:2.125rem;margin-left:-4px}
+.cf07 dl.textarea dt{vertical-align:top;padding-top:1rem}
+.cf07 dl.textarea textarea{width:100%;height:8.75rem}
+
+.cf07 .submit{text-align:right}
+.cf07 .submit button{padding:0 4rem;vertical-align:top;margin-left:1rem}
+.cf07.noticeWrite dl.check.target dd{position:relative}
+.cf07.noticeWrite dl.check.target label.error{position:absolute;right:0;top:0.6rem;color:#1e5eff}
+.cf07.noticeWrite dl.check.target span{min-width:0;margin-right:1.25rem}
+.cf07.noticeWrite dl.textarea h3{font-size:1rem;font-weight:600;margin-bottom:0.5rem;margin-top:1.25rem}
 
 .lc01{overflow:hidden;margin-bottom:5rem}
 .lc01 li{float:left;width:25%}
@@ -293,13 +332,28 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .ng08 .ui-buttonset.tkg01 .ui-button-text-only .ui-button-text{color:#666;padding-right:0}
 
 .pg01{text-align:center}
-.pg01 a{display:inline-block;height:1.875rem;line-height:1.875rem;text-align:center;color:#545454;border:1px solid #d3d3d3;width:1.875rem;font-size:1rem}
-.pg01 a:first-child{margin-left:0}
-.pg01 a.on, .pg01 a:hover{text-decoration:none;color:#fff;background-color:#1e5eff;border-color:#1e5eff}
+.pg01 a{padding:0 0.25rem}
+.pg01 a.first, .pg01 a.prev, .pg01 a.next, .pg01 a.end{display:inline-block;height:2.125rem;line-height:2.125rem;text-align:center;color:#666;border:1px solid #d3d3d3;width:2.125rem;font-size:1rem;padding:0;background-color:#f1f3f5}
+.pg01 a.first, .pg01 a.end{letter-spacing:-0.5rem;text-indent:-0.4375rem}
+.pg01 a.prev{margin-right:0.625rem}
+.pg01 a.next{margin-left:0.625rem}
+.pg01 a.on, .pg01 a:hover{text-decoration:none;color:#1e5eff}
+.pg01 a.first:hover, .pg01 a.prev:hover, .pg01 a.next:hover, .pg01 a.end:hover{background-color:#1e5eff;color:#fff}
 
 .pg02{border-top:1px solid #b8b8b8;text-align:right;padding-top:1.875rem}
 .pg02 a{display:inline-block;border:1px solid #cbcbcb;background-color:#e4e4e4;font-size:0.875rem;color:#212121;border-radius:0.1875rem;padding:0.3125rem 1.25rem;font-weight:500}
 .pg02 a:hover{background-color:#666;color:#fff;text-decoration:none}
+
+.tbl01{border-top:2px solid #ccc;border-bottom:1px solid #ccc;padding-top:2px}
+.tbl01 table{border-spacing:0;border-collapse:collapse;width:100%}
+.tbl01 caption{height:0px;text-indent:-9999px}
+.tbl01 thead th{background-color:#f1f3f5;padding:1rem;font-size:1rem;font-weight:500}
+.tbl01 tbody td{border-bottom:1px solid #d3d2d2;padding:1rem;font-size:0.875rem;text-align:center}
+.tbl01 tbody td a{font-size:1rem;color:#333;font-weight:600}
+.tbl01 tbody td a:hover{color:#1e5eff}
+.tbl01.noticeList .t02{width:50%;text-align:left}
+.tbl01.noticeList th.t02{text-align:center}
+.tbl01.noticeList .t02 a{display:inline-block;line-height:1rem;width:21rem;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden}
 
 .tc01{position:relative}
 .tc01 h2{font-size:1.5rem;line-height:1.5rem;color:#333;margin-bottom:1.25rem}
@@ -343,6 +397,14 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc05 .infoA ul li em{margin-left:2%}
 .tc05 .infoA .btn01{float:right;background-color:#666}
 
+.tc06 .searchA{margin-bottom:0.625rem}
+.tc06 .searchA label{display:inline-block;height:2rem;line-height:2rem;text-align:center;border:1px solid #e6e6e6;background-color:#f1f3f5;color:#333;vertical-align:top;width:20%}
+.tc06 .searchA input{vertical-align:top;width:53%;margin-left:-4px;margin-right:2%}
+.tc06 .searchA button{vertical-align:top;width:24%;height:2rem;line-height:2rem;margin-left:-4px}
+.tc06 .itemA li{background-color:#f1f3f5;margin-bottom:1px;padding:0 0.5rem;height:2.25rem;line-height:2.25rem;position:relative}
+.tc06 .itemA li a{display:block;position:absolute;right:0;top:0;width:2.25rem;height:2.25rem;text-indent:-9999px;background:#b3b3b3 url(../images/btn_close01.png) no-repeat center center}
+.tc06 .itemA li a:hover{background-color:#333}
+
 .td01{height:2.5rem;line-height:2.5rem}
 .td01 b{font-weight:bold}
 .td01 strong{font-weight:bold;border-bottom:1px solid #666}
@@ -350,7 +412,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .th01 dt h1{font-size:2.25rem;font-weight:700;line-height:3.5rem;color:#333}
 .th01 dd{font-size:1.1rem;color:#808080}
 .th01_01{border-bottom:none}
-.th01_01 dt{margin-bottom:20px}
+.th01_01 dt{margin-bottom:1.25rem}
 
 .th02{border-bottom:1px solid #ccc;font-size:2.25rem;font-weight:600;line-height:3rem;padding-bottom:2rem;color:#333}
 

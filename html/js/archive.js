@@ -124,30 +124,19 @@ $(document).ready(function() {
 		
 		return false;
 	});
+	//입력폼 파일 선택
+   $("form .fake a").bind('click', function() {
+       $(this).parent('.fake').siblings('.ti01').click();
+   });
+   $("form .ti01").bind('change', function() {
+       $(this).siblings('.fake').find('span').text($(this).val());
+   });
 	
 	//입력폼 유효성 검사
 	form_validation();
 	
 	
-	/*
-	$(".ng04 select").selectmenu();
-
-	$(".tc02 dd a").mouseenter(function(){
-		$(this).next().fadeIn();
-	});
-	$(".tc02 dd a").mouseleave(function(){
-		$(this).next().fadeOut();
-	});
-	//열람하기
-	$(".ng08 li.open a").click(function(){
-		$(".etc01").slideDown();
-		return false;
-	});
-	$(".etc01 a.close").click(function(){
-		$(".etc01").slideUp();
-		return false;
-	});
-	*/
+	
 });
 
 function form_validation(){
@@ -215,6 +204,20 @@ function form_validation(){
 		messages: {
 			reset_pw: "적절한 비밀번호를 입력하세요",
 			reset_pw2: "입력한 비밀번호가 일치하지 않습니다"
+		}
+	});
+	$(".cf07.noticeWrite").validate({
+		rules: {
+			notice_title: "required",
+			notice_summery: "required",
+			notice_content: "required",
+			notice_target: "required"
+		},
+		messages: {
+			notice_title: "제목을 입력해 주세요",
+			notice_summery: "요약내용을 입력해 주세요",
+			notice_content: "내용을 입력해 주세요",
+			notice_target: "발행할 대상을 선택해 주세요"
 		}
 	});
 }
