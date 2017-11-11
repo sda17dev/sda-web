@@ -132,12 +132,72 @@ $(document).ready(function() {
        $(this).siblings('.fake').find('span').text($(this).val());
    });
 	
+	//카테고리 선택 슬라이드
+	$('.ib01 .slide').slick({
+		dots: false,
+		infinite: false,
+		initialSlide:0,
+		prevArrow : ".ib01 .prevB",
+		nextArrow : ".ib01 .nextB",
+		speed: 300,
+		slidesToShow: 1,
+		variableWidth: true
+	});
+   $(".ib01 .slide li.add a").bind('click', function() {
+		var $layerPopupObj = $('#popup_category .popupBox');
+		var leftV = ( $(window).scrollLeft() + ($(window).width() - $layerPopupObj.width()) / 2 );
+		var topV = ( $(window).scrollTop() + 100 );
+		$layerPopupObj.css({
+			left:leftV,
+			top:topV
+		});
+		$('#popup_category').show();
+   });
+	
+	//팝업 - 카테고리 선택
+	$('#popup_category .addCat input').on('keypress', function(event) {
+		var text = $(this).val();
+		var index = $('#popup_category ul li').length + 1;
+		if(event.which == 13){
+			if(text.length < 1){
+				alert("카테고리를 입력하세요!")
+			}else{
+				$('#popup_category ul').append('<li><input type="checkbox" name="category_name" id="category_name' + index + '" value="' + text + '"/><label for="category_name' + index + '">' + text + '</label></li>');
+				$(this).val('');
+				$('#popup_category ul').scrollTop($('#popup_category ul').height());	
+			}
+			event.preventDefault();
+		}
+	});
+	$('#popup_category .submit button').on('click', function() {
+		var index = $('.ib01 .slide li').length - 2;
+		$('#popup_category ul li input:checked').each(function(){
+			if(check_overlap($(this).val())){
+				var a = $('<a/>').attr("href","#").text($(this).val());
+				var li = $('<li/>').append(a);
+				$('.ib01 .slide').slick('slickAdd',li,index);
+				index++;
+			}
+		});
+		$('#popup_category').hide();
+	});
+	$('#popup_category .closeB').on('click', function() {
+		$('#popup_category').hide();
+	});
+	
+	
 	//입력폼 유효성 검사
 	form_validation();
 	
-	
-	
 });
+
+function check_overlap(category){	//중복체크
+	$('.ib01 .slide li a').each(function(){
+		if($(this).text() == category) return false;
+		//console.log($(this).text() + "=="+ category);
+	})
+	return true;
+}
 
 function form_validation(){
 	$(".cf05.join").validate({
