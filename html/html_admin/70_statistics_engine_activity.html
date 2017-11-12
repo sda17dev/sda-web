@@ -7,8 +7,6 @@
 <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css"/>
 <link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
 <link rel="stylesheet" type="text/css" href="../css/archive.css"/>
-<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
-<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
 <link rel="stylesheet" type="text/css" href="../css/archive_slowalk.css"/>
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css"/><![endif]-->
@@ -17,7 +15,6 @@
 <script type="text/javascript" src='../js/jquery-1.11.3.min.js'></script>
 <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="../js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="../js/slick.min.js"></script>
 <script type="text/javascript" src="http://www.seoul.go.kr/seoulgnb/gnb.js"></script>
 <script type="text/javascript" src="../js/archive.js"></script>
 <script type="text/javascript">
@@ -65,13 +62,13 @@ window.onload = function() {
 		</div>
 	</header>
 	<!-- 컨텐츠 영역 -->
-    <div class="fc05" id="main-content">
+    <div class="fc05 viewMode" id="main-content">
 		<div class="inner">
 			<div class="header">
 				<ul class="ng06">
 					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
 					<li><a href="#">관리</a></li>
-					<li><a href="#">공지관리</a></li>
+					<li><a href="#">포스트관리</a></li>
 					<li class="current"><a href="#">공지사항</a></li>
 				</ul>
 			</div>
@@ -148,13 +145,13 @@ window.onload = function() {
 						</dd>
 					</dl>
 				</li>
-				<li>
+				<li class="on">
 					<a href="#">통계</a>
-					<dl>
+					<dl style="left:30%">
 						<dt>통계</dt>
 						<dd>
 							<ul>
-								<li>
+								<li class="on">
 									<a href="#">
 										<strong>기본통계</strong>
 										<em>Engine과 동기화한 데이터에 대한 기본 통계입니다.</em>
@@ -162,7 +159,7 @@ window.onload = function() {
 								</li>
 								<li>
 									<a href="#">
-										<strong>WEB 사용자 기록</strong>
+										<strong>사용자 통계</strong>
 										<em>로그인, 비로그인 사용자가 특정 영역의 활동을 했을 때 수집되는 사용자 통계의 전체 리스트입니다.</em>
 									</a>
 								</li>
@@ -272,16 +269,42 @@ window.onload = function() {
 				</li>																								
 			</ul>
 			<div class="conBody">
-				<h1 class="th02">기록 이관과 수집</h1>
+				<h1 class="th02">기본통계</h1>
 				<ul class="lc02">
 					<li class="l1">
 						<dl>
-							<dt><a href="#">강동구 둔촌동 일대</a></dt>
-							<dd class="date">1979-11-21</dd>
-							<dd class="sum">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+							<dt><a href="#">Archival Descriptions Statistics</a></dt>
+							<dd class="date">2018년 01월 02일 - 영구보존시스템(Engine)과 동기화 된 정보내역입니다.</dd>
+							<dd class="sum">레코드그룹 : 50 건 </dd>
+							<dd class="sum">시리즈  : 2,000 건 </dd>
+							<dd class="sum">파일 : 800,000 건 </dd>
+							<dd class="sum">아이템 : 900,000 건</dd>
+							<dd class="sum">컴포넌트 : 1800,000 건</dd>
+							<dd class="sum">온라인열람가능 아이템 : 700,000 건</dd>
+						</dl>
+					</li>					
+					<li class="l1">
+						<dl>
+							<dt><a href="#">Archival Descriptions Statistics</a></dt>
+							<dd class="date">2017년 12월 2일 - 영구보존시스템(Engine)과 동기화된 정보내역입니다.</dd>
+							<dd class="sum">파일 : 800,000 건 </dd>
+							<dd class="sum">아이템 : 900,000 건</dd>
+							<dd class="sum">컴포넌트 : 1800,000 건</dd>
+							<dd class="sum">온라인열람가능 아이템 : 700,000 건</dd>
 						</dl>
 					</li>
+					<li class="l1">
+						<dl>
+							<dt><a href="#">Archival Descriptions Statistics</a></dt>
+							<dd class="date">2017년 11월 31일 - 영구보존시스템(Engine)과 동기화된 정보내역입니다.</dd>
+							<dd class="sum">파일 : 800,000 건 </dd>
+							<dd class="sum">아이템 : 900,000 건</dd>
+							<dd class="sum">컴포넌트 : 1800,000 건</dd>
+							<dd class="sum">온라인열람가능 아이템 : 700,000 건</dd>
+						</dl>
+					</li>					
 				</ul>
+			</div>
 			</div>
 		</div>
 	</div>

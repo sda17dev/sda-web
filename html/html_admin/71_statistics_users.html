@@ -7,8 +7,6 @@
 <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css"/>
 <link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
 <link rel="stylesheet" type="text/css" href="../css/archive.css"/>
-<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
-<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
 <link rel="stylesheet" type="text/css" href="../css/archive_slowalk.css"/>
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css"/><![endif]-->
@@ -17,7 +15,6 @@
 <script type="text/javascript" src='../js/jquery-1.11.3.min.js'></script>
 <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="../js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="../js/slick.min.js"></script>
 <script type="text/javascript" src="http://www.seoul.go.kr/seoulgnb/gnb.js"></script>
 <script type="text/javascript" src="../js/archive.js"></script>
 <script type="text/javascript">
@@ -65,13 +62,13 @@ window.onload = function() {
 		</div>
 	</header>
 	<!-- 컨텐츠 영역 -->
-    <div class="fc05" id="main-content">
+    <div class="fc05 viewMode" id="main-content">
 		<div class="inner">
 			<div class="header">
 				<ul class="ng06">
 					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
 					<li><a href="#">관리</a></li>
-					<li><a href="#">공지관리</a></li>
+					<li><a href="#">포스트관리</a></li>
 					<li class="current"><a href="#">공지사항</a></li>
 				</ul>
 			</div>
@@ -148,9 +145,9 @@ window.onload = function() {
 						</dd>
 					</dl>
 				</li>
-				<li>
+				<li class="on">
 					<a href="#">통계</a>
-					<dl>
+					<dl style="left:30%">
 						<dt>통계</dt>
 						<dd>
 							<ul>
@@ -160,7 +157,7 @@ window.onload = function() {
 										<em>Engine과 동기화한 데이터에 대한 기본 통계입니다.</em>
 									</a>
 								</li>
-								<li>
+								<li class="on">
 									<a href="#">
 										<strong>WEB 사용자 기록</strong>
 										<em>로그인, 비로그인 사용자가 특정 영역의 활동을 했을 때 수집되는 사용자 통계의 전체 리스트입니다.</em>
@@ -272,16 +269,116 @@ window.onload = function() {
 				</li>																								
 			</ul>
 			<div class="conBody">
-				<h1 class="th02">기록 이관과 수집</h1>
-				<ul class="lc02">
-					<li class="l1">
-						<dl>
-							<dt><a href="#">강동구 둔촌동 일대</a></dt>
-							<dd class="date">1979-11-21</dd>
-							<dd class="sum">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-						</dl>
-					</li>
-				</ul>
+				<h1 class="th02">WEB 사용자 기록</h1>
+				<!--form class="cf06 noticeSearch" action="" method="post">
+					<fieldset>
+						<label for="notice_query">검색어</label>
+						<input type="text" name="query" id="notice_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+						<button class="btn01">검색</button>
+					</fieldset>
+				</form-->
+				<div class="fc10">
+					<a class="btn01 btn01_01 leftF" href="#">기록 다운로드</a>
+					<div class="pg01 rightF">
+						<a class="first" href="#"><i class="xi-angle-left"></i><i class="xi-angle-left"></i></a>
+						<a class="prev" href="#"><i class="xi-angle-left"></i></a>
+						<a href="#">1</a>
+						<a class="on" href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a class="next" href="#"><i class="xi-angle-right"></i></a>
+						<a class="end" href="#"><i class="xi-angle-right"></i><i class="xi-angle-right"></i></a>
+					</div>
+				</div>
+				<div class="tbl01 noticeList">
+					<table>
+						<caption>WEB 사용자 기록</caption>
+						<thead>
+							<tr>
+								<th class="t01">회원 ID</th>
+								<th class="t02">엔터티 ID</th>
+								<th class="t03">시간</th>
+								<th class="t04">활동</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="t01">email@email.com</td>
+								<td class="t02">탐색메인(site parameter)</td>
+								<td class="t03">2018.01.23 / 15:30</td>
+								<td class="t04">조회하다.</td>
+							</tr>
+							<tr>
+								<td class="t01">email@email.com</td>
+								<td class="t02">아이템-2323232990</td>
+								<td class="t03">2018.01.23 / 15:30</td>
+								<td class="t04">조회하다.</td>
+							</tr>
+							<tr>
+								<td class="t01">email@email.com</td>
+								<td class="t02">아이템-2323232990</td>
+								<td class="t03">2018.01.23 / 15:30</td>
+								<td class="t04">다운로드하다.</td>
+							</tr>
+							<tr>
+								<td class="t01">email@email.com</td>
+								<td class="t02">파일-2323232990</td>
+								<td class="t03">2018.01.23 / 15:30</td>
+								<td class="t04">즐겨찾기하다.</td>
+							</tr>
+							<tr>
+								<td class="t01">email@email.com</td>
+								<td class="t02">아이템-2323232990</td>
+								<td class="t03">2018.01.23 / 15:30</td>
+								<td class="t04">페이스북 공유하다.</td>
+							</tr>
+							<tr>
+								<td class="t01">어떤사람</td>
+								<td class="t02">탐색메인(site parameter)</td>
+								<td class="t03">2018.01.23 / 15:30</td>
+								<td class="t04">조회하다.</td>
+							</tr>
+							<tr>
+								<td class="t01">어떤사람</td>
+								<td class="t02">아이템-2323232990</td>
+								<td class="t03">2018.01.23 / 15:30</td>
+								<td class="t04">조회하다.</td>
+							</tr>
+							<tr>
+								<td class="t01">어떤사람</td>
+								<td class="t02">아이템-2323232990</td>
+								<td class="t03">2018.01.23 / 15:30</td>
+								<td class="t04">다운로드하다.</td>
+							</tr>
+							<tr>
+								<td class="t01">어떤사람</td>
+								<td class="t02">파일-2323232990</td>
+								<td class="t03">2018.01.23 / 15:30</td>
+								<td class="t04">즐겨찾기하다.</td>
+							</tr>
+							<tr>
+								<td class="t01">어떤사람</td>
+								<td class="t02">아이템-2323232990</td>
+								<td class="t03">2018.01.23 / 15:30</td>
+								<td class="t04">페이스북 공유하다.</td>
+							</tr>																						
+						</body>
+					</table>
+				</div>
+				<div class="fc10">
+					<div class="pg01 rightF">
+						<a class="first" href="#"><i class="xi-angle-left-min"></i><i class="xi-angle-left-min"></i></a>
+						<a class="prev" href="#"><i class="xi-angle-left-min"></i></a>
+						<a href="#">1</a>
+						<a class="on" href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a class="next" href="#"><i class="xi-angle-right-min"></i></a>
+						<a class="end" href="#"><i class="xi-angle-right-min"></i><i class="xi-angle-right-min"></i></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
