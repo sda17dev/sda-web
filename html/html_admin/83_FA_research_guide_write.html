@@ -65,14 +65,14 @@ window.onload = function() {
 		</div>
 	</header>
 	<!-- 컨텐츠 영역 -->
-    <div class="fc05" id="main-content">
+    <div class="fc05 viewMode" id="main-content">
 		<div class="inner">
 			<div class="header">
 				<ul class="ng06">
 					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
 					<li><a href="#">관리</a></li>
-					<li><a href="#">공지관리</a></li>
-					<li class="current"><a href="#">공지사항</a></li>
+					<li><a href="#">F/A관리</a></li>
+					<li class="current"><a href="#">리서치가이드</a></li>
 				</ul>
 			</div>
 			<ul class="ng05">
@@ -162,7 +162,7 @@ window.onload = function() {
 								</li>
 								<li>
 									<a href="#">
-										<strong>WEB 사용자 기록</strong>
+										<strong>사용자 통계</strong>
 										<em>로그인, 비로그인 사용자가 특정 영역의 활동을 했을 때 수집되는 사용자 통계의 전체 리스트입니다.</em>
 									</a>
 								</li>
@@ -176,7 +176,7 @@ window.onload = function() {
 						<dt>포스트관리</dt>
 						<dd>
 							<ul>
-								<li>
+								<li class="on">
 									<a href="#">
 										<strong>공지사항</strong>
 										<em>공지사항을 작성합니다. </em>
@@ -248,13 +248,13 @@ window.onload = function() {
 						</dd>
 					</dl>
 				</li>
-				<li>
+				<li class="on">
 					<a href="#">F/A관리</a>
-					<dl>
+					<dl style="left:30%">
 						<dt>F/A관리</dt>
 						<dd>
 							<ul>
-								<li>
+								<li class="on">
 									<a href="#">
 										<strong>리서치가이드</strong>
 										<em>리서치 가이드는 자료 조사를 시작하기 위한 안내 지도입니다. </em>
@@ -288,16 +288,93 @@ window.onload = function() {
 				</li>
 			</ul>
 			<div class="conBody">
-				<h1 class="th02">기록 이관과 수집</h1>
-				<ul class="lc02">
-					<li class="l1">
-						<dl>
-							<dt><a href="#">강동구 둔촌동 일대</a></dt>
-							<dd class="date">1979-11-21</dd>
-							<dd class="sum">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+				<h1 class="th02">리서치가이드 새 글 쓰기</h1>
+				<form class="cf07 noticeWrite" action="" method="post">
+					<fieldset>
+						<dl class="input">
+							<dt><label for="notice_title">제목</label></dt>
+							<dd><input type="text" name="notice_title" id="notice_title" placeholder="리서치가이드 제목을 입력합니다."/></dd>
 						</dl>
-					</li>
-				</ul>
+						<dl class="input">
+							<dt><label for="notice_title">url지정</label></dt>
+							<dd><input type="text" name="notice_title" id="notice_title" placeholder="research-guide/뒤의 커스텀 url을 적습니다."/></dd>
+						</dl>						
+						<dl class="input">
+							<dt><label for="notice_summery">키워드</label></dt>
+							<dd><input type="text" name="notice_summery" id="notice_summery" placeholder="리서치가이드가 포함될 수 있는 키워드 혹은 태그를 적습니다."/></dd>
+						</dl>
+						<dl class="check">
+							<dt><label for="notice_summery">공개유무</label></dt>
+							<dd>
+								<span>
+									<input type="radio" name="notice_open" id="notice_open01" checked="checked"/>
+									<label for="notice_open01">비공개</label>
+								</span>
+								<span>
+									<input type="radio" name="notice_open" id="notice_open02"/>
+									<label for="notice_open02">공개</label>
+								</span>
+								
+							</dd>
+						</dl>
+						<dl class="check">
+							<dt><label for="notice_fix">상단고정</label></dt>
+							<dd>
+								<span>
+									<input type="radio" name="notice_fix" id="notice_fix01" checked="checked"/>
+									<label for="notice_fix01">고정</label>
+								</span>
+								<span>
+									<input type="radio" name="notice_fix" id="notice_fix02"/>
+									<label for="notice_fix02">해제</label>
+								</span>
+								
+							</dd>
+						</dl>
+						<dl class="file">
+							<dt><label for="notice_image">대표이미지</label></dt>
+							<dd>
+								<input type="file" accept=".jpg, .jpeg, .jpe, .gif, .png" class="ti01" name="notice_image" id="notice_image"/>
+								<div class="fake">
+								     <span></span>
+								     <a class="btn02 btn02_01" href="javascript:;">파일찾기</a>
+								</div>
+							</dd>
+						</dl>
+						<dl class="textarea">
+							<dt><label for="notice_content">내용</label></dt>
+							<dd>
+								<textarea name="notice_content" id="notice_content"></textarea>
+								<h3>검색결과 이동</h3>
+								<div class="tc06">
+									<div class="searchA">
+										<label>검색세부링크</label>
+										<input type="text" name="item_query" id="item_query"/>
+										<button class="btn02 btn02_01" type="button">추가</button>
+									</div>
+								</div>
+							</dd>
+						</dl>
+						<dl class="textarea">
+							<dt><label for="notice_content">내용</label></dt>
+							<dd>
+								<textarea name="notice_content" id="notice_content"></textarea>
+								<h3>엑셀파일 추가</h3>
+								<div class="tc06">
+									<div class="searchA">
+										<label>목록 파일 추가</label>
+										<input type="text" name="item_query" id="item_query"/>
+										<button class="btn02 btn02_01" type="button">파일찾기</button>
+									</div>
+								</div>
+							</dd>
+						</dl>						
+					</fieldset>
+					<div class="submit">
+						<button class="btn02 cancel" type="button">취소</button>
+						<button class="btn01 submit" type="submit">저장</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>

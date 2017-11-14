@@ -71,8 +71,8 @@ window.onload = function() {
 				<ul class="ng06">
 					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
 					<li><a href="#">관리</a></li>
-					<li><a href="#">F/A관리</a></li>
-					<li class="current"><a href="#">리서치가이드</a></li>
+					<li><a href="#">요청관리</a></li>
+					<li class="current"><a href="#">요청목록</a></li>
 				</ul>
 			</div>
 			<ul class="ng05">
@@ -132,13 +132,13 @@ window.onload = function() {
 						</dd>
 					</dl>
 				</li>
-				<li>
+				<li class="on">
 					<a href="#">요청관리</a>
-					<dl>
+					<dl style="left:30%">
 						<dt>요청목록</dt>
 						<dd>
 							<ul>
-								<li>
+								<li class="on">
 									<a href="#">
 										<strong>요청목록</strong>
 										<em>일반문의, 기록정보 오류신고, 개발오류 신고 영역의 요청이 이곳으로 수집됩니다.</em>
@@ -176,7 +176,7 @@ window.onload = function() {
 						<dt>포스트관리</dt>
 						<dd>
 							<ul>
-								<li class="on">
+								<li>
 									<a href="#">
 										<strong>공지사항</strong>
 										<em>공지사항을 작성합니다. </em>
@@ -248,13 +248,13 @@ window.onload = function() {
 						</dd>
 					</dl>
 				</li>
-				<li class="on">
+				<li>
 					<a href="#">F/A관리</a>
-					<dl style="left:30%">
+					<dl>
 						<dt>F/A관리</dt>
 						<dd>
 							<ul>
-								<li class="on">
+								<li>
 									<a href="#">
 										<strong>리서치가이드</strong>
 										<em>리서치 가이드는 자료 조사를 시작하기 위한 안내 지도입니다. </em>
@@ -270,95 +270,241 @@ window.onload = function() {
 						</dd>
 					</dl>
 				</li>																								
+				<li>
+					<a href="#">이미지타일관리</a>
+					<dl>
+						<dt>이미지타일관리</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="#">
+										<strong>이미지 타일</strong>
+										<em>웹사이트에서 사용하는 이미지를 관리합니다.</em>
+									</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
 			</ul>
 			<div class="conBody">
-				<h1 class="th02">리서치가이드 새 글 쓰기</h1>
-				<form class="cf07 noticeWrite" action="" method="post">
+				<h1 class="th02">요청목록</h1>
+				<form class="cf06 requestSearch" action="" method="post">
 					<fieldset>
-						<dl class="input">
-							<dt><label for="notice_title">제목</label></dt>
-							<dd><input type="text" name="notice_title" id="notice_title" placeholder="리서치가이드 제목을 입력합니다."/></dd>
-						</dl>
-						<dl class="input">
-							<dt><label for="notice_title">url지정</label></dt>
-							<dd><input type="text" name="notice_title" id="notice_title" placeholder="research-guide/뒤의 커스텀 url을 적습니다."/></dd>
-						</dl>						
-						<dl class="input">
-							<dt><label for="notice_summery">키워드</label></dt>
-							<dd><input type="text" name="notice_summery" id="notice_summery" placeholder="리서치가이드가 포함될 수 있는 키워드 혹은 태그를 적습니다."/></dd>
-						</dl>
-						<dl class="check">
-							<dt><label for="notice_summery">공개유무</label></dt>
-							<dd>
-								<span>
-									<input type="radio" name="notice_open" id="notice_open01" checked="checked"/>
-									<label for="notice_open01">비공개</label>
-								</span>
-								<span>
-									<input type="radio" name="notice_open" id="notice_open02"/>
-									<label for="notice_open02">공개</label>
-								</span>
-								
-							</dd>
-						</dl>
-						<dl class="check">
-							<dt><label for="notice_fix">상단고정</label></dt>
-							<dd>
-								<span>
-									<input type="radio" name="notice_fix" id="notice_fix01" checked="checked"/>
-									<label for="notice_fix01">고정</label>
-								</span>
-								<span>
-									<input type="radio" name="notice_fix" id="notice_fix02"/>
-									<label for="notice_fix02">해제</label>
-								</span>
-								
-							</dd>
-						</dl>
-						<dl class="file">
-							<dt><label for="notice_image">대표이미지</label></dt>
-							<dd>
-								<input type="file" accept=".jpg, .jpeg, .jpe, .gif, .png" class="ti01" name="notice_image" id="notice_image"/>
-								<div class="fake">
-								     <span></span>
-								     <a class="btn02 btn02_01" href="javascript:;">파일찾기</a>
-								</div>
-							</dd>
-						</dl>
-						<dl class="textarea">
-							<dt><label for="notice_content">내용</label></dt>
-							<dd>
-								<textarea name="notice_content" id="notice_content"></textarea>
-								<h3>검색결과 이동</h3>
-								<div class="tc06">
-									<div class="searchA">
-										<label>검색세부링크</label>
-										<input type="text" name="item_query" id="item_query"/>
-										<button class="btn02 btn02_01" type="button">추가</button>
-									</div>
-								</div>
-							</dd>
-						</dl>
-						<dl class="textarea">
-							<dt><label for="notice_content">내용</label></dt>
-							<dd>
-								<textarea name="notice_content" id="notice_content"></textarea>
-								<h3>엑셀파일 추가</h3>
-								<div class="tc06">
-									<div class="searchA">
-										<label>목록 파일 추가</label>
-										<input type="text" name="item_query" id="item_query"/>
-										<button class="btn02 btn02_01" type="button">파일찾기</button>
-									</div>
-								</div>
-							</dd>
-						</dl>						
+						<label for="request_query">검색어</label>
+						<input type="text" name="request_query" id="request_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+						<button class="btn01">검색</button>
 					</fieldset>
-					<div class="submit">
-						<button class="btn02 cancel" type="button">취소</button>
-						<button class="btn01 submit" type="submit">저장</button>
-					</div>
 				</form>
+				<ul class="ng07 ng07_02">
+					<li class="on"><a href="#">일반문의 : N건 신청</a></li>
+					<li><a href="#">정보오류신고 : N건 신청</a></li>
+					<li><a href="#">기능오류신고 : N건 신청</a></li>
+				</ul>
+				<div class="fc10">
+					<a class="btn01 btn01_01 leftF" href="#">엑셀 다운로드</a>
+					<div class="pg01 rightF">
+						<a class="first" href="#"><i class="xi-angle-left"></i><i class="xi-angle-left"></i></a>
+						<a class="prev" href="#"><i class="xi-angle-left"></i></a>
+						<a href="#">1</a>
+						<a class="on" href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a class="next" href="#"><i class="xi-angle-right"></i></a>
+						<a class="end" href="#"><i class="xi-angle-right"></i><i class="xi-angle-right"></i></a>
+					</div>
+				</div>
+				<div class="tbl01 requestList">
+					<table>
+						<caption>요청 목록</caption>
+						<thead>
+							<tr>
+								<th class="t01">번호</th>
+								<th class="t02">요청타입</th>
+								<th class="t03 title">이름(회원/비회원)</th>
+								<th class="t04">기록</th>
+								<th class="t05">처리상태</th>
+								<th class="t06">등록일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">일반문의</td>
+								<td class="t03 title"><a href="#">김철수(회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">신청</td>
+								<td class="t06">2018.01.23</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">정보오류신고</td>
+								<td class="t03 title"><a href="#">김철수(비회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">처리중</td>
+								<td class="t06">2018.03.13</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">기능오류신고</td>
+								<td class="t03 title"><a href="#">김철수(회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">처리완료</td>
+								<td class="t06">2018.02.03</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">일반문의</td>
+								<td class="t03 title"><a href="#">김철수(회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">신청</td>
+								<td class="t06">2018.01.23</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">정보오류신고</td>
+								<td class="t03 title"><a href="#">김철수(비회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">처리중</td>
+								<td class="t06">2018.03.13</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">기능오류신고</td>
+								<td class="t03 title"><a href="#">김철수(회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">처리완료</td>
+								<td class="t06">2018.02.03</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">일반문의</td>
+								<td class="t03 title"><a href="#">김철수(회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">신청</td>
+								<td class="t06">2018.01.23</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">정보오류신고</td>
+								<td class="t03 title"><a href="#">김철수(비회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">처리중</td>
+								<td class="t06">2018.03.13</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">기능오류신고</td>
+								<td class="t03 title"><a href="#">김철수(회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">처리완료</td>
+								<td class="t06">2018.02.03</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">일반문의</td>
+								<td class="t03 title"><a href="#">김철수(회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">신청</td>
+								<td class="t06">2018.01.23</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">정보오류신고</td>
+								<td class="t03 title"><a href="#">김철수(비회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">처리중</td>
+								<td class="t06">2018.03.13</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">기능오류신고</td>
+								<td class="t03 title"><a href="#">김철수(회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">처리완료</td>
+								<td class="t06">2018.02.03</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">일반문의</td>
+								<td class="t03 title"><a href="#">김철수(회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">신청</td>
+								<td class="t06">2018.01.23</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">정보오류신고</td>
+								<td class="t03 title"><a href="#">김철수(비회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">처리중</td>
+								<td class="t06">2018.03.13</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">기능오류신고</td>
+								<td class="t03 title"><a href="#">김철수(회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">처리완료</td>
+								<td class="t06">2018.02.03</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">일반문의</td>
+								<td class="t03 title"><a href="#">김철수(회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">신청</td>
+								<td class="t06">2018.01.23</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">정보오류신고</td>
+								<td class="t03 title"><a href="#">김철수(비회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">처리중</td>
+								<td class="t06">2018.03.13</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">기능오류신고</td>
+								<td class="t03 title"><a href="#">김철수(회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">처리완료</td>
+								<td class="t06">2018.02.03</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">일반문의</td>
+								<td class="t03 title"><a href="#">김철수(회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">신청</td>
+								<td class="t06">2018.01.23</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">정보오류신고</td>
+								<td class="t03 title"><a href="#">김철수(비회원)</a></td>
+								<td class="t04">N건</td>
+								<td class="t05">처리중</td>
+								<td class="t06">2018.03.13</td>
+							</tr>
+						</body>
+					</table>
+				</div>
+				<div class="fc10">
+					<div class="pg01 rightF">
+						<a class="first" href="#"><i class="xi-angle-left-min"></i><i class="xi-angle-left-min"></i></a>
+						<a class="prev" href="#"><i class="xi-angle-left-min"></i></a>
+						<a href="#">1</a>
+						<a class="on" href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a class="next" href="#"><i class="xi-angle-right-min"></i></a>
+						<a class="end" href="#"><i class="xi-angle-right-min"></i><i class="xi-angle-right-min"></i></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

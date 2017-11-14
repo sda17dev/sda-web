@@ -70,9 +70,8 @@ window.onload = function() {
 			<div class="header">
 				<ul class="ng06">
 					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
-					<li><a href="#">관리</a></li>
-					<li><a href="#">포스트관리</a></li>
-					<li class="current"><a href="#">공지사항</a></li>
+					<li><a href="#">회원관리</a></li>
+					<li class="current"><a href="#">회원유형분리</a></li>
 				</ul>
 			</div>
 			<ul class="ng05">
@@ -170,13 +169,13 @@ window.onload = function() {
 						</dd>
 					</dl>
 				</li>
-				<li class="on">
+				<li>
 					<a href="#">포스트관리</a>
-					<dl style="left:30%">
+					<dl>
 						<dt>포스트관리</dt>
 						<dd>
 							<ul>
-								<li class="on">
+								<li>
 									<a href="#">
 										<strong>공지사항</strong>
 										<em>공지사항을 작성합니다. </em>
@@ -204,9 +203,9 @@ window.onload = function() {
 						</dd>
 					</dl>
 				</li>
-				<li>
+				<li class="on">
 					<a href="#">회원관리</a>
-					<dl>
+					<dl style="left:30%">
 						<dt>회원관리</dt>
 						<dd>
 							<ul>
@@ -222,7 +221,7 @@ window.onload = function() {
 										<em>회원가입한 회원 목록입니다.</em>
 									</a>
 								</li>
-								<li>
+								<li class="on">
 									<a href="#">
 										<strong>회원유형분리</strong>
 										<em>회원유형을 생성하거나, 분리해 서비스 개발에 필요한 데이터를 확보합니다.</em>
@@ -269,7 +268,7 @@ window.onload = function() {
 							</ul>
 						</dd>
 					</dl>
-				</li>																								
+				</li>
 				<li>
 					<a href="#">이미지타일관리</a>
 					<dl>
@@ -288,175 +287,250 @@ window.onload = function() {
 				</li>
 			</ul>
 			<div class="conBody">
-				<h1 class="th02">공지사항</h1>
-				<form class="cf06 noticeSearch" action="" method="post">
+				<h1 class="th02">회원 유형 분리</h1>
+				<form class="cf06 addMemberType" action="" method="post">
 					<fieldset>
-						<label for="notice_query">검색어</label>
-						<input type="text" name="query" id="notice_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
-						<button class="btn01">검색</button>
+						<label for="type_name">한글명</label>
+						<input type="text" name="type_name" id="type_name" placeholder="한글명을 작성해 주세요(6자이내)"/>
+						<label for="member_query">구분자</label>
+						<input type="text" name="type_code" id="type_code" placeholder="영문구분자(20자이내)"/>
+						<button class="btn01">회원유형 생성</button>
 					</fieldset>
 				</form>
-				<div class="fc10">
-					<a class="btn01 btn01_01 leftF" href="#">새글쓰기</a>
-					<div class="pg01 rightF">
-						<a class="first" href="#"><i class="xi-angle-left"></i><i class="xi-angle-left"></i></a>
-						<a class="prev" href="#"><i class="xi-angle-left"></i></a>
-						<a href="#">1</a>
-						<a class="on" href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<a href="#">5</a>
-						<a class="next" href="#"><i class="xi-angle-right"></i></a>
-						<a class="end" href="#"><i class="xi-angle-right"></i><i class="xi-angle-right"></i></a>
-					</div>
-				</div>
-				<div class="tbl01 noticeList">
+				<ul class="ng07 ng07_01">
+					<li class="on"><a href="#">게스트</a></li>
+					<li><a href="#">회원</a></li>
+					<li><a href="#">회원(연구)</a></li>
+					<li><a href="#">회원(기록)</a></li>
+					<li><a href="#">회원(행정)</a></li>
+					<li><a href="#">회원(큐레이터)</a></li>
+					<li><a href="#">관리자</a></li>
+				</ul>
+				<div class="tbl01 memberList">
 					<table>
-						<caption>공지사항 목록</caption>
+						<caption>회원 유형별 분리 목록</caption>
 						<thead>
 							<tr>
 								<th class="t01">번호</th>
-								<th class="t02 title">제목</th>
-								<th class="t03">작성자</th>
-								<th class="t04">작성날짜</th>
+								<th class="t02 title">이메일</th>
+								<th class="t03">가입방식</th>
+								<th class="t04">가입날짜</th>
+								<th class="t05">회원유형</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">FB</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member0" href="#">회원</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">FB</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member1" href="#">회원(연구)</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">FB</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member2" href="#">회원(기록)</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">FB</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member3" href="#">회원(행정)</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">FB</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member4" href="#">회원(큐레이터)</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">emailemail@emailemailemail.com</a></td>
+								<td class="t03">E</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 admin" href="#">관리자</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 super" href="#">슈퍼관리자</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 guest" href="#">게스트</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 super" href="#">슈퍼관리자</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 guest" href="#">게스트</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">FB</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member0" href="#">회원</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">FB</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member1" href="#">회원(연구)</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">FB</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member2" href="#">회원(기록)</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">FB</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member3" href="#">회원(행정)</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">FB</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member4" href="#">회원(큐레이터)</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">emailemail@emailemailemail.com</a></td>
+								<td class="t03">E</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 admin" href="#">관리자</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 super" href="#">슈퍼관리자</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 guest" href="#">게스트</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 super" href="#">슈퍼관리자</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
 								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 guest" href="#">게스트</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 super" href="#">슈퍼관리자</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 guest" href="#">게스트</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 super" href="#">슈퍼관리자</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 guest" href="#">게스트</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 super" href="#">슈퍼관리자</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 guest" href="#">게스트</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 super" href="#">슈퍼관리자</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 guest" href="#">게스트</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 super" href="#">슈퍼관리자</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@emailemailemail.com</a></td>
+								<td class="t03">E</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 guest" href="#">게스트</a></td>
 							</tr>
 						</body>
 					</table>
-				</div>
-				<div class="fc10">
-					<div class="pg01 rightF">
-						<a class="first" href="#"><i class="xi-angle-left-min"></i><i class="xi-angle-left-min"></i></a>
-						<a class="prev" href="#"><i class="xi-angle-left-min"></i></a>
-						<a href="#">1</a>
-						<a class="on" href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<a href="#">5</a>
-						<a class="next" href="#"><i class="xi-angle-right-min"></i></a>
-						<a class="end" href="#"><i class="xi-angle-right-min"></i><i class="xi-angle-right-min"></i></a>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -513,5 +587,40 @@ window.onload = function() {
 	</footer>
 </div>
 <!-- //main_wrap -->
+<!-- popup -->
+<div id="popup_member_type" class="pp01" style="display:none">
+	<div class="popupBox">
+		<a class="closeB" href="#close">닫기</a>
+		<form class="cf08 cf08_01">
+			<fieldset>
+				<h3 class="th03">회원유형변경</h3>
+				<ul>
+					<li><input type="radio" name="member_type" id="member_type1" value="guest"/><label for="member_type1">게스트</label></li>
+					<li><input type="radio" name="member_type" id="member_type2" value="member0"/><label for="member_type2">회원</label></li>
+					<li><input type="radio" name="member_type" id="member_type3" value="member1"/><label for="member_type3">회원(연구)</label></li>
+					<li><input type="radio" name="member_type" id="member_type4" value="member2"/><label for="member_type4">회원(기록)</label></li>
+					<li><input type="radio" name="member_type" id="member_type6" value="member3"/><label for="member_type6">회원(행정)</label></li>
+					<li><input type="radio" name="member_type" id="member_type5" value="member4"/><label for="member_type5">회원(큐레이터)</label></li>
+					<li><input type="radio" name="member_type" id="member_type7" value="관리자"/><label for="member_type7">관리자</label></li>
+					<li><input type="radio" name="member_type" id="member_type8" value="슈퍼관리자"/><label for="member_type8">슈퍼관리자</label></li>
+				</ul>
+				<div class="input">
+					<label for="member_name">이름</label>
+					<input type="text" name="member_name" id="member_name" placeholder="이름"/>
+				</div>
+				<div class="input">
+					<label for="member_tel">연락처</label>
+					<input type="text" name="member_tel" id="member_tel" placeholder="연락처"/>
+				</div>
+				<div class="input">
+					<label for="member_etc">특이점</label>
+					<input type="text" name="member_etc" id="member_etc" placeholder="특이점"/>
+				</div>
+			</fieldset>
+			<div class="submit"><button type="button" class="btn01">저장</button></div>
+		</form>
+	</div>
+</div>
+<!-- //popup -->
 </body>
 </html>
