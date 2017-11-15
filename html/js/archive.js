@@ -143,15 +143,9 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		variableWidth: true
 	});
-   $(".ib01 .slide li.add a").bind('click', function() {
-		var $layerPopupObj = $('#popup_category .popupBox');
-		var leftV = ( $(window).scrollLeft() + ($(window).width() - $layerPopupObj.width()) / 2 );
-		var topV = ( $(window).scrollTop() + 100 );
-		$layerPopupObj.css({
-			left:leftV,
-			top:topV
-		});
-		$('#popup_category').show();
+	$(".ib01 .slide li.add a").bind('click', function() {
+		open_popup("#popup_category");
+		return false;
    });
 	
 	//팝업 - 카테고리 선택
@@ -180,11 +174,18 @@ $(document).ready(function() {
 			}
 		});
 		$('#popup_category').hide();
+		return false;
 	});
-	$('#popup_category .closeB').on('click', function() {
-		$('#popup_category').hide();
+	$('.pp01 .closeB').on('click', function() {
+		$('.pp01').hide();
+		return false;
 	});
 	
+	//팝업 - 회원유형 변경
+	$(".memberList .btn03").bind('click', function() {
+		open_popup("#popup_member_type");
+		return false;
+   });
 	
 	//입력폼 유효성 검사
 	form_validation();
@@ -197,6 +198,18 @@ function check_overlap(category){	//중복체크
 		//console.log($(this).text() + "=="+ category);
 	})
 	return true;
+}
+
+//팝업오픈
+function open_popup(selector){	
+	var $layerPopupObj = $(selector + ' .popupBox');
+	var leftV = ( $(window).scrollLeft() + ($(window).width() - $layerPopupObj.width()) / 2 );
+	var topV = ( $(window).scrollTop() + 200 );
+	$layerPopupObj.css({
+		left:leftV,
+		top:topV
+	});
+	$(selector).show();
 }
 
 function form_validation(){

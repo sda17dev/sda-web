@@ -144,6 +144,9 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .btn02{display:inline-block;height:3.125rem;line-height:3.125rem;text-align:center;background-color:#e1e3e6;border:none;box-sizing:border-box;color:#333;border:1px solid #b3b3b3;font-size:1.125rem;cursor:pointer;padding:0 2rem}
 .btn02:hover{background-color:#333 !important;text-decoration:none;color:#fff}
 .btn02_01{height:2.25rem;line-height:2.25rem;font-size:1rem}
+.btn03{display:inline-block;height:2.25rem;line-height:2.25rem;text-align:center;background-color:#555;border:none;box-sizing:border-box;color:#fff;font-size:0.875rem;cursor:pointer;padding:0 1rem}
+.btn03:hover{background-color:#999;text-decoration:none;color:#fff !important}
+
 
 .cf02 fieldset label{display:none}
 .cf02 fieldset input{display:inline-block;height:4.9375rem;width:43%;vertical-align:top;border:none;margin-right:2.5%;margin-left:-4px;font-size:1.75rem;background-color:transparent;border-bottom:3px solid #fff;box-sizing:border-box;color:#fff}
@@ -203,6 +206,7 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .cf06 label{display:none}
 .cf06  input{display:inline-block;height:3.125rem;width:50%;vertical-align:top;margin-right:1%;margin-left:-4px;font-size:1rem;background-color:transparent;border:1px solid #ccc;box-sizing:border-box;color:#333;text-indent:1rem}
 .cf06  button{display:inline-block;width:23%;vertical-align:top;margin-left:-4px}
+.cf06.addMemberType input{width:33%}
 
 .cf07 fieldset{border-top:2px solid #ccc;border-bottom:1px solid #ccc;margin-bottom:1.25rem}
 .cf07 dl{border-bottom:1px solid #ccc;display:table;width:100%}
@@ -221,6 +225,10 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .cf07 dl.file .fake a{width:28%;height:2.125rem;line-height:2.125rem;margin-left:-4px}
 .cf07 dl.textarea dt{vertical-align:top;padding-top:1rem}
 .cf07 dl.textarea textarea{width:100%;height:8.75rem}
+.cf07.imageTileWrite dt{width:25%}
+.cf07.imageTileWrite .tileGroup{background-color:#f3f4f3;margin-top:1rem;border-top:1px solid #ccc}
+.cf07.imageTileWrite .input.size em{margin:0 1rem;color:#1e5eff}
+.cf07.imageTileWrite .input.size input{width:20%;margin-right:0.3rem}
 
 .cf07 .submit{text-align:right}
 .cf07 .submit button{padding:0 4rem;vertical-align:top;margin-left:1rem}
@@ -240,6 +248,12 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .cf08 .addCat input{height:1.75rem;width:78%;margin-left:-4px;text-indent:0.625rem;font-size:1rem}
 .cf08 textarea{width:100%;height:14.625rem}
 .cf08 .submit{clear:both;border-top:1px solid #ccc;padding-top:1.875rem;text-align:right}
+.cf08_01 fieldset{margin-bottom:1rem}
+.cf08_01 ul{height:auto}
+.cf08_01 ul li{width:50%;float:left}
+.cf08_01 .input{margin-bottom:1rem}
+.cf08_01 .input label{position:absolute;text-indent:-9999px}
+.cf08_01 .input input{width:100%}
 
 .ib01{height:3.375rem;border:1px solid #e6e6e6;background-color:#f1f3f5;position:relative}
 .ib01 > a{position:absolute;top:0.8125rem;z-index:1;display:block;width:1.875rem;height:1.875rem;line-height:1.875rem;text-align:center;font-size:1.125rem}
@@ -327,7 +341,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .ng05 > li.on > dl{display:block}
 .viewMode .ng05 > li > dl{border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6}
 
-.ng06 li{display:inline;font-size:0.875rem}
+.ng06 li{display:inline-block;font-size:0.875rem}
 .ng06 li:after{content:">";margin:0 0px 0 5px;color:#999}
 .ng06 li.current:after{content:none;margin:0}
 .ng06 li.home i{margin-right:0.3125rem}
@@ -335,13 +349,20 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .ng06 li.current a{font-weight:bold;border-bottom:1px solid #666;font-size:0.875rem;color:#333}
 .ng06 li.current a:hover{text-decoration:none;border-color:#ff0000}
 
-.ng07 li{float:left;margin-left:0.625rem}
+.ng07{overflow:hidden}
+.ng07 li{float:left;margin-left:0.625rem;margin-bottom:0.625rem}
 .ng07 li a{display:block;height:2.5rem;line-height:2.5rem;border:1px solid #cbcbcb;background-color:#e4e4e4;color:#212121;padding:0 1.25rem;border-radius:0.1875rem}
 .ng07 li a:hover{text-decoration:none;background-color:#666;color:#fff}
 .ng07 li a i{margin-right:0.3125rem;font-size:1.125rem}
 .ng07 .ui-selectmenu-button{border-radius:0.1875rem;border:1px solid #cbcbcb;background:#e4e4e4;min-width:8.125rem;font-size:1rem;color:#212121;vertical-align:top}
 .ng07 .ui-selectmenu-button span.ui-icon{background:url(../images/bl_arr01.png) no-repeat center center;right:0.9375rem}
 .ng07 .ui-selectmenu-button span.ui-selectmenu-text{padding:0.5625rem 1.25rem 0.5625rem}
+.ng07_01{padding:0.625rem 0 0 0}
+.ng07_01 li.on a{background-color:#666;border-color:#666;color:#fff}
+.ng07_02{padding:1.4rem 0 0 0;text-align:center}
+.ng07_02 li{float:none;display:inline-block;width:30%}
+.ng07_02 li a{padding:0}
+.ng07_02 li.on a{padding:0;background-color:#666;border-color:#666;color:#fff}
 
 .ng08{overflow:hidden;padding-bottom:0.9375rem;margin-bottom:1.875rem;border-bottom:1px solid #ddd}
 .ng08 dl{float:left;width:70%}
@@ -371,6 +392,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .pp01:before{content:"";display:block;position:fixed;left:0;top:0;width:100%;height:100%;background-color:#000;opacity:0.6;z-index:10}
 .pp01 .popupBox{position:absolute;width:63rem;padding:1.875rem;box-sizing:border-box;background-color:#fff;z-index:15}
 .pp01 .popupBox a.closeB{position:absolute;top:-3.125rem;right:0px;display:block;width:1.875rem;height:1.875rem;;background:url(../images/btn_close02.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
+#popup_member_type.pp01 .popupBox{width:33rem}
 
 .tbl01{border-top:2px solid #ccc;border-bottom:1px solid #ccc;padding-top:2px}
 .tbl01 table{border-spacing:0;border-collapse:collapse;width:100%}
@@ -383,6 +405,21 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tbl01.noticeList .t02{width:50%;text-align:left}
 .tbl01.noticeList th.t02{text-align:center}
 .tbl01.noticeList .t02 a{display:inline-block;line-height:1rem;width:21rem;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden}
+.tbl01.memberList .btn03{width:8rem;padding:0}
+.tbl01.imageTileList td.t02{width:10rem}
+.tbl01.imageTileList td.t02 a{display:inline-block;width:10rem;hegiht:8rem;overflow:hidden}
+.tbl01.imageTileList td.t02 a img{width:10rem;min-hegiht:8rem;display:block}
+.tbl01.requestList td.title{text-align:center}
+
+.tbl02{border-bottom:1px solid #ccc}
+.tbl02 table{border-spacing:0;border-collapse:collapse;width:100%}
+.tbl02 caption{height:0px;text-indent:-9999px}
+.tbl02 thead th{background-color:#f1f3f5;padding:0.5rem;font-size:1rem;font-weight:500}
+.tbl02 tbody td{border-bottom:1px solid #d3d2d2;padding:0.5rem;font-size:0.875rem;text-align:center}
+.tbl02 tbody td.title{text-align:left}
+.tbl02 tbody td.title a{font-size:1rem;color:#333;font-weight:600}
+.tbl02 tbody td a:hover{color:#1e5eff}
+.tbl02.requestHistory .title a{display:inline-block;line-height:1rem;width:21rem;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden}
 
 .tc01{position:relative}
 .tc01 h2{font-size:1.5rem;line-height:1.5rem;color:#333;margin-bottom:1.25rem}
@@ -433,6 +470,12 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc06 .itemA li{background-color:#f1f3f5;margin-bottom:1px;padding:0 0.5rem;height:2.25rem;line-height:2.25rem;position:relative}
 .tc06 .itemA li a{display:block;position:absolute;right:0;top:0;width:2.25rem;height:2.25rem;text-indent:-9999px;background:#b3b3b3 url(../images/btn_close01.png) no-repeat center center}
 .tc06 .itemA li a:hover{background-color:#333}
+
+.tc07{border:1px solid #ccc;background-color:#f1f3f5;padding:1.875rem}
+.tc07 dl{font-size:1rem;overflow:hidden;margin-bottom:1rem}
+.tc07 dl dt{float:left;width:25%;font-weight:600}
+.tc07 dl dd{float:right;width:75%}
+.tc07 dl dd a{color:#1e5eff}
 
 .td01{height:2.5rem;line-height:2.5rem}
 .td01 b{font-weight:bold}

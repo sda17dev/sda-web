@@ -71,8 +71,9 @@ window.onload = function() {
 				<ul class="ng06">
 					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
 					<li><a href="#">관리</a></li>
-					<li><a href="#">포스트관리</a></li>
-					<li class="current"><a href="#">공지사항</a></li>
+					<li><a href="#">요청관리</a></li>
+					<li><a href="#">요청목록</a></li>
+					<li class="current"><a href="#">세부</a></li>
 				</ul>
 			</div>
 			<ul class="ng05">
@@ -132,13 +133,13 @@ window.onload = function() {
 						</dd>
 					</dl>
 				</li>
-				<li>
+				<li class="on">
 					<a href="#">요청관리</a>
-					<dl>
+					<dl style="left:30%">
 						<dt>요청목록</dt>
 						<dd>
 							<ul>
-								<li>
+								<li class="on">
 									<a href="#">
 										<strong>요청목록</strong>
 										<em>일반문의, 기록정보 오류신고, 개발오류 신고 영역의 요청이 이곳으로 수집됩니다.</em>
@@ -170,13 +171,13 @@ window.onload = function() {
 						</dd>
 					</dl>
 				</li>
-				<li class="on">
+				<li>
 					<a href="#">포스트관리</a>
-					<dl style="left:30%">
+					<dl>
 						<dt>포스트관리</dt>
 						<dd>
 							<ul>
-								<li class="on">
+								<li>
 									<a href="#">
 										<strong>공지사항</strong>
 										<em>공지사항을 작성합니다. </em>
@@ -288,175 +289,274 @@ window.onload = function() {
 				</li>
 			</ul>
 			<div class="conBody">
-				<h1 class="th02">공지사항</h1>
-				<form class="cf06 noticeSearch" action="" method="post">
-					<fieldset>
-						<label for="notice_query">검색어</label>
-						<input type="text" name="query" id="notice_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
-						<button class="btn01">검색</button>
-					</fieldset>
-				</form>
-				<div class="fc10">
-					<a class="btn01 btn01_01 leftF" href="#">새글쓰기</a>
-					<div class="pg01 rightF">
-						<a class="first" href="#"><i class="xi-angle-left"></i><i class="xi-angle-left"></i></a>
-						<a class="prev" href="#"><i class="xi-angle-left"></i></a>
-						<a href="#">1</a>
-						<a class="on" href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<a href="#">5</a>
-						<a class="next" href="#"><i class="xi-angle-right"></i></a>
-						<a class="end" href="#"><i class="xi-angle-right"></i><i class="xi-angle-right"></i></a>
-					</div>
+				<h1 class="th02">요청세부정보</h1>
+				<div class="tc07">
+					<dl>
+						<dt>번호</dt>
+						<dd>1234</dd>
+					</dl>
+					<dl>
+						<dt>요청타입</dt>
+						<dd>일반문의</dd>
+					</dl>
+					<dl>
+						<dt>이름 (회원 / 비회원)</dt>
+						<dd>김철수(비회원)</dd>
+					</dl>
+					<dl>
+						<dt>이메일</dt>
+						<dd><a href="#">hobread@slowalk.co.kr</a></dd>
+					</dl>
+					<dl>
+						<dt>전화번호</dt>
+						<dd>02-2022-2323</dd>
+					</dl>
+					<dl>
+						<dt>처리상태</dt>
+						<dd>처리중</dd>
+					</dl>
+					<dl>
+						<dt>등록일</dt>
+						<dd>2018.01.23 15:30</dd>
+					</dl>
+					<dl>
+						<dt>분야</dt>
+						<dd>운영관련, 건축관련 / 디지털 열람관련 / 시민기록 수집관련</dd>
+					</dl>
+					<dl>
+						<dt>문의내용</dt>
+						<dd>문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.문의내용입니다.</dd>
+					</dl>
 				</div>
-				<div class="tbl01 noticeList">
+				<div class="fc10">
+					<p class="td01 leftF"><b>요청기록 30건</b></p>
+					<a class="btn01 btn01_01 rightF" href="#">요청기록 엑셀 다운로드</a>
+				</div>
+				<div class="tbl02 requestHistory">
 					<table>
-						<caption>공지사항 목록</caption>
+						<caption>요청 기록</caption>
 						<thead>
 							<tr>
 								<th class="t01">번호</th>
-								<th class="t02 title">제목</th>
-								<th class="t03">작성자</th>
-								<th class="t04">작성날짜</th>
+								<th class="t02">고유번호</th>
+								<th class="t03 title">제목</th>
+								<th class="t04">기술계층</th>
+								<th class="t05">링크</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">레코드그룹</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠? 문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">파일</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">아이템</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">레코드그룹</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠? 문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">파일</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">아이템</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">레코드그룹</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠? 문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">파일</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">아이템</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">레코드그룹</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠? 문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">파일</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">아이템</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">레코드그룹</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠? 문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">파일</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">아이템</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">레코드그룹</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠? 문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">파일</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">아이템</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">레코드그룹</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 							<tr>
 								<td class="t01">1234</td>
-								<td class="t02 title"><a href="#">공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다공지사항의 제목입니다</a></td>
-								<td class="t03">관리자 이름</td>
-								<td class="t04">2018.01.23</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠? 문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">파일</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">아이템</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">레코드그룹</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠? 문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">파일</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">아이템</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">레코드그룹</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠? 문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">파일</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">아이템</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">레코드그룹</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠? 문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">파일</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02">098374848</td>
+								<td class="t03 title"><a href="#">문의합니다. 이건 왜 이런거죠?</a></td>
+								<td class="t04">아이템</td>
+								<td class="t05"><a class="btn03" href="#">세부보기</a></td>
 							</tr>
 						</body>
 					</table>
-				</div>
-				<div class="fc10">
-					<div class="pg01 rightF">
-						<a class="first" href="#"><i class="xi-angle-left-min"></i><i class="xi-angle-left-min"></i></a>
-						<a class="prev" href="#"><i class="xi-angle-left-min"></i></a>
-						<a href="#">1</a>
-						<a class="on" href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<a href="#">5</a>
-						<a class="next" href="#"><i class="xi-angle-right-min"></i></a>
-						<a class="end" href="#"><i class="xi-angle-right-min"></i><i class="xi-angle-right-min"></i></a>
-					</div>
 				</div>
 			</div>
 		</div>
