@@ -303,7 +303,7 @@ header.hd02 .lg01 a{background-image:url(../images/logo@2x.png)}
 .lg02 a{display:block;width:7.8125rem;height:4.375rem;background:url(../images/logo@2x.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
 
 .ng02{border-top:1px solid #ccc;overflow:hidden;margin-bottom:2.2rem}
-.ng02 dl{float:left;width:33%}
+.ng02 dl{float:left;width:25%}
 .ng02 dl dt{border-bottom:1px solid #cbcbcb;height:4.75rem;line-height:4.75rem;margin-bottom:1.3rem;padding-left:1.25rem}
 .ng02 dl dt a{font-size:1.125rem;color:#333;font-weight:500}
 .ng02 dl dd{padding-left:1.25rem}
