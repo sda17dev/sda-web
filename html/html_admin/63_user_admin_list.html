@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<title>서울기록원</title>
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+<link rel="stylesheet" type="text/css" href="../css/archive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/archive_slowalk.css"/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css"/><![endif]-->
+<!--[if lt IE 9]><script src="../js/html5.js"></script><![endif]-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src='../js/jquery-1.11.3.min.js'></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script type="text/javascript" src="http://www.seoul.go.kr/seoulgnb/gnb.js"></script>
+<script type="text/javascript" src="../js/archive.js"></script>
+<script type="text/javascript">
+// GNB 로딩 스크립트
+// Yjs.Gnb.init('사이트 ID', 'GNB 표출영역 ID');
+window.onload = function() {
+    Yjs.Gnb.init('G188', 'seoul-common-gnb');
+};
+</script>
+</head>
+<body>
+<div id="main_wrap" class="subPage">
+	<div id="skip-link">
+		<a href="#main-content">컨텐츠 바로가기</a>
+	</div>
+	<div id="seoul-common-gnb"></div>
+	<header class="hd02">
+		<div class="inner2">
+		<div class="lg01"><a href="/">서울기록원</a></div>
+		<nav>
+			<menu>
+				<li class="news on"><a href="#">뉴스</a></li>
+				<li class="info"><a href="#">소개 및 안내</a></li>
+				<li class="explore"><a href="#">탐색</a></li>
+				<li class="search"><a href="#">검색</a></li>
+			</menu>
+			<form class="cf02" action="" method="post">
+				<fieldset>
+					<label for="search_option">검색옵션</label>
+					<select name="search_option" id="search_option">
+						<option value="0" selected="selected">웹사이트에서 검색하기</option>
+						<option value="1">기록에서 검색하기</option>
+					</select>
+					<label for="search_query">검색어</label>
+					<input type="text" name="query" id="search_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+					<button>웹사이트에서 검색</button>
+					<a class="closeBtn" href="#"><i class="xi-close"></i>닫기</a>
+				</fieldset>
+			</form>
+			<ul class="ng04">
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#">회원가입</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+	<!-- 컨텐츠 영역 -->
+    <div class="fc05 viewMode" id="main-content">
+		<div class="inner">
+			<div class="header">
+				<ul class="ng06">
+					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
+					<li><a href="#">관리자관리</a></li>
+					<li class="current"><a href="#">관리자목록</a></li>
+				</ul>
+			</div>
+			<ul class="ng05">
+				<li>
+					<a href="#">내 계정</a>
+					<dl>
+						<dt>내 계정</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="#">
+										<strong>회원정보</strong>
+										<em>회원가입 및 로그인한 사용자 정보입니다.</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>비밀번호 재설정</strong>
+										<em>등록된 이메일로 비밀번호를 재설정하는 링크를 보내드립니다. 해당하는 링크를 눌러 비밀번호를 재설정할 수 있습니다.</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>로그아웃</strong>
+										<em>버튼을 누르면 로그아웃됩니다.</em>
+									</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#">기록</a>
+					<dl>
+						<dt>기록</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="#">
+										<strong>즐겨찾기</strong>
+										<em>탐색, 검색한 기록을 즐겨찾기 합니다. 다수의 즐겨찾기 목록을 생성할 수 있습니다.</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>다운로드</strong>
+										<em>탐색, 검색한 기록의 목록을 다운로드한 사용자 기록입니다. 개별 기록을 다운로드한 목록도 포함되어 있습니다. </em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>즐겨찾기 공개</strong>
+										<em>사용자가 공개한 즐겨찾기는 베타기능입니다.</em>
+									</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#">요청관리</a>
+					<dl>
+						<dt>요청목록</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="#">
+										<strong>요청목록</strong>
+										<em>일반문의, 기록정보 오류신고, 개발오류 신고 영역의 요청이 이곳으로 수집됩니다.</em>
+									</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#">통계</a>
+					<dl>
+						<dt>통계</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="#">
+										<strong>기본통계</strong>
+										<em>Engine과 동기화한 데이터에 대한 기본 통계입니다.</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>사용자 통계</strong>
+										<em>로그인, 비로그인 사용자가 특정 영역의 활동을 했을 때 수집되는 사용자 통계의 전체 리스트입니다.</em>
+									</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#">포스트관리</a>
+					<dl>
+						<dt>포스트관리</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="#">
+										<strong>공지사항</strong>
+										<em>공지사항을 작성합니다. </em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>뉴스</strong>
+										<em>외부에 전달하는 뉴스를 발행합니다. </em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>건축과정</strong>
+										<em>오픈 전 건축과정을 소개합니다.</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>칼럼</strong>
+										<em>기록원 및 기록과 관련된 이슈를 다룹니다.</em>
+									</a>
+								</li>								
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#">회원관리</a>
+					<dl>
+						<dt>회원관리</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="#">
+										<strong>이메일 수집목록</strong>
+										<em>홈페이지 메인에서 수집되는 비회원의 이메일 목록입니다.</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>회원목록</strong>
+										<em>회원가입한 회원 목록입니다.</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>회원유형분리</strong>
+										<em>회원유형을 생성하거나, 분리해 서비스 개발에 필요한 데이터를 확보합니다.</em>
+									</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li class="on">
+					<a href="#">관리자관리</a>
+					<dl style="left:30%">
+						<dt>관리자관리</dt>
+						<dd>
+							<ul>
+								<li class="on">
+									<a href="#">
+										<strong>관리자목록</strong>
+										<em>WEB 시스템의 관리자, 운영대응 담당자의 목록입니다.</em>
+									</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#">F/A관리</a>
+					<dl>
+						<dt>F/A관리</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="#">
+										<strong>리서치가이드</strong>
+										<em>리서치 가이드는 자료 조사를 시작하기 위한 안내 지도입니다. </em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong>사용자 가이드</strong>
+										<em>특정한 사용자들에게 디지털아카이브를 안내하는 기본적인 도움말입니다.</em>
+									</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#">이미지타일관리</a>
+					<dl>
+						<dt>이미지타일관리</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="#">
+										<strong>이미지 타일</strong>
+										<em>웹사이트에서 사용하는 이미지를 관리합니다.</em>
+									</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+			<div class="conBody">
+				<h1 class="th02">관리자 목록</h1>
+				<ul class="ng07 ng07_01">
+					<li><a href="#">슈퍼관리자</a></li>
+					<li class="on"><a href="#">관리자</a></li>
+				</ul>
+				<div class="tbl01 memberList">
+					<table>
+						<caption>회원 유형별 분리 목록</caption>
+						<thead>
+							<tr>
+								<th class="t01">번호</th>
+								<th class="t02 title">이메일</th>
+								<th class="t03">이름</th>
+								<th class="t04">가입날짜</th>
+								<th class="t05">회원유형</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">홍기록</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member0" href="#">관리자</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">홍기록</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member1" href="#">관리자</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">홍기록</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member2" href="#">관리자</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">홍기록</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member3" href="#">슈퍼관리자</a></td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">email@email.com</a></td>
+								<td class="t03">홍기록</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05"><a class="btn03 member4" href="#">슈퍼관리자</a></td>
+							</tr>
+						</body>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //컨텐츠 영역 -->		
+	<footer>
+		<div class="inner">
+			<div class="lg02"><a ref="#">서울기록원</a></div>
+			<ul class="ng03">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#"><b>개인정보보호방침</b></a></li>
+			</ul>
+			<div class="ng02">
+				<dl>
+					<dt><a href="#">기록찾기</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">탐색</a></li>
+							<li><a href="#">검색결과 - 용산공원</a></li>
+							<li><a href="#">새로운용산공원 - 시리즈에 포함된 검색결과</a></li>
+							<li><a href="#">탐색 - 건축국 - 건축관련행정기록</a></li>
+							<li><a href="#">탐색 - 용산공원수집기록</a></li>
+							<li><a href="#">리서치 가이드</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">컬렉션</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">사진아카이브</a></li>
+							<li><a href="#">시민 컬렉션</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">소개 및 안내</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">소개</a></li>
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">일반문의</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>	
+		</div>
+		<address>
+			<div class="inner">
+				<span>서울특별시 은평구 녹번동 산1-61호 000-00-00000 T.<b>02-3709-7500</b>,   F.<b>02-3709-7520</b></span>
+				<span>COPYRIGHT ©2018 <b>SEOUL METROPOLITAN ARCHIVE</b></span>
+			</div>
+		</address>
+	</footer>
+</div>
+<!-- //main_wrap -->
+<!-- popup -->
+<div id="popup_member_type" class="pp01" style="display:none">
+	<div class="popupBox">
+		<a class="closeB" href="#close">닫기</a>
+		<form class="cf08 cf08_01">
+			<fieldset>
+				<h3 class="th03">회원유형변경</h3>
+				<ul>
+					<li><input type="radio" name="member_type" id="member_type1" value="guest"/><label for="member_type1">게스트</label></li>
+					<li><input type="radio" name="member_type" id="member_type2" value="member0"/><label for="member_type2">회원</label></li>
+					<li><input type="radio" name="member_type" id="member_type3" value="member1"/><label for="member_type3">회원(연구)</label></li>
+					<li><input type="radio" name="member_type" id="member_type4" value="member2"/><label for="member_type4">회원(기록)</label></li>
+					<li><input type="radio" name="member_type" id="member_type6" value="member3"/><label for="member_type6">회원(행정)</label></li>
+					<li><input type="radio" name="member_type" id="member_type5" value="member4"/><label for="member_type5">회원(큐레이터)</label></li>
+					<li><input type="radio" name="member_type" id="member_type7" value="관리자"/><label for="member_type7">관리자</label></li>
+					<li><input type="radio" name="member_type" id="member_type8" value="슈퍼관리자"/><label for="member_type8">슈퍼관리자</label></li>
+				</ul>
+				<div class="input">
+					<label for="member_name">이름</label>
+					<input type="text" name="member_name" id="member_name" placeholder="이름"/>
+				</div>
+				<div class="input">
+					<label for="member_tel">연락처</label>
+					<input type="text" name="member_tel" id="member_tel" placeholder="연락처"/>
+				</div>
+				<div class="input">
+					<label for="member_etc">특이점</label>
+					<input type="text" name="member_etc" id="member_etc" placeholder="특이점"/>
+				</div>
+			</fieldset>
+			<div class="submit"><button type="button" class="btn01">저장</button></div>
+		</form>
+	</div>
+</div>
+<!-- //popup -->
+</body>
+</html>
