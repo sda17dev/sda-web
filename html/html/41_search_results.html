@@ -70,15 +70,15 @@ window.onload = function() {
 			<div class="TopA">
 				<div class="td01 leftF"><i class="xi-search"></i> "<b>용산공원</b>"으로 검색한 결과값 <strong>35,800</strong></div>
 				<ul class="ng07 rightF">
-					<li>
+					<!--li>
 						<select id="filter_sort">
 							<option>제목순</option>
 							<option>년도순</option>
 						</select>
-					</li>
+					</li-->
 					<li><a href="#">결과값 다운로드</a></li>
-					<li><a href="#">인쇄모드</a></li>
-					<li><a href="#">수집박스 저장</a></li>
+					<li><a href="#">인쇄</a></li>
+					<li><a href="#">검색결과 저장</a></li>
 				</ul>
 			</div>
 			<div class="lowerA">
@@ -88,37 +88,62 @@ window.onload = function() {
 							<dl>
 								<dt>온라인 열람</dt>
 								<dd class="tkg01">
-								    <input type="checkbox" checked="checked" id="check01_01" name="check01"/><label for="check01_01">온라인 열람 가능 자료</label>
+								    <input type="checkbox" checked="checked" id="check01_01" name="check01"/><label for="check01_01">온라인 열람 가능 자료(2000)</label>
 								</dd>
 							</dl>
+								<dt>사진콜렉션(구 사진아카이브)</dt>
+								<dd class="tkg01">
+								    <input type="checkbox" checked="checked" id="check01_01" name="check01"/><label for="check01_01">사진콜렉션 포함(3000)</label>
+								</dd>
+							</dl>							
 							<dl>
 								<dt>기술계층</dt>
 								<dd class="tkg01">
-								    <input type="checkbox" id="check02_01" name="check02" checked="checked"/><label for="check02_01">Hierarchy 1</label>
-								    <input type="checkbox" id="check02_02" name="check02"/><label for="check02_02">Hierarchy 2</label>
-								    <input type="checkbox" id="check02_03" name="check02"/><label for="check02_03">단위과제카드(File)</label>
-								    <input type="checkbox" id="check02_04" name="check02"/><label for="check02_04">건(item)</label>
+								    <input type="checkbox" id="check02_01" name="check02" checked="checked"/><label for="check02_01">레코드그룹(200)</label>
+								    <input type="checkbox" id="check02_02" name="check02"/><label for="check02_02">시리즈(500)</label>
+								    <input type="checkbox" id="check02_03" name="check02"/><label for="check02_03">파일(5000)</label>
+								    <input type="checkbox" id="check02_04" name="check02"/><label for="check02_04">아이템(30000)</label>
 								</dd>
 							</dl>
 							<dl>
-								<dt>기록형태</dt>
+								<dt>생산부서</dt>
 								<dd class="tkg01">
-								    <input type="checkbox" id="check03_01" name="check03" checked="checked"/><label for="check03_01">종이문서</label>
-								    <input type="checkbox" id="check03_02" name="check03"/><label for="check03_02">사진, 필름</label>
-								    <input type="checkbox" id="check03_03" name="check03"/><label for="check03_03">하드디스크, USB</label>
-								    <input type="checkbox" id="check03_04" name="check03"/><label for="check03_04">도면</label>
-								    <input type="checkbox" id="check03_05" name="check03"/><label for="check03_05">마이크로필름</label>
+								    <input type="checkbox" id="check03_01" name="check03" checked="checked"/><label for="check03_01">공원과(232)</label>
+								    <input type="checkbox" id="check03_02" name="check03"/><label for="check03_02">용산구(2323)</label>
+								    <input type="checkbox" id="check03_03" name="check03"/><label for="check03_03">총무국(232)</label>
+								    <input type="checkbox" id="check03_04" name="check03"/><label for="check03_04">행정국(221)</label>
+								    <input type="checkbox" id="check03_05" name="check03"/><label for="check03_05">건축과(2323)</label>
 								</dd>
 							</dl>
 							<dl>
-								<dt>전자파일 포멧</dt>
+								<dt>생산년도</dt>
+								<dd class="tkg01">
+								    <input type="checkbox" id="check03_01" name="check03" checked="checked"/><label for="check03_01">~1950(343)</label>
+								    <input type="checkbox" id="check03_02" name="check03"/><label for="check03_02">1951~1960(232)</label>
+								    <input type="checkbox" id="check03_03" name="check03"/><label for="check03_03">1961~1970(232)</label>
+								    <input type="checkbox" id="check03_04" name="check03"/><label for="check03_04">1971~1980(232)</label>
+								    <input type="checkbox" id="check03_05" name="check03"/><label for="check03_05">~1998(2320)</label>
+								</dd>
+							</dl>							
+							<dl>
+								<dt>파일 포맷</dt>
 								<dd class="tkg01">
 								    <input type="checkbox" id="check04_01" name="check04" checked="checked"/><label for="check04_01">워드(HWP)</label>
 								    <input type="checkbox" id="check04_02" name="check04"/><label for="check04_02">PDF</label>
-								    <input type="checkbox" id="check04_03" name="check04"/><label for="check04_03">슬라이드(PPT, PPTX)</label>
+								    <input type="checkbox" id="check04_03" name="check04"/><label for="check04_03">이미지(jpg, png, bmp)</label>
 								    <input type="checkbox" id="check04_04" name="check04"/><label for="check04_04">엑셀(XLS, CSV)</label>
 								</dd>
 							</dl>
+							<dl>
+								<dt>종류</dt>
+								<dd class="tkg01">
+								    <input type="checkbox" id="check04_01" name="check04" checked="checked"/><label for="check04_01">간행물</label>
+								    <input type="checkbox" id="check04_02" name="check04"/><label for="check04_02">문서</label>
+								    <input type="checkbox" id="check04_03" name="check04"/><label for="check04_03">대장</label>
+								    <input type="checkbox" id="check04_04" name="check04"/><label for="check04_04">도면</label>
+								    <input type="checkbox" id="check04_05" name="check05"/><label for="check04_04">카드</label>
+								</dd>
+							</dl>							
 						</form>
 					</div>
 					<div class="rightA">
@@ -126,10 +151,11 @@ window.onload = function() {
 							<dl>
 								<dt>검색필터 :</dt>
 								<dd>
-									<a href="#">디지털 원문 직접 제공<i class="xi-close"></i></a>
-									<a href="#">단위과제카드<i class="xi-close"></i></a>
-									<a href="#">마이크로필름<i class="xi-close"></i></a>
+									<a href="#">온라인 열람 가능<i class="xi-close"></i></a>
+									<a href="#">사진아카이브<i class="xi-close"></i></a>
+									<a href="#">공원과<i class="xi-close"></i></a>
 									<a href="#">워드(HWP)<i class="xi-close"></i></a>
+									<a href="#">대장<i class="xi-close"></i></a>
 								</dd>
 							</dl>
 							<div class="tkg01">
@@ -143,7 +169,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[레코드그룹]</span>
 							</li>
 							<li>
 								<dl>
@@ -151,7 +177,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[레코드그룹]</span>
 							</li>
 							<li>
 								<dl>
@@ -159,7 +185,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[레코드그룹]</span>
 							</li>
 							<li>
 								<dl>
@@ -167,7 +193,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[레코드그룹]</span>
 							</li>
 							<li>
 								<dl>
@@ -175,7 +201,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[시리즈]</span>
 							</li>
 							<li>
 								<dl>
@@ -183,7 +209,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[시리즈]</span>
 							</li>
 							<li>
 								<dl>
@@ -191,7 +217,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[시리즈]</span>
 							</li>
 							<li>
 								<dl>
@@ -199,7 +225,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[시리즈]</span>
 							</li>
 							<li>
 								<dl>
@@ -207,7 +233,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[파일]</span>
 							</li>
 							<li>
 								<dl>
@@ -215,7 +241,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[파일]</span>
 							</li>
 							<li>
 								<dl>
@@ -223,7 +249,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[파일]</span>
 							</li>
 							<li>
 								<dl>
@@ -231,7 +257,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[파일]</span>
 							</li>
 							<li>
 								<dl>
@@ -239,7 +265,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[파일]</span>
 							</li>
 							<li>
 								<dl>
@@ -247,7 +273,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[파일]</span>
 							</li>
 							<li>
 								<dl>
@@ -255,7 +281,7 @@ window.onload = function() {
 									<dd>생산년도 : 2008년 ~ 2017년</dd>
 								</dl>
 								<a class="desc" href="#">세부보기</a>
-								<span class="card">[단위과제카드]</span>
+								<span class="card">[파일]</span>
 							</li>
 						</ul>
 						<div class="pg02"><a href="#">다음 목록(30개)</a></div>
