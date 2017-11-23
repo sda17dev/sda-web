@@ -60,6 +60,8 @@ $(document).ready(function() {
 	});
 	$(".tkg01").buttonset();
 	$(".ng07 select").selectmenu();
+	$(".cf10 input").spinner();
+	
 	//검색창 제어
 	$("header menu li.search a").click(function(){
 		$("header").addClass("searchMode");
@@ -186,6 +188,17 @@ $(document).ready(function() {
 		open_popup("#popup_member_type");
 		return false;
    });
+	
+	//상세검색폼 키워드 입력란 추가
+	$('.cf09 .keywords ul li.add button').on('click', function(event) {
+		var ul = $(this).parents(".keywords ul");
+		var index = ul.find("li").length;
+		var group = "1";
+		if(ul.find("li:first-child input").attr("name") == "search_d_keyword21")	group = "2";
+		$('li.add',ul).before('<li class="l'+index+'"><input type="text" name="search_d_keyword'+group+index+'"/></li>');
+		return false;
+	});
+	
 	
 	//입력폼 유효성 검사
 	form_validation();
