@@ -198,6 +198,12 @@ $(document).ready(function() {
 		$('li.add',ul).before('<li class="l'+index+'"><input type="text" name="search_d_keyword'+group+index+'"/></li>');
 		return false;
 	});
+   //검색가이드
+   $('.lc06 li dt a').bind("click",function(event){
+       $(this).parents(".lc06 ul").find("li").removeClass("on");
+       $(this).parents(".lc06 ul li").addClass("on");
+       return false;
+   });
 	
 	
 	//입력폼 유효성 검사
