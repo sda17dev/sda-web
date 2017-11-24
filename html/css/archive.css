@@ -561,7 +561,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .td02{text-align:right}
 .td02 strong{font-weight:600;color:#333}
 
-.th01 dt h1{font-size:2.25rem;font-weight:700;line-height:3.5rem;color:#333}
+.th01 dt h1{font-size:3rem;font-weight:700;line-height:3.8rem;color:#333;padding-bottom: 0.8rem}
 .th01 dd{font-size:1.1rem;color:#808080}
 .th01_01{border-bottom:none}
 .th01_01 dt{margin-bottom:1.25rem}
@@ -572,19 +572,19 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 
 /* post */
 .postA img{max-width:100%}
-.postA p{font-size:1rem;line-height:1.8rem;margin-bottom:1.25rem}
+.postA p{font-size:1.6rem;font-weight:370;line-height:2.4rem;margin-bottom:1.9rem;letter-spacing: -.006em}
 .postA b{color:#000;font-weight:600}
 .postA a{color:#ff6600}
-.postA h2{font-size:1.875rem;line-height:2.5rem;margin-bottom:1.875rem;color:#000}
-.postA h3{font-size:1.5rem;line-height:1.875rem;margin-bottom:1.25rem;color:#444;border-bottom:1px solid #ccc;padding-bottom:0.625rem}
-.postA h4{font-size:1.25rem;line-height:1.875rem;margin-bottom:2rem;color:#1e5eff}
+.postA h2{font-size:2.875rem;line-height:2.875rem;margin-bottom:2.3rem;color:#000}
+.postA h3{font-size:2.5rem;line-height:2rem;margin-bottom:1.25rem;color:#444;border-bottom:1px solid #ccc;padding-bottom:1rem}
+.postA h4{font-size:2rem;line-height:2rem;margin-bottom:2rem;color:#1e5eff}
 
 .postA ol{margin-bottom:1.25rem}
-.postA ol>li{position:relative;padding-left:1.25rem;margin-bottom:0.625rem}
+.postA ol>li{font-size:1.6rem;ine-height:2.4rem;position:relative;padding-left:1.3rem;margin-bottom:0.625rem}
 .postA ol>li>em{position:absolute;left:0;top:0}
 
 .postA ul{margin:0 0 1.25rem 0.9375rem}
-.postA ul>li{position:relative;padding-left:0.9375rem}
+.postA ul>li{font-size:1.6rem;line-height:2.4rem;position:relative;padding-left:1.3rem;padding-bottom: 0.5rem}
 .postA ul>li:before{content:"";display:block;width:0.4rem;height:0.3rem;background-color:#1e5eff;position:absolute;left:0;top:0.7rem}
 .postA ul>li>ul>li:before{content:"";display:block;width:0.25rem;height:0.25rem;background-color:#ff6600;position:absolute;left:0;top:0.5rem}
 .postA ul>li>ul>li{font-size:0.8rem;line-height:1.2rem;padding-left:0.8rem}
