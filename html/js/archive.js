@@ -60,7 +60,7 @@ $(document).ready(function() {
 	});
 	$(".tkg01").buttonset();
 	$(".ng07 select").selectmenu();
-	$(".cf10 input").spinner();
+	$(".cf10 select").selectmenu();
 	
 	//검색창 제어
 	$("header menu li.search a").click(function(){
