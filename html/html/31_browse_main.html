@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<title>서울기록원</title>
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+<link rel="stylesheet" type="text/css" href="../css/archive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/archive_slowalk.css"/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css"/><![endif]-->
+<!--[if lt IE 9]><script src="../js/html5.js"></script><![endif]-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src='../js/jquery-1.11.3.min.js'></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script type="text/javascript" src="http://www.seoul.go.kr/seoulgnb/gnb.js"></script>
+<script type="text/javascript" src="../js/archive.js"></script>
+<script type="text/javascript">
+// GNB 로딩 스크립트
+// Yjs.Gnb.init('사이트 ID', 'GNB 표출영역 ID');
+window.onload = function() {
+    Yjs.Gnb.init('G188', 'seoul-common-gnb');
+};
+</script>
+</head>
+<body>
+<div id="main_wrap" class="subPage">
+	<div id="skip-link">
+		<a href="#main-content">컨텐츠 바로가기</a>
+	</div>
+	<div id="seoul-common-gnb"></div>
+	<header class="hd02">
+		<div class="inner2">
+		<div class="lg01"><a href="/">서울기록원</a></div>
+		<nav>
+			<menu>
+				<li class="news on"><a href="#">뉴스</a></li>
+				<li class="info"><a href="#">소개 및 안내</a></li>
+				<li class="explore"><a href="#">탐색</a></li>
+				<li class="search"><a href="#">검색</a></li>
+			</menu>
+			<form class="cf02" action="" method="post">
+				<fieldset>
+					<label for="search_option">검색옵션</label>
+					<select name="search_option" id="search_option">
+						<option value="0" selected="selected">웹사이트에서 검색하기</option>
+						<option value="1">기록에서 검색하기</option>
+					</select>
+					<label for="search_query">검색어</label>
+					<input type="text" name="query" id="search_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+					<button>웹사이트에서 검색</button>
+					<a class="closeBtn" href="#"><i class="xi-close"></i>닫기</a>
+				</fieldset>
+			</form>
+			<ul class="ng04">
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#">회원가입</a></li>
+			</ul>
+		</nav>
+		</div>
+    </header>
+	<!-- 컨텐츠 영역 -->
+	<div class="fc03" id="main-content">
+		<div class="inner">
+			<div class="header">
+				<ul class="ng06">
+					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
+					<li class="current"><a href="#">탐색</a></li>
+				</ul>
+			</div>
+			<div class="TopA">
+				<div class="td01 leftF">조회건수 : <strong>125</strong>건</div>
+				<div class="rightF">
+					<div class="pg01">
+						<div class="preOption">
+							<a href="#" title="다운로드"><i class="xi-download"></i></a>
+							<a href="#" title="인쇄"><i class="xi-print"></i></a>
+						</div>
+						<a class="first" href="#" title="첫페이지"><i class="xi-angle-left"></i><i class="xi-angle-left"></i></a>
+						<a class="prev" href="#" title="이전페이지"><i class="xi-angle-left"></i></a>
+						<a href="#" title="1페이지">1</a>
+						<a class="on" href="#" title="2페이지">2</a>
+						<a href="#" title="3페이지">3</a>
+						<a href="#" title="4페이지">4</a>
+						<a href="#" title="5페이지">5</a>
+						<a class="next" href="#" title="다음페이지"><i class="xi-angle-right"></i></a>
+						<a class="end" href="#" title="마지막페이지"><i class="xi-angle-right"></i><i class="xi-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- 탐색메인의 시작은 레코드그룹의 목록이다. -->
+			<!-- lowerA -->
+			<div class="lowerA">
+				<div class="uiArea">
+					<ul class="lc05">
+						<li class="record">
+							<a href="#">
+								<em>레코드그룹</em>
+								<strong>타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</strong>
+								<i>생산기간: 2013년~2016년</i>
+							</a>
+						</li>
+						<li class="record">
+							<a href="#">
+								<em>레코드그룹</em>
+								<strong>타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</strong>
+								<i>생산기간: 2013년~2016년</i>
+							</a>
+						</li>
+						<li class="record">
+							<a href="#">
+								<em>레코드그룹</em>
+								<strong>타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</strong>
+								<i>생산기간: 2013년~2016년</i>
+							</a>
+						</li>
+						<li class="record">
+							<a href="#">
+								<em>레코드그룹</em>
+								<strong>타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</strong>
+								<i>생산기간: 2013년~2016년</i>
+							</a>
+						</li>
+						<li class="record">
+							<a href="#">
+								<em>레코드그룹</em>
+								<strong>타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</strong>
+								<i>생산기간: 2013년~2016년</i>
+							</a>
+						</li>
+						<li class="record">
+							<a href="#">
+								<em>레코드그룹</em>
+								<strong>타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</strong>
+								<i>생산기간: 2013년~2016년</i>
+							</a>
+						</li>
+						<li class="record">
+							<a href="#">
+								<em>레코드그룹</em>
+								<strong>타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</strong>
+								<i>생산기간: 2013년~2016년</i>
+							</a>
+						</li>
+						<li class="record">
+							<a href="#">
+								<em>레코드그룹</em>
+								<strong>타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</strong>
+								<i>생산기간: 2013년~2016년</i>
+							</a>
+						</li>
+						<li class="record">
+							<a href="#">
+								<em>레코드그룹</em>
+								<strong>타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</strong>
+								<i>생산기간: 2013년~2016년</i>
+							</a>
+						</li>
+						<li class="record">
+							<a href="#">
+								<em>레코드그룹</em>
+								<strong>타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</strong>
+								<i>생산기간: 2013년~2016년</i>
+							</a>
+						</li>
+					</ul>
+					<div class="fc10">
+						<form class="cf10 leftF">
+							<label for="sort_count">정렬:</label>
+							<input name="sort_count" id="sort_count" value="30"/>
+							<button>확인</button>
+						</form>
+						<div class="pg01 rightF">
+							<a class="first" href="#" title="첫페이지"><i class="xi-angle-left"></i><i class="xi-angle-left"></i></a>
+							<a class="prev" href="#" title="이전페이지"><i class="xi-angle-left"></i></a>
+							<a href="#" title="1페이지">1</a>
+							<a class="on" href="#" title="2페이지">2</a>
+							<a href="#" title="3페이지">3</a>
+							<a href="#" title="4페이지">4</a>
+							<a href="#" title="5페이지">5</a>
+							<a class="next" href="#" title="다음페이지"><i class="xi-angle-right"></i></a>
+							<a class="end" href="#" title="마지막페이지"><i class="xi-angle-right"></i><i class="xi-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //lowerA -->
+		</div>
+	</div>
+	<!-- //서브 컨텐츠 영역 -->
+	<footer>
+		<div class="inner">
+			<div class="lg02"><a ref="#">서울기록원</a></div>
+			<ul class="ng03">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#"><b>개인정보보호방침</b></a></li>
+			</ul>
+			<div class="ng02">
+				<dl>
+					<dt><a href="#">소개 및 안내 </a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">서울기록원 소개</a></li>
+							<li><a href="#">칼럼</a></li>
+							<li><a href="#">공지</a></li>
+							<li><a href="#">사용자를 위한 안내</a></li>
+							<li><a href="#">개발자를 위한 안내</a></li>
+							<li><a href="#">일반문의</a></li>							
+							<li><a href="#">오류신고</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">도구</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">기록 탐색</a></li>
+							<li><a href="#">기록 검색</a></li>
+							<li><a href="#">리서치가이드</a></li>							
+						</ul>
+					</dd>					
+				</dl>
+				<dl>
+					<dt><a href="#">컬렉션 및 전시</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">사진아카이브</a></li>
+							<li><a href="#">용산공원 특별 전시</a></li>
+						</ul>
+					</dd>					
+				</dl>
+			</div>	
+		</div>
+		<address>
+			<div class="inner">
+				<span>서울특별시 은평구 녹번동 산1-61호 000-00-00000 T.<b>02-3709-7500</b>,   F.<b>02-3709-7520</b></span>
+				<span>COPYRIGHT ©2018 <b>SEOUL METROPOLITAN ARCHIVE</b></span>
+			</div>
+		</address>
+	</footer>
+</div>
+<!-- //main_wrap -->
+</body>
+</html>
