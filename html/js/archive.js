@@ -150,6 +150,15 @@ $(document).ready(function() {
 		return false;
    });
 	
+	//콜렉션 메인 슬라이드
+	$('.ib04 .slide').slick({
+		dots: true,
+		infinite: true,
+		initialSlide:0,
+		adaptiveHeight:true,
+		speed: 300
+	});
+	
 	//팝업 - 카테고리 선택
 	$('#popup_category .addCat input').on('keypress', function(event) {
 		var text = $(this).val();
@@ -204,7 +213,12 @@ $(document).ready(function() {
        $(this).parents(".lc06 ul li").addClass("on");
        return false;
    });
-	
+	//콜렉션 메인 사용자 즐겨찾기 모음 그리드 정렬
+	if($('.lc07 .bookmarks').length > 0)
+		$('.lc07 .bookmarks').masonry({
+			itemSelector: '.box',
+			gutter:'.gutter-sizer'
+		});
 	
 	//입력폼 유효성 검사
 	form_validation();

@@ -43,6 +43,7 @@ header.hd01 nav menu li a{display:inline-block;height:6.125rem;color:#fff;font-s
 header.hd01 nav menu li a:hover{text-decoration:none;color:#1e5eff}
 header.hd01 nav menu li a:focus{text-decoration:none;color:#fff}
 header.hd01 .cf02{display:none}
+header.hd01 .td03{position:absolute;width:40%;right:2rem;bottom:2rem;z-index:10}
 
 header.hd01.searchMode nav menu{margin-bottom:3.375rem;transition:margin-bottom 1s ease 0s}
 header.hd01.searchMode nav menu li{margin-bottom:1.6875rem;transition:margin-bottom 1s ease 0s}
@@ -69,6 +70,7 @@ header.hd02 menu li a:hover{text-decoration:none;color:#999}
 header.hd02 menu li.on a{color:#1e5eff}
 
 .scrolling header.hd02{position:fixed;left:0;top:0;z-index:10;opacity:0.95;width:100%;box-sizing:border-box}
+.scrolling header.hd02 .td03{display:none}
 
 footer{overflow:hidden;padding:3.3rem 0 0;background-color:#f1f3f5}
 footer .lg02{float:left;margin-bottom:1.875rem}
@@ -314,6 +316,17 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 
 .ib02 img{width:100%}
 
+.ib03{}
+
+/* collection main slider */
+.ib04{margin-bottom:1.75rem}
+.ib04 .slide li img{width:100%}
+.ib04 .slick-dotted.slick-slider{margin-bottom:0}
+.ib04 .slick-dots{bottom:1rem}
+.ib04 .slick-dots li{width:1.125rem}
+.ib04 .slick-dots li button{background-color:#c0bdbd;width:1.125rem;height:1.125rem;text-indent:-9999px;border-radius:0.5625rem}
+.ib04 .slick-dots li.slick-active button{background-color:#fff}
+
 .lc01 li{float:left;width:25%}
 .lc01 li a{display:block;width:100%;position:relative}
 .lc01 li a em{display:block;height:2.5rem;font-size:0.8125rem;line-height:2.5rem;color:#ccc;background-color:#1e5eff;padding:0 1.25rem;color:#fff;border-left:1px solid #4b7eff}
@@ -385,6 +398,20 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .lc06 li.on dl dt{background-image:url(../images/bl_up01.png)}
 .lc06 li.on dl dt a{color:#1e5eff}
 .lc06 li.on dl dd{display:block;background-color:#f4f4f4;color:#333;line-height:2rem}
+
+/* collection main bookmarks */
+.lc07{position:relative}
+.lc07 h2{font-size:1.5rem;color:#333;margin-bottom:2rem}
+.lc07 a.more{position:absolute;right:0;top:0;font-size:0.875rem;background:url(../images/bl_arr05.png) no-repeat right center;padding-right:1rem}
+.lc07 .bookmarks dl{width:31.58%;box-sizing:border-box;padding:1.25rem;margin-bottom:2.63%;background-size:100% auto;background-color:#5a5a5a}
+.lc07 .bookmarks dl dt{font-size:1.5rem;color:#fff;margin-bottom:1.2rem}
+.lc07 .bookmarks dl ul{margin-bottom:1.25rem;overflow:hidden}
+.lc07 .bookmarks dl li{width:25%;float:left;position: relative}
+.lc07 .bookmarks dl li:before {content:"";display:block;padding-top: 100%; /* 1:1 비율 */}
+.lc07 .bookmarks dl li a{display:block;position:absolute;top:0;right:0;bottom:0;left:0;overflow:hidden;margin:0 1px 1px 0}
+.lc07 .bookmarks dl li a img{width:100%;min-height:100%}
+.lc07 .bookmarks dl .btn01{width:100%;height:2.5rem;line-height:2.5rem;font-size:0.875rem}
+.lc07 .bookmarks .gutter-sizer{width:2.63%}
 
 .lg01 a{display:block;width:7.8125rem;height:4.375rem;background:url(../images/logo02@2x.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
 header.hd02 .lg01 a{background-image:url(../images/logo@2x.png)}
@@ -619,6 +646,15 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc09.apply p{font-size:0.875rem;color:#999;line-height:1.4rem;margin-bottom:1rem}
 .tc09.apply .btn02{width:100%;height:2.5rem;line-height:2.4rem;font-size:1rem}
 
+/* selection notice */
+.tc10{border-bottom:1px solid #ccc;margin-bottom:2.5rem;padding-bottom:1.5rem}
+.tc10 dt{font-size:1.125rem;color:#333;font-weight:600;margin-bottom:0.6rem}
+.tc10 dt i{margin-left:0.1rem}
+.tc10 dd{font-size:0.875rem;line-height:1rem;color:#999}
+.tc10 dd p{display:inline-block;width:76%}
+.tc10 dd a{float:right;width:22%;text-align:center;font-size:0.875rem;border:1px solid #b3b3b3;background-color:#e1e3e6;color:#333;padding:0.4rem 0;position:relative;top:-0.5rem}
+.tc10 dd a:hover{background-color:#b3b3b3;text-decoration:none;color:#fff}
+
 .td01{height:2.125rem;line-height:2.125rem}
 .td01 b{font-weight:bold;color:#1e5eff}
 .td01 strong{font-weight:bold;color:#333}
@@ -626,7 +662,13 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .td02{text-align:right}
 .td02 strong{font-weight:600;color:#333}
 
-.th01 dt h1{font-size:2.25rem;font-weight:700;line-height:3.5rem;color:#333}
+/* main header banner info */
+.td03{font-size:1rem;color:#fff;padding:1.5rem;background:rgba(0,0,0,0.6);border-radius:2rem}
+.td03 a{display:inline-block;width:70%;font-size:1rem;color:#fff;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;vertical-align:top}
+.td03 i{float:right;width:1.375rem;height:1.375rem;line-height:1.375rem;text-align:center;background-color:#666;border-radius:0.6875rem;font-size:1rem;margin-top:3px}
+
+.th01 dt{margin-bottom:1rem}
+.th01 dt h1{font-size:2.25rem;font-weight:700;line-height:3rem;color:#333;margin-right:10rem}
 .th01 dd{font-size:1.1rem;color:#808080}
 .th01_01{border-bottom:none}
 .th01_01 dt{margin-bottom:1.25rem}
