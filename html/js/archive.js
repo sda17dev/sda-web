@@ -58,9 +58,11 @@ $(document).ready(function() {
 				$(".cf02 button").text("기록에서 검색");
 		}
 	});
+	/* jquery ui init */
 	$(".tkg01").buttonset();
 	$(".ng07 select").selectmenu();
 	$(".cf10 select").selectmenu();
+	$( ".fc13" ).tabs();
 	
 	//검색창 제어
 	$("header menu li.search a").click(function(){
@@ -214,12 +216,22 @@ $(document).ready(function() {
        return false;
    });
 	//콜렉션 메인 사용자 즐겨찾기 모음 그리드 정렬
-	if($('.lc07 .bookmarks').length > 0)
-		$('.lc07 .bookmarks').masonry({
+	if($('.lc07 .bookmarks').length > 0){
+		var $grid01 = $('.lc07 .bookmarks').masonry({
 			itemSelector: '.box',
 			gutter:'.gutter-sizer'
 		});
-	
+		$grid01.imagesLoaded().progress( function() {
+		  $grid01.masonry('layout');
+		});
+		var $grid02 = $('.lc07 .bookmarks ul').masonry({
+			itemSelector: '.grid-item',
+			columnWidth: '.grid-item'
+		});
+		$grid02.imagesLoaded().progress( function() {
+		  $grid02.masonry('layout');
+		});
+	}
 	//입력폼 유효성 검사
 	form_validation();
 	
