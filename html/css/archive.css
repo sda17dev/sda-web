@@ -322,8 +322,10 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .ib01 ul.slide li.add a{min-width:0;width:3.25rem;background-color:#666;color:#fff;border-color:666}
 .ib01 ul.slide li.on a{background-color:#666;color:#fff;border-color:666}
 
-.ib02{margin-bottom:1rem}
+.ib02{margin-bottom:1rem;background-color:#eee}
 .ib02 img{width:100%}
+.fc13 .ib02{height:16rem;text-align:center}
+.fc13 .ib02 img{height:16rem;width:auto;max-width:100%}
 
 .ib03{}
 
@@ -432,11 +434,16 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 
 /* collection view gallery */
 .lc08{margin-bottom:1.25rem;overflow:hidden}
+/*
 .lc08 li{width:25%;float:left;position: relative}
-.lc08 li:before {content:"";display:block;padding-top: 100%; /* 1:1 비율 */}
+.lc08 li:before {content:"";display:block;padding-top: 100%;}
 .lc08 li a{display:block;position:absolute;top:0;right:0;bottom:0;left:0;overflow:hidden;margin:0 1px 1px 0}
 .lc08 li a img{width:100%;min-height:100%}
-
+*/
+.lc08 li{width:25%}
+.lc08 li a{display:block;margin:0 1px 1px 0}
+.lc08 li a img{width:100%;display:block;border:1px solid #ccc;box-sizing:border-box}
+.lc08 li.on a img{border-color:#1e5eff}
 
 .lg01 a{display:block;width:7.8125rem;height:4.375rem;background:url(../images/logo02@2x.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
 header.hd02 .lg01 a{background-image:url(../images/logo@2x.png)}

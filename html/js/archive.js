@@ -232,6 +232,24 @@ $(document).ready(function() {
 		  $grid02.masonry('layout');
 		});
 	}
+	if($('.lc08').length > 0){
+		var $grid03 = $('.lc08').masonry({
+			itemSelector: '.grid-item',
+			columnWidth: '.grid-item'
+		});
+		$grid03.imagesLoaded().progress( function() {
+		  $grid03.masonry('layout');
+		});
+	}	
+   //콜렉션 뷰, 오른쪽 이미지 갤러리 선택
+   $('.fc13 .lc08 li a').bind("click",function(event){
+		$(this).parents(".lc08").find("li").removeClass("on");
+		$(this).parents(".lc08 li").addClass("on");
+		var src = $("img",$(this)).attr("src");
+		$(this).parents(".fc13").find(".ib02 a img").attr("src",src);
+		return false;
+   });
+	
 	//입력폼 유효성 검사
 	form_validation();
 	
