@@ -199,6 +199,21 @@ $(document).ready(function() {
 		open_popup("#popup_member_type");
 		return false;
    });
+	//팝업 - 문의신청 완료 확인
+	$("#popup_inquery_sended .submit button").bind('click', function() {
+		$('.pp01').hide();
+		return false;
+   });
+	//팝업 - 오류보고 팝업 열기
+	$(".tc11 .topBtn a").bind('click', function() {
+		$(".tc11 .pp01").slideDown();
+		return false;
+   });
+	$(".tc11 .closeB").unbind('click');
+	$(".tc11 .closeB").bind('click', function() {
+		$(".tc11 .pp01").slideUp();
+		return false;
+   });
 	
 	//상세검색폼 키워드 입력란 추가
 	$('.cf09 .keywords ul li.add button').on('click', function(event) {
@@ -354,6 +369,44 @@ function form_validation(){
 			notice_summery: "요약내용을 입력해 주세요",
 			notice_content: "내용을 입력해 주세요",
 			notice_target: "발행할 대상을 선택해 주세요"
+		}
+	});
+	$(".cf11.inquery").validate({
+		onkeyup: function(element) {$(element).valid()},
+		onclick: function(element) {$(element).valid()},
+		submitHandler: function() {
+			open_popup("#popup_inquery_sended");
+			return false;
+		},
+		rules: {
+			inquery_name: "required",
+			inquery_email: {
+				required: true,
+				email: true
+			},
+			inquery_phone: "required",
+			inquery_field: "required",
+			inquery_content: "required"
+		},
+		messages: {
+			inquery_name: "",
+			inquery_email: "",
+			inquery_phone: "",
+			inquery_field: "",
+			inquery_content: ""
+		}
+	});
+	$("#popup_report_error .cf08").validate({
+		rules: {
+			error_email: {
+				required: true,
+				email: true
+			},
+			error_desc: "required"
+		},
+		messages: {
+			error_email: "",
+			error_desc: ""
 		}
 	});
 }

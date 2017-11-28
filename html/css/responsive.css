@@ -6,17 +6,22 @@ html{font-size:11px}
 .fc08 .conBody{width:auto;margin:0}
 .fc09{width:auto;margin:0}
 .pp01 .popupBox{width:100%;left:0 !important}
-
+.fc04_04 .conBody{background:none}
+footer .tc11{bottom:29.2rem}
 }
 
 @media all and (min-width:961px) and (max-width:1280px){
 html{font-size:14px}
 .inner{margin:0 40px}
+.fc04_04 .conBody{background:none}
+footer .tc11{bottom:26.8rem}
 }
 
 @media all and (min-width:1281px){
 html{font-size:16px}
 .inner{max-width:1140px;margin:0 auto}
+/*.fc04_04 .conBody{background:url(../images/bg_fc04_04.jpg) repeat-y;background-position:right 0 top*/}
+  
 }
 
 @media all and (min-width:1441px){

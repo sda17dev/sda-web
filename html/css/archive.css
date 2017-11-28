@@ -23,7 +23,7 @@ a:hover,a:active{text-decoration:underline}
 input[type=text],
 input[type=password],
 input[type=email]{font-size:1rem;height:2.125rem;text-indent:0.625rem;border:1px solid #e6e6e6;box-sizing:border-box}
-textarea{font-size:1rem;padding:1rem;border:1px solid #e6e6e6;box-sizing:border-box}
+textarea{font-size:1rem;padding:0.625rem;border:1px solid #e6e6e6;box-sizing:border-box}
 /* Layout */
 #main-content{clear:both}
 #skip_contents{width:100%;}
@@ -43,7 +43,7 @@ header.hd01 nav menu li a{display:inline-block;height:6.125rem;color:#fff;font-s
 header.hd01 nav menu li a:hover{text-decoration:none;color:#1e5eff}
 header.hd01 nav menu li a:focus{text-decoration:none;color:#fff}
 header.hd01 .cf02{display:none}
-header.hd01 .td03{position:absolute;width:40%;right:2rem;bottom:2rem;z-index:10}
+header.hd01 .td03{position:absolute;max-width:40%;right:2rem;bottom:2rem;z-index:10}
 
 header.hd01.searchMode nav menu{margin-bottom:3.375rem;transition:margin-bottom 1s ease 0s}
 header.hd01.searchMode nav menu li{margin-bottom:1.6875rem;transition:margin-bottom 1s ease 0s}
@@ -72,11 +72,12 @@ header.hd02 menu li.on a{color:#1e5eff}
 .scrolling header.hd02{position:fixed;left:0;top:0;z-index:10;opacity:0.95;width:100%;box-sizing:border-box}
 .scrolling header.hd02 .td03{display:none}
 
-footer{overflow:hidden;padding:3.3rem 0 0;background-color:#f1f3f5}
+footer{overflow:visible;padding:3.3rem 0 0;background-color:#f1f3f5}
 footer .lg02{float:left;margin-bottom:1.875rem}
 footer .ng03{float:right;margin-top:1.25rem}
 footer .ng02{clear:both}
 footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;background-color:#636666;text-align:center;font-weight:300}
+footer .tc11{position:absolute;bottom:25.75rem;right:0}
 
 /* frames 프레임*/
 .fc01{padding:5rem 0 0}
@@ -94,22 +95,25 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .fc03 .lowerA{padding:1.875rem 0 0}
 .fc03 .lowerA .uiArea{padding-bottom:10rem}
 
-.fc04{padding:0 0 10rem}
 .fc04 .header{border-bottom:1px solid #ccc;padding:2.2rem 0;overflow:hidden}
 .fc04 .header .ng06{float:right}
 .fc04 .header .th01{float:left;margin-top:0.5rem}
 .fc04 .conBody{overflow:hidden}
-.fc04 .conBody .leftA{float:left;width:65%}
-.fc04 .conBody .rightA{float:right;width:31.6%}
+.fc04 .conBody .leftA{float:left;width:65.8%;padding:0 0 10rem}
+.fc04 .conBody .rightA{float:right;width:31.5%}
 .fc04 .conBody .postA{padding:1.875rem 0}
 .fc04_01 .header{border-bottom:none}
 .fc04_01 .conBody .leftA{float:left;width:73%}
 .fc04_01 .conBody .rightA{float:right;width:25%}
-.fc04_02 .conBody{padding-top:2.5rem}
-.fc04_02 .lower{padding-top:1.875rem}
+.fc04_02 .conBody{padding:2.5rem 0}
 .fc04_03 .header{padding-bottom:0;overflow:visible}
 .fc04_03 .header .th01{float:none;margin-top:3rem}
-
+.fc04_03 .lowerA{padding-bottom:3.875rem}
+.fc04_04 .header{border-bottom:none}
+.fc04_04 .th01{border-bottom:2px solid #ccc}
+.fc04_04 .th01 > dt{margin-bottom:2rem}
+.fc04_04 .conBody{/*! background:url(../images/bg_fc04_04.jpg) repeat-y; background-position:right 0 top*/}
+  
 .fc05{height:100%}
 .fc05 .inner{overflow:hidden;padding:0 0 10rem}
 .fc05 .header{padding:2.2rem 0;overflow:hidden}
@@ -262,7 +266,7 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .cf07.noticeWrite dl.check.target span{min-width:0;margin-right:1.25rem}
 .cf07.noticeWrite dl.textarea h3{font-size:1rem;font-weight:600;margin-bottom:0.5rem;margin-top:1.25rem}
 
-.cf08{}
+/* popup form */
 .cf08 .leftA{float:left;width:48%;margin-bottom:1.875rem}
 .cf08 .rightA{float:right;width:48%;margin-bottom:1.875rem}
 .cf08 ul{margin-bottom:1.25rem;height:14.625rem;overflow-y:scroll}
@@ -272,13 +276,21 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .cf08 .addCat label{display:inline-block;width:20%;height:1.875rem;line-height:1.875rem;vertical-align:middle}
 .cf08 .addCat input{height:1.75rem;width:78%;margin-left:-4px;text-indent:0.625rem;font-size:1rem}
 .cf08 textarea{width:100%;height:14.625rem}
+.cf08 input.error{border-color:#ff6600}
+.cf08 textarea.error{border-color:#ff6600}
 .cf08 .submit{clear:both;border-top:1px solid #ccc;padding-top:1.875rem;text-align:right}
 .cf08_01 fieldset{margin-bottom:1rem}
 .cf08_01 ul{height:auto}
 .cf08_01 ul li{width:50%;float:left}
 .cf08_01 .input{margin-bottom:1rem}
 .cf08_01 .input label{position:absolute;text-indent:-9999px}
-.cf08_01 .input input{width:100%}
+.cf08_01 .file label{position:absolute;text-indent:-9999px}
+.cf08_01 .input input{width:100%;font-size:0.75rem}
+.cf08_01 .content{margin-bottom:1.5rem}
+.cf08_01 textarea{width:100%;height:6rem;font-size:0.75rem}
+.cf08_01 .file input[type=file]{visibility:hidden;position:absolute}
+.cf08_01 .file .fake span{display:inline-block;border:1px solid #e6e6e6;height:2.125rem;line-height:2.125rem;width:70%;vertical-align:top;margin-right:2%;box-sizing:border-box;padding:0 0.625rem;font-size:0.75rem}
+.cf08_01 .file .fake a{width:28%;height:2.125rem;line-height:2rem;margin-left:-4px;font-size:1rem;padding:0}
 
 /* detail search form */
 .cf09{background-color:#f1f3f5;border:1px solid #e6e6e6}
@@ -308,6 +320,28 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .cf10 .ui-spinner .ui-icon.ui-icon-triangle-1-s{background:url(../images/btn_down01.png) no-repeat center 3px}
 .cf10 .ui-spinner a.ui-spinner-button{border-left:none}
 .cf10 button{height:1.75rem;border:1px solid #ccc;box-sizing:border-box;background-color:#e1e3e6;color:#333;padding:0 0.8rem;margin-left:-3px;vertical-align:middle}
+
+/* introduce inquiry form */
+.cf11 p{font-size:0.875rem;line-height:1.2rem;color:#999;padding:2rem 0}
+.cf11 fieldset{borer:1px solid #e6e6e6;background-color:#f1f3f5;padding:1.25rem 0}
+.cf11 dl{padding:0 1.25rem;margin-bottom:0.625rem;overflow:hidden}
+.cf11 dl dt{float:left;width:25%;font-size:1.125rem;color:#808080;padding-top:0.2rem}
+.cf11 dl dd{float:left;width:75%}
+.cf11 dl.input input{width:100%;height:2.5rem;font-size:0.875rem}
+.cf11 dl.check dd span{display:block}
+.cf11 dl.check dd span label{font-size:0.875rem;margin-left:0.3rem}
+.cf11 dl.textarea textarea{width:100%;font-size:0.875rem;height:8rem}
+.cf11 dl.required.input input{background:#fff url(../images/bg_validate.png) no-repeat right 0.5rem center;background-size:1.375rem} 
+.cf11 dl.required.check dd{background:url(../images/bg_validate_on.png) no-repeat right 0.5rem top;position:relative;background-size:1.375rem} 
+.cf11 dl.required.check label.error{display:block;width:1.375rem;height:1.375rem;background:url(../images/bg_validate.png) no-repeat 0 0;position:absolute;right:0.5rem;top:0;background-size:1.375rem}
+.cf11 dl.required.textarea textarea{background:#fff url(../images/bg_validate.png) no-repeat right 0.5rem top 0.5rem;background-size:1.375rem} 
+.cf11 dl.required.input input.valid{background-image:url(../images/bg_validate_on.png)} 
+.cf11 dl.required.textarea textarea.valid{background-image:url(../images/bg_validate_on.png)} 
+.cf11 dl.required.input input.error{background-image:url(../images/bg_validate.png)} 
+.cf11 dl.required.check label.error{background-image:url(../images/bg_validate.png)} 
+.cf11 dl.required.textarea textarea.error{background-image:url(../images/bg_validate.png)} 
+.cf11 .submit{border-top:1px solid #e6e6e6;margin-top:1.25rem;padding:1.25rem 1.25rem 0 1.25rem;text-align:center}
+.cf11 .submit .btn02{width:100%}
 
 .ib01{height:3.375rem;border:1px solid #e6e6e6;background-color:#f1f3f5;position:relative}
 .ib01 > a{position:absolute;top:0.8125rem;z-index:1;display:block;width:1.875rem;height:1.875rem;line-height:1.875rem;text-align:center;font-size:1.125rem}
@@ -358,6 +392,10 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .lc02 dd.date{font-size:0.875rem;color:#999;margin-bottom:1.5rem}
 .lc02 dd.sum{font-size:1rem;color:#666;line-height:1.8rem}
 .lc02 dd.sum img{max-width:100%}
+.lc02_01 dd{margin-left:1.8rem}
+.lc02_01 dd.date{font-size:1rem;color:#808080;margin-bottom:0}
+.lc02_01 dd.sum{font-size:1rem;color:#808080;margin-bottom:0}
+
 
 .lc03{margin-bottom:1.875rem}
 .lc03 li{border:1px solid #e6e6e6;position:relative;padding:1.25rem;margin-bottom:0.625rem}
@@ -402,9 +440,9 @@ footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;ba
 .lc06 > dt:before{content:"";display:inline-block;width:1.25rem;height:1.25rem;border-radius:0.625rem;background-color:#1e5eff;margin-right:0.5rem}
 .lc06 > dd{margin-left:1.8rem}
 .lc06 ul{border-top:1px solid #ececec}
-.lc06 li dl dt{border-bottom:1px solid #ececec;padding:1rem 0;background:url(../images/bl_down01.png) no-repeat right 1rem center}
-.lc06 li dl dt em{display:inline-block;width:2.875rem;height:2.875rem;line-height:2.875rem;border-radius:1.438rem;color:#1e5eff;text-align:center;border:1px solid #ebebeb;margin-right:0.6rem}
-.lc06 li dl dt a{font-size:1.25rem;color:#333}
+.lc06 li dl dt{border-bottom:1px solid #ececec;padding:1rem 0;background:url(../images/bl_down01.png) no-repeat right 1rem center;overflow:hidden}
+.lc06 li dl dt em{float:left;width:2.875rem;height:2.875rem;line-height:2.875rem;border-radius:1.438rem;color:#1e5eff;text-align:center;border:1px solid #ebebeb;margin-right:0.6rem}
+.lc06 li dl dt a{display:block;font-size:1.25rem;line-height:2.875rem;color:#333}
 .lc06 li dl dt a:hover{color:#1e5eff;text-decoration:none}
 .lc06 li dl dd{display:none;border-bottom:1px solid #ececec;padding:1.8rem 2rem 1.8rem 6rem;position:relative}
 .lc06 li dl dd em{position:absolute;left:0;top:2.063rem;display:block;width:5rem;height:1.813rem;line-height:1.813rem;background-color:#1e5eff;color:#fff;border-radius:0 0.875rem 0.875rem 0;text-align:center}
@@ -458,8 +496,8 @@ header.hd02 .lg01 a{background-image:url(../images/logo@2x.png)}
 .ng02 dl ul li a{font-size:1rem;color:#666}
 
 .ng03{display:inline-block;overflow:hidden;border:1px solid #cbcbcb}
-.ng03 li{float:left}
-.ng03 li:first-child{border-right:1px solid #cbcbcb}
+.ng03 li{float:left;border-left:1px solid #cbcbcb}
+.ng03 li:first-child{border-left:none}
 .ng03 li a{display:block;padding:0 2rem;height:2rem;line-height:2rem;background-color:#e4e4e4;font-size:0.875rem;color:#333}
 .ng03 li a:hover{text-decoration:none;background-color:#666;color:#fff}
 
@@ -581,6 +619,9 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .pp01 .popupBox{position:absolute;width:63rem;padding:1.875rem;box-sizing:border-box;background-color:#fff;z-index:15}
 .pp01 .popupBox a.closeB{position:absolute;top:-3.125rem;right:0px;display:block;width:1.875rem;height:1.875rem;;background:url(../images/btn_close02.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
 #popup_member_type.pp01 .popupBox{width:33rem}
+.pp01_01 .popupBox{width:24rem}
+.pp01_01 .popupBox .th03{border-bottom:2px solid #ccc}
+.pp01_01 .popupBox a.closeB{top:2.2rem;right:1.875rem;width:1.25rem;height:1.25rem;;background:url(../images/btn_close03.png) no-repeat 0 0;background-size:cover}
 
 .tbl01{border-top:2px solid #ccc;border-bottom:1px solid #ccc;padding-top:2px}
 .tbl01 table{border-spacing:0;border-collapse:collapse;width:100%}
@@ -703,6 +744,10 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc10 dd a:hover{background-color:#b3b3b3;text-decoration:none;color:#fff}
 .tc10_01{border-top:1px solid #ccc;border-bottom:1px solid #ccc;padding:1rem 0 1.5rem 0.2rem}
 
+/* error report popup */
+.tc11 .topBtn{text-align:right;position:relative;z-index:100}
+.tc11 .pp01 .popupBox{position:relative}
+
 .td01{height:2.125rem;line-height:2.125rem}
 .td01 b{font-weight:bold;color:#1e5eff}
 .td01 strong{font-weight:bold;color:#333}
@@ -712,7 +757,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 
 /* main header banner info */
 .td03{font-size:1rem;color:#fff;padding:1.5rem;background:rgba(0,0,0,0.6);border-radius:2rem}
-.td03 a{display:inline-block;width:70%;font-size:1rem;color:#fff;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;vertical-align:top}
+.td03 a{display:inline-block;max-width:70%;font-size:1rem;color:#fff;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;vertical-align:top}
 .td03 i{float:right;width:1.375rem;height:1.375rem;line-height:1.375rem;text-align:center;background-color:#666;border-radius:0.6875rem;font-size:1rem;margin-top:3px}
 
 .th01 > dt{margin-bottom:1rem}
