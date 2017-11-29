@@ -72,7 +72,7 @@ window.onload = function() {
 					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
 					<li><a href="#">관리</a></li>
 					<li><a href="#">F/A관리</a></li>
-					<li class="current"><a href="#">유형별가이드</a></li>
+					<li class="current"><a href="#">도움말</a></li>
 				</ul>
 			</div>
 			<ul class="ng05">
@@ -262,7 +262,7 @@ window.onload = function() {
 								</li>
 								<li>
 									<a href="#">
-										<strong>사용자 가이드</strong>
+										<strong>도움말</strong>
 										<em>특정한 사용자들에게 디지털아카이브를 안내하는 기본적인 도움말입니다.</em>
 									</a>
 								</li>
@@ -288,102 +288,197 @@ window.onload = function() {
 				</li>
 			</ul>
 			<div class="conBody">
-				<h1 class="th02">유형별 가이드 쓰기</h1>
-				<form class="cf07 typeGuideWrite" action="" method="post">
+				<h1 class="th02">도움말</h1>
+				<form class="cf06 typeGuideSearch" action="" method="post">
 					<fieldset>
-						<dl class="input">
-							<dt><label for="notice_title">제목</label></dt>
-							<dd><input type="text" name="notice_title" id="notice_title" placeholder="제목을 입력합니다."/></dd>
-						</dl>
-						<dl class="input">
-							<dt><label for="notice_summery">요약</label></dt>
-							<dd><input type="text" name="notice_summery" id="notice_summery" placeholder="제목에 관련된 요약 내용을 적습니다."/></dd>
-						</dl>
-						<dl class="check">
-							<dt><label for="notice_summery">공개유무</label></dt>
-							<dd>
-								<span>
-									<input type="radio" name="notice_open" id="notice_open01" checked="checked"/>
-									<label for="notice_open01">비공개</label>
-								</span>
-								<span>
-									<input type="radio" name="notice_open" id="notice_open02"/>
-									<label for="notice_open02">공개</label>
-								</span>
-								
-							</dd>
-						</dl>
-						<dl class="check">
-							<dt><label for="notice_fix">상단고정</label></dt>
-							<dd>
-								<span>
-									<input type="radio" name="notice_fix" id="notice_fix01" checked="checked"/>
-									<label for="notice_fix01">고정</label>
-								</span>
-								<span>
-									<input type="radio" name="notice_fix" id="notice_fix02"/>
-									<label for="notice_fix02">해제</label>
-								</span>
-								
-							</dd>
-						</dl>
-						<dl class="file">
-							<dt><label for="notice_image">대표이미지</label></dt>
-							<dd>
-								<input type="file" accept=".jpg, .jpeg, .jpe, .gif, .png" class="ti01" name="notice_image" id="notice_image"/>
-								<div class="fake">
-								     <span></span>
-								     <a class="btn02 btn02_01" href="javascript:;">파일찾기</a>
-								</div>
-							</dd>
-						</dl>
-						<dl class="textarea">
-							<dt><label for="notice_content">내용</label></dt>
-							<dd>
-								<textarea name="notice_content" id="notice_content"></textarea>
-								<h3>아이템 추가</h3>
-								<div class="tc06">
-									<div class="searchA">
-										<label>권/철</label>
-										<input type="text" name="item_query" id="item_query"/>
-										<button class="btn02 btn02_01" type="button">검색</button>
-									</div>
-									<ul class="itemA">
-										<li>
-											<span>[+] 추가된 권 1 / 권 2</span>
-											<a href="#close">닫기</a>
-										</li>
-										<li>
-											<span>[+] 추가된 권 1 / 권 2</span>
-											<a href="#close">닫기</a>
-										</li>
-									</ul>
-								</div>
-							</dd>
-						</dl>
-						<dl class="check target">
-							<dt><label for="notice_target">발행할 대상</label></dt>
-							<dd>
-								<span>
-									<input type="checkbox" name="notice_target" id="notice_target01"/>
-									<label for="notice_target01">공지사항</label>
-								</span>
-								<span>
-									<input type="checkbox" name="notice_target" id="notice_target02"/>
-									<label for="notice_target02">기록 이관과 수집</label>
-								</span>
-								<span>
-									<input type="checkbox" name="notice_target" id="notice_target03"/>
-									<label for="notice_target03">건축과정</label>
-								</span>								
-							</dd>
-						</dl>
+						<label for="type_query">검색어</label>
+						<input type="text" name="type_query" id="type_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+						<button class="btn01">검색</button>
 					</fieldset>
-					<div class="submit">
-						<button class="btn02 cancel" type="button">취소</button>
-						<button class="btn01 submit" type="submit">저장</button>
-					</div>
 				</form>
+				<div class="fc10">
+					<a class="btn01 btn01_01 leftF" href="#">새글쓰기</a>
+					<div class="pg01 rightF">
+						<a class="first" href="#"><i class="xi-angle-left"></i><i class="xi-angle-left"></i></a>
+						<a class="prev" href="#"><i class="xi-angle-left"></i></a>
+						<a href="#">1</a>
+						<a class="on" href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a class="next" href="#"><i class="xi-angle-right"></i></a>
+						<a class="end" href="#"><i class="xi-angle-right"></i><i class="xi-angle-right"></i></a>
+					</div>
+				</div>
+				<div class="tbl01 typeGuideList">
+					<table>
+						<caption>도움말 목록</caption>
+						<thead>
+							<tr>
+								<th class="t01">번호</th>
+								<th class="t02 title">제목</th>
+								<th class="t03">작성자</th>
+								<th class="t04">작성날짜</th>
+								<th class="t05">공개유무</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">연구자를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">기자 큐레이터 예술가를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">비공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">연구자를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">기자 큐레이터 예술가를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">비공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">연구자를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">기자 큐레이터 예술가를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">비공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">연구자를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">기자 큐레이터 예술가를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">비공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">연구자를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">기자 큐레이터 예술가를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">비공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">연구자를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">기자 큐레이터 예술가를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">비공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">연구자를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">기자 큐레이터 예술가를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">비공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">연구자를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">기자 큐레이터 예술가를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">비공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">연구자를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">기자 큐레이터 예술가를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">비공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">연구자를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">공개</td>
+							</tr>
+							<tr>
+								<td class="t01">1234</td>
+								<td class="t02 title"><a href="#">기자 큐레이터 예술가를 위한 안내</a></td>
+								<td class="t03">관리자 이름</td>
+								<td class="t04">2018.01.23</td>
+								<td class="t05">비공개</td>
+							</tr>
+						</body>
+					</table>
+				</div>
+				<div class="fc10">
+					<div class="pg01 rightF">
+						<a class="first" href="#"><i class="xi-angle-left-min"></i><i class="xi-angle-left-min"></i></a>
+						<a class="prev" href="#"><i class="xi-angle-left-min"></i></a>
+						<a href="#">1</a>
+						<a class="on" href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a class="next" href="#"><i class="xi-angle-right-min"></i></a>
+						<a class="end" href="#"><i class="xi-angle-right-min"></i><i class="xi-angle-right-min"></i></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
