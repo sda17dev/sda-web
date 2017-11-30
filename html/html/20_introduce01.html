@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<title>서울기록원</title>
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+<link rel="stylesheet" type="text/css" href="../css/archive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/archive_slowalk.css"/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css"/><![endif]-->
+<!--[if lt IE 9]><script src="../js/html5.js"></script><![endif]-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src='../js/jquery-1.11.3.min.js'></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="http://www.seoul.go.kr/seoulgnb/gnb.js"></script>
+<script type="text/javascript" src="../js/archive.js"></script>
+<script type="text/javascript">
+// GNB 로딩 스크립트
+// Yjs.Gnb.init('사이트 ID', 'GNB 표출영역 ID');
+window.onload = function() {
+    Yjs.Gnb.init('G188', 'seoul-common-gnb');
+};
+</script>
+</head>
+<body>
+<div id="main_wrap" class="subPage">
+	<div id="skip-link">
+		<a href="#main-content">컨텐츠 바로가기</a>
+	</div>
+	<div id="seoul-common-gnb"></div>
+	<header class="hd02">
+		<div class="inner2">
+		<div class="lg01"><a href="/">서울기록원</a></div>
+		<nav>
+			<menu>
+				<li class="news on"><a href="#">뉴스</a></li>
+				<li class="info"><a href="#">소개 및 안내</a></li>
+				<li class="explore"><a href="#">탐색</a></li>
+				<li class="search"><a href="#">검색</a></li>
+			</menu>
+			<form class="cf02" action="" method="post">
+				<fieldset>
+					<label for="search_option">검색옵션</label>
+					<select name="search_option" id="search_option">
+						<option value="0" selected="selected">웹사이트에서 검색하기</option>
+						<option value="1">기록에서 검색하기</option>
+					</select>
+					<label for="search_query">검색어</label>
+					<input type="text" name="query" id="search_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+					<button>웹사이트에서 검색</button>
+					<a class="closeBtn" href="#"><i class="xi-close"></i>닫기</a>
+				</fieldset>
+			</form>
+			<ul class="ng04">
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#">회원가입</a></li>
+			</ul>
+		</nav>
+		</div>
+    </header>
+	<!-- 컨텐츠 영역 -->
+    <div class="fc04" id="main-content">
+		<div class="inner">
+			<!-- list header -->
+			<div class="header">
+				<ul class="ng06">
+					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
+					<li class="current"><a href="#">서울기록원 소개</a></li>
+				</ul>
+				<dl class="th01">
+					<dt><h1>서울기록원 소개</h1></dt>
+				</dl>
+			</div>
+			<!-- //list header -->
+			<!-- conBody -->
+			<div class="conBody">
+				<!-- con01 -->
+				<div class="con01">
+					<div class="banner">
+						<img src="../images/@ib04.png" alt="이미지설명"/>
+						<dl>
+							<dt>Archivists should be “culture custodians”</dt>
+							<dd>- David Bearman, 1989 -</dd>
+						</dl>
+					</div>
+					<!-- unit01 -->
+					<div class="unit unit01">
+						<h2>1. 서울기록원의 시작</h2>
+						<div class="interview">
+							<div class="thumb"><img src="../images/@tc01_01.jpg" alt="이미지설명"/></div>
+							<dl>
+								<dt>인터뷰</dt>
+								<dd>
+									<p>“인터뷰 텍스트 텍스트<br/>텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트” </p>
+									<div class="sign">
+										<b>From 정보공개정책과 조영삼</b>
+										<img src="../images/sign.png" alt="조영삼 서명"/>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<dl class="pass">
+							<dt>추진경과</dt>
+							<dd>
+								<div class="tbl01 pass">
+									<table>
+										<caption>추진경과</caption>
+										<thead>
+											<tr>
+												<th class="t01">년도</th>
+												<th class="t02">내용</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="firstChild">
+												<td class="t01">2007</td>
+												<td class="t02 title">서울시, 지방기록물관리기관 건립 기본계획 수립과 설립부지 확보 노력 시작</td>
+											</tr>
+											<tr>
+												<td class="t01">2012. 02</td>
+												<td class="t02 title">박원순 서울시장, “세계적 수준의 서울 아카이브 건립” 요청</td>
+											</tr>
+											<tr>
+												<td class="t01">2012. 08</td>
+												<td class="t02 title">‘열린시정2.0의 5가지 약속’의 하나로 서울기록원 건립 제시</td>
+											</tr>
+											<tr>
+												<td class="t01">2013</td>
+												<td class="t02 title">서울기록원 건립 타당성 조사 및 기본계획 수립</td>
+											</tr>
+											<tr>
+												<td class="t01">2014. 01</td>
+												<td class="t02 title">서울시 기록물 관리에 관한 조례 제정공포</td>
+											</tr>
+											<tr>
+												<td class="t01">2014. 10</td>
+												<td class="t02 title">서울기록원 현상공모 설계 진행</td>
+											</tr>
+											<tr>
+												<td class="t01">2014. 12 ~ 현재</td>
+												<td class="t02 title">서울기록원 설립과 운영 자문단 구성과 운영
+													<ul>
+														<li>“서울기록원은 서울시 행정에 대한 설명책임(Accountability)을 구현하는 기관입니다.” </li>
+														<li>“서울기록원은 공공 아카이브의 새로운 전형을 제시해야 합니다.” </li>
+														<li>“서울기록원은 기록 문화유산 기관입니다.”</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td class="t01">2015. 01</td>
+												<td class="t02 title">서울기록원 건립 및 기본 운영계획 보고(시장, 국장, 시의원, 주민설명회) 
+													<ul>
+														<li>운영기반 준비 사업 기획(서울기록화, 디지털 아카이브 등)</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td class="t01">2016</td>
+												<td class="t02 title">운영기반 준비 사업 시작
+													<ul>
+														<li>서울기록화 수집전략 설계 </li>
+														<li>서울기록원 정보화전략계획 수립</li>
+														<li>서울기록원 시민 서비스 프로그램 사례조사</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td class="t01">2016. 05. 20</td>
+												<td class="t02 title">서울기록원 기공식 </td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<!-- //unit01 -->
+					<!-- unit02 -->
+					<div class="unit unit02">
+						<h2>2. 건립추진을 위한 학술 연구 외</h2>
+						<ul class="documents">
+							<li>
+								<div class="thumb"><img src="../img-title/02.png" alt="이미지 설명"/></div>
+								<dl>
+									<dt>서울기록원 건립추진을 위한<br/>학술연구용역<br/>- 연구보고서 1권 -</dt>
+									<dd><a class="btn02" href="#">다운로드</a></dd>
+								</dl>
+							</li>
+							<li>
+								<div class="thumb"><img src="../img-title/02.png" alt="이미지 설명"/></div>
+								<dl>
+									<dt>서울기록원 건립추진을 위한<br/>학술연구용역<br/>- 연구보고서 1권 -</dt>
+									<dd><a class="btn02" href="#">다운로드</a></dd>
+								</dl>
+							</li>
+							<li>
+								<div class="thumb"><img src="../img-title/02.png" alt="이미지 설명"/></div>
+								<dl>
+									<dt>서울기록원 건립추진을 위한<br/>학술연구용역<br/>- 연구보고서 1권 -</dt>
+									<dd><a class="btn02" href="#">다운로드</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<!-- //unit02 -->
+					<!-- unit03 -->
+					<div class="unit unit03">
+						<h2>3. 현재 건축상황</h2>
+						<ul class="currents">
+							<li class="l1">
+								<div class="thumb"><img src="../images/@tc01_02.jpg" alt="이미지 설명"/></div>
+								<p>서울기록원 웹사이트를 제작하면서 발생하는 문제들을 정리한 후, 이곳에 보고하여 주시기 바랍니다. 계속해서 수고해 주시기 바랍니다. 감사합니다.</p>
+							</li>
+							<li class="l2">
+								<div class="thumb"><img src="../images/@tc01_02.jpg" alt="이미지 설명"/></div>
+								<p>서울기록원 웹사이트를 제작하면서 발생하는 문제들을 정리한 후, 이곳에 보고하여 주시기 바랍니다. 계속해서 수고해 주시기 바랍니다. 감사합니다.</p>
+							</li>
+							<li class="l3">
+								<div class="thumb"><img src="../images/@tc01_02.jpg" alt="이미지 설명"/></div>
+								<p>서울기록원 웹사이트를 제작하면서 발생하는 문제들을 정리한 후, 이곳에 보고하여 주시기 바랍니다. 계속해서 수고해 주시기 바랍니다. 감사합니다.</p>
+							</li>
+							<li class="l4">
+								<div class="thumb"><img src="../images/@tc01_02.jpg" alt="이미지 설명"/></div>
+								<p>서울기록원 웹사이트를 제작하면서 발생하는 문제들을 정리한 후, 이곳에 보고하여 주시기 바랍니다. 계속해서 수고해 주시기 바랍니다. 감사합니다.</p>
+							</li>
+							<li class="l5">
+								<div class="thumb"><img src="../images/@tc01_02.jpg" alt="이미지 설명"/></div>
+								<p>서울기록원 웹사이트를 제작하면서 발생하는 문제들을 정리한 후, 이곳에 보고하여 주시기 바랍니다. 계속해서 수고해 주시기 바랍니다. 감사합니다.</p>
+							</li>
+							<li class="l6">
+								<div class="thumb"><img src="../images/@tc01_02.jpg" alt="이미지 설명"/></div>
+								<p>서울기록원 웹사이트를 제작하면서 발생하는 문제들을 정리한 후, 이곳에 보고하여 주시기 바랍니다. 계속해서 수고해 주시기 바랍니다. 감사합니다.</p>
+							</li>
+						</ul>
+					</div>
+					<!-- //unit03 -->
+				</div>
+				<!-- //con01 -->
+			</div>
+			<!-- //conBody -->
+		</div>
+	</div>
+	<!-- //컨텐츠 영역 -->		
+	<footer>
+		<div class="inner">
+			<div class="lg02"><a ref="#">서울기록원</a></div>
+			<ul class="ng03">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#"><b>개인정보보호방침</b></a></li>
+			</ul>
+			<div class="ng02">
+				<dl>
+					<dt><a href="#">소개 및 안내 </a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">서울기록원 소개</a></li>
+							<li><a href="#">칼럼</a></li>
+							<li><a href="#">공지</a></li>
+							<li><a href="#">사용자를 위한 안내</a></li>
+							<li><a href="#">개발자를 위한 안내</a></li>
+							<li><a href="#">일반문의</a></li>							
+							<li><a href="#">오류신고</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">도구</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">기록 탐색</a></li>
+							<li><a href="#">기록 검색</a></li>
+							<li><a href="#">리서치가이드</a></li>							
+						</ul>
+					</dd>					
+				</dl>
+				<dl>
+					<dt><a href="#">컬렉션 및 전시</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">사진아카이브</a></li>
+							<li><a href="#">용산공원 특별 전시</a></li>
+						</ul>
+					</dd>					
+				</dl>
+			</div>	
+		</div>
+		<address>
+			<div class="inner">
+				<span>서울특별시 은평구 녹번동 산1-61호 000-00-00000 T.<b>02-3709-7500</b>,   F.<b>02-3709-7520</b></span>
+				<span>COPYRIGHT ©2018 <b>SEOUL METROPOLITAN ARCHIVE</b></span>
+			</div>
+		</address>
+	</footer>
+</div>
+<!-- //main_wrap -->
+</body>
+</html>

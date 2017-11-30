@@ -7,6 +7,7 @@ html{font-size:11px}
 .fc09{width:auto;margin:0}
 .pp01 .popupBox{width:100%;left:0 !important}
 .fc04_04 .conBody{background:none}
+.fc14 .outer{width:auto;margin:0}
 footer .tc11{bottom:29.2rem}
 }
 
@@ -14,18 +15,45 @@ footer .tc11{bottom:29.2rem}
 html{font-size:14px}
 .inner{margin:0 40px}
 .fc04_04 .conBody{background:none}
+.fc14 .outer{width:auto;margin:0}
+.con02 .unit{padding:1.6rem 0}
+.con02 .unit h2{font-size:2rem;line-height:2.6rem;margin-bottom:1.2rem}
+.con02 .unit .picture{margin-bottom:2rem}
+.con02 .unit .picture dt p{font-size:1rem;line-height:1.2rem;margin-bottom:1.3rem}
+.con02 .unit .picture dd img{margin-bottom:0.5rem}
+.con02 .unit .picture dd p strong{font-size:0.8rem;margin-bottom:0.15rem}
+.con02 .unit .picture dd p em{font-size:0.7rem;line-height:1rem}
+.con02 .unit .picture dd .btn01{height:2.8rem;line-height:2.8rem}
+.con02 .unit01{padding-bottom:25rem}
+.con02 .unit02{padding-bottom:17rem}
+.con02 .unit03 .type03 dd{margin-bottom:1.5rem}
 footer .tc11{bottom:26.8rem}
 }
 
-@media all and (min-width:1281px){
+@media all and (min-width:1281px) and (max-width:1440px){
 html{font-size:16px}
 .inner{max-width:1140px;margin:0 auto}
-/*.fc04_04 .conBody{background:url(../images/bg_fc04_04.jpg) repeat-y;background-position:right 0 top*/}
+.fc14 .outer{width:auto;margin:0}
+.con02 .unit{padding:2rem 0}
+.con02 .unit h2{font-size:2.5rem;line-height:3.2rem;margin-bottom:1.5rem}
+.con02 .unit .picture{margin-bottom:2.2rem}
+.con02 .unit .picture dt p{font-size:1.2rem;line-height:1.5rem;margin-bottom:1.6rem}
+.con02 .unit .picture dd img{margin-bottom:0.7rem}
+.con02 .unit .picture dd p strong{font-size:1rem;margin-bottom:0.2rem}
+.con02 .unit .picture dd p em{font-size:0.7rem;line-height:1rem}
+.con02 .unit .picture dd .btn01{height:2.8rem;line-height:2.8rem}
   
+.con02 .unit01{padding-bottom:29rem}
+.con02 .unit02{padding-bottom:17rem}
+
 }
 
+
 @media all and (min-width:1441px){
+html{font-size:16px}
 header.hd01{background-size:100%}
+.inner{max-width:1140px;margin:0 auto}
+.fc14 .outer{width:1440px;margin:0 auto}
 }
 
 /* main header */
