@@ -232,18 +232,26 @@ window.onload = function() {
 			<ul class="ng03">
 				<li><a href="#">이용약관</a></li>
 				<li><a href="#"><b>개인정보보호방침</b></a></li>
+				<li><a href="http://www.seoul.go.kr/v2013/helper/copyright.html"><b>저작권정책</b></a></li>
 			</ul>
 			<div class="ng02">
+				<dl>
+					<dt><a href="#">뉴스</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">칼럼</a></li>
+							<li><a href="#">공지</a></li>
+						</ul>
+					</dd>
+				</dl>
 				<dl>
 					<dt><a href="#">소개 및 안내 </a></dt>
 					<dd>
 						<ul>
 							<li><a href="#">서울기록원 소개</a></li>
-							<li><a href="#">칼럼</a></li>
-							<li><a href="#">공지</a></li>
 							<li><a href="#">사용자를 위한 안내</a></li>
 							<li><a href="#">개발자를 위한 안내</a></li>
-							<li><a href="#">일반문의</a></li>							
+							<li><a href="#">일반문의</a></li>
 							<li><a href="#">오류신고</a></li>
 						</ul>
 					</dd>
@@ -252,11 +260,11 @@ window.onload = function() {
 					<dt><a href="#">도구</a></dt>
 					<dd>
 						<ul>
-							<li><a href="#">기록 탐색</a></li>
-							<li><a href="#">기록 검색</a></li>
-							<li><a href="#">리서치가이드</a></li>							
+							<li><a href="#">탐색</a></li>
+							<li><a href="#">검색</a></li>
+							<li><a href="#">리서치가이드</a></li>
 						</ul>
-					</dd>					
+					</dd>
 				</dl>
 				<dl>
 					<dt><a href="#">컬렉션 및 전시</a></dt>
@@ -265,9 +273,41 @@ window.onload = function() {
 							<li><a href="#">사진아카이브</a></li>
 							<li><a href="#">용산공원 특별 전시</a></li>
 						</ul>
-					</dd>					
+					</dd>
 				</dl>
 			</div>	
+			<!-- error report popup -->
+			<div class="tc11">
+				<div class="topBtn"><a class="btn02 btn02_01" href="javascript:;">오류신고</a></div>
+				<div id="popup_report_error" class="pp01 pp01_01" style="display:none">
+					<div class="popupBox">
+						<a class="closeB" href="#close">닫기</a>
+						<form class="cf08 cf08_01">
+							<fieldset>
+								<h3 class="th03">오류신고</h3>
+								<div class="input">
+									<label for="error_email">이메일</label>
+									<input type="email" name="error_email" id="error_email" placeholder="이메일"/>
+								</div>
+								<div class="input">
+									<label for="error_desc">오류내용</label>
+									<textarea name="error_desc" id="error_desc" placeholder="오류가 난 상황을 설명하면 서비스 개선에 도움이 됩니다."></textarea>
+								</div>
+								<div class="file">
+									<label for="error_file">파일업로드</label>
+									<input type="file" class="ti01" name="error_file" id="error_file"/>
+									<div class="fake">
+										<span></span>
+										<a class="btn02 btn02_01" href="javascript:;">파일찾기</a>
+									</div>
+								</div>
+							</fieldset>
+							<div class="submit"><button class="btn01">저장</button></div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- //error report popup -->
 		</div>
 		<address>
 			<div class="inner">
