@@ -223,7 +223,7 @@ footer .tc11{position:absolute;bottom:25.75rem;right:0}
 
 /* yongsan diqital exhibit */
 .con02{background-color:#fbf9f5}
-.con02 .conHeader .topA{background:url(../img-title/yongsan00.png) no-repeat center center;height:41.5rem}
+.con02 .conHeader .topA{background:url(../image-tile/yongsan00.png) no-repeat center center;height:41.5rem}
 .con02 .conHeader .topA dl{padding-top:5rem;height:41.5rem;box-sizing:border-box}
 .con02 .conHeader .topA dl dt{display:inline-block;color:#fff;border-bottom:1px solid #fff;font-size:2.25rem;line-height:4rem;margin-bottom:3rem}
 .con02 .conHeader .topA dl dd.title h1{font-size:4.5rem;line-height:5.5rem;color:#009ecd;font-weight:600}
@@ -246,19 +246,19 @@ footer .tc11{position:absolute;bottom:25.75rem;right:0}
 .con02 .unit .type02 dt{float:right}
 .con02 .unit .type02 dd{float:left}
 
-.con02 .unit01{background:#fbf9f5 url(../img-title/yongsan01.png) no-repeat center bottom;background-size:100% auto;padding-bottom:31rem;position:relative}
+.con02 .unit01{background:#fbf9f5 url(../image-tile/yongsan01.png) no-repeat center bottom;background-size:100% auto;padding-bottom:31rem;position:relative}
 .con02 .unit01 .type01 dt{width:31%}
 .con02 .unit01 .type01 dd{width:60%}
 .con02 .unit01 .type02{margin-left:5%}
 .con02 .unit01 .type02 dt{width:51%;padding-top:3rem}
 .con02 .unit01 .type02 dd{width:30%}
 .con02 .unit01 .type02 dd p{text-align:left}
-.con02 .pictureInfo{height:3.75rem;line-height:3.75rem;background:rgb(0,0,0,0.6);position:absolute;bottom:0;left:0;width:100%}
+.con02 .pictureInfo{height:3.75rem;line-height:3.75rem;background:rgba(0,0,0,0.6);position:absolute;bottom:0;left:0;width:100%}
 .con02 .pictureInfo dl{color:#fff}
 .con02 .pictureInfo dt{display:inline;font-size:1.125rem}
 .con02 .pictureInfo dd{display:inline;font-size:0.875rem}
 
-.con02 .unit02{background:#fbf9f5 url(../img-title/yongsan02.png) no-repeat center bottom;background-size:100% auto;padding-bottom:17rem}
+.con02 .unit02{background:#fbf9f5 url(../image-tile/yongsan02.png) no-repeat center bottom;background-size:100% auto;padding-bottom:17rem}
 .con02 .unit02 h2{margin-left:53%}
 .con02 .unit02 .type02 dt{width:37%;padding-right:10%}
 .con02 .unit02 .type02 dd{width:41%}
@@ -268,12 +268,12 @@ footer .tc11{position:absolute;bottom:25.75rem;right:0}
 .con02 .unit02 .type01 dd{width:47%}
 .con02 .unit02 .type01 dd p{text-align:left}
 
-.con02 .unit03{background:#fbf9f5 url(../img-title/yongsan03.png) no-repeat right top;background-size:50% auto;padding-bottom:1rem}
+.con02 .unit03{background:#fbf9f5 url(../image-tile/yongsan03.png) no-repeat right top;background-size:50% auto;padding-bottom:1rem}
 .con02 .unit03 .type03{width:47%;margin-bottom:0}
 .con02 .unit03 .type03 dd{margin-bottom:2.5rem;width:77%}
 .con02 .unit03 .type03 dd p{text-align:left}
 
-.con02 .unit04{background:#fbf9f5 url(../img-title/yongsan04.png) no-repeat left top;background-size:50% auto;position:relative}
+.con02 .unit04{background:#fbf9f5 url(../image-tile/yongsan04.png) no-repeat left top;background-size:50% auto;position:relative}
 .con02 .unit04 h2{margin-left:53%}
 .con02 .unit04 .type03{margin-left:53%}
 .con02 .unit04 .type03 ul{overflow:hidden}
@@ -495,19 +495,17 @@ footer .tc11{position:absolute;bottom:25.75rem;right:0}
 .ib05 .picSlide .slideControl a:hover{text-decoration:none;background-color:#eee}
 .ib05 .picSlide .slideControl a.slick-disabled i{color:#ddd}
 .ib05 .picSlide .slideA{position:relative}
-.ib05 .picSlide .slideA dt{height:25.3rem;line-height:25.3rem;background-color:#f1f3f5;text-align:center;overflow:scroll;padding:1rem}
-.ib05 .picSlide .slideA dt img{display:inline-block;width:80%;vertical-align:middle;box-shadow:5px 15px 12px #999}
+.ib05 .picSlide .slideA dt{height:27.3rem;line-height:27.3rem;background-color:#f1f3f5;text-align:center;overflow:scroll}
+.ib05 .picSlide .slideA dt img{display:inline-block;vertical-align:middle;box-shadow:5px 15px 12px #999}
 .ib05 .picSlide .slideA dd{background-color:#495057;color:#fff;padding:4.56rem 1.25rem 1.25rem 1.25rem}
 .ib05 .picSlide .slideA ul.slide{margin-bottom:0}
 .ib05 .picSlide .slideA .imgScale{position:absolute;left:0;top:27.3rem;width:100%;border-bottom:1px solid #383d42;text-align:right}
 .ib05 .picSlide .slideA .imgScale li{display:inline-block;border-left:1px solid #576068}
 .ib05 .picSlide .slideA .imgScale li a{display:block;height:3.125rem;line-height:3.125rem;color:#fff;padding:0 2rem;border-left:1px solid #383d42}
-.ib05 .picSlide .slideA .imgScale li a i{margin-right:0.5rem}
+.ib05 .picSlide .slideA .imgScale li a i{margin-right:0.5rem;font-weight:600;font-size:1.1rem}
 .ib05 .picSlide .slideA .imgScale li a:hover{text-decoration:none;color:yellow}
-.ib05 .picSlide .slick-dots{position:absolute;bottom:0.6rem;right:-3rem;width:2rem}
-.ib05 .picSlide .slick-dots li{display:none}
-.ib05 .picSlide .slick-dots li.slick-active{display:block}
-.ib05 .picSlide .slick-dots li b{font-weight:600;color:#333;letter-spacing:2px}
+.ib05 .picSlide .slick-dots{position:absolute;bottom:0.6rem;right:21rem;width:2rem}
+.ib05 .picSlide .slick-dots b{font-weight:600;color:#333;letter-spacing:2px}
 .ib05 .picSlide .contentA p{font-size:1.125rem;margin-bottom:1.8rem;line-height:1.8rem}
 
 .ib05 .pagingSlide{height:17.625rem;line-height:17.625rem;background-color:#f1f3f5;position:relative}
