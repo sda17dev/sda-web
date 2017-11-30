@@ -150,7 +150,7 @@ $(document).ready(function() {
 	$(".ib01 .slide li.add a").bind('click', function() {
 		open_popup("#popup_category");
 		return false;
-   });
+	});
 	
 	//콜렉션 메인 슬라이드
 	$('.ib04 .slide').slick({
@@ -161,19 +161,29 @@ $(document).ready(function() {
 		speed: 300
 	});
 	//용산디지털 전시 뷰 슬라이드
+	$('.ib05 .picSlide .slide').on('init', function(){
+		$('.ib05 .picSlide .slide li dt img').each(function(){
+			 if($(this).width() > $(this).height()){
+				$(this).css({
+					width:'80%',
+					height:'auto'
+				});
+			 }else{
+				 $(this).css({
+					height:'80%',
+					width:'auto'
+				});
+			}
+		});
+	});
 	$('.ib05 .picSlide .slide').slick({
 		dots: false,
 		infinite: false,
 		initialSlide:0,
-		prevArrow : ".ib05 .picSlide .slideControl .prev",
-		nextArrow : ".ib05 .picSlide .slideControl .next",
 		fade:true,
 		speed: 300,
 		dots:true,
-		asNavFor: '.ib05 .pagingSlide .slide',
-		customPaging: function (slider, i) {
-			return  '<b>' + (i + 1) + '</b>/' + slider.slideCount;
-		}
+		asNavFor: '.ib05 .pagingSlide .slide'
 	});
 	$('.ib05 .pagingSlide .slide').slick({
 		dots: false,
@@ -186,6 +196,18 @@ $(document).ready(function() {
 		focusOnSelect: true,
 		centerMode: true,
 		variableWidth: true
+	});
+	$(".ib05 .picSlide .imgScale a.enlarge").bind('click', function() {
+		$target = $(".ib05 .picSlide li.slick-current dt img");
+		$target.width($target.width()*1.5);
+		$target.css('height','auto');
+		return false;
+	});
+	$(".ib05 .picSlide .imgScale a.reduce").bind('click', function() {
+		$target = $(".ib05 .picSlide li.slick-current dt img");
+		$target.width($target.width()/1.5);
+		$target.css('height','auto');
+		return false;
 	});
 	
 	//팝업 - 카테고리 선택
