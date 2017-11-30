@@ -160,6 +160,33 @@ $(document).ready(function() {
 		adaptiveHeight:true,
 		speed: 300
 	});
+	//용산디지털 전시 뷰 슬라이드
+	$('.ib05 .picSlide .slide').slick({
+		dots: false,
+		infinite: false,
+		initialSlide:0,
+		prevArrow : ".ib05 .picSlide .slideControl .prev",
+		nextArrow : ".ib05 .picSlide .slideControl .next",
+		fade:true,
+		speed: 300,
+		dots:true,
+		asNavFor: '.ib05 .pagingSlide .slide',
+		customPaging: function (slider, i) {
+			return  '<b>' + (i + 1) + '</b>/' + slider.slideCount;
+		}
+	});
+	$('.ib05 .pagingSlide .slide').slick({
+		dots: false,
+		infinite: false,
+		speed: 300,
+		prevArrow : ".ib05 .pagingSlide .slideControl .prev",
+		nextArrow : ".ib05 .pagingSlide .slideControl .next",
+		asNavFor: '.ib05 .picSlide .slide',
+		slidesToShow: 1,
+		focusOnSelect: true,
+		centerMode: true,
+		variableWidth: true
+	});
 	
 	//팝업 - 카테고리 선택
 	$('#popup_category .addCat input').on('keypress', function(event) {

@@ -148,6 +148,7 @@ footer .tc11{position:absolute;bottom:25.75rem;right:0}
 .fc10{padding:0.9375rem 0;overflow:hidden}
 .fc10 .leftF{float:left}
 .fc10 .rightF{float:right}
+.fc10_01{padding:2rem 0;overflow:hidden;border-bottom:2px solid #ccc}
 
 .fc11{overflow:hidden}
 .fc11 .leftA{float:left;width:74%;padding-right:1.5%;border-right:1px solid #ccc;padding-bottom:10rem}
@@ -483,6 +484,46 @@ footer .tc11{position:absolute;bottom:25.75rem;right:0}
 .ib04 .slick-dots li button{background-color:#c0bdbd;width:1.125rem;height:1.125rem;text-indent:-9999px;border-radius:0.5625rem}
 .ib04 .slick-dots li.slick-active button{background-color:#fff}
 
+/* yongsan view slider */
+.ib05{margin-top:1.875rem;margin-bottom:10rem}
+.ib05 .picSlide{overflow:hidden;margin-bottom:1.5rem;position:relative}
+.ib05 .picSlide .slideA{float:left;width:66%}
+.ib05 .picSlide .contentA{float:right;width:32%}
+.ib05 .picSlide .slideControl{position:absolute;bottom:0;right:0}
+.ib05 .picSlide .slideControl a{float:left;width:2.625rem;height:2.625rem;line-height:2.625rem;text-align:center;font-size:1.5rem;border:1px solid #ccc}
+.ib05 .picSlide .slideControl a.next{border-left:none}
+.ib05 .picSlide .slideControl a:hover{text-decoration:none;background-color:#eee}
+.ib05 .picSlide .slideControl a.slick-disabled i{color:#ddd}
+.ib05 .picSlide .slideA{position:relative}
+.ib05 .picSlide .slideA dt{height:25.3rem;line-height:25.3rem;background-color:#f1f3f5;text-align:center;overflow:scroll;padding:1rem}
+.ib05 .picSlide .slideA dt img{display:inline-block;width:80%;vertical-align:middle;box-shadow:5px 15px 12px #999}
+.ib05 .picSlide .slideA dd{background-color:#495057;color:#fff;padding:4.56rem 1.25rem 1.25rem 1.25rem}
+.ib05 .picSlide .slideA ul.slide{margin-bottom:0}
+.ib05 .picSlide .slideA .imgScale{position:absolute;left:0;top:27.3rem;width:100%;border-bottom:1px solid #383d42;text-align:right}
+.ib05 .picSlide .slideA .imgScale li{display:inline-block;border-left:1px solid #576068}
+.ib05 .picSlide .slideA .imgScale li a{display:block;height:3.125rem;line-height:3.125rem;color:#fff;padding:0 2rem;border-left:1px solid #383d42}
+.ib05 .picSlide .slideA .imgScale li a i{margin-right:0.5rem}
+.ib05 .picSlide .slideA .imgScale li a:hover{text-decoration:none;color:yellow}
+.ib05 .picSlide .slick-dots{position:absolute;bottom:0.6rem;right:-3rem;width:2rem}
+.ib05 .picSlide .slick-dots li{display:none}
+.ib05 .picSlide .slick-dots li.slick-active{display:block}
+.ib05 .picSlide .slick-dots li b{font-weight:600;color:#333;letter-spacing:2px}
+.ib05 .picSlide .contentA p{font-size:1.125rem;margin-bottom:1.8rem;line-height:1.8rem}
+
+.ib05 .pagingSlide{height:17.625rem;line-height:17.625rem;background-color:#f1f3f5;position:relative}
+.ib05 .pagingSlide .slide{padding-top:2.6rem}
+.ib05 .pagingSlide .slide li{padding:2rem 1rem}
+.ib05 .pagingSlide .slide li a{display:block;box-shadow:0rem 1rem 1rem #999}
+.ib05 .pagingSlide .slide li a img{height:8.5625rem;display:block}
+.ib05 .pagingSlide .slide li.slick-current a{position:relative}
+.ib05 .pagingSlide .slide li.slick-current a:before{content:"";display:block;border:0.5rem solid #1e5eff;position:absolute;top:0;bottom:0;right:0;left:0}
+.ib05 .pagingSlide .slideControl a{display:block;position:absolute;top:0;width:2.75rem;height:100%;line-height:17.625rem;text-align:center;font-size:1.5rem;background-color:rgba(0,0,0,0.6)}
+.ib05 .pagingSlide .slideControl a.prev{left:0}
+.ib05 .pagingSlide .slideControl a.next{right:0}
+.ib05 .pagingSlide .slideControl a i{vertical-align:middle;color:#fff}
+.ib05 .pagingSlide .slideControl a:hover{text-decoration:none;background-color:rgba(0,0,0,1)}
+.ib05 .pagingSlide .slideControl a.slick-disabled{visibility:hidden}
+
 .lc01 li{float:left;width:25%}
 .lc01 li a{display:block;width:100%;position:relative}
 .lc01 li a em{display:block;height:2.5rem;font-size:0.8125rem;line-height:2.5rem;color:#ccc;background-color:#1e5eff;padding:0 1.25rem;color:#fff;border-left:1px solid #4b7eff}
@@ -724,6 +765,10 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .pg02 a{display:inline-block;border:1px solid #cbcbcb;background-color:#e4e4e4;font-size:0.875rem;color:#212121;border-radius:0.1875rem;padding:0.3125rem 1.25rem;font-weight:500}
 .pg02 a:hover{background-color:#666;color:#fff;text-decoration:none}
 
+.pg03{text-align:center}
+.pg03 a{padding:0 0.25rem;display:inline-block;height:2.125rem;line-height:2.125rem;text-align:center;color:#666;border:1px solid #d3d3d3;background-color:#f1f3f5;width:2.125rem;font-size:1rem;padding:0}
+.pg03 a.on, .pg03 a:hover{text-decoration:none;background-color:#333;border-color:#333;color:#fff}
+
 .pp01:before{content:"";display:block;position:fixed;left:0;top:0;width:100%;height:100%;background-color:#000;opacity:0.6;z-index:10}
 .pp01 .popupBox{position:absolute;width:63rem;padding:1.875rem;box-sizing:border-box;background-color:#fff;z-index:15}
 .pp01 .popupBox a.closeB{position:absolute;top:-3.125rem;right:0px;display:block;width:1.875rem;height:1.875rem;;background:url(../images/btn_close02.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
@@ -900,6 +945,8 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .th06.series{background-image:url(../images/icon_series.png)}
 .th06.item{background-image:url(../images/icon_item.png)}
 .th06.file{background-image:url(../images/icon_file.png)}
+
+.th07{font-size:1.875rem;color:#333;line-height:1.875rem;font-weight:500}
 
 
 /* post */
