@@ -87,12 +87,12 @@ window.onload = function() {
 			<div class="lowerA">
 				<dl class="th05 item"><!-- level : series,item,file -->
 					<dt>
-						<i class="xi-list-square"></i>
+						<a href="#" title="목록으로 돌아가기"><i class="xi-list-square"></i></a>
 						<em>아이템</em>
 						<h1>이곳은 타이틀이 보여지는 영역입니다. 잘 보이나요?</h1>
 					</dt>
 					<dd>
-						<a class="pre" href="#pre" title="이전"><i class="xi-angle-left"></i></a>
+						<a class="prev" href="#pre" title="이전"><i class="xi-angle-left"></i></a>
 						<a class="next" href="#next" title="다음"><i class="xi-angle-right"></i></a>
 					</dd>
 				</dl>
@@ -101,16 +101,27 @@ window.onload = function() {
 					<div class="leftA">
 						<div class="ib03">
 							<ul class="slide">
-								<li><a href="javascript:;"><img src="../image-tile/yongsan01.png" alt="이미지 설명"/></a></li>
-								<li><a href="javascript:;"><img src="../image-tile/yongsan01_01.png" alt="이미지 설명"/></a></li>
-								<li><a href="javascript:;"><img src="../image-tile/yongsan01_02.png" alt="이미지 설명"/></a></li>
-								<li><a href="javascript:;"><img src="../image-tile/02.png" alt="이미지 설명"/></a></li>
+								<li><a href="javascript:;"><img data-scale="1" src="../image-tile/yongsan01.png" alt="이미지 설명"/></a></li>
+								<li><a href="javascript:;"><img data-scale="1" src="../image-tile/yongsan01_01.png" alt="이미지 설명"/></a></li>
+								<li><a href="javascript:;"><img data-scale="1" src="../image-tile/yongsan01_02.png" alt="이미지 설명"/></a></li>
+								<li><a href="javascript:;"><img data-scale="1" src="../image-tile/02.png" alt="이미지 설명"/></a></li>
 							</ul>
+							<div class="paging"></div>
 							<ul class="imgScale">
-								<li><a href="javascript:;" class="full"><i class="xi-expand"></i>화면전체</a></li>
+								<li><a href="javascript:;" class="full"><i class="xi-arrows-alt"></i>화면전체</a></li>
 								<li><a href="javascript:;" class="enlarge"><i class="xi-expand"></i>확대</a></li>
 								<li><a href="javascript:;" class="reduce"><i class="xi-compress"></i>축소</a></li>
 							</ul>
+							<div class="fullImage">
+								<div class="thumb"><span><img src="../images/bl_arr01.jpg" alt="이미지 설명"/></span></div>
+								<div class="control">
+									<a class="close" href="javascript:;" title="닫기"><i class="xi-close"></i></a>
+									<div class="imgControl">
+										<a class="prev" href="javascript:;" title="이전"><i class="xi-angle-left"></i></a>
+										<a class="next" href="javascript:;" title="다음"><i class="xi-angle-right"></i></a>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="tbl03">
 							<table>

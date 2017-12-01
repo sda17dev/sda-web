@@ -471,7 +471,33 @@ footer .tc11{position:absolute;bottom:25.75rem;right:0}
 .fc13 .ib02{height:16rem;text-align:center}
 .fc13 .ib02 img{height:16rem;width:auto;max-width:100%}
 
-.ib03{}
+/* browse view slider */
+.ib03{position:relative;margin-bottom:0.5rem}
+.ib03 ul.slide{height:30.6rem;line-height:30.6rem;background-color:#f1f3f5;margin-bottom:0}
+.ib03 ul.slide li{margin:0 1.6rem}
+.ib03 ul.slide li.slick-current{position:relative;z-index:10}
+.ib03 ul.slide li a{display:inline-block;vertical-align:middle}
+.ib03 ul.slide li img{display:block;box-shadow:0rem 1rem 1rem #999}
+.ib03 .imgScale{background-color:#495057;text-align:right}
+.ib03 .imgScale li{display:inline-block;border-left:1px solid #576068}
+.ib03 .imgScale li a{display:block;height:3.125rem;line-height:3.125rem;color:#fff;padding:0 2rem;border-left:1px solid #383d42}
+.ib03 .imgScale li a i{margin-right:0.5rem;font-weight:600;font-size:1.1rem}
+.ib03 .imgScale li a:hover{text-decoration:none;color:yellow}
+.ib03 .slick-dots{position:absolute;bottom:0;left:1rem;width:2rem;height:3.125rem;line-height:3.125rem}
+.ib03 .slick-dots li{display:none;color:#fff;font-weight:300}
+.ib03 .slick-dots li.slick-active{display:block}
+.ib03 .slick-dots b{font-weight:500;color:#333;letter-spacing:2px;color:#fff}
+
+.ib03 .fullImage{display:none;position:fixed;top:0;left:0;width:100%;height:100%;padding:2rem;box-sizing:border-box;background-color:#f1f3f5;margin-bottom:0;z-index:100}
+.ib03 .fullImage .thumb{float:left;width:85%;height:100%;padding-right:2rem;border-right:1px solid #ccc;box-sizing:border-box;text-align:center}
+.ib03 .fullImage .thumb:before{content:'';display:inline-block;height:100%;vertical-align:middle}
+.ib03 .fullImage .thumb img{display:inline-block;vertical-align:middle}
+.ib03 .fullImage .control{float:right;width:15%;box-sizing:border-box;padding-left:2rem}
+.ib03 .fullImage .control a{float:left;width:3.375rem;height:3.375rem;line-height:3.375rem;font-size:2rem;text-align:center;border:1px solid #e6e6e6;background-color:#fff}
+.ib03 .fullImage .control a.prev{border-right:none}
+.ib03 .fullImage .control a:hover{text-decoration:none;background-color:#eee}
+.ib03 .fullImage .control .imgControl{position:absolute;bottom:2rem}
+
 
 /* collection main slider */
 .ib04{margin-bottom:1.75rem}
@@ -936,8 +962,9 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .th05 dt h1{font-size:1.875rem;line-height:2rem;color:#333}
 .th05 dd{float:right}
 .th05 dd a{float:left;width:3.375rem;height:3.375rem;line-height:3.375rem;font-size:2rem;text-align:center;border:1px solid #e6e6e6}
-.th05 dd a.pre{border-right:none}
+.th05 dd a.prev{border-right:none}
 .th05 dd a:hover{text-decoration:none;background-color:#e1e1e1}
+.th05 dd a.slick-disabled{color:#ddd}
 
 .th06{display:inline-block;background:url(../images/icon_record.png) no-repeat 0 center;padding-left:2.2rem;font-weight:normal}
 .th06.series{background-image:url(../images/icon_series.png)}

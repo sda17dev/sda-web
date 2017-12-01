@@ -151,6 +151,98 @@ $(document).ready(function() {
 		open_popup("#popup_category");
 		return false;
 	});
+	//탐색 뷰 슬라이드
+	$('.ib03 .slide').on('init', function(){
+		$('.ib03 .slide li a img').each(function(){
+			 if($(this).width() > $(this).height()){
+				$(this).css({
+					width:'21.25rem',
+					height:'auto'
+				});
+			 }else{
+				 $(this).css({
+					height:'22.75rem',
+					width:'auto'
+				});
+			}
+		});
+	});
+	$('.ib03 .slide').slick({
+		dots: true,
+		infinite: false,
+		speed: 300,
+		slidesToShow: 1,
+		focusOnSelect: true,
+		centerMode: true,
+		centerPadding:'1rem',
+		variableWidth: true,
+		appendDots:".ib03 .paging",
+		customPaging: function (slider, i) {
+			return  '<b>' + (i + 1) + '</b>/' + slider.slideCount;
+		}
+	});
+	$(".ib03 .imgScale a.enlarge").bind('click', function() {	//확대
+		$target = $(".ib03 .slide li.slick-current img");
+		var cur_scale = $target.attr("data-scale");
+		cur_scale *= 1;
+		cur_scale += 0.1;
+		$target.css('transform', 'scale(' + cur_scale + ')');
+		$target.attr("data-scale",cur_scale);
+		return false;
+	});
+	$(".ib03 .imgScale a.reduce").bind('click', function() {	//축소
+		$target = $(".ib03 .slide li.slick-current img");
+		var cur_scale = $target.attr("data-scale");
+		cur_scale *= 1;
+		cur_scale -= 0.1;
+		$target.css('transform', 'scale(' + cur_scale + ')');
+		$target.attr("data-scale",cur_scale);
+		return false;
+	});
+	$(".ib03 .imgScale a.full").bind('click', function() {	//화면전체
+		$(".ib03 .fullImage").fadeIn();
+		var $source = $(".ib03 .slide li.slick-current img");
+		view_in_full($source);
+		return false;
+	});
+	$(".ib03 .fullImage a.close").bind('click', function() {	//전체화면 닫기
+		$(".ib03 .fullImage").fadeOut();
+
+		return false;
+	});
+	$(".ib03 .fullImage a.next").bind('click', function() {	//다음이미지
+		$('.ib03 .slide').slick("slickNext");
+		var $source = $(".ib03 .slide li.slick-current img");
+		$(".ib03 .fullImage .thumb img").fadeOut("fast",function() {
+			view_in_full($source);
+			$(".ib03 .fullImage .thumb img").fadeIn();
+		});
+		return false;
+	});
+	$(".ib03 .fullImage a.prev").bind('click', function() {	//다음이미지
+		$('.ib03 .slide').slick("slickPrev");
+		var $source = $(".ib03 .slide li.slick-current img");
+		$(".ib03 .fullImage .thumb img").fadeOut("fast",function() {
+			view_in_full($source);
+			$(".ib03 .fullImage .thumb img").fadeIn();
+		});
+		return false;
+	});
+	function view_in_full($source) {
+		var $target = $(".ib03 .fullImage .thumb img");
+		$target.attr("src",$source.attr("src"));
+		 if($source.width() > $source.height()){
+			$target.css({
+				width:'100%',
+				height:'auto'
+			});
+		 }else{
+			 $target.css({
+				height:'100%',
+				width:'auto'
+			});
+		}
+	}
 	
 	//콜렉션 메인 슬라이드
 	$('.ib04 .slide').slick({
@@ -199,14 +291,20 @@ $(document).ready(function() {
 	});
 	$(".ib05 .picSlide .imgScale a.enlarge").bind('click', function() {
 		$target = $(".ib05 .picSlide li.slick-current dt img");
-		$target.width($target.width()*1.5);
-		$target.css('height','auto');
+		var cur_scale = $target.attr("data-scale");
+		cur_scale *= 1;
+		cur_scale += 0.1;
+		$target.css('transform', 'scale(' + cur_scale + ')');
+		$target.attr("data-scale",cur_scale);
 		return false;
 	});
 	$(".ib05 .picSlide .imgScale a.reduce").bind('click', function() {
 		$target = $(".ib05 .picSlide li.slick-current dt img");
-		$target.width($target.width()/1.5);
-		$target.css('height','auto');
+		var cur_scale = $target.attr("data-scale");
+		cur_scale *= 1;
+		cur_scale -= 0.1;
+		$target.css('transform', 'scale(' + cur_scale + ')');
+		$target.attr("data-scale",cur_scale);
 		return false;
 	});
 	
