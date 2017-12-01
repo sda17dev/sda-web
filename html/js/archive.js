@@ -31,7 +31,7 @@ $(window).scroll(function(e){
 			$("#main_wrap").removeClass("scrolling");
 			$("#main-content").css("paddingTop","3rem");
 		}
-	} else {		//서브화면
+	} else if(!$("header").hasClass("fixed")) {		//서브화면
 		if ($(window).scrollTop() > 0){
 			$("#main_wrap").addClass("scrolling");
 			$("#main-content").css("paddingTop",header_height);
