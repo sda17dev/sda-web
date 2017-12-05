@@ -17,7 +17,7 @@ html{font-size:11px}
   
 body.mobile header .inner2{display:block;padding:0}
 body.mobile header .mobileHeader{height:68px;background-color:#fff}
-body.mobile header .mobileMenuOpen{float:right;height:25px;line-height:25px;margin:20px 10px 0 0;text-decoration:none}
+body.mobile header .mobileMenuOpen{float:right;height:25px;line-height:25px;margin:21px 10px 0 0;text-decoration:none}
 body.mobile header .mobileMenuOpen i{font-size:25px;color:#333}
 body.mobile header .mobileMenuOpen:active i{color:#1e5eff}
 body.mobile header .lg01{float:left;margin:15px 0 0 10px}
@@ -65,7 +65,7 @@ footer .tc11{position:absolute;top:0;right:0}
 
 .fc04{padding-bottom:40px}
 .fc04 .header{padding:0;overflow:hidden}
-.fc04 .header .ng06{float:none}
+.fc04 .header .ng06{float:none;margin-bottom:1rem}
 .fc04 .header .th01{float:none}
 .fc04 .conBody .leftA{float:none;width:auto;padding:0 0 10rem}
 .fc04 .conBody .rightA{float:none;width:auto}
@@ -83,6 +83,32 @@ footer .tc11{position:absolute;top:0;right:0}
 .fc04_04 .conBody{/*! background:url(../images/bg_fc04_04.jpg) repeat-y; background-position:right 0 top*/}
 .fc04_05 .lowerA{padding:2.5rem 0 0}
 
+  /* introduce page */
+.con01{margin-bottom:6rem}
+.con01 .banner dl{bottom:15px;left:15px}
+.con01 .banner dl dd{font-size:2rem}
+
+.con01 .unit01 .interview .thumb{float:none;margin-right:0;width:auto;height:auto}
+.con01 .unit01 .interview .thumb img{width:100%;min-height:0;height:auto}
+.con01 .unit01 .interview dl{padding: 1rem 0 0 0}
+.con01 .unit01 .interview dl dd .sign img{width:100px}
+.con01 .unit01 .pass .tbl01 td.t01{width:33%;padding:0.1rem 1rem}
+.con01 .unit01 .pass .tbl01 td.t02{padding:0.1rem 1rem}
+.con01 .unit01 .pass .tbl01 ul{margin-left:10px}
+.con01 .unit01 .pass .tbl01 li{padding-left:10px}
+
+.con01 .unit02 .documents{background-color:#f1f3f5;padding:1px 20px}
+.con01 .unit02 .documents li{margin:2rem 1rem 2rem 1rem}
+.con01 .unit02 .documents li .thumb{margin-bottom:10px}
+.con01 .unit02 .documents li dt{line-height:16px}
+
+.con01 .unit03 .currents{overflow:hidden}
+.con01 .unit03 .currents li{float:left;width:48%;margin:0 4% 5% 0}
+.con01 .unit03 .currents li.l3,
+.con01 .unit03 .currents li.l6{margin-right:4%}
+.con01 .unit03 .currents li.l2,
+.con01 .unit03 .currents li.l4,
+.con01 .unit03 .currents li.l6{margin-right:0}
 
 /* header search form */
 .cf02 fieldset{background-color:#fff}
@@ -150,8 +176,20 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 /* error report popup */
 .tc11{width:100%}
 
+/* 서브페이지 제목 */
+.th01{margin-bottom:1rem}
+.th01 > dt h1{margin-right:0}
+.th01_01{border-bottom:none}
+.th01_01 > dt{margin-bottom:1.25rem;float:none}
+.th01_02 > dt{padding-bottom:1rem;position:relative}
+.th01_02 > dt .link{position:absolute;right:0;top:0}
+.th01_02 .tc10{clear:both;border-top:1px solid #ccc;padding-top:1.2rem}
+
 /* main header banner info */
 .td03{border-radius:0}
+
+/* post */
+.postA ul>li:before{top:0.9rem}
 
 
   

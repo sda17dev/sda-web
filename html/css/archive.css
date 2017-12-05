@@ -72,6 +72,9 @@ header.hd02 menu li.on a{color:#1e5eff}
 .scrolling header.hd02{position:fixed;left:0;top:0;z-index:10;opacity:0.95;width:100%;box-sizing:border-box}
 .scrolling header.hd02 .td03{display:none}
 
+body.pc header .mobileMenuOpen{display:none}
+body.pc header .mobileMenuClose{display:none}
+
 footer{overflow:visible;padding:3.3rem 0 0;background-color:#f1f3f5}
 footer .lg02{float:left;margin-bottom:1.875rem}
 footer .ng03{float:right;margin-top:1.25rem}
@@ -184,10 +187,10 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .con01 .banner:before{content:"";width:100%;height:100%;opacity:0.2;background-color:#000;position:absolute;top:0;left:0}
 .con01 .banner img{display:block;width:100%}
 .con01 .banner dl{position:absolute;bottom:3.125rem;left:3.125rem;color:#fff}
-.con01 .banner dl dt{font-size:2.25rem;font-weight:500;line-height:4rem;letter-spacing:-1px}
+.con01 .banner dl dt{font-size:2.25rem;font-weight:500;line-height:3rem;letter-spacing:-1px;margin-bottom:10px}
 .con01 .banner dl dd{font-size:2.25rem;letter-spacing:-1px}
 .con01 .unit{margin-bottom:2rem}
-.con01 .unit h2{font-size:1.875rem;font-weight:500;line-height:1.875rem;color:#333;margin-bottom:2rem}
+.con01 .unit h2{font-size:1.875rem;font-weight:500;line-height:2.5rem;color:#333;margin-bottom:1.6rem}
 .con01 .unit01 .interview{overflow:hidden;margin-bottom:2rem}
 .con01 .unit01 .interview .thumb{float:left;margin-right:1.5rem;width:34.75rem;height:19.5625rem;overflow:hidden}
 .con01 .unit01 .interview .thumb img{width:34.75rem;min-height:19.5625rem}
@@ -955,6 +958,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .td03 a{display:inline-block;max-width:70%;font-size:1rem;color:#fff;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;vertical-align:top}
 .td03 i{float:right;width:1.375rem;height:1.375rem;line-height:1.375rem;text-align:center;background-color:#666;border-radius:0.6875rem;font-size:1rem;margin-top:3px}
 
+/* 서브페이지 제목 */
 .th01 > dt{margin-bottom:1rem}
 .th01 > dt h1{font-size:2.25rem;font-weight:700;line-height:3rem;color:#333;margin-right:10rem}
 .th01 > dd{font-size:1.1rem;color:#808080}
@@ -998,7 +1002,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .postA a{color:#ff6600}
 .postA h2{font-size:1.875rem;line-height:2.5rem;margin-bottom:1.875rem;color:#000}
 .postA h3{font-size:1.5rem;line-height:1.875rem;margin-bottom:1.25rem;color:#444;border-bottom:1px solid #ccc;padding-bottom:0.625rem}
-.postA h4{font-size:1.25rem;line-height:1.875rem;margin-bottom:2rem;color:#1e5eff}
+.postA h4{font-size:1.25rem;line-height:1.875rem;margin-bottom:1.25rem;color:#1e5eff}
 
 .postA ol{margin-bottom:1.25rem}
 .postA ol>li{position:relative;padding-left:1.25rem;margin-bottom:0.625rem}
@@ -1011,8 +1015,8 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .postA ul>li>ul>li{font-size:0.8rem;line-height:1.2rem;padding-left:0.8rem}
 .postA ol ul{margin-left:0.625rem}
 
-.postA dl{margin-bottom:30px}
-.postA dl dt{border:1px solid #ccc;padding:5px 10px;border-radius:5px;background-color:#eee;margin-bottom:10px}
+.postA dl{margin-bottom:1.875rem}
+.postA dl dt{border:1px solid #ccc;padding:0.3125rem 0.625rem;border-radius:0.3125rem;background-color:#eee;margin-bottom:0.625rem}
 
-
+.postA iframe{max-width:100%}
 

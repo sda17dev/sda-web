@@ -38,8 +38,11 @@ window.onload = function() {
 	<div id="seoul-common-gnb"></div>
 	<header class="hd02">
 		<div class="inner2">
-		<div class="lg01"><a href="/">서울기록원</a></div>
-		<nav>
+					<div class="mobileHeader">
+				<div class="lg01"><a href="/">서울기록원</a></div>
+				<a href="javascript:;" class="mobileMenuOpen" title="모바일 메뉴 열기"><i class="xi-bars"></i></a>
+			</div>
+		<nav>
 			<menu>
 				<li class="news on"><a href="#">뉴스</a></li>
 				<li class="info"><a href="#">소개 및 안내</a></li>
@@ -63,7 +66,8 @@ window.onload = function() {
 				<li class="login"><a href="#">로그인</a></li>
 				<li class="join"><a href="#">회원가입</a></li>
 			</ul>
-		</nav>
+				<a href="javascript:;" class="mobileMenuClose" title="모바일 메뉴 열기"><i class="xi-close"></i></a>
+			</nav>
 		</div>
 	</header>
 	<!-- 컨텐츠 영역 -->
