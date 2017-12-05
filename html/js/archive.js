@@ -6,48 +6,83 @@ Version:2.0
 var $ = jQuery;
 var header_height;
 var fontSize;
+var device_status = "";
 var main_min_height = 640;
 
 $(window).resize(function() {
 	fontSize = parseFloat($("html").css("fontSize"));
-	if(window.innerHeight >= main_min_height)
-		$("header.hd01").height(window.innerHeight);
-	else
-		$("header.hd01").height(main_min_height);
-	header_height = $("header").height();
+	//브라우져 사이즈 실시간 반응
+	var dw = $(document).width();
+	if(dw < 768 && device_status == "pc"){	//PC에서 모바일로 변경시
+		$("body").removeClass('pc');
+		$("body").addClass('mobile');
+		init_mobile();
+		device_status = "mobile";
+	}else if(dw >= 768 && device_status == "mobile"){	//모바일에서 PC로 변경시
+		$("body").removeClass('mobile');
+		$("body").addClass('pc');
+		init_pc();
+		device_status = "pc";
+	}
+	//메인 배너 화면 꽉채우기
+	if($("body").hasClass('pc')){
+		if(window.innerHeight >= main_min_height)
+			$("header.hd01").height(window.innerHeight);
+		else
+			$("header.hd01").height(main_min_height);
+		header_height = $("header").height();
+	}
 });
 
 $(window).scroll(function(e){
 	//헤더 고정
-	if ($("#main_wrap").hasClass("mainPage")){	//메인화면
-		if ($(window).scrollTop() > header_height){
-			$("header").removeClass("hd01");
-			$("header").addClass("hd02");
-			$("#main_wrap").addClass("scrolling");
-			$("#main-content").css("paddingTop",header_height + (fontSize * 3));
-		} else{
-			$("header").removeClass("hd02");
-			$("header").addClass("hd01");
-			$("#main_wrap").removeClass("scrolling");
-			$("#main-content").css("paddingTop","3rem");
-		}
-	} else if(!$("header").hasClass("fixed")) {		//서브화면
-		if ($(window).scrollTop() > 0){
-			$("#main_wrap").addClass("scrolling");
-			$("#main-content").css("paddingTop",header_height);
-		} else{
-			$("#main_wrap").removeClass("scrolling");
-			$("#main-content").css("paddingTop",0);
+	if($("body").hasClass('pc')){
+		if ($("#main_wrap").hasClass("mainPage")){	//메인화면
+			if ($(window).scrollTop() > header_height){
+				$("header").removeClass("hd01");
+				$("header").addClass("hd02");
+				$("#main_wrap").addClass("scrolling");
+				$("#main-content").css("paddingTop",header_height + (fontSize * 3));
+			} else{
+				$("header").removeClass("hd02");
+				$("header").addClass("hd01");
+				$("#main_wrap").removeClass("scrolling");
+				$("#main-content").css("paddingTop","3rem");
+			}
+		} else if(!$("header").hasClass("fixed")) {		//서브화면
+			if ($(window).scrollTop() > 0){
+				$("#main_wrap").addClass("scrolling");
+				$("#main-content").css("paddingTop",header_height);
+			} else{
+				$("#main_wrap").removeClass("scrolling");
+				$("#main-content").css("paddingTop",0);
+			}
 		}
 	}
 });
 
 $(document).ready(function() {
-	if(window.innerHeight >= main_min_height)
-		$("header.hd01").height(window.innerHeight);
-	else
-		$("header.hd01").height(main_min_height);
-	header_height = $("header").height();
+	//초기 로딩시 브라우저 사이즈
+	var dw = $(document).width();
+	if(dw < 768){	//모바일
+		$("body").removeClass('pc');
+		$("body").addClass('mobile');
+		init_mobile();
+		device_status = "mobile";
+	}else{	//PC
+		$("body").removeClass('mobile');
+		$("body").addClass('pc');
+		init_pc();
+		device_status = "pc";
+	}
+	//메인 배너 화면 꽉채우기
+	if($("body").hasClass('pc')){
+		if(window.innerHeight >= main_min_height)
+			$("header.hd01").height(window.innerHeight);
+		else
+			$("header.hd01").height(main_min_height);
+		header_height = $("header").height();
+	}
 	fontSize = parseFloat($("html").css("fontSize"));
 	//폼요소 스타일링
 	$(".cf02 select").selectmenu({
@@ -63,20 +98,6 @@ $(document).ready(function() {
 	$(".ng07 select").selectmenu();
 	$(".cf10 select").selectmenu();
 	$( ".fc13" ).tabs();
-	
-	//검색창 제어
-	$("header menu li.search a").click(function(){
-		$("header").addClass("searchMode");
-		return false;
-	});
-	$("header menu li a:not(li.search a)").click(function(){
-		$("header").removeClass("searchMode");
-		return false;
-	});
-	$(".cf02 .closeBtn").click(function(){
-		$("header").removeClass("searchMode");
-		return false;
-	});
 	
 	//관리자 메뉴
 	var sub_height = $(".ng05>li.on dl dt").outerHeight() + $(".ng05>li.on dl dd").outerHeight();
@@ -437,6 +458,47 @@ function open_popup(selector){
 	$(selector).show();
 }
 
+//PC버젼 초기화
+function init_pc(){
+	$("header nav").show();
+	$("header .mobileMenuOpen").unbind();
+	$("header .mobileMenuClose").unbind();
+	
+	//검색창 제어
+	$("header menu li.search a").click(function(){
+		$("header").addClass("searchMode");
+		return false;
+	});
+	$("header menu li a:not(li.search a)").click(function(){
+		$("header").removeClass("searchMode");
+		return false;
+	});
+	$(".cf02 .closeBtn").click(function(){
+		$("header").removeClass("searchMode");
+		return false;
+	});
+
+}
+//모바일 버젼 초기화
+function init_mobile(){
+	//모바일 메뉴
+	$("header nav").hide();
+	$("header menu li.search a").unbind();
+	$("header menu li a:not(li.search a)").unbind();
+	$(".cf02 .closeBtn").unbind();
+
+	//헤더 LNB 메뉴(mobile)
+	$("header .mobileMenuOpen").bind("click",function(){
+		$("header nav").slideDown();
+		$("header").addClass("open");
+	});
+	$("header .mobileMenuClose").bind("click",function(){
+	   $("header nav").slideUp();
+		$("header").removeClass("open");
+	});
+}
+
+//폼 유효성 검사
 function form_validation(){
 	$(".cf05.join").validate({
 		rules: {

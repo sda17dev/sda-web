@@ -79,7 +79,7 @@ footer .ng02{clear:both}
 footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;background-color:#636666;text-align:center;font-weight:300}
 footer .tc11{position:absolute;bottom:25.7rem;right:0}
 
-/* frames 프레임*/
+/* frame containers */
 .fc01{padding:5rem 0 0}
 
 .fc02{padding:5rem 0;overflow:hidden;border-top:1px solid #ccc}
@@ -308,6 +308,7 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .hd02 .cf02 .ui-selectmenu-button span.ui-icon{background:url(../images/bl_arr01.png) no-repeat center center;right:15px}
 .hd02 .cf02 .ui-selectmenu-button span.ui-selectmenu-text{padding:0 2rem 0 1rem;height:3rem;line-height:3rem}
 
+/* main mail letter form */
 .cf03{text-align:center;height:19.895rem;background:#000 url(../images/bg_letter.jpg) no-repeat center center;box-sizing:border-box;padding-top:4.875rem}
 .cf03 dl{margin-bottom:2.8rem}
 .cf03 dl dt{font-size:1.875rem;line-height:2rem;color:#fff;font-weight:500;margin-bottom:1rem}
@@ -552,6 +553,7 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .ib06{margin-bottom:0.6rem;padding:0.5rem;background-color:#333}
 .ib06 embed{width:100%;height:30rem}
 
+/* main informaition */
 .lc01 li{float:left;width:25%}
 .lc01 li a{display:block;width:100%;position:relative}
 .lc01 li a em{display:block;height:2.5rem;font-size:0.8125rem;line-height:2.5rem;color:#ccc;background-color:#1e5eff;padding:0 1.25rem;color:#fff;border-left:1px solid #4b7eff}
@@ -661,10 +663,12 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .lc08 li a img{width:100%;display:block;border:1px solid #ccc;box-sizing:border-box}
 .lc08 li.on a img{border-color:#1e5eff}
 
+/* logo */
 .lg01 a{display:block;width:7.8125rem;height:4.375rem;background:url(../images/logo02@2x.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
 header.hd02 .lg01 a{background-image:url(../images/logo@2x.png)}
 .lg02 a{display:block;width:7.8125rem;height:4.375rem;background:url(../images/logo@2x.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
 
+/* footer menu1 */
 .ng02{border-top:1px solid #ccc;overflow:hidden;margin-bottom:2.2rem}
 .ng02 dl{float:left;width:25%}
 .ng02 dl dt{border-bottom:1px solid #cbcbcb;height:4.75rem;line-height:4.75rem;margin-bottom:1.3rem;padding-left:1.25rem}
@@ -673,12 +677,14 @@ header.hd02 .lg01 a{background-image:url(../images/logo@2x.png)}
 .ng02 dl ul li{margin-bottom:0.5rem}
 .ng02 dl ul li a{font-size:1rem;color:#666}
 
-.ng03{display:inline-block;overflow:hidden;border:1px solid #cbcbcb}
+/* footer menu2 */
+.ng03{display:inline-block;overflow:hidden;border:1px solid #cbcbcb;}
 .ng03 li{float:left;border-left:1px solid #cbcbcb}
 .ng03 li:first-child{border-left:none}
 .ng03 li a{display:block;padding:0 2rem;height:2rem;line-height:2rem;background-color:#e4e4e4;font-size:0.875rem;color:#333}
 .ng03 li a:hover{text-decoration:none;background-color:#666;color:#fff}
 
+/* 헤더 lnb메뉴 */
 .ng04 li{margin-top:1.7rem}
 .ng04 li a{color:#fff;font-size:1.75rem;line-height:1.75rem;color:#fff}
 .ng04 li a:hover{color:#1e5eff;text-decoration:none}
@@ -797,11 +803,12 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .pg03 a{padding:0 0.25rem;display:inline-block;height:2.125rem;line-height:2.125rem;text-align:center;color:#666;border:1px solid #d3d3d3;background-color:#f1f3f5;width:2.125rem;font-size:1rem;padding:0}
 .pg03 a.on, .pg03 a:hover{text-decoration:none;background-color:#333;border-color:#333;color:#fff}
 
+/* popup */
 .pp01:before{content:"";display:block;position:fixed;left:0;top:0;width:100%;height:100%;background-color:#000;opacity:0.6;z-index:10}
 .pp01 .popupBox{position:absolute;width:63rem;padding:1.875rem;box-sizing:border-box;background-color:#fff;z-index:15}
 .pp01 .popupBox a.closeB{position:absolute;top:-3.125rem;right:0px;display:block;width:1.875rem;height:1.875rem;;background:url(../images/btn_close02.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
 #popup_member_type.pp01 .popupBox{width:33rem}
-.pp01_01 .popupBox{width:24rem}
+.pp01_01 .popupBox{width:24rem;}
 .pp01_01 .popupBox .th03{border-bottom:2px solid #ccc}
 .pp01_01 .popupBox a.closeB{top:2.2rem;right:1.875rem;width:1.25rem;height:1.25rem;;background:url(../images/btn_close03.png) no-repeat 0 0;background-size:cover}
 
@@ -844,6 +851,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tbl03.collectionView td.rightC{width:31.5789%;padding:0;vertical-align:top}
 .tbl03.collectionView .flexible *{vertical-align:top;height:30rem}
 
+/* main headline*/
 .tc01{position:relative}
 .tc01 h2{font-size:1.5rem;line-height:1.5rem;color:#333;margin-bottom:1.25rem}
 .tc01 .conA{display:block}
@@ -865,8 +873,8 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc02.toc ul>li{position:relative;padding-left:1.25rem;font-size:1rem;margin-bottom:0.625rem}
 .tc02.toc ul>li>em{position:absolute;left:0;top:0;color:#000;font-weight:500}
 
-.tc03{clear:both;border:1px solid #ccc;padding:30px;border-radius:5px;background-color:#eee}
-.tc03 dt{color:#333;font-weight:bold;margin-bottom:0.625rem;font-size:1.2rem}
+.tc03{clear:both;border:1px solid #ccc;padding:1.875rem;border-radius:0.3125rem;background-color:#eee}
+.tc03 dt{color:#333;font-weight:bold;margin-bottom:0.625rem;font-size:1.2rem;line-height:1.6rem}
 
 .tc04{padding:2.5rem 1.25rem;border-bottom:1px solid #ccc}
 .tc04 p{font-size:0.875rem;line-height:1.25rem;margin-bottom:0.9375rem}
@@ -928,7 +936,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 
 /* error report popup */
 .tc11 .topBtn{text-align:right;position:relative;z-index:100}
-.tc11 .pp01 .popupBox{position:relative}
+.tc11 .pp01 .popupBox{position:relative;}
 
 .tc12 a{display:block;text-decoration:none;height:17.6875rem;background:#b3b3b3 url(../images/bg_banner01.png) no-repeat center bottom}
 .tc12 em{display:block;height:2.6875rem;line-height:2.6875rem;background:rgba(0,0,0,0.6);text-align:center;font-size:0.8125rem;letter-spacing:-1px;color:#fff;margin-bottom:0.8rem}

@@ -5,11 +5,158 @@ html{font-size:11px}
 .inner{margin:0 15px}
 .fc08 .conBody{width:auto;margin:0}
 .fc09{width:auto;margin:0}
-.pp01 .popupBox{width:100%;left:0 !important}
+.pp01 .popupBox{width:100%;left:0 !important;}
 .fc04_04 .conBody{background:none}
 .fc14 .outer{width:auto;margin:0}
 footer .tc11{bottom:29.2rem}
 }
+
+@media all and (max-width:768px){
+html{font-size:11px}
+.inner{margin:0 10px}
+  
+body.mobile header .inner2{display:block;padding:0}
+body.mobile header .mobileHeader{height:68px;background-color:#fff}
+body.mobile header .mobileMenuOpen{float:right;height:25px;line-height:25px;margin:20px 10px 0 0;text-decoration:none}
+body.mobile header .mobileMenuOpen i{font-size:25px;color:#333}
+body.mobile header .mobileMenuOpen:active i{color:#1e5eff}
+body.mobile header .lg01{float:left;margin:15px 0 0 10px}
+body.mobile header nav .mobileMenuClose{position:absolute;top:0;right:0;height:25px;line-height:25px;margin:20px 10px 0 0;text-decoration:none}
+body.mobile header nav .mobileMenuClose i{font-size:25px;color:#fff}
+body.mobile header nav .mobileMenuClose:active i{color:#ccc}
+
+body.mobile header nav{position:fixed;top:0;left:0;width:100%;height:100%;box-sizing:border-box;padding:70px 10px 10px 10px;background:rgba(30,94,255,0.9);z-index:100}
+body.mobile header nav menu{margin-bottom:0}
+body.mobile header nav menu li{margin-bottom:0}
+body.mobile header nav menu li a{display:block;height:auto;font-size:18px;font-weight:400;line-height:18px;border-bottom:1px solid #fff;padding:15px 10px}
+body.mobile header nav menu li.search a{border-bottom:none;padding:15px 10px 10px}
+body.mobile header nav menu li a:hover{text-decoration:none;color:#333}
+body.mobile header .cf02{display:block;margin-bottom:0;padding:0 10px 15px;border-bottom:1px solid #fff}
+
+header.hd01{position:relative;display:table;height:340px;background-size:auto 100%;background-position:center 68px}
+header.hd01:after{top:68px;height:272px}
+header.hd01 .td03{position:absolute;max-width:100%;width:100%;right:0;bottom:0;box-sizing:border-box}
+
+header.hd02{height:68px !important;padding:0}
+header.hd02 nav{float:none;margin-top:0}
+header.hd02 .cf02{float:none;margin-top:0;width:auto}
+
+header.hd02 .ng04{position:static}
+header.hd02 menu{float:none;margin:0}
+header.hd02 menu li{float:none;margin-left:0;position:relative;background:none;padding-left:0}
+header.hd02 menu li a{font-size:18px;font-weight:500;color:#fff}
+header.hd02 menu li a:hover{color:#333}
+header.hd02 menu li.on a{color:#fff}
+
+footer{overflow:visible;padding:15px 0 0}
+footer .lg02{float:none;margin-bottom:15px}
+footer .ng03{float:none;margin-top:0;margin-bottom:15px}
+footer .ng02{clear:both;margin-bottom:0}
+footer address{padding:20px 0;font-size:12px;line-height:18px;text-align:left}
+footer address span{display:block}
+footer .tc11{position:absolute;top:0;right:0}
+
+/* frame containers */
+.fc01{padding:20px 0 0}
+  
+.fc02{padding:0;overflow:hidden}
+.fc02 .tc01{float:none;width:auto;margin-left:0;border-bottom:1px solid #ccc;padding:20px 0}
+.fc02 .tc01.notice{margin-left:0}
+
+.fc04{padding-bottom:40px}
+.fc04 .header{padding:0;overflow:hidden}
+.fc04 .header .ng06{float:none}
+.fc04 .header .th01{float:none}
+.fc04 .conBody .leftA{float:none;width:auto;padding:0 0 10rem}
+.fc04 .conBody .rightA{float:none;width:auto}
+.fc04 .conBody .postA{padding:1.875rem 0}
+
+.fc04_01 .conBody .leftA{float:none;width:auto;border-bottom:1px solid #ccc;margin-bottom:20px}
+.fc04_01 .conBody .rightA{float:none;width:auto}
+.fc04_02 .conBody{padding:2.5rem 0}
+.fc04_03 .header{padding-bottom:0;overflow:visible}
+.fc04_03 .header .th01{float:none;margin-top:3rem}
+.fc04_03 .lowerA{padding-bottom:3.875rem}
+.fc04_04 .header{border-bottom:none}
+.fc04_04 .th01{border-bottom:2px solid #ccc}
+.fc04_04 .th01 > dt{margin-bottom:2rem}
+.fc04_04 .conBody{/*! background:url(../images/bg_fc04_04.jpg) repeat-y; background-position:right 0 top*/}
+.fc04_05 .lowerA{padding:2.5rem 0 0}
+
+
+/* header search form */
+.cf02 fieldset{background-color:#fff}
+.cf02 fieldset input{float:left;height:40px;width:80%;margin-right:0;margin-left:0;font-size:12px;border-bottom:none;color:#333}
+.cf02 fieldset button{float:right;height:40px;width:40px;background-color:#fff;color:#ccc;margin-left:0;background:url(../images/btn_search.png) no-repeat center center;text-indent:-9999px;background-size:15px}
+.cf02 .ui-selectmenu-button{display:none}
+.hd02 .cf02 fieldset label{display:none}
+.hd02 .cf02 fieldset input{height:40px;width:80%;margin-right:0;margin-left:0;font-size:12px;background-color:#fff;border:none;color:#333}
+.hd02 .cf02 fieldset button{float:right;height:40px;width:40px;background-color:#fff;color:#333;margin-right:0;margin-left:0}
+.hd02 .cf02 fieldset .closeBtn{display:none}
+
+
+/* main mail letter form */
+.cf03{height:200px;background-size:auto 200px;padding-top:40px}
+.cf03 dl{margin-bottom:2rem}
+.cf03 fieldset input{float:left;width:67%;margin-left:10px;height:50px}
+.cf03 fieldset button{float:right;width:25%;height:50px;padding:0;margin-right:10px}
+
+/* main informaition */
+.lc01{margin-bottom:20px}
+.lc01 li{width:50%;border-right:1px solid #fff;border-bottom:1px solid #fff;box-sizing:border-box}
+.lc01 li a{}
+.lc01 li a span strong{display:block;padding:15px 15px}
+.lc01 li a span i{top:inherit;bottom:1rem}
+
+/* logo */
+.lg01 a{display:block;width:63px;height:35px}
+header.hd01 .lg01 a{background-image:url(../images/logo@2x.png)}
+.lg02 a{display:block;width:63px;height:35px}
+
+
+/* footer menu1 */
+.ng02{margin-bottom:2.2rem;border-top:none}
+.ng02 dl{float:none;width:auto;margin-bottom:25px}
+.ng02 dl dt{border-top:1px solid #cbcbcb;border-bottom:1px solid #cbcbcb;height:auto;line-height:15px;margin-bottom:5px;padding:10px}
+.ng02 dl dt a{font-size:15px;font-weight:600}
+.ng02 dl dd{padding-left:10px}
+.ng02 dl ul li{margin-bottom:0}
+.ng02 dl ul li a{font-size:12px}
+
+/* footer menu1 */
+.ng03{display:table;width:100%}
+.ng03 li{float:none;display:table-cell;text-align:center;border-bottom:none;}
+.ng03 li a{display:block;padding:6px 10px;height:auto;line-height:16px;font-size:13px}
+
+
+/* 헤더 lnb메뉴 */
+.ng04 li{margin-top:0}
+.ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;line-height:18px;border-bottom:1px solid #fff;padding:15px 10px}
+.ng04 li a:hover{color:#333}
+header.hd02 .ng04 li{display:block;margin:0}
+header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;color:#fff;line-height:18px;border-bottom:1px solid #fff;padding:15px 10px}
+
+/* popup */
+.pp01 .popupBox{width:100% !important;padding:10px;box-sizing:border-box;background-color:#fff;z-index:15;}
+.pp01 .popupBox a.closeB{position:absolute;top:10px;right:10px}
+#popup_member_type.pp01 .popupBox{width:33rem}
+.pp01_01 .popupBox{width:100% !important;}
+.pp01_01 .popupBox .th03{border-bottom:2px solid #ccc}
+.pp01_01 .popupBox a.closeB{top:10px;right:10px;width:1.25rem;height:1.25rem;;background:url(../images/btn_close03.png) no-repeat 0 0;background-size:cover}
+
+/* main headline*/
+.tc01 a.more{top:20px;background-size:5.2px 8px}
+
+/* error report popup */
+.tc11{width:100%}
+
+/* main header banner info */
+.td03{border-radius:0}
+
+
+  
+}
+
 
 @media all and (min-width:961px) and (max-width:1280px){
 html{font-size:14px}

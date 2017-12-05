@@ -38,35 +38,39 @@ window.onload = function() {
 	<div id="seoul-common-gnb"></div>
 	<header class="hd01" style="background-image:url(../image-tile/12.png)">
 		<div class="inner2">
-		<div class="lg01"><a href="/">서울기록원</a></div>
-		<nav>
-			<menu>
-				<li class="news"><a href="#">뉴스</a></li>
-				<li class="info"><a href="#">소개 및 안내</a></li>
-				<li class="explore"><a href="#">탐색</a></li>
-				<li class="search"><a href="#">검색</a></li>
-			</menu>
-			<form class="cf02" action="" method="post">
-				<fieldset>
-					<label for="search_option">검색옵션</label>
-					<select name="search_option" id="search_option">
-						<option value="0" selected="selected">웹사이트에서 검색하기</option>
-						<option value="1">기록에서 검색하기</option>
-					</select>
-					<label for="search_query">검색어</label>
-					<input type="text" name="query" id="search_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
-					<button>웹사이트에서 검색</button>
-					<a class="closeBtn" href="#"><i class="xi-close"></i>닫기</a>
-				</fieldset>
-			</form>
-			<ul class="ng04">
-				<li class="login"><a href="#">로그인</a></li>
-				<li class="join"><a href="#">회원가입</a></li>
-			</ul>
-		</nav>
-		<div class="td03">
-			<a href="#">[아이템] 마포로 제 2구역 2지구 재개발사업 신축공사 조감도...</a> | <em>23212232</em><i class="xi-arrow-right"></i>
-		</div>
+			<div class="mobileHeader">
+				<div class="lg01"><a href="/">서울기록원</a></div>
+				<a href="javascript:;" class="mobileMenuOpen" title="모바일 메뉴 열기"><i class="xi-bars"></i></a>
+			</div>
+			<nav>
+				<menu>
+					<li class="news"><a href="#">뉴스</a></li>
+					<li class="info"><a href="#">소개 및 안내</a></li>
+					<li class="explore"><a href="#">탐색</a></li>
+					<li class="search"><a href="#">검색</a></li>
+				</menu>
+				<form class="cf02" action="" method="post">
+					<fieldset>
+						<label for="search_option">검색옵션</label>
+						<select name="search_option" id="search_option">
+							<option value="0" selected="selected">웹사이트에서 검색하기</option>
+							<option value="1">기록에서 검색하기</option>
+						</select>
+						<label for="search_query">검색어</label>
+						<input type="text" name="query" id="search_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+						<button>웹사이트에서 검색</button>
+						<a class="closeBtn" href="#"><i class="xi-close"></i>닫기</a>
+					</fieldset>
+				</form>
+				<ul class="ng04">
+					<li class="login"><a href="#">로그인</a></li>
+					<li class="join"><a href="#">회원가입</a></li>
+				</ul>
+				<a href="javascript:;" class="mobileMenuClose" title="모바일 메뉴 열기"><i class="xi-close"></i></a>
+			</nav>
+			<div class="td03">
+				<a href="#">[아이템] 마포로 제 2구역 2지구 재개발사업 신축공사 조감도...</a> | <em>23212232</em><i class="xi-arrow-right"></i>
+			</div>
 		</div>
 	</header>
 	<!-- 메인 컨텐츠 영역 -->
