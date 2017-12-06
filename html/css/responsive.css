@@ -62,6 +62,14 @@ footer .tc11{position:absolute;top:0;right:0}
 .fc02{padding:0;overflow:hidden}
 .fc02 .tc01{float:none;width:auto;margin-left:0;border-bottom:1px solid #ccc;padding:20px 0}
 .fc02 .tc01.notice{margin-left:0}
+  
+.fc03 .header{text-align:left;padding:0 0 1rem}
+.fc03 .TopA{border-bottom:1px solid #b8b8b8;padding:1rem 0 1rem;overflow:hidden}
+.fc03 .TopA .leftF{float:left}
+.fc03 .TopA .rightF{float:right}
+.fc03 .TopA .rightF .btn01{margin:0 0 0 0.625rem}
+.fc03 .lowerA{padding:1.875rem 0 0}
+.fc03 .lowerA .uiArea{padding-bottom:10rem}
 
 .fc04{padding-bottom:40px}
 .fc04 .header{padding:0;overflow:hidden}
@@ -82,6 +90,12 @@ footer .tc11{position:absolute;top:0;right:0}
 .fc04_04 .th01 > dt{margin-bottom:2rem}
 .fc04_04 .conBody{/*! background:url(../images/bg_fc04_04.jpg) repeat-y; background-position:right 0 top*/}
 .fc04_05 .lowerA{padding:2.5rem 0 0}
+
+.fc11 .leftA{float:none;width:auto;padding-right:0;border-right:none;border-bottom:1px solid #ccc;padding-bottom:2rem;margin-bottom:2rem}
+.fc11 .rightA{float:none;width:auto}
+
+.fc12 .btn04{font-size:0;width:auto;padding:0 10px}
+.fc12 .btn04 i{font-size:16px;line-height:2.625rem;margin-right:0}
 
   /* introduce page */
 .con01{margin-bottom:6rem}
@@ -111,14 +125,22 @@ footer .tc11{position:absolute;top:0;right:0}
 .con01 .unit03 .currents li.l6{margin-right:0}
 
 /* header search form */
-.cf02 fieldset{background-color:#fff}
-.cf02 fieldset input{float:left;height:40px;width:80%;margin-right:0;margin-left:0;font-size:12px;border-bottom:none;color:#333}
-.cf02 fieldset button{float:right;height:40px;width:40px;background-color:#fff;color:#ccc;margin-left:0;background:url(../images/btn_search.png) no-repeat center center;text-indent:-9999px;background-size:15px}
-.cf02 .ui-selectmenu-button{display:none}
+.cf02 fieldset{position:relative}
+.cf02 fieldset input{float:left;height:40px;width:100%;margin-right:0;margin-left:0;text-indent:10px;font-size:12px;border-bottom:none;color:#333;background-color:#fff}
+.cf02 fieldset button{position:absolute;right:0;bottom:0;height:40px;width:40px;background-color:#fff;color:#ccc;margin-left:0;background:#fff url(../images/btn_search.png) no-repeat center center;text-indent:-9999px;background-size:15px}
+.cf02 .ui-selectmenu-button{border-radius:0;border:none;border-bottom:none;height:40px;min-width:100%;font-size:12px;color:#333;margin-right:0;margin-bottom:5px;background-color:#fff}
+.cf02 .ui-selectmenu-button span.ui-icon{background:url(../images/bl_arr01.png) no-repeat center center;background-size:10px 8px;right:12px}
+.cf02 .ui-selectmenu-button span.ui-selectmenu-text{padding:0 10px;height:40px;line-height:40px}
+.ui-menu{border:1px solid #fff;background-color:#fff}
+.ui-menu .ui-menu-item{padding:0.6em 1em;font-size:12px}
+
 .hd02 .cf02 fieldset label{display:none}
-.hd02 .cf02 fieldset input{height:40px;width:80%;margin-right:0;margin-left:0;font-size:12px;background-color:#fff;border:none;color:#333}
-.hd02 .cf02 fieldset button{float:right;height:40px;width:40px;background-color:#fff;color:#333;margin-right:0;margin-left:0}
+.hd02 .cf02 fieldset input{height:40px;width:100%;margin-right:0;margin-left:0;font-size:12px;background-color:#fff;border:none;color:#333}
+.hd02 .cf02 fieldset button{position:absolute;right:0;bottom:0;height:40px;width:40px;background-color:#fff;color:#333;margin-right:0;margin-left:0}
 .hd02 .cf02 fieldset .closeBtn{display:none}
+.hd02 .cf02 .ui-selectmenu-button{border-radius:0;border:none;border-bottom:none;height:40px;min-width:100%;font-size:12px;color:#333;margin-right:0;margin-bottom:5px;background-color:#fff}
+.hd02 .cf02 .ui-selectmenu-button span.ui-icon{background:url(../images/bl_arr01.png) no-repeat center center;background-size:10px 8px;right:12px}
+.hd02 .cf02 .ui-selectmenu-button span.ui-selectmenu-text{padding:0 10px;height:40px;line-height:40px}
 
 
 /* main mail letter form */
@@ -126,6 +148,19 @@ footer .tc11{position:absolute;top:0;right:0}
 .cf03 dl{margin-bottom:2rem}
 .cf03 fieldset input{float:left;width:67%;margin-left:10px;height:50px}
 .cf03 fieldset button{float:right;width:25%;height:50px;padding:0;margin-right:10px}
+
+/* browse view slider */
+.ib03 .imgScale li a{padding:0 1rem}
+
+.ib03 .fullImage{display:none;position:fixed;top:0;left:0;width:100%;height:100%;padding:10px}
+.ib03 .fullImage .thumb{float:none;width:auto;height:100%;padding-right:0;border-right:none}
+.ib03 .fullImage .thumb img{width:100% !important;height:auto !important}
+.ib03 .fullImage .control{float:none;width:100%;padding-left:0;position:absolute;bottom:0;left:0;padding:10px;box-sizing:border-box}
+.ib03 .fullImage .control a{float:left;width:3.375rem;height:3.375rem;line-height:3.375rem;font-size:2rem;text-align:center;border:1px solid #e6e6e6;background-color:#fff}
+.ib03 .fullImage .control a.prev{border-right:none}
+.ib03 .fullImage .control a:hover{text-decoration:none;background-color:#eee}
+.ib03 .fullImage .control a.close{float:right}
+.ib03 .fullImage .control .imgControl{position:static;float:left}
 
 /* main informaition */
 .lc01{margin-bottom:20px}
@@ -162,6 +197,12 @@ header.hd01 .lg01 a{background-image:url(../images/logo@2x.png)}
 header.hd02 .ng04 li{display:block;margin:0}
 header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;color:#fff;line-height:18px;border-bottom:1px solid #fff;padding:15px 10px}
 
+/* browse navigator */
+.ng09 li{background-position:0 6px}
+.ng09 li:before{top:9px}
+.ng09 li.record:before{content:none}
+  .ng09 li a{line-height:14px}
+
 /* popup */
 .pp01 .popupBox{width:100% !important;padding:10px;box-sizing:border-box;background-color:#fff;z-index:15;}
 .pp01 .popupBox a.closeB{position:absolute;top:10px;right:10px}
@@ -169,6 +210,14 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 .pp01_01 .popupBox{width:100% !important;}
 .pp01_01 .popupBox .th03{border-bottom:2px solid #ccc}
 .pp01_01 .popupBox a.closeB{top:10px;right:10px;width:1.25rem;height:1.25rem;;background:url(../images/btn_close03.png) no-repeat 0 0;background-size:cover}
+
+#popup_report_data_error .inputGroup{max-height:14rem}
+#popup_report_data_error .input{margin-bottom:0.5rem}
+#popup_report_data_error .input a.close{top:0.8rem;right:0.8rem}
+
+/* browse view table */
+.tbl03{margin-bottom:10px}
+.tbl03 table th{width:25%}
 
 /* main headline*/
 .tc01 a.more{top:20px;background-size:5.2px 8px}
@@ -185,6 +234,10 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 .th01_02 > dt .link{position:absolute;right:0;top:0}
 .th01_02 .tc10{clear:both;border-top:1px solid #ccc;padding-top:1.2rem}
 
+/* browse view headline */
+.th05 dt{width:70%;padding-left:0}
+.th05 dt a{display:none}
+  
 /* main header banner info */
 .td03{border-radius:0}
 

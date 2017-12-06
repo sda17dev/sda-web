@@ -11,7 +11,7 @@ var main_min_height = 640;
 
 $(window).resize(function() {
 	fontSize = parseFloat($("html").css("fontSize"));
-	//브라우져 사이즈 실시간 반응
+	//브라우져 사이즈 변화에 따른 실시간 반응
 	var dw = $(document).width();
 	if(dw < 768 && device_status == "pc"){	//PC에서 모바일로 변경시
 		$("body").removeClass('pc');
@@ -23,14 +23,6 @@ $(window).resize(function() {
 		$("body").addClass('pc');
 		init_pc();
 		device_status = "pc";
-	}
-	//메인 배너 화면 꽉채우기
-	if($("body").hasClass('pc')){
-		if(window.innerHeight >= main_min_height)
-			$("header.hd01").height(window.innerHeight);
-		else
-			$("header.hd01").height(main_min_height);
-		header_height = $("header").height();
 	}
 });
 
@@ -74,14 +66,6 @@ $(document).ready(function() {
 		$("body").addClass('pc');
 		init_pc();
 		device_status = "pc";
-	}
-	//메인 배너 화면 꽉채우기
-	if($("body").hasClass('pc')){
-		if(window.innerHeight >= main_min_height)
-			$("header.hd01").height(window.innerHeight);
-		else
-			$("header.hd01").height(main_min_height);
-		header_height = $("header").height();
 	}
 	fontSize = parseFloat($("html").css("fontSize"));
 	//폼요소 스타일링
@@ -382,6 +366,15 @@ $(document).ready(function() {
 		$(".tc11 .pp01").slideUp();
 		return false;
    });
+	//팝업 - 정보오류보고 팝업 열기
+	$(".tc09.apply .btn02").bind('click', function() {
+		$("#popup_report_data_error").show();
+		return false;
+   });
+	$("#popup_report_data_error .inputGroup .input a.close").bind('click', function() {
+		$(this).parent(".input").remove();
+		return false;
+   });
 	
 	//상세검색폼 키워드 입력란 추가
 	$('.cf09 .keywords ul li.add button').on('click', function(event) {
@@ -463,7 +456,14 @@ function init_pc(){
 	$("header nav").show();
 	$("header .mobileMenuOpen").unbind();
 	$("header .mobileMenuClose").unbind();
-	
+
+	//메인 배너 화면 꽉채우기
+	if(window.innerHeight >= main_min_height)
+		$("header.hd01").height(window.innerHeight);
+	else
+		$("header.hd01").height(main_min_height);
+	header_height = $("header").height();
+
 	//검색창 제어
 	$("header menu li.search a").click(function(){
 		$("header").addClass("searchMode");
@@ -487,6 +487,8 @@ function init_mobile(){
 	$("header menu li a:not(li.search a)").unbind();
 	$(".cf02 .closeBtn").unbind();
 
+	$("header.hd01").height(340);
+	
 	//헤더 LNB 메뉴(mobile)
 	$("header .mobileMenuOpen").bind("click",function(){
 		$("header nav").slideDown();
@@ -500,6 +502,18 @@ function init_mobile(){
 
 //폼 유효성 검사
 function form_validation(){
+	//헤더 검색창
+	$(".cf02").bind('submit', function() {
+		var input = $("input",$(this));
+		if(input.val().trim() == ""){
+			alert("검색어를 입력해 주세요");
+			input.focus();
+			return false;
+		}
+		else
+			return true;
+	});	
+
 	$(".cf05.join").validate({
 		rules: {
 			join_email: {

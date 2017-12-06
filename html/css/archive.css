@@ -156,7 +156,7 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 
 .fc11{overflow:hidden}
 .fc11 .leftA{float:left;width:74%;padding-right:1.5%;border-right:1px solid #ccc;padding-bottom:10rem}
-.fc11 .rightA{float:right;width:23%;padding-bottom:5rem}
+.fc11 .rightA{float:right;width:23%;padding-bottom:5rem;position:relative}
 
 .fc12{text-align:right}
 .fc12 .btn04{margin-left:0.4rem}
@@ -815,6 +815,15 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .pp01_01 .popupBox .th03{border-bottom:2px solid #ccc}
 .pp01_01 .popupBox a.closeB{top:2.2rem;right:1.875rem;width:1.25rem;height:1.25rem;;background:url(../images/btn_close03.png) no-repeat 0 0;background-size:cover}
 
+#popup_report_data_error:before{content:none}
+#popup_report_data_error .popupBox{bottom:0;right:0;border:1px solid #ccc;width:100%}
+#popup_report_data_error .inputGroup{max-height:14.7rem;overflow:scroll;margin-bottom:1rem}
+#popup_report_data_error .input{position:relative}
+#popup_report_data_error .input a.close{position:absolute;top:0.6rem;right:0.6rem;display:block;width:0.8rem;height:0.8rem;background:url(../images/btn_close03.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
+#popup_report_data_error .textarea label{font-size:1rem;display:block;margin-bottom:0.4rem}
+
+
+
 .tbl01{border-top:2px solid #ccc;border-bottom:1px solid #ccc;padding-top:2px}
 .tbl01 table{border-spacing:0;border-collapse:collapse;width:100%}
 .tbl01 caption{height:0px;text-indent:-9999px}
@@ -845,6 +854,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tbl02 tbody td a:hover{color:#1e5eff}
 .tbl02.requestHistory .title a{display:inline-block;line-height:1rem;width:21rem;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden}
 
+/* browse view table */
 .tbl03{border-bottom:2px solid #ccc;margin-bottom:0.4rem}
 .tbl03 table{border-spacing:1px;width:100%;margin-bottom:0.4rem}
 .tbl03 table caption{position:absolute;left:-9999px}
@@ -938,7 +948,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc10_01{border-top:1px solid #ccc;border-bottom:1px solid #ccc;padding:1rem 0 1.5rem 0.2rem}
 
 /* error report popup */
-.tc11 .topBtn{text-align:right;position:relative;z-index:100}
+.tc11 .topBtn{text-align:right;position:relative;z-index:50}
 .tc11 .pp01 .popupBox{position:relative;}
 
 .tc12 a{display:block;text-decoration:none;height:17.6875rem;background:#b3b3b3 url(../images/bg_banner01.png) no-repeat center bottom}
