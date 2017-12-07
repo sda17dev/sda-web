@@ -71,6 +71,14 @@ footer .tc11{position:absolute;top:0;right:0}
 .fc03 .lowerA{padding:1.875rem 0 0}
 .fc03 .lowerA .uiArea{padding-bottom:10rem}
 
+.fc03 .header{text-align:left;padding:0 0 1.6rem}
+.fc03 .TopA .leftF{float:none;text-align:center}
+.fc03 .TopA .rightF{float:none;text-align:center}
+.fc03 .TopA .rightF .btn01{margin:0 0 0 0.625rem}
+.fc03 .TopA .td01{margin-bottom:0.6rem;text-align:center}
+.fc03 .lowerA{padding:1.875rem 0 0}
+.fc03 .lowerA .uiArea{padding-bottom:10rem}
+
 .fc04{padding-bottom:40px}
 .fc04 .header{padding:0;overflow:hidden}
 .fc04 .header .ng06{float:none;margin-bottom:1rem}
@@ -83,13 +91,23 @@ footer .tc11{position:absolute;top:0;right:0}
 .fc04_01 .conBody .rightA{float:none;width:auto}
 .fc04_02 .conBody{padding:2.5rem 0}
 .fc04_03 .header{padding-bottom:0;overflow:visible}
-.fc04_03 .header .th01{float:none;margin-top:3rem}
+.fc04_03 .header .th01{float:none;margin-top:0}
 .fc04_03 .lowerA{padding-bottom:3.875rem}
 .fc04_04 .header{border-bottom:none}
-.fc04_04 .th01{border-bottom:2px solid #ccc}
+.fc04_04 .th01{border-bottom:2px solid #ccc;margin-bottom:0}
 .fc04_04 .th01 > dt{margin-bottom:2rem}
 .fc04_04 .conBody{/*! background:url(../images/bg_fc04_04.jpg) repeat-y; background-position:right 0 top*/}
 .fc04_05 .lowerA{padding:2.5rem 0 0}
+
+.fc06 .leftA{float:none;width:auto}
+.fc06 .rightA{float:none;width:auto;padding-bottom:3.75rem}
+.fc06 .rightA .ng05{margin-top:1.875rem}
+
+.fc10 .leftF{float:none}
+.fc10 .rightF{float:none}
+.fc10 .th07{margin-bottom:1rem}
+.fc10 .pg03{float:left}
+.fc10 .cf10{text-align:center;margin-bottom:0.5rem}
 
 .fc11 .leftA{float:none;width:auto;padding-right:0;border-right:none;border-bottom:1px solid #ccc;padding-bottom:2rem;margin-bottom:2rem}
 .fc11 .rightA{float:none;width:auto}
@@ -201,6 +219,17 @@ footer .tc11{position:absolute;top:0;right:0}
 .cf03 fieldset input{float:left;width:67%;margin-left:10px;height:50px}
 .cf03 fieldset button{float:right;width:25%;height:50px;padding:0;margin-right:10px}
 
+/* search facet option*/
+.cf04 dl{padding:10px}
+.cf04 dl dt{margin-bottom:0}
+
+/* detail search form */
+.cf09 dl{padding:1.5rem}
+.cf09 dl dt{padding-bottom:1.5rem}
+.cf09 dl.keyword dd label{width:14%}
+.cf09 dl.keyword dd ul{width:86%;float:left;overflow:hidden}
+.cf09 dl.check dd{overflow:hidden}
+.cf09 dl.check dd span{float:left}
 /* browse view slider */
 .ib03 .imgScale li a{padding:0 1rem}
 
@@ -214,12 +243,37 @@ footer .tc11{position:absolute;top:0;right:0}
 .ib03 .fullImage .control a.close{float:right}
 .ib03 .fullImage .control .imgControl{position:static;float:left}
 
+/* yongsan view slider */
+.ib05{margin-bottom:0rem}
+.ib05 .picSlide{margin-bottom:1rem}
+.ib05 .picSlide .slideA{float:none;width:auto}
+.ib05 .picSlide .contentA{float:none;width:auto;padding-right:7rem}
+.ib05 .picSlide .slideControl{position:absolute;top:0;right:0;height:5rem}
+.ib05 .picSlide .slideA{position:relative}
+.ib05 .picSlide .slideA dt{height:24rem;line-height:24rem}
+.ib05 .picSlide .slideA dt img{box-shadow:3px 8px 7px #999}
+.ib05 .picSlide .slideA dd{padding:47px 15px 15px 15px;line-height:1.4rem}
+.ib05 .picSlide .slideA .imgScale{top:24rem}
+.ib05 .picSlide .slick-dots{bottom:inherit;top:4rem;right:0}
+.ib05 .picSlide .slick-dots b{letter-spacing:0}
+.ib05 .picSlide .contentA p{margin-bottom:1rem}
+
+.ib05 .pagingSlide{height:10rem;line-height:10rem}
+.ib05 .pagingSlide .slide{padding-top:1.2rem}
+.ib05 .pagingSlide .slide li{padding:1rem 0.5rem}
+.ib05 .pagingSlide .slide li a{display:block;box-shadow:0rem 0.5rem 0.5rem #999}
+.ib05 .pagingSlide .slide li a img{height:5rem;display:block}
+.ib05 .pagingSlide .slide li.slick-current a:before{border:0.3rem solid #1e5eff}
+.ib05 .pagingSlide .slideControl a{line-height:10rem}
+
 /* main informaition */
 .lc01{margin-bottom:20px}
 .lc01 li{width:50%;border-right:1px solid #fff;border-bottom:1px solid #fff;box-sizing:border-box}
 .lc01 li a{}
 .lc01 li a span strong{display:block;padding:15px 15px}
 .lc01 li a span i{top:inherit;bottom:1rem}
+
+.lc02_01 dd{margin-left:0}
 
 /* logo */
 .lg01 a{display:block;width:63px;height:35px}
@@ -248,6 +302,9 @@ header.hd01 .lg01 a{background-image:url(../images/logo@2x.png)}
 .ng04 li a:hover{color:#333}
 header.hd02 .ng04 li{display:block;margin:0}
 header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;color:#fff;line-height:18px;border-bottom:1px solid #fff;padding:15px 10px}
+/* search filter */
+.ng08 dl{float:none;width:auto}
+.ng08 .ui-buttonset.tkg01 label.ui-button{background-size:1.125rem}
 
 /* browse navigator */
 .ng09 li{background-position:0 6px}
@@ -276,6 +333,8 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 
 /* error report popup */
 .tc11{width:100%}
+
+.tc12 a{height:20rem;background-position:center bottom -4rem}
 
 /* 서브페이지 제목 */
 .th01{margin-bottom:1rem}

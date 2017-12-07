@@ -319,10 +319,10 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .cf03 fieldset label{display:none}
 .cf03 fieldset input{width:21rem;height:3.125rem;text-indent:10px;border:none;margin-right:0.5rem;vertical-align:top;font-size:1.125rem}
 .cf03 fieldset button{padding:0 2.4rem;height:3.125rem;border:none;background-color:#1e5eff;color:#fff;font-size:1.125rem;cursor:pointer;vertical-align:top}
-
+/* search facet option*/
 .cf04 dl{border:1px solid #e6e6e6;background-color:#f1f3f5;padding:1.25rem 1.25rem;margin-bottom:0.625rem}
 .cf04 dl dt{margin-bottom:0.625rem;font-weight:bold}
-.cf04 .ui-buttonset.tkg01 label.ui-button{min-width:6.875rem;font-size:0.875rem;text-align:left;border:none;background:url(../images/btn_check_off.jpg) no-repeat 0 0.375rem;padding-left:1rem}
+.cf04 .ui-buttonset.tkg01 label.ui-button{min-width:6.875rem;font-size:0.875rem;text-align:left;border:none;background:url(../images/btn_check_off.jpg) no-repeat 0 0.375rem;padding-left:1rem;background-size:1.125rem}
 .cf04 .ui-buttonset.tkg01 label.ui-button:hover{text-decoration:underline}
 .cf04 .ui-buttonset.tkg01 label.ui-button.ui-state-active{background-image:url(../images/btn_check_on.jpg)}
 .cf04 .ui-buttonset.tkg01 .ui-button-text-only .ui-button-text{color:#666}
@@ -430,11 +430,19 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 
 /* list sort form */
 .cf10 label{margin-right:0.5rem;vertical-align:middle}
+/*
 .cf10 .ui-spinner{width:3rem;height:1.8rem;line-height:1.5rem;box-sizing:border-box;font-size:0.8rem;color:#333;font-weight:500;border-radius:0;border-color:#e6e6e6}
 .cf10 .ui-spinner .ui-icon.ui-icon-triangle-1-n{background:url(../images/btn_up01.png) no-repeat center 7px}
 .cf10 .ui-spinner .ui-icon.ui-icon-triangle-1-s{background:url(../images/btn_down01.png) no-repeat center 3px}
 .cf10 .ui-spinner a.ui-spinner-button{border-left:none}
+*/
 .cf10 button{height:1.75rem;border:1px solid #ccc;box-sizing:border-box;background-color:#e1e3e6;color:#333;padding:0 0.8rem;margin-left:-3px;vertical-align:middle}
+.cf10 .ui-selectmenu-button{border-radius:0;background:none;min-width:3.75rem;height:1.75rem;vertical-align:middle;margin-right:0.3rem}
+.cf10 .ui-selectmenu-button span.ui-icon{background:url(../images/btn_select01.png) no-repeat right center;background-size:0.5625rem 0.9375rem}
+.cf10 .ui-selectmenu-button span.ui-selectmenu-text{color:#333;font-size:0.8rem;padding:0 0.6rem;line-height:1.75rem}
+#sort_count-menu{border:1px solid #ccc}
+#sort_count-menu .ui-menu-item{padding-left:0.6rem;list-style-image:none;background-color:#fff;color:#999;padding:0.2rem 0 0.2rem 0.6rem;font-size:0.8rem}
+#sort_count-menu .ui-menu-item.ui-state-focus{background:#1e5eff;color:#fff;border:none}
 
 /* introduce inquiry form */
 .cf11 p{font-size:0.875rem;line-height:1.2rem;color:#999;padding:2rem 0}
@@ -615,7 +623,7 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .lc05 li a strong{display:block;font-size:1.5rem;line-height:2rem;font-weight:500;color:#333;margin-bottom:0.5rem}
 .lc05 li a i{color:#666;font-weight:500}
 .lc05 li.on a strong{color:#1e5eff}
-.lc05 li ul{margin-top:0.3rem;padding-left:3.75rem;;background:url(../images/icon_child02.png) no-repeat 1rem 2rem}
+.lc05 li ul{margin-top:0.3rem;padding-left:3.75rem;;background:url(../images/icon_child02.png) no-repeat 1rem 2rem;background-size:1.3125rem}
 
 /* search guide list */
 .lc06{margin-bottom:3rem}
@@ -623,9 +631,9 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .lc06 > dt:before{content:"";display:inline-block;width:1.25rem;height:1.25rem;border-radius:0.625rem;background-color:#1e5eff;margin-right:0.5rem}
 .lc06 > dd{margin-left:1.8rem}
 .lc06 ul{border-top:1px solid #ececec}
-.lc06 li dl dt{border-bottom:1px solid #ececec;padding:1rem 0;background:url(../images/bl_down01.png) no-repeat right 1rem center;overflow:hidden}
-.lc06 li dl dt em{float:left;width:2.875rem;height:2.875rem;line-height:2.875rem;border-radius:1.438rem;color:#1e5eff;text-align:center;border:1px solid #ebebeb;margin-right:0.6rem}
-.lc06 li dl dt a{display:block;font-size:1.25rem;line-height:2.875rem;color:#333}
+.lc06 li dl dt{border-bottom:1px solid #ececec;padding:1.6rem 0;background:url(../images/bl_down01.png) no-repeat right 1rem center;overflow:hidden;background-size:1.3125rem 0.6875rem;position:relative}
+.lc06 li dl dt em{position:absolute;left:0;top:0.9rem;display:block;width:2.875rem;height:2.875rem;line-height:2.875rem;border-radius:1.438rem;color:#1e5eff;text-align:center;border:1px solid #ebebeb;margin-right:0.6rem}
+.lc06 li dl dt a{display:block;padding:0 4rem;font-size:1.25rem;line-height:1.6rem;color:#333}
 .lc06 li dl dt a:hover{color:#1e5eff;text-decoration:none}
 .lc06 li dl dd{display:none;border-bottom:1px solid #ececec;padding:1.8rem 2rem 1.8rem 6rem;position:relative}
 .lc06 li dl dd em{position:absolute;left:0;top:2.063rem;display:block;width:5rem;height:1.813rem;line-height:1.813rem;background-color:#1e5eff;color:#fff;border-radius:0 0.875rem 0.875rem 0;text-align:center}
@@ -735,7 +743,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .ng07_02 li{float:none;display:inline-block;width:30%}
 .ng07_02 li a{padding:0}
 .ng07_02 li.on a{padding:0;background-color:#666;border-color:#666;color:#fff}
-
+/* search filter */
 .ng08{overflow:hidden;padding-bottom:0.9375rem;margin-bottom:1.875rem;border-bottom:1px solid #ddd}
 .ng08 dl{float:left;width:70%}
 .ng08 dl dt{float:left;font-weight:bold;margin-right:0.3125rem;color:#333}
@@ -792,7 +800,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .pg01 a.first, .pg01 a.end{letter-spacing:-0.5rem;text-indent:-0.4375rem}
 .pg01 a.prev{margin-right:0.625rem}
 .pg01 a.next{margin-left:0.625rem}
-.pg01 a.on, .pg01 a:hover{text-decoration:none;color:#1e5eff}
+.pg01 a.on, .pg01 a:hover{text-decoration:none;color:#1e5eff;}
 .pg01 a.first:hover, .pg01 a.prev:hover, .pg01 a.next:hover, .pg01 a.end:hover{background-color:#1e5eff;color:#fff}
 .pg01 .preOption{display:inline-block;margin-right:1rem}
 .pg01 .preOption a{display:inline-block;height:2.125rem;line-height:2.125rem;text-align:center;color:#666;border:1px solid #d3d3d3;width:2.125rem;font-size:1rem;padding:0}
@@ -951,8 +959,8 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 /* error report popup */
 .tc11 .topBtn{text-align:right;position:relative;z-index:50}
 .tc11 .pp01 .popupBox{position:relative;}
-
-.tc12 a{display:block;text-decoration:none;height:17.6875rem;background:#b3b3b3 url(../images/bg_banner01.png) no-repeat center bottom}
+/* right area banner */
+.tc12 a{display:block;text-decoration:none;height:17.6875rem;background:#b3b3b3 url(../images/bg_banner01.png) no-repeat center center;background-size:100% auto}
 .tc12 em{display:block;height:2.6875rem;line-height:2.6875rem;background:rgba(0,0,0,0.6);text-align:center;font-size:0.8125rem;letter-spacing:-1px;color:#fff;margin-bottom:0.8rem}
 .tc12 strong{display:block;width:10rem;margin:0 auto;padding-bottom:0.3rem;line-height:2rem;text-align:center;font-size:1.5rem;color:#fff;border-bottom:1px solid #fff}
 
