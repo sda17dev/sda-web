@@ -117,7 +117,7 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .fc04_04 .th01 > dt{margin-bottom:2rem}
 .fc04_04 .conBody{/*! background:url(../images/bg_fc04_04.jpg) repeat-y; background-position:right 0 top*/}
 .fc04_05 .lowerA{padding:2.5rem 0 0}
-
+/* 관리자 프레임 */
 .fc05{height:100%}
 .fc05 .inner{overflow:hidden;padding:0 0 10rem}
 .fc05 .header{padding:2.2rem 0;overflow:hidden}
@@ -326,7 +326,7 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .cf04 .ui-buttonset.tkg01 label.ui-button:hover{text-decoration:underline}
 .cf04 .ui-buttonset.tkg01 label.ui-button.ui-state-active{background-image:url(../images/btn_check_on.jpg)}
 .cf04 .ui-buttonset.tkg01 .ui-button-text-only .ui-button-text{color:#666}
-
+/* member login,join form */
 .cf05{border:1px solid #e6e6e6;background-color:#f1f3f5;padding:1.25rem}
 .cf05 p{margin-bottom:1.25rem}
 .cf05 p.input label{display:inline-block;width:20%;height:3.125rem;line-height:3.125rem;vertical-align:top;font-size:1rem;font-weight:bold}
@@ -644,7 +644,7 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 /* collection main bookmarks */
 .lc07{position:relative;border-top:1px solid #ccc;padding-top:2.5rem;margin-bottom:1.5rem}
 .lc07 h2{font-size:1.5rem;color:#333;margin-bottom:2rem}
-.lc07 a.more{position:absolute;right:0;top:2.5rem;font-size:0.875rem;background:url(../images/bl_arr05.png) no-repeat right center;padding-right:1rem}
+.lc07 a.more{position:absolute;right:0;top:2.5rem;font-size:0.875rem;background:url(../images/bl_arr05.png) no-repeat right center;background-size:0.7rem 0.875rem;padding-right:1rem}
 .lc07 .bookmarks dl{width:31.58%;box-sizing:border-box;padding:1.25rem;margin-bottom:2.63%;background-size:100% auto;background-color:#5a5a5a}
 .lc07 .bookmarks dl dt{font-size:1.5rem;color:#fff;margin-bottom:1.2rem}
 .lc07 .bookmarks dl ul{margin-bottom:1.25rem;overflow:hidden}
@@ -659,6 +659,8 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .lc07 .bookmarks dl li a img{width:100%;display:block}
 
 .lc07 .bookmarks dl .btn01{width:100%;height:2.5rem;line-height:2.5rem;font-size:0.875rem}
+.lc07 .bookmarks dl dd .btns{margin-bottom:0.6rem}
+.lc07 .bookmarks dl dd .btns .btn03{margin-right:0.3rem}
 .lc07 .bookmarks .gutter-sizer{width:2.63%}
 
 /* collection view gallery */
@@ -702,6 +704,7 @@ header.hd02 .lg01 a{background-image:url(../images/logo@2x.png)}
 header.hd02 .ng04 li{display:inline;margin:0 0 0 2.5rem}
 header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;font-weight:500;color:#666}
 
+/* 관리자 메뉴 */
 .ng05{position:relative}
 .ng05 > li{border-bottom:1px solid #e6e6e6;width:73%}
 .ng05 > li:first-child{border-top:1px solid #e6e6e6}
@@ -824,19 +827,19 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .pp01_01 .popupBox a.closeB{top:2.2rem;right:1.875rem;width:1.25rem;height:1.25rem;;background:url(../images/btn_close03.png) no-repeat 0 0;background-size:cover}
 
 #popup_report_data_error:before{content:none}
-#popup_report_data_error .popupBox{bottom:0;right:0;border:1px solid #ccc;width:100%}
-#popup_report_data_error .inputGroup{max-height:14.7rem;overflow:scroll;margin-bottom:1rem}
+#popup_report_data_error .popupBox{top:0;right:0;bottom:0;right:0;width:100%;border:1px solid #e6e6e6;padding:1rem}
+#popup_report_data_error .inputGroup{margin-bottom:1rem}
 #popup_report_data_error .input{position:relative}
 #popup_report_data_error .input a.close{position:absolute;top:0.6rem;right:0.6rem;display:block;width:0.8rem;height:0.8rem;background:url(../images/btn_close03.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
 #popup_report_data_error .textarea label{font-size:1rem;display:block;margin-bottom:0.4rem}
 
 
-
+/* common list */
 .tbl01{border-top:2px solid #ccc;border-bottom:1px solid #ccc;padding-top:2px}
 .tbl01 table{border-spacing:0;border-collapse:collapse;width:100%}
 .tbl01 caption{height:0px;text-indent:-9999px}
-.tbl01 thead th{background-color:#f1f3f5;padding:1rem;font-size:1rem;font-weight:500}
-.tbl01 tbody td{border-bottom:1px solid #d3d2d2;padding:1rem;font-size:0.875rem;text-align:center}
+.tbl01 thead th{background-color:#f1f3f5;padding:1rem;font-size:1rem;line-height:1.2rem;font-weight:500}
+.tbl01 tbody td{border-bottom:1px solid #d3d2d2;padding:1rem;font-size:0.875rem;line-height:1.2rem;text-align:center}
 .tbl01 tbody td.title{text-align:left}
 .tbl01 tbody td.title a{font-size:1rem;color:#333;font-weight:600}
 .tbl01 tbody td a:hover{color:#1e5eff}
@@ -868,9 +871,10 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tbl03 table caption{position:absolute;left:-9999px}
 .tbl03 table th{background-color:#f1f3f5;text-align:right;padding:0.85rem;width:20%;font-weight:normal;color:#808080;font-size:1.125rem}
 .tbl03 table td{font-size:1.125rem;padding:1rem 1.5rem}
-.tbl03.collectionView{padding:1.875rem 0;margin-bottom:1.5rem}
-.tbl03.collectionView td.rightC{width:31.5789%;padding:0;vertical-align:top}
-.tbl03.collectionView .flexible *{vertical-align:top;height:30rem}
+.tbl03.collectionView{padding:1.875rem 0;margin-bottom:1.5rem;overflow:hidden}
+.tbl03.collectionView table{width:68%;padding:0;float:left}
+.tbl03.collectionView .rightC{width:31.5789%;padding:0;float:right}
+.tbl03.collectionView .flexible *{vertical-align:top;min-height:30rem}
 
 /* main headline*/
 .tc01{position:relative}
@@ -890,7 +894,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc02 dd a{font-size:1.2rem}
 .tc02 form{margin-bottom:1.25rem}
 .tc02 form label{display:none}
-.tc02 form input{display:inline-block;height:2rem;width:70%;vertical-align:top;border:none;margin-right:3%;margin-left:-4px;font-size:1rem;background-color:#fff;border:1px solid #ccc;box-sizing:border-box}
+.tc02 form input{display:inline-block;height:2rem;width:70%;vertical-align:top;border:none;margin-right:3%;font-size:1rem;background-color:#fff;border:1px solid #ccc;box-sizing:border-box}
 .tc02 form button{display:inline-block;height:2rem;width:27%;vertical-align:top;border:none;background-color:#1e5eff;color:#fff;font-size:1rem;line-height:1rem;font-weight:400;cursor:pointer;margin-left:-4px}
 .tc02.toc ul>li{position:relative;padding-left:1.25rem;font-size:1rem;margin-bottom:0.625rem}
 .tc02.toc ul>li>em{position:absolute;left:0;top:0;color:#000;font-weight:500}
@@ -903,7 +907,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc04 a{display:inline-block;height:3.125rem;line-height:3.125rem;text-align:center;background-color:#636666;width:100%;color:#fff;font-size:1.125rem;cursor:pointer;text-decoration:none}
 .tc04 a:hover{background-color:#333}
 .tc04_01{padding:0 1.25rem 1rem;border-bottom:none}
-
+/* user info */
 .tc05{border:1px solid #ccc;overflow:hidden;display:table;width:100%;box-sizing:border-box}
 .tc05 .picA{display:table-cell;width:40%;height:100%;text-align:center;padding:1.875rem 0}
 .tc05 .picA em{display:block;width:8.125rem;height:8.125rem;margin:0 auto 3.125rem;overflow:hidden;border-radius:4.0625rem}
@@ -988,7 +992,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .th01_02 .tc10{clear:both;border-top:1px solid #ccc;padding-top:1.2rem}
 
 .th02{border-bottom:1px solid #ccc;font-size:2.25rem;font-weight:600;line-height:3rem;padding-bottom:2rem;color:#333}
-.th03{font-size:1.5rem;line-height:1.875rem;border-bottom:1px solid #ccc;padding-bottom:24px;margin-bottom:24px;color:#333}
+.th03{font-size:1.5rem;line-height:1.875rem;border-bottom:1px solid #ccc;padding-bottom:1.5rem;margin-bottom:1.5rem;color:#333}
 .th04{font-size:1.5rem;line-height:1.875rem;border:1px solid #e6e6e6;background-color:#f1f3f5;padding:1rem 1.2rem;color:#333}
 
 /* browse view headline */
@@ -1036,6 +1040,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 
 .postA dl{margin-bottom:1.875rem}
 .postA dl dt{border:1px solid #ccc;padding:0.3125rem 0.625rem;border-radius:0.3125rem;background-color:#eee;margin-bottom:0.625rem}
+.postA dl.tc02 dt{border:none;padding:0;border-radius:0;background-color:none;margin-bottom:1rem}
 
 .postA iframe{max-width:100%}
 

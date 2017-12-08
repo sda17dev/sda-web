@@ -233,7 +233,7 @@ $(document).ready(function() {
 		});
 		return false;
 	});
-	function view_in_full($source) {
+	function view_in_full($source) {	//전체화면
 		var $target = $(".ib03 .fullImage .thumb img");
 		$target.attr("src",$source.attr("src"));
 		 if($source.width() > $source.height()){
@@ -294,7 +294,7 @@ $(document).ready(function() {
 		centerMode: true,
 		variableWidth: true
 	});
-	$(".ib05 .picSlide .imgScale a.enlarge").bind('click', function() {
+	$(".ib05 .picSlide .imgScale a.enlarge").bind('click', function() {	//확대
 		$target = $(".ib05 .picSlide li.slick-current dt img");
 		var cur_scale = $target.attr("data-scale");
 		cur_scale *= 1;
@@ -303,7 +303,7 @@ $(document).ready(function() {
 		$target.attr("data-scale",cur_scale);
 		return false;
 	});
-	$(".ib05 .picSlide .imgScale a.reduce").bind('click', function() {
+	$(".ib05 .picSlide .imgScale a.reduce").bind('click', function() {	//축소
 		$target = $(".ib05 .picSlide li.slick-current dt img");
 		var cur_scale = $target.attr("data-scale");
 		cur_scale *= 1;
@@ -392,15 +392,16 @@ $(document).ready(function() {
        return false;
    });
 	//콜렉션 메인 사용자 즐겨찾기 모음 그리드 정렬
+	var $grid01,$grid02,$grid03;
 	if($('.lc07 .bookmarks').length > 0){
-		var $grid01 = $('.lc07 .bookmarks').masonry({
+		$grid01 = $('.lc07 .bookmarks').masonry({
 			itemSelector: '.box',
 			gutter:'.gutter-sizer'
 		});
 		$grid01.imagesLoaded().progress( function() {
 		  $grid01.masonry('layout');
 		});
-		var $grid02 = $('.lc07 .bookmarks ul').masonry({
+		$grid02 = $('.lc07 .bookmarks ul').masonry({
 			itemSelector: '.grid-item',
 			columnWidth: '.grid-item'
 		});
@@ -409,7 +410,7 @@ $(document).ready(function() {
 		});
 	}
 	if($('.lc08').length > 0){
-		var $grid03 = $('.lc08').masonry({
+		$grid03 = $('.lc08').masonry({
 			itemSelector: '.grid-item',
 			columnWidth: '.grid-item'
 		});
@@ -477,7 +478,6 @@ function init_pc(){
 		$("header").removeClass("searchMode");
 		return false;
 	});
-
 }
 //모바일 버젼 초기화
 function init_mobile(){
