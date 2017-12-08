@@ -130,7 +130,8 @@ footer .tc11{position:absolute;top:0;right:0}
 .fc10 .th07{margin-bottom:1rem}
 .fc10 .pg03{float:left}
 .fc10 .cf10{text-align:center;margin-bottom:0.5rem}
-
+.fc10 .btn01{margin-bottom:1rem;width:100%;height:2.5rem;line-height:2.5rem}
+  
 .fc11 .leftA{float:none;width:auto;padding-right:0;border-right:none;border-bottom:1px solid #ccc;padding-bottom:2rem;margin-bottom:2rem}
 .fc11 .rightA{float:none;width:auto}
 
@@ -249,6 +250,11 @@ footer .tc11{position:absolute;top:0;right:0}
 .cf05 p.input input{width:75%;margin-left:-4px}
 .cf05 p.input label.error{margin-left:25%}
 .cf05.login p.check{padding-left:25%}
+/* list search form */
+.cf06{padding-bottom:10px}
+.cf06  input{width:70%}
+.cf06  button{width:29%}
+.cf06.addMemberType input{width:33%}
 /* popup form */
 .cf08 .leftA{float:none;width:auto;margin-bottom:1.875rem}
 .cf08 .rightA{float:none;width:auto;margin-bottom:1.875rem}
@@ -372,6 +378,19 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 .ng05 > li > dl li a{padding:1rem;background-size:7.14px 10px;background-position:right 1.25rem center}
 .ng05 > li > dl li a strong{margin-bottom:0.2rem;line-height:1.2rem}
 .viewMode .ng05 > li > dl{border-left:none;border-right:none}
+/* list filter option */
+.ng07 li{float:left;margin-left:0.625rem;margin-bottom:0.625rem}
+.ng07 li a{display:block;height:2.5rem;line-height:2.5rem;border:1px solid #cbcbcb;background-color:#e4e4e4;color:#212121;padding:0 1.25rem;border-radius:0.1875rem}
+.ng07 li a:hover{text-decoration:none;background-color:#666;color:#fff}
+.ng07 li a i{margin-right:0.3125rem;font-size:1.125rem}
+.ng07 .ui-selectmenu-button{border-radius:0.1875rem;border:1px solid #cbcbcb;background:#e4e4e4;min-width:8.125rem;font-size:1rem;color:#212121;vertical-align:top}
+.ng07 .ui-selectmenu-button span.ui-icon{background:url(../images/bl_arr01.png) no-repeat center center;right:0.9375rem}
+.ng07 .ui-selectmenu-button span.ui-selectmenu-text{padding:0.5625rem 1.25rem 0.5625rem}
+.ng07_01{padding:0.625rem 0 0 0}
+.ng07_01 li.on a{background-color:#666;border-color:#666;color:#fff}
+.ng07_02{padding:1.4rem 0 0 0;text-align:center}
+.ng07_02 li{float:none;display:inline-block;width:100%;margin-left:0}
+.ng07_02 li.on a{padding:0;background-color:#666;border-color:#666;color:#fff}
 /* search filter */
 .ng08 dl{float:none;width:auto}
 .ng08 .ui-buttonset.tkg01 label.ui-button{background-size:1.125rem}
@@ -380,8 +399,12 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 .ng09 li{background-position:0 6px}
 .ng09 li:before{top:9px}
 .ng09 li.record:before{content:none}
-  .ng09 li a{line-height:14px}
-
+.ng09 li a{line-height:14px}
+/* admin menu open/close */
+.ng12{display:block;margin-bottom:10px}
+.ng12 a{border:1px solid #ccc;text-decoration:none;display:inline-block;height:30px;padding:0 10px;line-height:30px}
+.ng12 a.mobileMenuOpen{display:none}
+.ng12 a i{font-size:1.5rem;margin-left:5px;vertical-align:middle}
 /* popup */
 .pp01 .popupBox{width:100% !important;padding:10px;box-sizing:border-box;background-color:#fff;z-index:15;margin-top:-150px !important}
 .pp01 .popupBox a.closeB{position:absolute;width:18px;height:18px;top:10px;right:10px;background-image:url(../images/btn_close03.png)}

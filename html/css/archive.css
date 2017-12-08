@@ -345,10 +345,10 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .cf05.login p.check{border-bottom:1px solid #ccc;text-align:left;padding-left:20%;height:1.875rem;line-height:0.875rem}
 .cf05.resetPassword p.submit,
 .cf05.resetPassword2 p.submit{border-top:1px solid #ccc;padding-top:1.25rem;margin-bottom:0}
-
-.cf06{text-align:center;padding-bottom:30px;border-bottom:1px solid #ccc}
+/* list search form */
+.cf06{text-align:center;padding-bottom:1.875rem;border-bottom:1px solid #ccc}
 .cf06 label{display:none}
-.cf06  input{display:inline-block;height:3.125rem;width:50%;vertical-align:top;margin-right:1%;margin-left:-4px;font-size:1rem;background-color:transparent;border:1px solid #ccc;box-sizing:border-box;color:#333;text-indent:1rem}
+.cf06  input{display:inline-block;height:3.125rem;width:50%;vertical-align:top;margin-right:1%;font-size:1rem;background-color:transparent;border:1px solid #ccc;box-sizing:border-box;color:#333;text-indent:1rem}
 .cf06  button{display:inline-block;width:23%;vertical-align:top;margin-left:-4px}
 .cf06.addMemberType input{width:33%}
 
@@ -731,7 +731,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .ng06 li a{color:#999}
 .ng06 li.current a{font-weight:bold;border-bottom:1px solid #666;font-size:0.875rem;color:#333}
 .ng06 li.current a:hover{text-decoration:none;border-color:#ff0000}
-
+/* list filter option */
 .ng07{overflow:hidden}
 .ng07 li{float:left;margin-left:0.625rem;margin-bottom:0.625rem}
 .ng07 li a{display:block;height:2.5rem;line-height:2.5rem;border:1px solid #cbcbcb;background-color:#e4e4e4;color:#212121;padding:0 1.25rem;border-radius:0.1875rem}
@@ -795,7 +795,8 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .ng11.ui-tabs-nav li a{font-size:0.875rem;float:none !important;display:block;text-align:center;padding:0.6rem 0 !important}
 .ng11.ui-tabs-nav li.ui-tabs-active a{border-top:0.2rem solid #1e5eff;color:#1e5eff;font-weight:600;padding:0.4rem 0 0.6rem 0 !important}
 .ng11.ui-widget-header{background:none}
-
+/* admin menu open/close button */
+.ng12{display:none}
 /* pagination */
 .pg01{text-align:center}
 .pg01 a{padding:0 0.25rem}
