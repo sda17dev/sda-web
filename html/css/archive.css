@@ -351,7 +351,7 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .cf06  input{display:inline-block;height:3.125rem;width:50%;vertical-align:top;margin-right:1%;font-size:1rem;background-color:transparent;border:1px solid #ccc;box-sizing:border-box;color:#333;text-indent:1rem}
 .cf06  button{display:inline-block;width:23%;vertical-align:top;margin-left:-4px}
 .cf06.addMemberType input{width:33%}
-
+/* notice write form */
 .cf07 fieldset{border-top:2px solid #ccc;border-bottom:1px solid #ccc;margin-bottom:1.25rem}
 .cf07 dl{border-bottom:1px solid #ccc;display:table;width:100%}
 .cf07 dl dt{display:table-cell;width:20%;padding:0 1.3rem}
@@ -834,7 +834,6 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 #popup_report_data_error .input a.close{position:absolute;top:0.6rem;right:0.6rem;display:block;width:0.8rem;height:0.8rem;background:url(../images/btn_close03.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
 #popup_report_data_error .textarea label{font-size:1rem;display:block;margin-bottom:0.4rem}
 
-
 /* common list */
 .tbl01{border-top:2px solid #ccc;border-bottom:1px solid #ccc;padding-top:2px}
 .tbl01 table{border-spacing:0;border-collapse:collapse;width:100%}
@@ -849,13 +848,13 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tbl01.noticeList .t02 a{display:inline-block;line-height:1rem;width:21rem;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden}
 .tbl01.memberList .btn03{width:8rem;padding:0}
 .tbl01.imageTileList td.t02{width:10rem}
-.tbl01.imageTileList td.t02 a{display:inline-block;width:10rem;hegiht:8rem;overflow:hidden}
-.tbl01.imageTileList td.t02 a img{width:10rem;min-hegiht:8rem;display:block}
+.tbl01.imageTileList td.t02 a{display:inline-block;width:10rem;height:8rem;overflow:hidden}
+.tbl01.imageTileList td.t02 a img{width:10rem;min-height:8rem;display:block}
 .tbl01.requestList td.title{text-align:center}
 .tbl01.imgCollection td.t01 a{display:block;margin:0 auto;width:5.625rem;overflow:hidden}
 .tbl01.imgCollection td.t01 a img{display:block;width:100%;border:1px solid #ccc;box-sizing:border-box}
 .tbl01.imgCollection td.t02{width:65%}
-
+/* 관리자 요청기록 */
 .tbl02{border-bottom:1px solid #ccc}
 .tbl02 table{border-spacing:0;border-collapse:collapse;width:100%}
 .tbl02 caption{height:0px;text-indent:-9999px}
@@ -920,7 +919,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc05 .infoA ul li a{color:#1e5eff;margin-left:2%}
 .tc05 .infoA ul li em{margin-left:2%}
 .tc05 .infoA .btn01{float:right;background-color:#666}
-
+/* 아이템 추가 */
 .tc06 .searchA{margin-bottom:0.625rem}
 .tc06 .searchA label{display:inline-block;height:2rem;line-height:2rem;text-align:center;border:1px solid #e6e6e6;background-color:#f1f3f5;color:#333;vertical-align:top;width:20%}
 .tc06 .searchA input{vertical-align:top;width:53%;margin-left:-4px;margin-right:2%}
@@ -928,7 +927,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc06 .itemA li{background-color:#f1f3f5;margin-bottom:1px;padding:0 0.5rem;height:2.25rem;line-height:2.25rem;position:relative}
 .tc06 .itemA li a{display:block;position:absolute;right:0;top:0;width:2.25rem;height:2.25rem;text-indent:-9999px;background:#b3b3b3 url(../images/btn_close01.png) no-repeat center center}
 .tc06 .itemA li a:hover{background-color:#333}
-
+/* 관리자 요청 상세 */
 .tc07{border:1px solid #ccc;background-color:#f1f3f5;padding:1.875rem}
 .tc07 dl{font-size:1rem;overflow:hidden;margin-bottom:1rem}
 .tc07 dl dt{float:left;width:25%;font-weight:600}
