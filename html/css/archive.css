@@ -25,6 +25,7 @@ input[type=password],
 input[type=email]{font-size:1rem;height:2.125rem;text-indent:0.625rem;border:1px solid #e6e6e6;box-sizing:border-box}
 textarea{font-size:1rem;padding:0.625rem;border:1px solid #e6e6e6;box-sizing:border-box}
 /* Layout */
+#main_wrap{overflow:hidden}
 #main-content{clear:both}
 #skip_contents{width:100%;}
 #skip-link a{display:block;width:100%;height:40px;line-height:40px;text-align:center;position:absolute;top:-40px;left:0;background:#fff;font-size:14px;font-weight:bold;z-index:50}
@@ -57,9 +58,11 @@ header.hd02{height:8.9rem !important;padding:0 4.5rem;border-bottom:1px solid #b
 header.hd02 .lg01{float:left;margin-top:2.4375rem}
 header.hd02 nav{float:right;margin-top:2.5rem;width:80%;position:relative}
 header.hd02 .cf02{float:right;margin-top:0.5rem;display:none;width:70%}
-header.hd02.searchMode .cf02{display:block}
-header.hd02.searchMode nav menu{display:none}
-header.hd02.searchMode nav .ng04{display:none}
+body.pc header.hd02.searchMode nav{width:100%;overflow:hidden}
+body.pc header.hd02.searchMode nav menu{display:none}
+body.pc header.hd02.searchMode .cf02{display:block;width:100%}
+body.pc header.hd02.searchMode nav .ng04{display:none}
+body.pc header.hd02.searchMode .lg01{display:none}
 
 header.hd02 .ng04{position:absolute;top:-6px;right:0}
 header.hd02 menu{float:right;margin:2.3125rem 0 0 0}
@@ -75,12 +78,14 @@ header.hd02 menu li.on a{color:#1e5eff}
 body.pc header .mobileMenuOpen{display:none}
 body.pc header .mobileMenuClose{display:none}
 
-footer{overflow:visible;padding:3.3rem 0 0;background-color:#f1f3f5}
+footer{overflow:visible;width:100%;padding:3.3rem 0 0;background-color:#f1f3f5;position:relative}
 footer .lg02{float:left;margin-bottom:1.875rem}
 footer .ng03{float:right;margin-top:1.25rem}
 footer .ng02{clear:both}
 footer address{display:block;padding:1.625rem 0;font-size:0.875rem;color:#fff;background-color:#636666;text-align:center;font-weight:300}
-footer .tc11{position:absolute;bottom:25.7rem;right:0}
+footer .tc11{position:absolute;top:-2.25rem;transition:right 0.5s ease 0s}
+footer .tc11.opened{right:24rem}
+footer .tc11.closed{right:1px}
 
 /* frame containers */
 .fc01{padding:5rem 0 0}
@@ -97,6 +102,7 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .fc03 .TopA .rightF .btn01{margin:0 0 0 0.625rem}
 .fc03 .lowerA{padding:1.875rem 0 0}
 .fc03 .lowerA .uiArea{padding-bottom:10rem}
+.fc03 .mobileSearch{display:none}
 
 .fc04 .header{border-bottom:1px solid #ccc;padding:2.2rem 0;overflow:hidden}
 .fc04 .header .ng06{float:right}
@@ -303,12 +309,12 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 .ui-menu .ui-selectmenu-button span.ui-selectmenu-text{color:#fff}
 
 .hd02 .cf02 fieldset label{display:none}
-.hd02 .cf02 fieldset input{display:inline-block;height:3rem;width:35%;vertical-align:top;margin-right:1%;margin-left:-4px;font-size:1rem;background-color:transparent;border:1px solid #ccc;box-sizing:border-box;color:#333;text-indent:1rem}
-.hd02 .cf02 fieldset button{display:inline-block;height:3rem;width:23%;vertical-align:top;border:none;background-color:#1e5eff;color:#fff;font-size:1rem;line-height:1rem;font-weight:400;cursor:pointer;margin-right:1%;margin-left:-4px}
+.hd02 .cf02 fieldset input{display:inline-block;height:3rem;width:45%;vertical-align:top;margin-right:1%;margin-left:-4px;font-size:1rem;background-color:transparent;border:1px solid #ccc;box-sizing:border-box;color:#333;text-indent:1rem}
+.hd02 .cf02 fieldset button{display:inline-block;height:3rem;width:20%;vertical-align:top;border:none;background-color:#1e5eff;color:#fff;font-size:1rem;line-height:1rem;font-weight:400;cursor:pointer;margin-right:1%;margin-left:-4px}
 .hd02 .cf02 fieldset .closeBtn{display:inline-block;height:3rem;line-height:3rem;width:10%;vertical-align:top;border:none;background-color:#555;color:#fff;font-size:1rem;font-weight:400;cursor:pointer;margin-left:-4px;text-align:center}
 .hd02 .cf02 fieldset .closeBtn:hover{text-decoration:none}
-.hd02 .cf02 .ui-selectmenu-button{border-radius:0;border:1px solid #ccc;height:3rem;box-sizing:border-box;background:none;min-width:29%;font-size:1rem;color:#333;vertical-align:top;margin-right:1%}
-.hd02 .cf02 .ui-selectmenu-button span.ui-icon{background:url(../images/bl_arr01.png) no-repeat center center;right:15px}
+.hd02 .cf02 .ui-selectmenu-button{border-radius:0;border:1px solid #ccc;height:3rem;box-sizing:border-box;background:none;min-width:22%;font-size:1rem;color:#333;vertical-align:top;margin-right:1%}
+.hd02 .cf02 .ui-selectmenu-button span.ui-icon{background:url(../images/bl_arr01.png) no-repeat center center;right:0.9rem;background-size:0.75rem 0.6rem}
 .hd02 .cf02 .ui-selectmenu-button span.ui-selectmenu-text{padding:0 2rem 0 1rem;height:3rem;line-height:3rem}
 
 /* main mail letter form */
@@ -322,6 +328,7 @@ footer .tc11{position:absolute;bottom:25.7rem;right:0}
 /* search facet option*/
 .cf04 dl{border:1px solid #e6e6e6;background-color:#f1f3f5;padding:1.25rem 1.25rem;margin-bottom:0.625rem}
 .cf04 dl dt{margin-bottom:0.625rem;font-weight:bold}
+.cf04 dl dt a.mobileToggle{display:none}
 .cf04 .ui-buttonset.tkg01 label.ui-button{min-width:6.875rem;font-size:0.875rem;text-align:left;border:none;background:url(../images/btn_check_off.jpg) no-repeat 0 0.375rem;padding-left:1rem;background-size:1.125rem}
 .cf04 .ui-buttonset.tkg01 label.ui-button:hover{text-decoration:underline}
 .cf04 .ui-buttonset.tkg01 label.ui-button.ui-state-active{background-image:url(../images/btn_check_on.jpg)}
@@ -961,8 +968,13 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc10_01{border-top:1px solid #ccc;border-bottom:1px solid #ccc;padding:1rem 0 1.5rem 0.2rem}
 
 /* error report popup */
-.tc11 .topBtn{text-align:right;position:relative;z-index:50}
-.tc11 .pp01 .popupBox{position:relative;}
+.tc11{position:relative}
+.tc11 .topBtn .btn02{display:none}
+.tc11 .pp01 .popupBox{left:100%;bottom:0;border:1px solid #ccc}
+.tc11 .pp01:before{content:none}
+.tc11.closed a.open{display:block}
+.tc11.opened a.close{display:block}
+
 /* right area banner */
 .tc12 a{display:block;text-decoration:none;height:17.6875rem;background:#b3b3b3 url(../images/bg_banner01.png) no-repeat center center;background-size:100% auto}
 .tc12 em{display:block;height:2.6875rem;line-height:2.6875rem;background:rgba(0,0,0,0.6);text-align:center;font-size:0.8125rem;letter-spacing:-1px;color:#fff;margin-bottom:0.8rem}

@@ -3,12 +3,13 @@
 @media all and (max-width:960px){
 html{font-size:11px}
 .inner{margin:0 15px}
+header.hd02{margin:0;padding:0 15px}
 .fc08 .conBody{width:auto;margin:0}
 .fc09{width:auto;margin:0}
-.pp01 .popupBox{width:100%;left:0 !important;}
+.pp01 .popupBox{width:100%;left:0 !important}
+.tc11 .pp01 .popupBox{left:100% !important;width:24rem !important}
 .fc04_04 .conBody{background:none}
 .fc14 .outer{width:auto;margin:0}
-footer .tc11{bottom:29.2rem}
 }
 
 @media all and (max-width:767px){
@@ -37,7 +38,7 @@ header.hd01{position:relative;display:table;height:340px;background-size:auto 10
 header.hd01:after{top:68px;height:272px}
 header.hd01 .td03{position:absolute;max-width:100%;width:100%;right:0;bottom:0;box-sizing:border-box}
 
-header.hd02{height:68px !important;padding:0}
+header.hd02{height:68px !important;padding:0 10px}
 header.hd02 nav{float:none;margin-top:0}
 header.hd02 .cf02{float:none;margin-top:0;width:auto}
 
@@ -54,7 +55,6 @@ footer .ng03{float:none;margin-top:0;margin-bottom:15px}
 footer .ng02{clear:both;margin-bottom:0}
 footer address{padding:20px 0;font-size:12px;line-height:18px;text-align:left}
 footer address span{display:block}
-footer .tc11{position:absolute;top:0;right:0}
 
 /* frame containers */
 .fc01{padding:20px 0 0}
@@ -240,10 +240,14 @@ footer .tc11{position:absolute;top:0;right:0}
 .cf03 dl{margin-bottom:2rem}
 .cf03 fieldset input{float:left;width:67%;margin-left:10px;height:50px}
 .cf03 fieldset button{float:right;width:25%;height:50px;padding:0;margin-right:10px}
-
+.fc03 .mobileSearch{display:block}
 /* search facet option*/
-.cf04 dl{padding:10px}
+.cf04 dl{padding:6px 10px}
 .cf04 dl dt{margin-bottom:0}
+.cf04 dl dt a.mobileToggle{display:block;background:url(../images/bl_up01.png) no-repeat center center;background-size:1.3125rem 0.6875rem;float:right;width:24px;height:24px;text-indent:-9999px}
+.cf04 dl.mobileClosed dt a.mobileToggle{background-image:url(../images/bl_down01.png)}
+.cf04 dl.mobileClosed dd{display:none}
+  
 /* member login,join form */
 .cf05 p.input label{width:25%}
 .cf05 p.input input{width:75%;margin-left:-4px}
@@ -500,8 +504,7 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 .tc10 dd p{width:65%}
 .tc10 dd a{width:30%;padding:0.4rem 1%;position:relative;top:0}
 
-/* error report popup */
-.tc11{width:100%}
+.tc11 .topBtn .btn02{padding:0 10px}
 
 .tc12 a{height:20rem;background-position:center bottom -4rem}
 
@@ -533,6 +536,7 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 @media all and (min-width:961px) and (max-width:1280px){
 html{font-size:14px}
 .inner{margin:0 40px}
+header.hd02{padding:0 40px}
 .fc04_04 .conBody{background:none}
 .fc14 .outer{width:auto;margin:0}
 .con02 .unit{padding:1.6rem 0}
@@ -546,7 +550,6 @@ html{font-size:14px}
 .con02 .unit01{padding-bottom:25rem}
 .con02 .unit02{padding-bottom:17rem}
 .con02 .unit03 .type03 dd{margin-bottom:1.5rem}
-footer .tc11{bottom:26.8rem}
 }
 
 @media all and (min-width:1281px) and (max-width:1440px){

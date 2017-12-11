@@ -36,7 +36,7 @@ window.onload = function() {
 		<a href="#main-content">컨텐츠 바로가기</a>
 	</div>
 	<div id="seoul-common-gnb"></div>
-	<header class="hd02">
+	<header class="hd02 searchMode">
 		<div class="inner2">
 					<div class="mobileHeader">
 				<div class="lg01"><a href="/">서울기록원</a></div>
@@ -74,6 +74,13 @@ window.onload = function() {
     <div class="fc03" id="main-content">
 		<div class="inner">
 			<div class="TopA">
+				<form class="cf06 mobileSearch" action="" method="post">
+					<fieldset>
+						<label for="mobile_search_query">검색어</label>
+						<input type="text" name="mobile_search_query" id="mobile_search_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+						<button class="btn01">검색</button>
+					</fieldset>
+				</form>
 				<div class="td01 leftF"><i class="xi-search"></i> "<b>용산공원</b>"으로 검색한 결과값 <strong>35,800</strong></div>
 				<ul class="ng07 rightF">
 					<!--li>
@@ -91,20 +98,20 @@ window.onload = function() {
 				<div class="fc06">
 					<div class="leftA">
 						<form class="cf04">
-							<dl>
-								<dt>온라인 열람</dt>
+							<dl class="mobileClosed">
+								<dt>온라인 열람<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
 								<dd class="tkg01">
 								    <input type="checkbox" checked="checked" id="check01_01" name="check01"/><label for="check01_01">온라인 열람 가능 자료(2000)</label>
 								</dd>
 							</dl>
-							<!--dl>
-								<dt>사진콜렉션(구 사진아카이브)</dt>
+							<!--dl class="mobileClosed">
+								<dt>사진콜렉션(구 사진아카이브)<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
 								<dd class="tkg01">
 								    <input type="checkbox" checked="checked" id="check02_01" name="check01"/><label for="check02_01">사진콜렉션 포함(3000)</label>
 								</dd>
 							</dl-->							
-							<dl>
-								<dt>기술계층</dt>
+							<dl class="mobileClosed">
+								<dt>기술계층<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
 								<dd class="tkg01">
 								    <input type="checkbox" id="check03_01" name="check03" checked="checked"/><label for="check03_01">레코드그룹(200)</label>
 								    <input type="checkbox" id="check03_02" name="check03"/><label for="check03_02">시리즈(500)</label>
@@ -112,8 +119,8 @@ window.onload = function() {
 								    <input type="checkbox" id="check03_04" name="check03"/><label for="check03_04">아이템(30000)</label>
 								</dd>
 							</dl>
-							<dl>
-								<dt>생산부서</dt>
+							<dl class="mobileClosed">
+								<dt>생산부서<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
 								<dd class="tkg01">
 								    <input type="checkbox" id="check04_01" name="check04" checked="checked"/><label for="check04_01">공원과(232)</label>
 								    <input type="checkbox" id="check04_02" name="check04"/><label for="check04_02">용산구(2323)</label>
@@ -122,8 +129,8 @@ window.onload = function() {
 								    <input type="checkbox" id="check04_05" name="check04"/><label for="check04_05">건축과(2323)</label>
 								</dd>
 							</dl>
-							<dl>
-								<dt>생산년도</dt>
+							<dl class="mobileClosed">
+								<dt>생산년도<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
 								<dd class="tkg01">
 								    <input type="checkbox" id="check05_01" name="check05" checked="checked"/><label for="check05_01">~1950(343)</label>
 								    <input type="checkbox" id="check05_02" name="check05"/><label for="check05_02">1951~1960(232)</label>
@@ -132,8 +139,8 @@ window.onload = function() {
 								    <input type="checkbox" id="check05_05" name="check05"/><label for="check05_05">~1998(2320)</label>
 								</dd>
 							</dl>							
-							<!--dl>
-								<dt>파일 포맷</dt>
+							<!--dl class="mobileClosed">
+								<dt>파일 포맷<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
 								<dd class="tkg01">
 								    <input type="checkbox" id="check06_01" name="check06" checked="checked"/><label for="check06_01">워드(HWP)</label>
 								    <input type="checkbox" id="check06_02" name="check06"/><label for="check06_02">PDF</label>
@@ -141,8 +148,8 @@ window.onload = function() {
 								    <input type="checkbox" id="check06_04" name="check06"/><label for="check06_04">엑셀(XLS, CSV)</label>
 								</dd>
 							</dl-->
-							<dl>
-								<dt>종류</dt>
+							<dl class="mobileClosed">
+								<dt>종류<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
 								<dd class="tkg01">
 								    <input type="checkbox" id="check07_01" name="check07" checked="checked"/><label for="check07_01">간행물</label>
 								    <input type="checkbox" id="check07_02" name="check07"/><label for="check07_02">문서</label>
@@ -348,38 +355,6 @@ window.onload = function() {
 					</dd>
 				</dl>
 			</div>	
-			<!-- error report popup -->
-			<div class="tc11">
-				<div class="topBtn"><a class="btn02 btn02_01" href="javascript:;">오류신고</a></div>
-				<div id="popup_report_error" class="pp01 pp01_01" style="display:none">
-					<div class="popupBox">
-						<a class="closeB" href="#close">닫기</a>
-						<form class="cf08 cf08_01">
-							<fieldset>
-								<h3 class="th03">오류신고</h3>
-								<div class="input">
-									<label for="error_email">이메일</label>
-									<input type="email" name="error_email" id="error_email" placeholder="이메일"/>
-								</div>
-								<div class="input">
-									<label for="error_desc">오류내용</label>
-									<textarea name="error_desc" id="error_desc" placeholder="오류가 난 상황을 설명하면 서비스 개선에 도움이 됩니다."></textarea>
-								</div>
-								<div class="file">
-									<label for="error_file">파일업로드</label>
-									<input type="file" class="ti01" name="error_file" id="error_file"/>
-									<div class="fake">
-										<span></span>
-										<a class="btn02 btn02_01" href="javascript:;">파일찾기</a>
-									</div>
-								</div>
-							</fieldset>
-							<div class="submit"><button class="btn01">저장</button></div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<!-- //error report popup -->
 		</div>
 		<address>
 			<div class="inner">
@@ -387,6 +362,40 @@ window.onload = function() {
 				<span>COPYRIGHT ©2018 <b>SEOUL METROPOLITAN ARCHIVE</b></span>
 			</div>
 		</address>
+		<!-- error report popup -->
+		<div class="tc11 closed">
+			<div class="topBtn">
+				<a class="btn02 btn02_01 open" href="javascript:;">오류신고</a>
+				<a class="btn02 btn02_01 close" href="javascript:;">닫기<i class="xi-arrow-right"></i></a>
+			</div>
+			<div id="popup_report_error" class="pp01 pp01_01">
+				<div class="popupBox">
+					<form class="cf08 cf08_01">
+						<fieldset>
+							<h3 class="th03">오류신고</h3>
+							<div class="input">
+								<label for="error_email">이메일</label>
+								<input type="email" name="error_email" id="error_email" placeholder="이메일"/>
+							</div>
+							<div class="input">
+								<label for="error_desc">오류내용</label>
+								<textarea name="error_desc" id="error_desc" placeholder="오류가 난 상황을 설명하면 서비스 개선에 도움이 됩니다."></textarea>
+							</div>
+							<div class="file">
+								<label for="error_file">파일업로드</label>
+								<input type="file" class="ti01" name="error_file" id="error_file"/>
+								<div class="fake">
+									<span></span>
+									<a class="btn02 btn02_01" href="javascript:;">파일찾기</a>
+								</div>
+							</div>
+						</fieldset>
+						<div class="submit"><button class="btn01">저장</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- //error report popup -->
 	</footer>
 </div>
 <!-- //main_wrap -->

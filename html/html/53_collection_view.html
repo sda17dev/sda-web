@@ -207,38 +207,6 @@ window.onload = function() {
 					</dd>
 				</dl>
 			</div>	
-			<!-- error report popup -->
-			<div class="tc11">
-				<div class="topBtn"><a class="btn02 btn02_01" href="javascript:;">오류신고</a></div>
-				<div id="popup_report_error" class="pp01 pp01_01" style="display:none">
-					<div class="popupBox">
-						<a class="closeB" href="#close">닫기</a>
-						<form class="cf08 cf08_01">
-							<fieldset>
-								<h3 class="th03">오류신고</h3>
-								<div class="input">
-									<label for="error_email">이메일</label>
-									<input type="email" name="error_email" id="error_email" placeholder="이메일"/>
-								</div>
-								<div class="input">
-									<label for="error_desc">오류내용</label>
-									<textarea name="error_desc" id="error_desc" placeholder="오류가 난 상황을 설명하면 서비스 개선에 도움이 됩니다."></textarea>
-								</div>
-								<div class="file">
-									<label for="error_file">파일업로드</label>
-									<input type="file" class="ti01" name="error_file" id="error_file"/>
-									<div class="fake">
-										<span></span>
-										<a class="btn02 btn02_01" href="javascript:;">파일찾기</a>
-									</div>
-								</div>
-							</fieldset>
-							<div class="submit"><button class="btn01">저장</button></div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<!-- //error report popup -->
 		</div>
 		<address>
 			<div class="inner">
@@ -246,6 +214,40 @@ window.onload = function() {
 				<span>COPYRIGHT ©2018 <b>SEOUL METROPOLITAN ARCHIVE</b></span>
 			</div>
 		</address>
+		<!-- error report popup -->
+		<div class="tc11 closed">
+			<div class="topBtn">
+				<a class="btn02 btn02_01 open" href="javascript:;">오류신고</a>
+				<a class="btn02 btn02_01 close" href="javascript:;">닫기<i class="xi-arrow-right"></i></a>
+			</div>
+			<div id="popup_report_error" class="pp01 pp01_01">
+				<div class="popupBox">
+					<form class="cf08 cf08_01">
+						<fieldset>
+							<h3 class="th03">오류신고</h3>
+							<div class="input">
+								<label for="error_email">이메일</label>
+								<input type="email" name="error_email" id="error_email" placeholder="이메일"/>
+							</div>
+							<div class="input">
+								<label for="error_desc">오류내용</label>
+								<textarea name="error_desc" id="error_desc" placeholder="오류가 난 상황을 설명하면 서비스 개선에 도움이 됩니다."></textarea>
+							</div>
+							<div class="file">
+								<label for="error_file">파일업로드</label>
+								<input type="file" class="ti01" name="error_file" id="error_file"/>
+								<div class="fake">
+									<span></span>
+									<a class="btn02 btn02_01" href="javascript:;">파일찾기</a>
+								</div>
+							</div>
+						</fieldset>
+						<div class="submit"><button class="btn01">저장</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- //error report popup -->
 	</footer>
 </div>
 <!-- //main_wrap -->

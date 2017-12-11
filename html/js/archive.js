@@ -307,13 +307,14 @@ $(document).ready(function() {
 		return false;
    });
 	//팝업 - 오류보고 팝업 열기
-	$(".tc11 .topBtn a").bind('click', function() {
-		$(".tc11 .pp01").slideDown();
+	$(".tc11 .topBtn a.open").bind('click', function() {
+		$(".tc11").removeClass("closed");
+		$(".tc11").addClass("opened");
 		return false;
    });
-	$(".tc11 .closeB").unbind('click');
-	$(".tc11 .closeB").bind('click', function() {
-		$(".tc11 .pp01").slideUp();
+	$(".tc11 .topBtn a.close").bind('click', function() {
+		$(".tc11").removeClass("opened");
+		$(".tc11").addClass("closed");
 		return false;
    });
 	//팝업 - 정보오류보고 팝업 열기
@@ -409,6 +410,7 @@ function init_pc(){
 	$(".mobileMenuClose").unbind();
 	$(".ng05>li>a").unbind();
 	$(".ng05>li>dl li a").unbind();
+	$(".cf04 dl dt a.mobileToggle").unbind();
 	$(".ng05").show();
 
 	//메인 배너 화면 꽉채우기
@@ -540,6 +542,13 @@ function init_mobile(){
 		$(".ng05").slideUp();
 		$(".ng12 .mobileMenuOpen").css("display","inline-block");
 		$(".ng12 .mobileMenuClose").css("display","none");
+		return false;
+	});
+	//패싯검색 모바일 모드
+	$(".cf04 dl dt a.mobileToggle").click(function(){
+		var dl = $(this).parents("dl");
+		if(dl.hasClass("mobileClosed"))	dl.removeClass("mobileClosed");
+		else dl.addClass("mobileClosed");
 		return false;
 	});
 }
