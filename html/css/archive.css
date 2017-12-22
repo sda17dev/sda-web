@@ -1055,4 +1055,5 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .postA dl.tc02 dt{border:none;padding:0;border-radius:0;background-color:none;margin-bottom:1rem}
 
 .postA iframe{max-width:100%}
-
+/* etc */
+#seoul-gnb-plugin .seoul-gnb-holder{max-width:none;margin: 0 40px}
