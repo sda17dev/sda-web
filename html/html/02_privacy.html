@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<title>서울기록원</title>
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+<link rel="stylesheet" type="text/css" href="../css/archive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/archive_slowalk.css"/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css"/><![endif]-->
+<!--[if lt IE 9]><script src="../js/html5.js"></script><![endif]-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src='../js/jquery-1.11.3.min.js'></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="http://www.seoul.go.kr/seoulgnb/gnb.js"></script>
+<script type="text/javascript" src="../js/archive.js"></script>
+<script type="text/javascript">
+// GNB 로딩 스크립트
+// Yjs.Gnb.init('사이트 ID', 'GNB 표출영역 ID');
+window.onload = function() {
+    Yjs.Gnb.init('G188', 'seoul-common-gnb');
+};
+</script>
+</head>
+<body>
+<div id="main_wrap" class="subPage">
+	<div id="skip-link">
+		<a href="#main-content">컨텐츠 바로가기</a>
+	</div>
+	<div id="seoul-common-gnb"></div>
+	<header class="hd02">
+		<div class="inner2">
+			<div class="mobileHeader">
+				<div class="lg01"><a href="/">서울기록원</a></div>
+				<a href="javascript:;" class="mobileMenuOpen" title="모바일 메뉴 열기"><i class="xi-bars"></i></a>
+			</div>
+			<nav>
+				<menu>
+					<li class="news on"><a href="#">뉴스</a></li>
+					<li class="info"><a href="#">소개 및 안내</a></li>
+					<li class="explore"><a href="#">탐색</a></li>
+					<li class="search"><a href="#">검색</a></li>
+				</menu>
+				<form class="cf02" action="" method="post">
+					<fieldset>
+						<label for="search_option">검색옵션</label>
+						<select name="search_option" id="search_option">
+							<option value="0" selected="selected">웹사이트에서 검색하기</option>
+							<option value="1">기록에서 검색하기</option>
+						</select>
+						<label for="search_query">검색어</label>
+						<input type="text" name="query" id="search_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+						<button>웹사이트에서 검색</button>
+						<a class="closeBtn" href="#"><i class="xi-close"></i>닫기</a>
+					</fieldset>
+				</form>
+				<ul class="ng04">
+					<li class="login"><a href="#">로그인</a></li>
+					<li class="join"><a href="#">회원가입</a></li>
+				</ul>
+				<a href="javascript:;" class="mobileMenuClose" title="모바일 메뉴 열기"><i class="xi-close"></i></a>
+			</nav>
+		</div>
+    </header>
+	<!-- 컨텐츠 영역 -->
+    <div class="fc04 fc04_01" id="main-content">
+		<div class="inner">
+			<!-- list header -->
+			<div class="header">
+				<ul class="ng06">
+					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
+					<li><a href="#">정책</a></li>
+					<li class="current"><a href="#">개인정보보호방침</a></li>
+				</ul>
+				<dl class="th01 th01_01">
+					<dt><h1>개인정보보호방침</h1></dt>
+				</dl>
+				<dl class="tc03">
+					<dt>최종 업데이트 날짜</dt>
+					<dd>
+						2017년 12월 21일 | 서울디지털아카이브 서비스 베타(Beta)
+					</dd>
+				</dl>
+			</div>
+			<!-- //list header -->
+			<!-- conBody -->
+			<div class="conBody">
+				<!-- leftA -->
+				<div class="leftA postA searchGuide">
+					<h3 id="title1">서울디지털아카이브 개인정보처리방침</h3>
+					<p>서울디지털아카이브는 서울기록원(Seoul Metropolitan Archive)의 웹 소프트웨어를 지칭합니다. 서울디지털아카이브는  개인정보보호법 제30조 등 관련 법령상의 개인정보 보호규정을 준수하며, 서울시의 '개인정보처리방침'에 따라 서비스됩니다. 서울시의 개인정보처리방침은 다음 링크에서 확인이 가능합니다.</p>
+					<ul>
+						<li>서울시 개인정보처리방침 바로가기 : <a href="http://www.seoul.go.kr/v2007/help/privacy.html">http://www.seoul.go.kr/v2007/help/privacy.html</a></li>
+					</ul>
+					<br/>
+					<h3 id="title2">서울디지털아카이브의 쿠키 사용</h3>
+					<p>쿠키는 사용자가 방문한 웹사이트에서 사용자의 브라우저에 전송되는 작은 텍스트 조각입니다. 쿠키는 웹사이트 배너 설정 등 익명 사용자의 방문 관련 정보를 웹사이트가 기억할 수 있도록 도와줍니다. 그 결과 사용자는 다음에 자신에게 더욱 유용한 사이트의 설정을 유지한 채 방문할 수 있게 됩니다. 쿠키는 중요한 역할을 수행하기 때문에, 쿠키가 없으면 웹 사용이 불편해질 수 있습니다.</p>
+					<p>
+					서울디지털아카이브는 다양한 용도로 쿠키를 사용합니다. 예를 들어 서울디지털아카이브는 보통의 웹사이트가 수집하는 페이지 방문자수 및 고유 사용자(Unique Visitor)를 익명의 통계로 계산합니다. 더욱이 보존가치가 있는 수백만 건의 서울시의 행정, 시민기록 중에 어떤 기록이 조회되는지, 도움이 되는지 확인하고자 기록물에 대한 사용자 활동을 확인하기 위해 활동 정보를 익명으로 수집합니다. 마지막으로 좀 더 괜찮은 웹사이트를 만들고자 쿠키를 사용하기도 합니다. 
+					</p>
+					<p>
+					아래 서울디지털아카이브에서 사용하는 쿠키의 유형 목록을 보고 서울디지털아카이브에서 쿠키를 사용하는 방법을 확인할 수 있습니다.	
+					</p>	
+					<ul>
+						<li>사이트에서 기록물을 사용하는 사용자의 활동과 관련된 쿠키</br>[Cookies essential for using services on this website(Records)]</li>
+						<li>웹사이트와 URL을 기능적으로 향상시키기 위한 영역에 관련된 쿠키</br>[Cookies used to improve the functionality of areas of this website(Website, URL)]</li>
+						<li>서울기록원의 서비스와 웹사이트를 사용하는 사용자 경험을 측정하기 위한 쿠키</br>[ Cookies for measuring user experience of our services and website performance]</li>
+						<li>페이스북 공유기능과 같이 소셜미디어를 통해 확인된 외부 서비스의 쿠키</br>[Third party cookies used to share our content across social media sites.]</li>
+					</ul>
+					<br/>
+					<h3 id="title3">쿠키 사용 목적 : 웹로그 분석</h3>
+					<p>서울시 웹로그 시스템(Wiselog)과 구글 어낼러틱스(Google Analytics)은 서울디지털아카이브의 시스템 운영자로 하여금 방문자의 사이트 활용 방식을 이해하는 데 도움을 주는 웹로그 분석 도구입니다. 이러한 웹로그 시스템은 개별 방문자의 개인 정보를 식별하지 않고 익명의 사용자 정보를 활용하여 웹사이트 사용 통계를 보고하기 위해 쿠키를 사용합니다. 서울기록원을 포함한 지방행정영구기록관의 서비스 이해를 목적으로 서버에서 별도로 쿠키관련 데이터를 수집합니다.</p>
+					<br/>
+					<h3 id="title4">서울디지털아카이브에서 사용하는 쿠키의 유형</h3>
+					<p>
+					<ul>
+						<li>서울시 웹로그 통합 쿠키(영구쿠키) : PCID 등 익명의 정보를 토대로 웹로그의 Unique Visitor 카운팅</li>
+						<li>Google Analytics 관련 쿠키 : GA 등 익명의 정보를 토대로 웹로그 및 인구통계학적 데이터 산출</li>
+					</ul>
+					</p>
+					<br/>
+					<h3 id="title3">브라우저 쿠키 관리</h3>
+					<p>이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서 이용자는 웹브라우저에서 옵션을 설정함으로써 모든 쿠키(영구쿠키, 임시쿠키)를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다.</p>
+					<p>쿠키를 허용하고 싶어하지 않는 사용자들을 위해 대부분의 브라우저는 사용자가 쿠키를 자신에게 맞게 관리할 수 있는 기능을 제공합니다. 일부 브라우저에서는 사용자가 사이트별로 쿠키를 관리하는 규칙을 설정하여 개인정보를 보다 세밀하게 제어할 수 있습니다. 즉, 사용자는 자신이 신뢰하는 사이트에서만 쿠키를 허용할 수 있습니다.</p>
+					<br/>					
+				</div>
+				<!-- //leftA -->
+				<!-- 개인정보보호방침 이력 -->
+				<!--div class="rightA">
+					<dl class="tc02 navi toc">
+						<dt>이전 정보보호방침</dt>
+						<dd>
+							<ul>
+								<li><em>1.</em><a href="#history2">2018년 3월 최초생성 개인정보보호방침</a></li>
+								<li><em>2.</em><a href="#history1">2018년 1월 최초생성 개인정보보호방침</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div-->
+				<!-- //rightA -->
+				
+			</div>
+			<!-- //conBody -->
+		</div>
+	</div>
+	<!-- //컨텐츠 영역 -->		
+	<footer>
+		<div class="inner">
+			<div class="lg02"><a href="#">서울기록원</a></div>
+			<ul class="ng03">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#"><b>개인정보보호방침</b></a></li>
+				<li><a href="http://www.seoul.go.kr/v2013/helper/copyright.html"><b>저작권정책</b></a></li>
+			</ul>
+			<div class="ng02">
+				<dl>
+					<dt><a href="#">뉴스</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">칼럼</a></li>
+							<li><a href="#">공지</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">소개 및 안내 </a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">서울기록원 소개</a></li>
+							<li><a href="#">사용자를 위한 안내</a></li>
+							<li><a href="#">개발자를 위한 안내</a></li>
+							<li><a href="#">일반문의</a></li>
+							<li><a href="#">오류신고</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">도구</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">탐색</a></li>
+							<li><a href="#">검색</a></li>
+							<li><a href="#">리서치가이드</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">컬렉션 및 전시</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">사진아카이브</a></li>
+							<li><a href="#">용산공원 특별 전시</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>	
+		</div>
+		<address>
+			<div class="inner">
+				<span>서울특별시 은평구 녹번동 산1-61호 000-00-00000 T.<b>02-3709-7500</b>,   F.<b>02-3709-7520</b></span>
+				<span>COPYRIGHT ©2018 <b>SEOUL METROPOLITAN ARCHIVE</b></span>
+			</div>
+		</address>
+		<!-- error report popup -->
+		<div class="tc11 closed">
+			<div class="topBtn">
+				<a class="btn02 btn02_01 open" href="javascript:;">오류신고</a>
+				<a class="btn02 btn02_01 close" href="javascript:;">닫기<i class="xi-arrow-right"></i></a>
+			</div>
+			<div id="popup_report_error" class="pp01 pp01_01">
+				<div class="popupBox">
+					<form class="cf08 cf08_01">
+						<fieldset>
+							<h3 class="th03">오류신고</h3>
+							<div class="input">
+								<label for="error_email">이메일</label>
+								<input type="email" name="error_email" id="error_email" placeholder="이메일"/>
+							</div>
+							<div class="input">
+								<label for="error_desc">오류내용</label>
+								<textarea name="error_desc" id="error_desc" placeholder="오류가 난 상황을 설명하면 서비스 개선에 도움이 됩니다."></textarea>
+							</div>
+							<div class="file">
+								<label for="error_file">파일업로드</label>
+								<input type="file" class="ti01" name="error_file" id="error_file"/>
+								<div class="fake">
+									<span></span>
+									<a class="btn02 btn02_01" href="javascript:;">파일찾기</a>
+								</div>
+							</div>
+						</fieldset>
+						<div class="submit"><button class="btn01">저장</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- //error report popup -->
+	</footer>
+</div>
+<!-- //main_wrap -->
+</body>
+</html>
