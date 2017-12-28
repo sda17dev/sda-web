@@ -295,6 +295,57 @@ footer .tc11.closed{right:1px}
 
 .con02 .conFooter{background-color:#009ecd;color:#fff;padding:2.5rem 0;font-size:0.875rem}
 
+/* research guide - new */
+.con03{padding:1.875rem 0 0;overflow:hidden}
+.con03 h2{font-size:30px;line-height:30px;color:#333;margin-bottom:1.875rem}
+.con03 .unit{position:relative;float:left;border-right:1px solid #ccc;width:65.7895%;padding-right:1.228%}
+.con03 .unit .leftA{padding:1.5rem 0 2rem;border-top:2px solid #ccc;width:auto;float:none}
+.con03 .unit .rightA{position:absolute;left:100%;top:0;width:47%;margin-left:2%;padding:1.5rem 0 0;border-top:2px solid #ccc}
+.con03 .unit .leftA h3{font-size:1.5rem;line-height:2rem;color:#333;font-weight:600;margin-bottom:1.2rem}
+.con03 .unit .leftA h4{font-size:1.125rem;line-height:1.2rem;color:#808080;margin-bottom:1.2rem}
+.con03 .unit .leftA h4 em{display:inline-block;width:2.375rem;height:2.375rem;text-align:center;line-height:2.375rem;background-color:#666;border-radius:1.1875rem;color:#fff;margin-right:0.5rem}
+.con03 .unit .leftA p{font-size:1.125rem;line-height:1.8rem;color:#808080}
+.con03 .unit .leftA p.sum{margin-bottom:2rem}
+.con03 .unit .leftA dl{margin-bottom:1.5rem}
+.con03 .unit .leftA dl dt{font-size:1rem;color:#333;font-weight:600;margin-bottom:0.5rem}
+.con03 .unit .leftA dl dt:before{content:"";display:block;width:1.875rem;height:0.1875rem;background-color:#333;margin-bottom:0.1875rem}
+.con03 .unit .leftA dl dd p{font-size:1rem;line-height:1.4rem;color:#666;margin-bottom:0.8rem}
+.con03 .unit .leftA ul{margin-left:1.5rem}
+.con03 .unit .leftA ul li{font-size:1rem;line-height:1.8rem;color:#666;padding-left:0.6rem;position:relative}
+.con03 .unit .leftA ul li:before{content:"";display:block;position:absolute;left:0;top:0.8rem;width:0.25rem;height:0.25rem;background:url(../images/bl_dot02.png) no-repeat 0 0;background-size:cover}
+.con03 .unit .leftA ul li ol{margin:0.5rem 0 0.5rem 2.2rem }
+.con03 .unit .leftA ul li li{font-size:0.875rem;line-height:1.4rem}
+.con03 .unit .leftA ol{list-style-type:decimal}
+.con03 .unit .leftA ol>li{padding-left:0}
+.con03 .unit .leftA ol>li:before{content:none}
+.con03 .unit .leftA ol>li>em{position:absolute;left:0;top:0}
+.con03 .unit .leftA hr{margin:1.5rem 0;border:none;border-top:1px solid #ccc;height:0}
+.con03 .unit00 .leftA{padding-top:0;border-top:none}
+.con03 .unit00 .rightA{padding:0;border-top:1px solid #ccc}
+.con03 .unit01 .leftA{padding:1.5rem 0 3rem}
+.con03 .unit05 ul{margin:1rem 0}
+.con03 .unit06 p{margin-bottom:2rem}
+.con03 .history{border:1px solid #ccc}
+.con03 .history .infoA{;padding:1.2rem}
+.con03 .history h4{font-size:0.875rem;color:#999;margin-bottom:0.5rem}
+.con03 .history h4 b{color:#333;font-weight:600}
+.con03 .history .btn02{font-weight:600;padding:0 2.8rem;margin-bottom:1rem}
+.con03 .history ul li{font-size:0.875rem;color:#999;line-height:1.4rem}
+.con03 .history ul li b{color:#333}
+.con03 .history .productNo{background-color:#34b0e8;padding:0.6rem 1.2rem;color:#fff}
+.con03 .links h4{padding:0.5rem 1.2rem;background-color:#666;color:#fff;font-size:0.875rem}
+.con03 .links ul{border-bottom:1px solid #ccc;border-right:1px solid #ccc}
+.con03 .links ul li{border-top:1px solid #ccc;border-left:1px solid #ccc}
+.con03 .links ul li a{display:block;padding:0.5rem 1.2rem;background-color:#f1f3f5;position:relative;font-size:0.875rem;color:#333;font-weight:500}
+.con03 .links ul li a i{position:absolute;right:1rem;top:0.9rem;font-size:0.875rem}
+.con03 .links ul li a:hover{text-decoration:none;background-color:#fff}
+.con03 .unit04 .links.list{margin-bottom:24rem}
+.con03  .picForm form{border:1px solid #ccc;border-bottom:none;padding:1.25rem;background-color:#f1f3f5}
+.con03  .picForm form label{display:none}
+.con03  .picForm form input{width:80%}
+.con03  .picForm form button{width:18%;height:2.125rem;border:none;background-color:#333;color:#fff;vertical-align:top;border-radius:2px}
+.con03  .picForm h4{background-color:transparent;color:#808080;font-size:1.125rem;padding:0;margin-bottom:0.5rem}
+
 /* header search form */
 .cf02 fieldset label{display:none}
 .cf02 fieldset input{display:inline-block;height:4.9375rem;width:43%;vertical-align:top;border:none;margin-right:2.5%;margin-left:-4px;font-size:1.75rem;background-color:transparent;border-bottom:3px solid #fff;box-sizing:border-box;color:#fff}
@@ -804,6 +855,13 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .ng11.ui-widget-header{background:none}
 /* admin menu open/close button */
 .ng12{display:none}
+/* research guide anchor */
+.ng13{border-bottom:1px solid #ccc;border-right:1px solid #ccc;margin:0 0 2rem 0 !important}
+.ng13 li{border-top:1px solid #ccc;border-left:1px solid #ccc;padding-left:0 !important}
+.ng13 li a{display:block;padding:1rem 1rem 1rem 3.5rem;background:#f1f3f5 url(../images/bl_arr07.png) no-repeat 1rem center;font-size:1.125rem;color:#333;font-weight:600}
+.ng13 li:before{content:none;background:none !important}
+.ng13 li a:hover{text-decoration:none;background-color:#fff}
+
 /* pagination */
 .pg01{text-align:center}
 .pg01 a{padding:0 0.25rem}

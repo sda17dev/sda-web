@@ -377,6 +377,11 @@ $(document).ready(function() {
 		$(this).parents(".fc13").find(".ib02 a img").attr("src",src);
 		return false;
    });
+	//연구가이드 링크이동 효과
+	$(".ng13 li a").click(function(event){     
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500,"linear");
+	});
 	
 	//입력폼 유효성 검사
 	form_validation();

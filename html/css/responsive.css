@@ -216,6 +216,17 @@ footer address span{display:block}
 .con02 .unit04 .pictureInfo{display:none}
 
 .con02 .conFooter{padding:1rem 0;line-height:1.4rem}
+  
+/* research guide - new */
+.con03 .unit{float:none;border-right:none;width:auto;padding-right:0;margin-bottom:2rem}
+.con03 .unit .leftA{padding:1.5rem 0 0rem}
+.con03 .unit .rightA{position:static;width:auto;margin-left:0;padding:0;border-top:none}
+.con03 .unit .leftA ul{margin-left:1rem}
+.con03 .unit00 .leftA{padding-top:0;border-top:none;padding-bottom:0}
+.con03 .unit00 .rightA{padding:0;border-top:1px solid #ccc}
+.con03 .unit01 .leftA{padding:1.5rem 0 0rem}
+.con03 .links ul li a i{top:1rem}
+.con03 .unit04 .links.list{margin-bottom:1rem}
 
 /* header search form */
 .cf02 fieldset{position:relative}
