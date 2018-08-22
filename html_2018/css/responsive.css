@@ -496,6 +496,7 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 /* browse view table */
 .tbl03{margin-bottom:10px}
 .tbl03 table th{width:25%}
+.tbl03 table td.ccl img{height:20px}
 .tbl03.collectionView table{width:100%;float:none;margin-bottom:1rem;border-bottom:1px solid #ccc}
 .tbl03.collectionView .rightC{width:auto;float:none}
 .tbl03.collectionView .flexible *{min-height:0}
