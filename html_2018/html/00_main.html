@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<title>서울기록원</title>
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+<link rel="stylesheet" type="text/css" href="../css/archive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/archive_slowalk.css"/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css"/><![endif]-->
+<!--[if lt IE 9]><script src="../js/html5.js"></script><![endif]-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src='../js/jquery-1.11.3.min.js'></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="http://www.seoul.go.kr/seoulgnb/gnb.js"></script>
+<script type="text/javascript" src="../js/archive.js"></script>
+<script type="text/javascript">
+// GNB 로딩 스크립트
+// Yjs.Gnb.init('사이트 ID', 'GNB 표출영역 ID');
+window.onload = function() {
+    Yjs.Gnb.init('G188', 'seoul-common-gnb');
+};
+</script>
+</head>
+<body>
+<div id="main_wrap" class="mainPage">
+	<div id="skip-link"><a href="#main-content">컨텐츠 바로가기</a></div>
+	<div id="cookie-bar">We use cookies to improve services and ensure they work for you. Read our <a href="#">cookie policy</a>. <i class="xi-close-circle"></i> <a class="close" href="#">Close</a></div>	
+	<div id="seoul-common-gnb"></div>
+	<header class="hd01" style="background-image:url(../image-tile/12.png)">
+		<div class="inner2">
+			<div class="mobileHeader">
+				<div class="lg01"><a href="/">서울기록원</a></div>
+				<a href="javascript:;" class="mobileMenuOpen" title="모바일 메뉴 열기"><i class="xi-bars"></i></a>
+			</div>
+			<nav>
+				<menu>
+					<li class="news"><a href="#">뉴스</a></li>
+					<li class="info"><a href="#">소개 및 안내</a></li>
+					<li class="explore"><a href="#">탐색</a></li>
+					<li class="search"><a href="#">검색</a></li>
+				</menu>
+				<form class="cf02" action="" method="post">
+					<fieldset>
+						<label for="search_option">검색옵션</label>
+						<select name="search_option" id="search_option">
+							<option value="0" selected="selected">웹사이트에서 검색하기</option>
+							<option value="1">기록에서 검색하기</option>
+						</select>
+						<label for="search_query">검색어</label>
+						<input type="text" name="query" id="search_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+						<button>웹사이트에서 검색</button>
+						<a class="closeBtn" href="#"><i class="xi-close"></i>닫기</a>
+					</fieldset>
+				</form>
+				<ul class="ng04">
+					<li class="login"><a href="#">로그인</a></li>
+					<li class="join"><a href="#">회원가입</a></li>
+				</ul>
+				<a href="javascript:;" class="mobileMenuClose" title="모바일 메뉴 열기"><i class="xi-close"></i></a>
+			</nav>
+			<div class="td03">
+				<a href="#">[아이템] 마포로 제 2구역 2지구 재개발사업 신축공사 조감도...</a> | <em>23212232</em><i class="xi-arrow-right"></i>
+			</div>
+		</div>
+	</header>
+	<!-- 메인 컨텐츠 영역 -->
+	<div class="fc01" id="main-content">
+		<div class="inner">
+			<!-- Guideline01 -->
+			<div class="ng14">
+				<a class="firstVisit" href="#">처음 오셨나요?</a>
+				<dl>
+					<dt>맟춤 이용 안내</dt>
+					<dd>
+						<ul>
+							<li><a href="#">기록 조사/연구자</a></li>
+							<li><a href="#">기록 이관 공무원, 기록연구사</a></li>
+							<li><a href="#">큐레이터, 기획자, 작가, 기자 등 콘텐츠 제작자</a></li>
+							<li><a href="#">서울의 공공기록물에 관심있는 모든 사람</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<!-- //Guideline01 -->
+			<!-- Headline -->
+			<div class="fc02">
+				<div class="tc01 notice">
+					<h2>공지사항</h2>
+					<a class="conA" href="#">
+						<span class="thumb"><img src="../images/@tc01_01.png" alt="대체텍스트"/></span>
+						<b><em>[오픈]</em>1.0 오픈과 관련해 소스 공개합니다. 해당 GitHub 페이지를 참조하세요.</b>
+					</a>
+					<a class="more" href="#">자세히보기</a>
+				</div>
+				<div class="tc01 collect">
+					<h2>기록 이관과 수집</h2>
+					<a class="conA" href="#">
+						<span class="thumb"><img src="../images/@tc01_02.png" alt="대체텍스트"/></span>
+						<b><em>[기록이관]</em>사진아카이브 자료를 기존 공간에서 디지털 아카이브 엔진으로 이관했습니다. </b>
+					</a>
+					<a class="more" href="#">자세히보기</a>
+				</div>
+				<div class="tc01 prepare">
+					<h2>건축 및 과정</h2>
+					<a class="conA" href="#">
+						<span class="thumb"><img src="../images/@tc01_03.png" alt="대체텍스트"/></span>
+						<b><em>[건축]</em>항온, 항습을 위한 장치 마련했습니다. 이를 위한 관련 한 장치를 준비했습니다.</b>
+					</a>
+					<a class="more" href="#">자세히 보기</a>
+				</div>
+			</div>
+			<!-- //Headline -->
+		</div>
+	</div>
+	<!-- //메인 컨텐츠 영역 -->		
+	<!-- Newsletter -->		
+	<form class="cf03" action="" method="post">
+		<dl>
+			<dt>서울기록원 오픈 준비 메일 받아보기</dt>
+			<dd>서울기록원의 오픈 준비 과정을 담은 메일을 받아보실 수 있습니다.</dd>
+		</dl>
+		<fieldset>
+			<label for="letter_email">이메일 주소</label>
+			<input type="email" name="letter_email" id="letter_email"/>
+			<button>이메일 수신</button>
+		</fieldset>
+	</form>
+	<form class="cf03 cf03_01" action="" method="post">
+		<dl>
+			<dt>서울시의 사진 기록 저장소 - 서울사진아카이브 </dt>
+			<dt>안내 | 02-120 다산콜센터 
+			<dd>서울사진아카이브는 1950년대부터 1980년대까지 서울 시정의 모습을 담은<br/>
+				어디서도 보기 힘든 사진으로 가득한 서울시의 디지털 사진 기록 저장소입니다.<br/> 
+				98,896장의 다채로운 사진 속에 담긴 서울의 변화와 시민의 모습을 찾아보세요.<br/>서울사진아카이브에 대한 문의는 다산콜센터를 이용해 주세요.<br/></dd>
+		</dl>
+		<fieldset>
+			<!--label for="letter_email">이메일주소</label>
+			<input type="email" name="letter_email" id="letter_email"/-->
+			<button>photoarchives.seoul.go.kr</button>
+		</fieldset>
+	</form>
+	<!-- //Newsletter -->	
+	<footer>
+		<div class="inner">
+			<div class="lg02"><a href="#">서울기록원</a></div>
+			<ul class="ng03">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#"><b>개인정보보호방침</b></a></li>
+				<li><a href="http://www.seoul.go.kr/v2013/helper/copyright.html"><b>저작권정책</b></a></li>
+			</ul>
+			<div class="ng02">
+				<dl>
+					<dt><a href="#">소식</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">칼럼</a></li>
+							<li><a href="#">뉴스</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">소개 및 안내 </a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">서울기록원 소개</a></li>
+							<li><a href="#">사용자를 위한 안내</a></li>
+							<!--li><a href="#">개발자를 위한 안내</a></li-->
+							<li><a href="#">일반문의</a></li>
+							<!--li><a href="#">오류신고</a></li-->
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">도구</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">탐색</a></li>
+							<li><a href="#">검색</a></li>
+							<li><a href="#">조사/연구 가이드</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">컬렉션 및 전시</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">서울사진아카이브</a></li>
+							<li><a href="#">용산공원 특별 전시</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>	
+		</div>
+		<address>
+			<div class="inner">
+				<span>서울특별시 은평구 녹번동 산1-61호 000-00-00000 T.<b>02-3709-7500</b>,   F.<b>02-3709-7520</b></span>
+				<span>©2018 <b>SEOUL METROPOLITAN ARCHIVE</b></span>
+			</div>
+		</address>
+		<!-- error report popup -->
+		<div class="tc11 closed">
+			<div class="topBtn">
+				<a class="btn02 btn02_01 open" href="javascript:;">오류신고</a>
+				<a class="btn02 btn02_01 close" href="javascript:;">닫기<i class="xi-arrow-right"></i></a>
+			</div>
+			<div id="popup_report_error" class="pp01 pp01_01">
+				<div class="popupBox">
+					<form class="cf08 cf08_01">
+						<fieldset>
+							<h3 class="th03">오류신고</h3>
+							<div class="input">
+								<label for="error_email">이메일</label>
+								<input type="email" name="error_email" id="error_email" placeholder="이메일"/>
+							</div>
+							<div class="input">
+								<label for="error_desc">오류 내용</label>
+								<textarea name="error_desc" id="error_desc" placeholder="오류를 발견하신 상황을 함께 적어주시면 서비스 개선에 도움이 됩니다."></textarea>
+							</div>
+							<div class="file">
+								<label for="error_file">파일 업로드</label>
+								<input type="file" class="ti01" name="error_file" id="error_file"/>
+								<div class="fake">
+									<span></span>
+									<a class="btn02 btn02_01" href="javascript:;">파일 찾기</a>
+								</div>
+							</div>
+						</fieldset>
+						<div class="submit"><button class="btn01">저장</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- //error report popup -->
+	</footer>
+</div>
+<!-- //main_wrap -->
+</body>
+</html>

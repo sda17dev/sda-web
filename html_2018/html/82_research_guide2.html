@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<title>서울기록원</title>
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+<link rel="stylesheet" type="text/css" href="../css/archive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/archive_slowalk.css"/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css"/><![endif]-->
+<!--[if lt IE 9]><script src="../js/html5.js"></script><![endif]-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src='../js/jquery-1.11.3.min.js'></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="http://www.seoul.go.kr/seoulgnb/gnb.js"></script>
+<script type="text/javascript" src="../js/archive.js"></script>
+<script type="text/javascript">
+// GNB 로딩 스크립트
+// Yjs.Gnb.init('사이트 ID', 'GNB 표출영역 ID');
+window.onload = function() {
+    Yjs.Gnb.init('G188', 'seoul-common-gnb');
+};
+</script>
+</head>
+<body>
+<div id="main_wrap" class="subPage">
+	<div id="skip-link">
+		<a href="#main-content">컨텐츠 바로가기</a>
+	</div>
+	<div id="seoul-common-gnb"></div>
+	<header class="hd02 fixed">
+		<div class="inner2">
+					<div class="mobileHeader">
+				<div class="lg01"><a href="/">서울기록원</a></div>
+				<a href="javascript:;" class="mobileMenuOpen" title="모바일 메뉴 열기"><i class="xi-bars"></i></a>
+			</div>
+		<nav>
+			<menu>
+				<li class="news on"><a href="#">뉴스</a></li>
+				<li class="info"><a href="#">소개 및 안내</a></li>
+				<li class="explore"><a href="#">탐색</a></li>
+				<li class="search"><a href="#">검색</a></li>
+			</menu>
+			<form class="cf02" action="" method="post">
+				<fieldset>
+					<label for="search_option">검색옵션</label>
+					<select name="search_option" id="search_option">
+						<option value="0" selected="selected">웹사이트에서 검색하기</option>
+						<option value="1">기록에서 검색하기</option>
+					</select>
+					<label for="search_query">검색어</label>
+					<input type="text" name="query" id="search_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+					<button>웹사이트에서 검색</button>
+					<a class="closeBtn" href="#"><i class="xi-close"></i>닫기</a>
+				</fieldset>
+			</form>
+			<ul class="ng04">
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#">회원가입</a></li>
+			</ul>
+				<a href="javascript:;" class="mobileMenuClose" title="모바일 메뉴 열기"><i class="xi-close"></i></a>
+			</nav>
+		</div>
+    </header>
+	<!-- 컨텐츠 영역 -->
+    <div class="fc04" id="main-content">
+		<div class="inner">
+			<!-- list header -->
+			<div class="header">
+				<ul class="ng06">
+					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
+					<li><a href="#">뉴스</a></li>
+					<li class="current"><a href="#">뉴스</a></li>
+				</ul>
+				<dl class="th01">
+					<dt><h1>서울기록원 연구 가이드</h1></dt>
+					<dd>서울기록원의 기록물을 주제별로 조사, 연구하는 방법을 안내합니다.</dd>
+				</dl>
+			</div>
+			<!-- //list header -->
+			<!-- conBody -->
+			<div class="conBody">
+				<!-- postA -->
+				<div class="con03 researchGuide">
+					<h2>광장</h2>
+					<div class="unit unit00">
+						<div class="leftA">
+							<ul class="ng13">
+								<li><a href="#con03_unit01">1. 기록물을 찾기 전에 알아둘 것 </a></li>
+								<li><a href="#con03_unit02">2. 기록물 검색 방법</a></li>
+								<li><a href="#con03_unit03">3. 서울기록원에서 찾을 수 있는 기록물의 구성</a></li>
+								<li><a href="#con03_unit04">4. 서울기록원의 기록물 읽기</a></li>
+								<li><a href="#con03_unit05">5. 다른 아카이브의 기록물</a></li>
+								<li><a href="#con03_unit06">6. 도움이 되는 자료</a></li>
+							</ul>
+						</div>
+						<div class="history rightA">
+							<div class="infoA">
+								<h4>기록물번호:<b>RG-2017-P-00001</b></h4>
+								<a class="btn02 btn02_01" href="#">이전 버전 보기</a>
+								<ul>
+									<li>3차 생산일자:<b>2017/10/16</b></li>
+									<li>2차 생산일자:<b>2017/10/10</b></li>
+									<li>1차 생산일자:<b>2017/10/05</b></li>
+								</ul>
+							</div>
+							<div class="productNo">생산자번호: <b>RG-101-S</b></div>
+						</div>
+					</div>
+					<div class="unit unit01" id="con03_unit01">
+						<div class="leftA">
+							<h3>1. 기록물을 찾기 전에 알아둘 것</h3>
+							<p>서울특별시가 '광장'을 조성하고 유지하는 과정에서 생산한 행정자료들이다.<br/>아직 도시계획 하에서 '광장'에 대한 계획과 행정 관리가 어떻게 이루어지는지에 대해서는 추후 조사가 필요하다.</p>
+						</div>
+					</div>
+					<div class="unit unit02" id="con03_unit02">
+						<div class="leftA">
+							<h3>2. 기록물 검색 방법</h3>
+							<dl>
+								<dt>일반</dt>
+								<dd>
+									<ul>
+										<li>광장의 이름과 광장이 조성된 시기를 알아야 한다.</li>
+										<li>찾으려하는 기록물의 생산부처를 알아야 한다.</li>
+									</ul>
+								</dd>
+							</dl>
+							<dl>
+								<dt>세부</dt>
+								<dd>
+									<ul>
+										<li>일반검색어로 '광장'을 검색하면, '광장동'과 '광장시장'과 '광장지구'와 같이 서울특별시의 지명 (혹은 지구명)이 포함된다.</li>
+										<li>'광장'은 '도시광장'과 '교통광장'으로 나뉜다. 즉, '광장' 검색어의 검색결과엔 도시광장과 교통광장이 포함된다. </li>
+										<li>서울특별시의 행정절차를 보여주기 때문에 광장에서 일어난 사건과 직결된 자료는 드물다.</li>
+									</ul>
+								</dd>
+							</dl>
+							<dl>
+								<dt>열람과 메타데이타</dt>
+								<dd>
+									<ul>
+										<li>디지털 아카이브에서 '검색'되지만 '온라인 열람'이 안되는 기록물이 있다. 그 이유는 아래와 같다.
+											<ol>
+												<li>기록물의 기술 정보에서 '기록물 등록건수' 항목이 '0'으로 표기된 경우로 아직 디지털화되지 않았으므로 온라인 열람이 불가능하다.</li>
+												<li>비공개 문서일 수도 있다.</li>
+											</ol>
+										</li>
+										<li>검색결과에서 '기록물 종류'에 문서로 표기되어 있다해도, 문서철 내부에 '사진' 혹은 '도면'이 포함되어 있을 수 있다. '기록물 종류'항목에서 제공하는 정보는 포함된 기록물의 종류 전체는 아니다.</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<div class="rightA">
+							<div class="links">
+								<h4>자료 열람 안내</h4>
+								<ul>
+									<li><a href="#">온라인 열람<i class="xi-angle-right"></i></a></li>
+									<li><a href="#">방문 열람 신청<i class="xi-angle-right"></i></a></li>
+									<li><a href="#">사본 신청<i class="xi-angle-right"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="unit unit03" id="con03_unit03">
+						<div class="leftA">
+							<h3>3. 서울기록원에서 찾을 수 있는 기록물의 구성</h3>
+							<p class="sum">현재 '광장'과 관련한 기록물철은 총 104종이 있다.</p>
+							<dl>
+								<dt>유형</dt>
+								<dd>
+									<p>자료유형으로 나누면, 일반에게 알리기 위한 공고문서(고시/공고 등)와 구청과 사업소 등을 비롯한 하급기관 또는 소속공무원에게 지시하는 지시문서(지시, 명령 등)가 포함되어 있다. 또한 행정과정에서 생산된 사진과 지도와 계획도면, 몇몇 위탁연구 결과물이 포함되어 있다. </p>
+								</dd>
+							</dl>
+							<dl>
+								<dt>생산부처</dt>
+								<dd>
+									<p>기록물철의 생산부처는 건설국/건설기획국(35개 재확인 필요), 환경관리실(23개), 재무국(14개), 도시계획국(12개, 도시계획과 3개 확인 필요), 광화문광장행사담당관(6개), 도로국(5개) 지하철건설본부(3개), 문화관광국(2개), 교통관리실(1개), 기술심사담당관(1개)이다. </p>
+								</dd>
+							</dl>
+							<dl>
+								<dt>특수</dt>
+								<dd>
+									<ul>
+										<li>계획 단계에 그치고 시행되지 않은 서류들, 즉, '기안문'이 많다.</li>
+										<li>'광장' 항목에는 구간명에 '광장'이 포함된 도로공사 관련 서류가 많다.</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+
+					<div class="unit unit04" id="con03_unit04">
+						<div class="leftA">
+							<h3>4. 서울기록원의 기록물 읽기</h3>
+							<h4><em>01</em>유형에 따른 접근</h4>
+							<dl>
+								<dt>목록</dt>
+								<dd>
+									<p>광장의 특정시기 목록을 확인할 수 있다.</p>
+									<ul>
+										<li>"광장도부본"(도시계획국 계획과, 1963년 생산)을 통해 1963년에서 1965년 사이의 광장 목록이 제시되어 있다.</li>
+										<li>"광장도부본"은 현재 세 건이 등록돼 있다. 이는 "부본(副本)"이 원본이 되는 정식 서류와 똑같이 만들어 참고로 보관하는 서류이기 때문에 복사본 혹은 복본(寫本)이 존재한다고 볼 수 있다.</li>
+										<li>"기타지구도시계획시설(광장)지적승인"(도시계획국 구획정리과, 1977-1979년 생산)을 통해 1970년대 말 존재하는 광장의 목록을 일부 확인할 수 있다.</li>
+									</ul>							
+								</dd>
+							</dl>
+							<dl>
+								<dt>생산부처</dt>
+								<dd>
+									<p>광장의 계획도면을 확인할 수 있다.</p>
+									<ul>
+										<li>"광장도부본"(도시계획국 계획과, 1963년 생산)을 통해 1963년에서 1965년 사이의 광장 계획도면을 모았다.</li>
+									</ul>							
+								</dd>
+							</dl>
+							<dl>
+								<dt>사진</dt>
+								<dd>
+									<p>광장의 사진을 볼 수 있다.</p>
+									<ul>
+										<li>서울사진아카이브에서 제공하는 서울시청광장 사진들로, 1961년에서 1989년까지의 변화를 볼 수 있다.</li>
+									</ul>							
+								</dd>
+							</dl>
+							<hr/>
+							<h4><em>02</em>주제에 따른 접근</h4>
+							<dl>
+								<dt>행정</dt>
+								<dd>
+									<p>광장을 조성하기 위한 행정과정을 확인할 수 있다. 서울특별시는 중앙정부의 거시적인 수준과 달리 사업을 직접 시행해야하는 입장으로 계획과 이후 발생한 문제와 대처를 위한 행정자료를 생산했다.</p>
+									<ul>
+										<li>“중앙청 앞 광장계획”(건설국 관리제1과, 1970-1973)은 1970년대 초 당시 중앙청(구 조선총독부 건물) 앞에 광장을 조성하는 과정에서 생산된 기록물들이다. </li>
+										<li>기록물철에 포함된 '기록물건'명을 시계열 순으로 차례대로 읽으면  '광장'을 조성하기 위한 과정과 문제를 알 수 있다.</li>
+									</ul>							
+								</dd>
+							</dl>
+							<dl>
+								<dt>516광장</dt>
+								<dd>
+									<p>광광장 운영에 필요한 행정의 변화를 확인할 수 있다. 여의도공원은 5.16혁명을 기념하는 '5.16 광장'으로 조성됐고, 1999년 '여의도공원'이 됐다. 서울특별시는 광장의 운영과 공원화 과정에 관한 행정자료를 생산했다.</p>
+									<ul>
+										<li>"5.16광장 사용료 조례" 기록물건을 통해 1971년 9월 5.16광장 초기 사용 규칙과 그 생산과정을 알 수 있다.</li>
+										<li>1990년대 공원화 과정은 "여의도광장" 검색어를 통해 읽을 수 있으며, "여의도광장개선계획"(도시계획국 도시계획과, 1993-1994년 생산)과 같은 행정계획과 "여의도여론관계철"(환경관리실 공원과, 1997년 생산)과 같은 여론 파악 자료 등을 읽을 수 있다.</li>
+									</ul>							
+								</dd>
+							</dl>
+						</div>
+						<div class="rightA">
+							<div class="links list">
+								<ul>
+									<li><a href="#">기타지구도시계획시설(광장)지적승인 목록 보기<i class="xi-angle-right"></i></a></li>
+									<li><a href="#">도면 목록 보기<i class="xi-angle-right"></i></a></li>
+									<li><a href="#">여의도 관련 기록물철 목록 보기<i class="xi-angle-right"></i></a></li>
+								</ul>
+							</div>
+							<div class="links picForm">
+								<form action="" methos="post">
+									<h4>서울 사진 아카이브</h4>
+									<fieldset>
+										<label for="search_pic_query">검색어</label>
+										<input type="text" name="query" id="search_pic_query"/>
+										<button>검색</button>
+									</fieldset>
+								</form>
+								<ul>
+									<li><a href="#">여의도 관련 기록물 목록<i class="xi-angle-right"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="unit unit05" id="con03_unit05">
+						<div class="leftA">
+							<h3>5. 다른 아카이브의 기록물</h3>
+							<p>서울연구데이터서비스는 1995년부터 2015년까지, 5년 단위로 찍은 여의도공원과 광화문광장 사진을 제공하고 있다.</p>
+							<ul>
+								<li>여의도공원 <a href="http://data.si.re.kr/collection/view/357">http://data.si.re.kr/collection/view/357</a></li>
+								<li>광화문광장 <a href="http://data.si.re.kr/collection/view/360">http://data.si.re.kr/collection/view/360</a></li>
+							</ul>							
+						
+							<p>대한민국역사박물관에서는 2009년 차로에서 인도로 재조성하며 광장으로 개방된 '광화문광장'의 2014년 모습을 기록하는 중이다.</p>
+							<ul>
+								<li>특히, 광화문광장의 조경 뿐만 아니라 세월호 유가족 및 유관단체의 풍경, 김장문화제와 같은 시민들의 활동과 인근 지역의 경관 역시 기록하고 있다.<br/>
+									<a href="http://archive.much.go.kr/data/JD008/folderView.do?jobdirSeq=366">http://archive.much.go.kr/data/JD008/folderView.do?jobdirSeq=366</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="unit unit06" id="con03_unit06">
+						<div class="leftA">
+							<h3>6. 도움이 되는 자료</h3>
+							<p>광장에 대해 인문사회과학 분야에서 발표된 책과 연구논문은 아래와 같다.</p>
+							<dl>
+								<dt>[책]</dt>
+								<dd>
+									<ul>
+										<li>김백영, 2017, 「서울의 광장문화, 오래된 것과 새로운 것」, 『서울사회학』</li>
+										<li>김진애, 2003, '광장'이 된 '거리' - 광화문 네거리와 시청 앞 광장」, 『우리도시 예찬』</li>
+										<li>양상현, 2005, 「길에서 광장까지, 도시를 걷다」, 『거꾸로 읽는 도시, 뒤집어 보는 건축』</li>
+										<li>임석재, 2005, 「골목 속 놀이터를 살리자 - 광장」, 『건축, 우리의 자화상』</li>
+										<li>전상현, 2017, 「공공 공간」, 『서울, 도시의 품격』</li>
+										<li>조한, 2013, 「닫힌 광장에 서서 열린 광장을 꿈꾸다 - 광화문광장」, 『서울, 공간의 기억 기억의 공간』</li>
+										<li>프랑스 만쿠조, 2009/2007, 『광장』</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+
+				</div>
+				<!-- //con03 -->
+			</div>
+			<!-- //conBody -->
+		</div>
+	</div>
+	<!-- //컨텐츠 영역 -->		
+	<footer>
+		<div class="inner">
+			<div class="lg02"><a href="#">서울기록원</a></div>
+			<ul class="ng03">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#"><b>개인정보보호방침</b></a></li>
+				<li><a href="http://www.seoul.go.kr/v2013/helper/copyright.html"><b>저작권정책</b></a></li>
+			</ul>
+			<div class="ng02">
+				<dl>
+					<dt><a href="#">뉴스</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">칼럼</a></li>
+							<li><a href="#">공지</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">소개 및 안내 </a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">서울기록원 소개</a></li>
+							<li><a href="#">사용자를 위한 안내</a></li>
+							<li><a href="#">개발자를 위한 안내</a></li>
+							<li><a href="#">일반문의</a></li>
+							<li><a href="#">오류신고</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">도구</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">탐색</a></li>
+							<li><a href="#">검색</a></li>
+							<li><a href="#">리서치가이드</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">컬렉션 및 전시</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">사진아카이브</a></li>
+							<li><a href="#">용산공원 특별 전시</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>	
+		</div>
+		<address>
+			<div class="inner">
+				<span>서울특별시 은평구 녹번동 산1-61호 000-00-00000 T.<b>02-3709-7500</b>,   F.<b>02-3709-7520</b></span>
+				<span>COPYRIGHT ©2018 <b>SEOUL METROPOLITAN ARCHIVE</b></span>
+			</div>
+		</address>
+		<!-- error report popup -->
+		<div class="tc11 closed">
+			<div class="topBtn">
+				<a class="btn02 btn02_01 open" href="javascript:;">오류신고</a>
+				<a class="btn02 btn02_01 close" href="javascript:;">닫기<i class="xi-arrow-right"></i></a>
+			</div>
+			<div id="popup_report_error" class="pp01 pp01_01">
+				<div class="popupBox">
+					<form class="cf08 cf08_01">
+						<fieldset>
+							<h3 class="th03">오류신고</h3>
+							<div class="input">
+								<label for="error_email">이메일</label>
+								<input type="email" name="error_email" id="error_email" placeholder="이메일"/>
+							</div>
+							<div class="input">
+								<label for="error_desc">오류내용</label>
+								<textarea name="error_desc" id="error_desc" placeholder="오류가 난 상황을 설명하면 서비스 개선에 도움이 됩니다."></textarea>
+							</div>
+							<div class="file">
+								<label for="error_file">파일업로드</label>
+								<input type="file" class="ti01" name="error_file" id="error_file"/>
+								<div class="fake">
+									<span></span>
+									<a class="btn02 btn02_01" href="javascript:;">파일찾기</a>
+								</div>
+							</div>
+						</fieldset>
+						<div class="submit"><button class="btn01">저장</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- //error report popup -->
+	</footer>
+</div>
+<!-- //main_wrap -->
+</body>
+</html>

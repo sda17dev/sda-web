@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<title>서울기록원</title>
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+<link rel="stylesheet" type="text/css" href="../css/archive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/archive_slowalk.css"/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css"/><![endif]-->
+<!--[if lt IE 9]><script src="../js/html5.js"></script><![endif]-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src='../js/jquery-1.11.3.min.js'></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="http://www.seoul.go.kr/seoulgnb/gnb.js"></script>
+<script type="text/javascript" src="../js/archive.js"></script>
+<script type="text/javascript">
+// GNB 로딩 스크립트
+// Yjs.Gnb.init('사이트 ID', 'GNB 표출영역 ID');
+window.onload = function() {
+    Yjs.Gnb.init('G188', 'seoul-common-gnb');
+};
+</script>
+</head>
+<body>
+<div id="main_wrap" class="subPage">
+	<div id="skip-link">
+		<a href="#main-content">컨텐츠 바로가기</a>
+	</div>
+	<div id="seoul-common-gnb"></div>
+	<header class="hd02 searchMode">
+		<div class="inner2">
+					<div class="mobileHeader">
+				<div class="lg01"><a href="/">서울기록원</a></div>
+				<a href="javascript:;" class="mobileMenuOpen" title="모바일 메뉴 열기"><i class="xi-bars"></i></a>
+			</div>
+		<nav>
+			<menu>
+				<li class="news on"><a href="#">뉴스</a></li>
+				<li class="info"><a href="#">소개 및 안내</a></li>
+				<li class="explore"><a href="#">탐색</a></li>
+				<li class="search"><a href="#">검색</a></li>
+			</menu>
+			<form class="cf02" action="" method="post">
+				<fieldset>
+					<label for="search_option">검색옵션</label>
+					<select name="search_option" id="search_option">
+						<option value="0" selected="selected">웹사이트에서 검색하기</option>
+						<option value="1">기록에서 검색하기</option>
+					</select>
+					<label for="search_query">검색어</label>
+					<input type="text" name="query" id="search_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+					<button>웹사이트에서 검색</button>
+					<a class="closeBtn" href="#"><i class="xi-close"></i>닫기</a>
+				</fieldset>
+			</form>
+			<ul class="ng04">
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#">회원가입</a></li>
+			</ul>
+				<a href="javascript:;" class="mobileMenuClose" title="모바일 메뉴 열기"><i class="xi-close"></i></a>
+			</nav>
+		</div>
+    </header>
+	<!-- 컨텐츠 영역 -->
+    <div class="fc03" id="main-content">
+		<div class="inner">
+			<div class="TopA">
+				<form class="cf06 mobileSearch" action="" method="post">
+					<fieldset>
+						<label for="mobile_search_query">검색어</label>
+						<input type="text" name="mobile_search_query" id="mobile_search_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+						<button class="btn01">검색</button>
+					</fieldset>
+				</form>
+				<div class="td01 leftF"><i class="xi-search"></i> "<b>용산공원</b>"으로 검색한 결과값 <strong>35,800</strong></div>
+				<ul class="ng07 rightF">
+					<!--li>
+						<select id="filter_sort">
+							<option>제목순</option>
+							<option>년도순</option>
+						</select>
+					</li-->
+					<li><a href="#">결과값 다운로드</a></li>
+					<li><a href="#">인쇄</a></li>
+					<li><a href="#">검색결과 저장</a></li>
+				</ul>
+			</div>
+			<div class="lowerA">
+				<div class="fc06">
+					<div class="leftA">
+						<form class="cf04">
+							<dl class="mobileClosed">
+								<dt>온라인 열람<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
+								<dd class="tkg01">
+								    <input type="checkbox" checked="checked" id="check01_01" name="check01"/><label for="check01_01">온라인 열람 가능 자료(2000)</label>
+								</dd>
+							</dl>
+							<!--dl class="mobileClosed">
+								<dt>사진콜렉션(구 사진아카이브)<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
+								<dd class="tkg01">
+								    <input type="checkbox" checked="checked" id="check02_01" name="check01"/><label for="check02_01">사진콜렉션 포함(3000)</label>
+								</dd>
+							</dl-->							
+							<dl class="mobileClosed">
+								<dt>기술계층<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
+								<dd class="tkg01">
+								    <input type="checkbox" id="check03_01" name="check03" checked="checked"/><label for="check03_01">레코드그룹(200)</label>
+								    <input type="checkbox" id="check03_02" name="check03"/><label for="check03_02">시리즈(500)</label>
+								    <input type="checkbox" id="check03_03" name="check03"/><label for="check03_03">파일(5000)</label>
+								    <input type="checkbox" id="check03_04" name="check03"/><label for="check03_04">아이템(30000)</label>
+								</dd>
+							</dl>
+							<dl class="mobileClosed">
+								<dt>생산부서<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
+								<dd class="tkg01">
+								    <input type="checkbox" id="check04_01" name="check04" checked="checked"/><label for="check04_01">공원과(232)</label>
+								    <input type="checkbox" id="check04_02" name="check04"/><label for="check04_02">용산구(2323)</label>
+								    <input type="checkbox" id="check04_03" name="check04"/><label for="check04_03">총무국(232)</label>
+								    <input type="checkbox" id="check04_04" name="check04"/><label for="check04_04">행정국(221)</label>
+								    <input type="checkbox" id="check04_05" name="check04"/><label for="check04_05">건축과(2323)</label>
+								</dd>
+							</dl>
+							<dl class="mobileClosed">
+								<dt>생산년도<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
+								<dd class="tkg01">
+								    <input type="checkbox" id="check05_01" name="check05" checked="checked"/><label for="check05_01">~1950(343)</label>
+								    <input type="checkbox" id="check05_02" name="check05"/><label for="check05_02">1951~1960(232)</label>
+								    <input type="checkbox" id="check05_03" name="check05"/><label for="check05_03">1961~1970(232)</label>
+								    <input type="checkbox" id="check05_04" name="check05"/><label for="check05_04">1971~1980(232)</label>
+								    <input type="checkbox" id="check05_05" name="check05"/><label for="check05_05">~1998(2320)</label>
+								</dd>
+							</dl>							
+							<!--dl class="mobileClosed">
+								<dt>파일 포맷<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
+								<dd class="tkg01">
+								    <input type="checkbox" id="check06_01" name="check06" checked="checked"/><label for="check06_01">워드(HWP)</label>
+								    <input type="checkbox" id="check06_02" name="check06"/><label for="check06_02">PDF</label>
+								    <input type="checkbox" id="check06_03" name="check06"/><label for="check06_03">이미지(jpg, png, bmp)</label>
+								    <input type="checkbox" id="check06_04" name="check06"/><label for="check06_04">엑셀(XLS, CSV)</label>
+								</dd>
+							</dl-->
+							<dl class="mobileClosed">
+								<dt>종류<a class="mobileToggle" href="javajscript:;">열기/닫기</a></dt>
+								<dd class="tkg01">
+								    <input type="checkbox" id="check07_01" name="check07" checked="checked"/><label for="check07_01">간행물</label>
+								    <input type="checkbox" id="check07_02" name="check07"/><label for="check07_02">문서</label>
+								    <input type="checkbox" id="check07_03" name="check07"/><label for="check07_03">대장</label>
+								    <input type="checkbox" id="check07_04" name="check07"/><label for="check07_04">도면</label>
+								    <input type="checkbox" id="check07_05" name="check05"/><label for="check07_04">카드</label>
+								</dd>
+							</dl>							
+						</form>
+					</div>
+					<div class="rightA">
+						<div class="ng08">
+							<dl>
+								<dt>검색필터 :</dt>
+								<dd>
+									<a href="#">온라인 열람 가능<i class="xi-close"></i></a>
+									<a href="#">사진아카이브<i class="xi-close"></i></a>
+									<a href="#">공원과<i class="xi-close"></i></a>
+									<a href="#">워드(HWP)<i class="xi-close"></i></a>
+									<a href="#">대장<i class="xi-close"></i></a>
+								</dd>
+							</dl>
+							<div class="tkg01">
+							    <input type="checkbox" id="check_filter" name="check_filter" checked="checked"/><label for="check_filter">온라인 열람 가능 자료만 보기</label>
+							</div>
+						</div>
+						<ul class="lc03">
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 참여 프로그램</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[레코드그룹]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 건축 시행 관련 협의</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[레코드그룹]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 건축 시행 관련 이해</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[레코드그룹]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 참여 프로그램</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[레코드그룹]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 건축 시행 관련 협의</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[시리즈]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 건축 시행 관련 이해</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[시리즈]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 참여 프로그램</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[시리즈]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 건축 시행 관련 협의</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[시리즈]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 건축 시행 관련 이해</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[파일]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 참여 프로그램</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[파일]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 건축 시행 관련 협의</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[파일]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 건축 시행 관련 이해</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[파일]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 참여 프로그램</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[파일]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 건축 시행 관련 협의</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[파일]</span>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#">용산공원 건축 시행 관련 이해</a></dt>
+									<dd>생산년도 : 2008년 ~ 2017년</dd>
+								</dl>
+								<a class="desc" href="#">세부보기</a>
+								<span class="card">[파일]</span>
+							</li>
+						</ul>
+						<div class="pg02"><a href="#">다음 목록(30개)</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //서브 컨텐츠 영역 -->
+	<footer>
+		<div class="inner">
+			<div class="lg02"><a href="#">서울기록원</a></div>
+			<ul class="ng03">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#"><b>개인정보보호방침</b></a></li>
+				<li><a href="http://www.seoul.go.kr/v2013/helper/copyright.html"><b>저작권정책</b></a></li>
+			</ul>
+			<div class="ng02">
+				<dl>
+					<dt><a href="#">뉴스</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">칼럼</a></li>
+							<li><a href="#">공지</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">소개 및 안내 </a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">서울기록원 소개</a></li>
+							<li><a href="#">사용자를 위한 안내</a></li>
+							<li><a href="#">개발자를 위한 안내</a></li>
+							<li><a href="#">일반문의</a></li>
+							<li><a href="#">오류신고</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">도구</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">탐색</a></li>
+							<li><a href="#">검색</a></li>
+							<li><a href="#">리서치가이드</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">컬렉션 및 전시</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">사진아카이브</a></li>
+							<li><a href="#">용산공원 특별 전시</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>	
+		</div>
+		<address>
+			<div class="inner">
+				<span>서울특별시 은평구 녹번동 산1-61호 000-00-00000 T.<b>02-3709-7500</b>,   F.<b>02-3709-7520</b></span>
+				<span>COPYRIGHT ©2018 <b>SEOUL METROPOLITAN ARCHIVE</b></span>
+			</div>
+		</address>
+		<!-- error report popup -->
+		<div class="tc11 closed">
+			<div class="topBtn">
+				<a class="btn02 btn02_01 open" href="javascript:;">오류신고</a>
+				<a class="btn02 btn02_01 close" href="javascript:;">닫기<i class="xi-arrow-right"></i></a>
+			</div>
+			<div id="popup_report_error" class="pp01 pp01_01">
+				<div class="popupBox">
+					<form class="cf08 cf08_01">
+						<fieldset>
+							<h3 class="th03">오류신고</h3>
+							<div class="input">
+								<label for="error_email">이메일</label>
+								<input type="email" name="error_email" id="error_email" placeholder="이메일"/>
+							</div>
+							<div class="input">
+								<label for="error_desc">오류내용</label>
+								<textarea name="error_desc" id="error_desc" placeholder="오류가 난 상황을 설명하면 서비스 개선에 도움이 됩니다."></textarea>
+							</div>
+							<div class="file">
+								<label for="error_file">파일업로드</label>
+								<input type="file" class="ti01" name="error_file" id="error_file"/>
+								<div class="fake">
+									<span></span>
+									<a class="btn02 btn02_01" href="javascript:;">파일찾기</a>
+								</div>
+							</div>
+						</fieldset>
+						<div class="submit"><button class="btn01">저장</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- //error report popup -->
+	</footer>
+</div>
+<!-- //main_wrap -->
+</body>
+</html>

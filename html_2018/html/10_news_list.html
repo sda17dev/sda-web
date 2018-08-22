@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<title>서울기록원</title>
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+<link rel="stylesheet" type="text/css" href="../css/archive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/archive_slowalk.css"/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css"/><![endif]-->
+<!--[if lt IE 9]><script src="../js/html5.js"></script><![endif]-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src='../js/jquery-1.11.3.min.js'></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="http://www.seoul.go.kr/seoulgnb/gnb.js"></script>
+<script type="text/javascript" src="../js/archive.js"></script>
+<script type="text/javascript">
+// GNB 로딩 스크립트
+// Yjs.Gnb.init('사이트 ID', 'GNB 표출영역 ID');
+window.onload = function() {
+    Yjs.Gnb.init('G188', 'seoul-common-gnb');
+};
+</script>
+</head>
+<body>
+<div id="main_wrap" class="subPage">
+	<div id="skip-link">
+		<a href="#main-content">컨텐츠 바로가기</a>
+	</div>
+	<div id="seoul-common-gnb"></div>
+	<header class="hd02">
+		<div class="inner2">
+					<div class="mobileHeader">
+				<div class="lg01"><a href="/">서울기록원</a></div>
+				<a href="javascript:;" class="mobileMenuOpen" title="모바일 메뉴 열기"><i class="xi-bars"></i></a>
+			</div>
+		<nav>
+			<menu>
+				<li class="news on"><a href="#">뉴스</a></li>
+				<li class="info"><a href="#">소개 및 안내</a></li>
+				<li class="explore"><a href="#">탐색</a></li>
+				<li class="search"><a href="#">검색</a></li>
+			</menu>
+			<form class="cf02" action="" method="post">
+				<fieldset>
+					<label for="search_option">검색옵션</label>
+					<select name="search_option" id="search_option">
+						<option value="0" selected="selected">웹사이트에서 검색하기</option>
+						<option value="1">기록에서 검색하기</option>
+					</select>
+					<label for="search_query">검색어</label>
+					<input type="text" name="query" id="search_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+					<button>웹사이트에서 검색</button>
+					<a class="closeBtn" href="#"><i class="xi-close"></i>닫기</a>
+				</fieldset>
+			</form>
+			<ul class="ng04">
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#">회원가입</a></li>
+			</ul>
+				<a href="javascript:;" class="mobileMenuClose" title="모바일 메뉴 열기"><i class="xi-close"></i></a>
+			</nav>
+		</div>
+    </header>
+	<!-- 컨텐츠 영역 -->
+    <div class="fc04" id="main-content">
+		<div class="inner">
+			<!-- list header -->
+			<div class="header">
+				<ul class="ng06">
+					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
+					<li><a href="#">뉴스</a></li>
+					<li class="current"><a href="#">뉴스</a></li>
+				</ul>
+				<dl class="th01">
+					<dt><h1>뉴스</h1></dt>
+					<dd>서울기록원의 소식을 전합니다.</dd>
+				</dl>
+			</div>
+			<!-- //list header -->
+			<!-- conBody -->
+			<div class="conBody">
+				<!-- leftA -->
+				<div class="leftA">
+					<ul class="lc02">
+						<li class="l1">
+							<dl>
+								<dt><a href="#">서울기록원 전시설계 및 제작설치 사업</a></dt>
+								<dd class="date">2017-09-30</dd>
+								<dd class="sum">서울시 정보공개정책과는 <서울기록원 전시설계 및 제작 설치 사업>을 준비하고 있습니다. 제안서 평가 준비 단계이며 다음달에 본격적으로 사업이 시작됩니다. 기록 전시가 뮤지엄의 전시와 어떤 점에서 다르고, 어떻게 새로운 전형을 제시할 수 있을지 많은 고민을 하고 있습니다.</dd>
+							</dl>
+						</li>
+						<li class="l2">
+							<dl>
+								<dt><a href="#">서울기록원의 오픈 세미나 시리즈를 시작합니다.</a></dt>
+								<dd class="date">2017-09-13</dd>
+								<dd class="sum">첫 번째 세미나는 강성현 성공회대 동아시아 연구소 HK교수와 함께 미국 국립문서기록관리청(NARA: National Archives and Records Administration) 현지조사의 경험을 나누고, 여정을 듣는 자리입니다. 아카이브를 가장 깊이 들여다보는 사람들의 이야기를 통해 기록 '활용'에 대한 우리의 고민이 더 깊어지면 좋겠습니다.</dd>
+							</dl>
+						</li>
+						<li class="l2">
+							<dl>
+								<dt><a href="#">서울기록원 디지털 아카이브 웹사이트 테스트에 참여해주세요.</a></dt>
+								<dd class="date">2017-09-10</dd>
+								<dd class="sum"><img src="../images/@lc02.png" alt="이미지 설명"/></dd>
+								<dd class="sum">서울기록원 디지털 아카이브 웹사이트 테스트에 참여해주세요. 어렵지 않습니다. 짧은 가이드를 읽으신 후 각 페이지별로 버튼을 눌러보시면서 기능을 확인할 수 있습니다. 제안하고 싶은 게 있다면 오른쪽 아래의 대화 로봇에게 말을 걸 수도 있습니다. 질문도 좋습니다. 서울기록원에 바라는 것을 제안해주셔도 됩니다. 제안해주신 내용은 디지털 아카이브의 설계와 개발에만 활용됩니다.</dd>
+							</dl>
+						</li>
+						<li class="l2">
+							<dl>
+								<dt><a href="#">서울기록원 건축공사를 진행하고 있는 은평구 통일로 684번지의 현장</a></dt>
+								<dd class="date">2017-09-05</dd>
+								<dd class="sum"><img src="../images/@lc02.png" alt="이미지 설명"/></dd>
+								<dd class="sum">서울기록원 건축 공사 현장입니다. 공정률 34%이며 지하1층의 철근배근과 콘크리트 공사를 진행하고 있습니다. 지하1층에는 일반문서고와 서울역사박물관의 유물 수장고가 만들어집니다.서울기록원은 2018년 10월 준공이 목표입니다.</dd>
+							</dl>
+						</li>
+						<li class="l2">
+							<dl>
+								<dt><a href="#">[2017년 서울기록원 디지털 아카이브 구축]사업의 중간보고회를 진행합니다. </a></dt>
+								<dd class="date">2017-08-23</dd>
+								<dd class="sum">프로젝트팀은 발제 후 다양한 분야의 피드백을 받았습니다. 몇 개의 이슈를 공유합니다. 1. 서울기록원은 종이기록기반의 1:1 매칭 분류 패러다임을 버리고 집합체(Aggregation)와 분류 체계(Classification scheme)를 유동적으로 결합하는 모델로 다중 분류체계를 설계한다.</dd>
+							</dl>
+						</li>																		
+					</ul>
+					<div class="pg01">
+						<a class="first" href="#"><i class="xi-angle-left"></i><i class="xi-angle-left"></i></a>
+						<a class="prev" href="#"><i class="xi-angle-left"></i></a>
+						<a href="#">1</a>
+						<a class="on" href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a class="next" href="#"><i class="xi-angle-right"></i></a>
+						<a class="end" href="#"><i class="xi-angle-right"></i><i class="xi-angle-right"></i></a>
+					</div>
+				</div>
+				<!-- //leftA -->
+				<!-- rightA -->
+				<div class="rightA">
+					<!--dl class="tc02 text">
+						<dt>About</dt>
+						<dd>
+							<p>Etiam porta sem malesuada<br/>
+							magna mollis euismod. <br/>
+							Cras mattis consectetur <br/>
+							purus sit amet fermentum. <br/>
+							Aenean lacinia bibendum <br/>
+							nulla sed consectetur.</p>
+						</dd>
+					</dl-->
+					<dl class="tc02 navi">
+						<dt>카테고리</dt>
+						<dd>
+							<ul>
+								<li><a href="#">뉴스</a></li>
+								<li><a href="#">칼럼</a></li>
+								<li><a href="#">공지</a></li>
+								<!--li><a href="#">December 2013</a></li>
+								<li><a href="#">November 2013</a></li>
+								<li><a href="#">October 2013</a></li>
+								<li><a href="#">September 2013</a></li>
+								<li><a href="#">August 2013</a></li>
+								<li><a href="#">July 2013</a></li>
+								<li><a href="#">June 2013</a></li>
+								<li><a href="#">May 2013</a></li>
+								<li><a href="#">April 2013</a></li-->
+							</ul>
+						</dd>
+					</dl>
+					<dl class="tc02 navi">
+						<dt>소셜미디어</dt>
+						<dd>
+							<ul>	
+								<li><i class="xi-facebook-official"></i><a href="#">페이스북</a></li>
+								<li><i class="xi-github"></i><a href="#">깃허브</a></li>
+								<!--li><i class="xi-twitter"></i><a href="#">Twitter</a></li-->
+							</ul>
+						</dd>
+					</dl-->
+				</div>
+				<!-- //rightA -->
+			</div>
+			<!-- //conBody -->
+		</div>
+	</div>
+	<!-- //컨텐츠 영역 -->		
+	<footer>
+		<div class="inner">
+			<div class="lg02"><a href="#">서울기록원</a></div>
+			<ul class="ng03">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#"><b>개인정보보호방침</b></a></li>
+				<li><a href="http://www.seoul.go.kr/v2013/helper/copyright.html"><b>저작권정책</b></a></li>
+			</ul>
+			<div class="ng02">
+				<dl>
+					<dt><a href="#">뉴스</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">칼럼</a></li>
+							<li><a href="#">공지</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">소개 및 안내 </a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">서울기록원 소개</a></li>
+							<li><a href="#">사용자를 위한 안내</a></li>
+							<li><a href="#">개발자를 위한 안내</a></li>
+							<li><a href="#">일반문의</a></li>
+							<li><a href="#">오류신고</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">도구</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">탐색</a></li>
+							<li><a href="#">검색</a></li>
+							<li><a href="#">리서치가이드</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">컬렉션 및 전시</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">사진아카이브</a></li>
+							<li><a href="#">용산공원 특별 전시</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>	
+		</div>
+		<address>
+			<div class="inner">
+				<span>서울특별시 은평구 녹번동 산1-61호 000-00-00000 T.<b>02-3709-7500</b>,   F.<b>02-3709-7520</b></span>
+				<span>COPYRIGHT ©2018 <b>SEOUL METROPOLITAN ARCHIVE</b></span>
+			</div>
+		</address>
+		<!-- error report popup -->
+		<div class="tc11 closed">
+			<div class="topBtn">
+				<a class="btn02 btn02_01 open" href="javascript:;">오류신고</a>
+				<a class="btn02 btn02_01 close" href="javascript:;">닫기<i class="xi-arrow-right"></i></a>
+			</div>
+			<div id="popup_report_error" class="pp01 pp01_01">
+				<div class="popupBox">
+					<form class="cf08 cf08_01">
+						<fieldset>
+							<h3 class="th03">오류신고</h3>
+							<div class="input">
+								<label for="error_email">이메일</label>
+								<input type="email" name="error_email" id="error_email" placeholder="이메일"/>
+							</div>
+							<div class="input">
+								<label for="error_desc">오류내용</label>
+								<textarea name="error_desc" id="error_desc" placeholder="오류가 난 상황을 설명하면 서비스 개선에 도움이 됩니다."></textarea>
+							</div>
+							<div class="file">
+								<label for="error_file">파일업로드</label>
+								<input type="file" class="ti01" name="error_file" id="error_file"/>
+								<div class="fake">
+									<span></span>
+									<a class="btn02 btn02_01" href="javascript:;">파일찾기</a>
+								</div>
+							</div>
+						</fieldset>
+						<div class="submit"><button class="btn01">저장</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- //error report popup -->
+	</footer>
+</div>
+<!-- //main_wrap -->
+</body>
+</html>

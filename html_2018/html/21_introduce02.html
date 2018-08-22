@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<title>서울기록원</title>
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+<link rel="stylesheet" type="text/css" href="../css/archive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+<link rel="stylesheet" type="text/css" href="../css/archive_slowalk.css"/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css"/><![endif]-->
+<!--[if lt IE 9]><script src="../js/html5.js"></script><![endif]-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src='../js/jquery-1.11.3.min.js'></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="http://www.seoul.go.kr/seoulgnb/gnb.js"></script>
+<script type="text/javascript" src="../js/archive.js"></script>
+<script type="text/javascript">
+// GNB 로딩 스크립트
+// Yjs.Gnb.init('사이트 ID', 'GNB 표출영역 ID');
+window.onload = function() {
+    Yjs.Gnb.init('G188', 'seoul-common-gnb');
+};
+</script>
+</head>
+<body>
+<div id="main_wrap" class="subPage">
+	<div id="skip-link">
+		<a href="#main-content">컨텐츠 바로가기</a>
+	</div>
+	<div id="seoul-common-gnb"></div>
+	<header class="hd02 fixed"><!-- fixed를 추가하면 스크롤시에 헤더가 상단고정 되지 않음  -->
+		<div class="inner2">
+					<div class="mobileHeader">
+				<div class="lg01"><a href="/">서울기록원</a></div>
+				<a href="javascript:;" class="mobileMenuOpen" title="모바일 메뉴 열기"><i class="xi-bars"></i></a>
+			</div>
+		<nav>
+			<menu>
+				<li class="news on"><a href="#">뉴스</a></li>
+				<li class="info"><a href="#">용산공원특별전시</a></li>
+				<li class="search"><a href="#">검색</a></li>
+			</menu>
+			<form class="cf02" action="" method="post">
+				<fieldset>
+					<label for="search_option">검색옵션</label>
+					<select name="search_option" id="search_option">
+						<option value="0" selected="selected">웹사이트에서 검색하기</option>
+						<option value="1">기록에서 검색하기</option>
+					</select>
+					<label for="search_query">검색어</label>
+					<input type="text" name="query" id="search_query" placeholder="찾으시는 검색어를 입력해 주세요"/>
+					<button>웹사이트에서 검색</button>
+					<a class="closeBtn" href="#"><i class="xi-close"></i>닫기</a>
+				</fieldset>
+			</form>
+			<ul class="ng04">
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#">회원가입</a></li>
+			</ul>
+				<a href="javascript:;" class="mobileMenuClose" title="모바일 메뉴 열기"><i class="xi-close"></i></a>
+			</nav>
+		</div>
+    </header>
+	<!-- 컨텐츠 영역 -->
+    <div class="fc14" id="main-content">
+		<div class="outer">
+			<div class="con02">
+				<div class="conHeader">
+					<div class="topA">
+						<dl class="title inner">
+							<dt>2017 디지털 전시</dt>
+							<dd class="title"><h1>용산,<br/>금단의 땅을<br/>전傳하다.</h1></dd>
+							<dd class="info">1948년 31보병연대 32보병연대 일대 (현 전쟁기념관) 항공사진_미국국립기록보존소</dd>
+						</dl>
+					</div>
+					<div class="lowerA">
+						<dl class="summery inner">
+							<dt>용산기지는<br/>
+	제국주의와 냉전 유산의 상징이자<br/>
+	인류가 더 이상 같은 실수를 되풀이하지 않기 위해 보존해야 할 가치가 큰 유산입니다.<br/>
+	‘용산, 금단의 땅을 전하다’ 전시를 통해 용산기지가 전해주는 공생, 평화, 인권 등 인류 보편적인 가치에 대해 생각해 보는 계기가 되었으면 합니다.<br/><br/>
+
+	20세기의 굴곡진 역사를 넘어 새로운 희망의 싹을<br/>
+	틔울 수 있는 용산공원을 상상해보며,<br/>
+	곧 우리의 품으로 돌아올 용산기지를 전傳합니다.</dt>
+							<dd>In the middle of prosperous South Korea’s capital, Seoul, there sits a forbidden land for the last 100 years called Yongsan Garrison. This military base captures both imperialism and cold war ideologies which were once pervasive around the world, and for Koreans, this land is a reminder of painful history like Japanese colonial period, wars and the divided nation. Through reflecting on the tumultuous 20th century history of Yongsan, this exhibition hopes to provide a glimmer of hope for Yongsan Garrison and imagine the future Yongsan Park which will be soon returned to the hearts of all Koreans.</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="unit unit01">
+					<div class="inner">
+						<h2>[1]<br/>삶의 터전,<br/>용산</h2>
+						<dl class="picture type01">
+							<dt>
+								<p>조선시대에 기록된 옛 지도를 보면, 인왕산 무악재에서 뻗은 산자락 끝에서 용산의 지명을 확인할 수 있다. 조선시대 사람들은 한강과 남산, 그리고 만초천과 같은 자연경관에 둘러싸인 용산을 생활의 터전으로 삼아왔다.</p>
+							</dt>
+							<dd>
+								<img src="../image-tile/yongsan01_01.png" alt="동국여도"/>
+								<p><strong>동국여도</strong><em>경강부임진도 19세기 전반<br/>서울대학교 규장각 소장</em></p>
+							</dd>
+						</dl>
+						<dl class="picture type02">
+							<dt>
+								<p>용산은 조선의 수도인 한성과 전국을 이어주는 주요 결절점으로서 사람이 모이는 곳이자 물류의 중심지였으며, 전쟁 때는 전략 요충지였다.</p>
+								<a class="btn01" href="#">[1]전시 페이지  세부 보기</a>
+							</dt>
+							<dd>
+								<img src="../image-tile/yongsan01_02.png" alt="용산의 한강변 겨울 빨래"/>
+								<p><strong>용산의 한강변 겨울 빨래</strong><em>출처 - 사진으로보는 서울</em></p>
+							</dd>
+						</dl>
+					</div>
+					<div class="pictureInfo">
+						<dl class="inner">
+							<dt>석재운반</dt>
+							<dd>_ 서울시립대학교박물관 소장</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="unit unit02">
+					<div class="inner">
+						<h2>[2]<br/>식민 지배의 산실, 용산</h2>
+						<dl class="picture type02">
+							<dt>
+								<p>조선 정부는 1881년에 창설한 별기군에게 특혜를 주는데 반해 구식군대를 멸시하여 임오군란(1882년)이 일어났다.<br/>
+	일본은 이를 계기로 인천 제물포에 1,200명의 군대를 파견하고, 호위 병력을 서울 남산 아래에 주둔시켰다. 이는 임진왜란 이후 한성에 일본군이 주둔하게 된 첫 사례이다.<br/><br/>
+	일본은 러시아와의 전쟁을 위해 조선 땅에 군부대를 설치한다는 내용이 포함된 한일의정서(1904년)를 체결했다. 이후 러일전쟁에서 승리한 일본은 을사늑약을 체결하고, 용산을 비롯한 전국에서 영구병영을 설치하기 시작했다. </p>
+							</dt>
+							<dd>
+								<img src="../image-tile/yongsan02_01.png" alt="용산의 한강변 겨울 빨래"/>
+								<p><strong>사단대항연습사진첩</strong><em>출처 - 민족문제연구소 소장</em></p>
+							</dd>
+						</dl>
+						<dl class="picture type01">
+							<dt>
+								<p>한일의정서 제 4조<br/>
+	<i>일본 정부는 전항의 목적을 달성하기 위하여 군사상 필요한 지점을 
+	임기수용(任機收用) 할 수 있음.</i></p>
+								<a class="btn01" href="#">[2]전시 페이지 세부 보기</a>
+							</dt>
+							<dd>
+								<img src="../image-tile/yongsan02_02.png" alt="용산의 한강변 겨울 빨래"/>
+								<p><strong>용산총독관저 항공사진</strong><em>출처 -  일본지리풍속대계(1930) 수록</em></p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="unit unit03">
+					<div class="inner">
+						<h2>[3]<br/>냉전의 최전초 기지, 용산</h2>
+						<dl class="picture type03">
+							<dt>
+								<p>한반도는 1945년 일본군의 항복으로 해방되었지만,
+북위 38도 선을 경계로 이북지역은 소련군이, 이남지역은 미군이 각각 일본군의 항복을 접수했다.<br/><br/>
+
+조선 총독은 1945년 9월 9일, 미군 제24군단에 정식으로 항복했다. 제17방면군사령부가 용산을 떠나면서 일본군의 용산기지 역사는 마무리된다. 
+대신 용산기지를 접수한 미군은 이곳을 ‘캠프 서빙고
+(Camp Seobinggo)’라 명명했다. </p>
+							</dt>
+							<dd>
+								<img src="../image-tile/yongsan03_01.png" alt="미7사단 위수감옥 & 미7사단 헌병소대의 박사와 수송반"/>
+								<p><strong>미7사단 위수감옥 & 미7사단 헌병소대의 박사와 수송반</strong><em>출처 -  1948년 미국 국립문서보관청(NARA) 소장</em></p>
+							</dd>
+							<dd>
+								<img src="../image-tile/yongsan03_02.png" alt="미7사단 포병대(現 용산기지 캠프 코이너)일대"/>
+								<p><strong>미7사단 포병대(現 용산기지 캠프 코이너)일대</strong><em>출처 -  1948년 미국 국립문서보관청(NARA) 소장</em></p>
+							</dd>
+							<dd>
+								<a class="btn01" href="#">[3]전시 페이지 세부 보기</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="unit unit04">
+					<div class="inner">
+						<h2>[4]<br/>숙제의 땅, 용산</h2>
+						<dl class="picture type03">
+							<dt>
+								<p>1957년, 일본 동경에 주둔했던<br/>유엔군사령부(UNC)가 용산기지로 이동하여<br/>주한미군사령부(USFK)를 창설했다.<br/>
+1978년에는 한미연합사령부(CFC)가 창설되면서<br/>용산기지는 한미 군사동맹의 상징적인<br/>장소로 변모했다.</p>
+							</dt>
+							<dd>
+								<ul>
+									<li>
+										<img src="../image-tile/yongsan04_01.png" alt="수령 2000년이 넘은 느티나무"/>
+										<p><strong>수령 2000년이 넘은 느티나무</strong><em>용산문화공원(김천수)</em></p>
+									</li>
+									<li>
+										<img src="../image-tile/yongsan04_02.png" alt="용산미군기지 전경"/>
+										<p><strong>용산미군기지 전경</strong><em>국토교통부</em></p>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="picture type03">
+							<dt>
+								<p>현재 용산기지는 3개 지역(메인 포스트, 사우스 포스트, 캠프 코이너)으로 구분된다. 메인 포스트는 주로 미군 근무지(주한미군사령부, 한미연합사령부 등), 사우스 포스트에는 주거시설을 비롯한 병원 및 편의시설, 캠프 코이너에는 지원시설이 있다.<br/><br/>
+한미 상호보호조약 제4조<br/> 
+상호적 합의에 의하여 미합중국의 육군, 해군과 공군을 대한민국의 영토 내와 그 부근에 배치하는 권리를 대한민국은 이를 허여(許與)하고 미합중국은 이를 수리한다</p>
+							</dt>
+							<dd>
+								<a class="btn01" href="#">[4]전시 페이지 세부 보기</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="pictureInfo">
+						<dl class="inner">
+							<dt>용산천 연결다리</dt>
+							<dd>_ 국토교통부</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="conFooter">
+					<div class="inner">
+						서울특별시 도시계획과 용산공원전략팀 (02.2133.8341, khr0801@seoul.go.kr)<br/>
+						주최 : 서울특별시 도시계획국.문화본부, 정보공개정책과 기록문화팀<br/>
+						주관 : 서울특별시, 용산구,  서울역사박물관<br/>
+						협조 : 국가기록원, 국토교통부, 독립기념관, 민족문제연구소, 서울시립대학교박물관, 서울역사박물관, 서울역사편찬원, 용산구청, 용산문화원, tbs교통방송
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //컨텐츠 영역 -->		
+	<footer>
+		<div class="inner">
+			<div class="lg02"><a href="#">서울기록원</a></div>
+			<ul class="ng03">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#"><b>개인정보보호방침</b></a></li>
+				<li><a href="http://www.seoul.go.kr/v2013/helper/copyright.html"><b>저작권정책</b></a></li>
+			</ul>
+			<div class="ng02">
+				<dl>
+					<dt><a href="#">뉴스</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">칼럼</a></li>
+							<li><a href="#">공지</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">소개 및 안내 </a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">서울기록원 소개</a></li>
+							<li><a href="#">사용자를 위한 안내</a></li>
+							<li><a href="#">개발자를 위한 안내</a></li>
+							<li><a href="#">일반문의</a></li>
+							<li><a href="#">오류신고</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">도구</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">탐색</a></li>
+							<li><a href="#">검색</a></li>
+							<li><a href="#">리서치가이드</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">컬렉션 및 전시</a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">사진아카이브</a></li>
+							<li><a href="#">용산공원 특별 전시</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>	
+		</div>
+		<address>
+			<div class="inner">
+				<span>서울특별시 은평구 녹번동 산1-61호 000-00-00000 T.<b>02-3709-7500</b>,   F.<b>02-3709-7520</b></span>
+				<span>COPYRIGHT ©2018 <b>SEOUL METROPOLITAN ARCHIVE</b></span>
+			</div>
+		</address>
+		<!-- error report popup -->
+		<div class="tc11 closed">
+			<div class="topBtn">
+				<a class="btn02 btn02_01 open" href="javascript:;">오류신고</a>
+				<a class="btn02 btn02_01 close" href="javascript:;">닫기<i class="xi-arrow-right"></i></a>
+			</div>
+			<div id="popup_report_error" class="pp01 pp01_01">
+				<div class="popupBox">
+					<form class="cf08 cf08_01">
+						<fieldset>
+							<h3 class="th03">오류신고</h3>
+							<div class="input">
+								<label for="error_email">이메일</label>
+								<input type="email" name="error_email" id="error_email" placeholder="이메일"/>
+							</div>
+							<div class="input">
+								<label for="error_desc">오류내용</label>
+								<textarea name="error_desc" id="error_desc" placeholder="오류가 난 상황을 설명하면 서비스 개선에 도움이 됩니다."></textarea>
+							</div>
+							<div class="file">
+								<label for="error_file">파일업로드</label>
+								<input type="file" class="ti01" name="error_file" id="error_file"/>
+								<div class="fake">
+									<span></span>
+									<a class="btn02 btn02_01" href="javascript:;">파일찾기</a>
+								</div>
+							</div>
+						</fieldset>
+						<div class="submit"><button class="btn01">저장</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- //error report popup -->
+	</footer>
+</div>
+<!-- //main_wrap -->
+</body>
+</html>
