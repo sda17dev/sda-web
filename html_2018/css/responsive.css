@@ -439,6 +439,18 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 .ng12 a{border:1px solid #ccc;text-decoration:none;display:inline-block;height:30px;padding:0 10px;line-height:30px}
 .ng12 a.mobileMenuOpen{display:none}
 .ng12 a i{font-size:1.5rem;margin-left:5px;vertical-align:middle}
+/* 메인 맞춤이용 안내*/
+.ng14{margin-bottom:2rem;padding-top:20px}
+.ng14 a.firstVisit{float:none;display:block;;width:auto;height:12rem;line-height:8rem;background-size:100% auto;background-position:center top -160px;font-size:1.5rem;margin-bottom:20px}
+.ng14 dl{float:none;width:auto}
+.ng14 dl dt{font-size:1.5rem;line-height:1.5rem;color:#333;margin-bottom:1.25rem;}
+.ng14 dl ul{border:1px solid #cbcbcb}
+.ng14 dl li{border-top:1px solid #cbcbcb;position:relative}
+.ng14 dl li:first-child{border-top:none}
+.ng14 dl li:after{content:"";position:absolute;top:0.8rem;right:1rem;display:block;width:1.3rem;height:1.3rem;background:url(../images/icon_play.png) no-repeat 0 0;background-size:cover;z-index:1}
+.ng14 dl li a{display:block;padding:0 1rem;height:3rem;line-height:3rem;background-color:#e4e4e4;font-size:1rem;color:#333}
+.ng14 dl li a:hover{text-decoration:none;background-color:#666;color:#fff}
+
 /* popup */
 .pp01 .popupBox{width:100% !important;padding:10px;box-sizing:border-box;background-color:#fff;z-index:15;margin-top:-150px !important}
 .pp01 .popupBox a.closeB{position:absolute;width:18px;height:18px;top:10px;right:10px;background-image:url(../images/btn_close03.png)}

@@ -872,7 +872,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .ng13 li a:hover{text-decoration:none;background-color:#fff}
 /* 메인 맞춤이용 안내*/
 .ng14{overflow:hidden;margin-bottom:3rem}
-.ng14 a.firstVisit{float:left;width:40%;height:15rem;line-height:15rem;text-align:center;background:url(../images/bg_ng14.png) no-repeat;background-position:left 0 bottom -50px;background-size:100% auto;font-size:2rem;font-weight:600;color:#fff}
+.ng14 a.firstVisit{float:left;width:40%;height:15rem;line-height:15rem;text-align:center;background:url(../images/bg_ng14.png) no-repeat;background-position:left 0 bottom -50px;background-size:100% auto;font-size:2rem;font-weight:500;color:#fff}
 .ng14 dl{float:right;width:57%}
 .ng14 dl dt{font-size:1.5rem;line-height:1.5rem;color:#333;margin-bottom:1.25rem;}
 .ng14 dl ul{border:1px solid #cbcbcb}
