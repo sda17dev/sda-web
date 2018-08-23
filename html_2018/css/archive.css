@@ -1092,8 +1092,8 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 /* collection detail topic */
 .tc13{margin-bottom:2rem;position:relative}
 .tc13 .thumb{background-color:#000;display:block;text-align:center}
-.tc13 .thumb img{max-width:100%}
-.tc13 .info{position:absolute;bottom:0;left:50%;margin-left:-570px;display:block;background-color:#fff;padding:1.2rem 2.3rem 1.2rem;box-sizing:border-box}
+.tc13 .thumb img{max-width:100%;display:block;margin:auto}
+.tc13 .info{position:absolute;bottom:2rem;left:50%;margin-left:-570px;display:block;background-color:#fff;padding:1.2rem 2.3rem 1.2rem;box-sizing:border-box}
 .tc13 .info strong{font-size:1.5rem;line-height:2rem;font-weight:300;display:block;color:#333}
 .tc13 .info i{color:#999;display:block;margin-bottom:1rem}
 /* collection detail description */
