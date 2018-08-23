@@ -177,7 +177,8 @@ footer .tc11.closed{right:1px}
 .fc14 .outer{width:1440px;margin:0 auto}
 
 .fc15{padding:5rem 0 10rem}
-.fc15 .btnA{text-align:right}
+.fc15 .btnA{text-align:right;margin-bottom:2rem}
+.fc15 .btnA02{text-align:center}
 .fc15 .btnA a{margin-left:10px}
 
 /* buttons */
@@ -770,7 +771,7 @@ footer .tc11.closed{right:1px}
 .lc10 ul li .thumb img{display:inline-block}
 .lc10 ul li .thumb img.fillwidth{width:100%}
 .lc10 ul li .thumb img.fillheight{height:100%}
-.lc10 ul li strong{font-size:1.2rem;line-height:1.6rem;color:#333;font-weight:300;display:block;max-height:3rem;display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+.lc10 ul li strong{font-size:1rem;line-height:1.6rem;color:#333;font-weight:300;display:block;max-height:3rem;display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
 
 /* logo */
 .lg01 a{display:block;width:7.8125rem;height:4.375rem;background:url(../images/logo02@2x.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
