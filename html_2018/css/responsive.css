@@ -10,6 +10,8 @@ header.hd02{margin:0;padding:0 15px}
 .tc11 .pp01 .popupBox{left:100% !important;width:24rem !important}
 .fc04_04 .conBody{background:none}
 .fc14 .outer{width:auto;margin:0}
+.tc13 .info{position:absolute;bottom:0;left:15px;margin-left:0;display:block}
+
 }
 
 @media all and (max-width:767px){
@@ -137,6 +139,9 @@ footer address span{display:block}
 
 .fc12 .btn04{font-size:0;width:auto;padding:0 10px}
 .fc12 .btn04 i{font-size:16px;line-height:2.625rem;margin-right:0}
+
+.fc15{padding:0 0 10rem}
+.fc15 .btnA a{margin:0 1rem}
 
 /* introduce page */
 .con01{margin-bottom:6rem}
@@ -372,6 +377,15 @@ footer address span{display:block}
 .lc07 h2{font-size:1.5rem;margin-bottom:2rem}
 .lc07 .bookmarks dl{width:100%;padding:1.25rem;margin-bottom:20px}
 
+/* collection detail featured */
+.lc09{margin-bottom:3rem}
+.lc09 ul{overflow:hidden}
+.lc09 ul li{float:none;width:auto;margin-right:0;margin-bottom:3rem}
+
+.lc10{margin-bottom:3rem;background-color:#eee;padding:1rem 0}
+.lc10 ul li{float:none;width:auto;margin-left:0;margin-bottom:2rem}
+.lc10 ul li .thumb{height:20rem}
+
 
 /* logo */
 .lg01 a{display:block;width:63px;height:35px}
@@ -534,6 +548,15 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 .tc11 .topBtn .btn02{padding:0 10px}
 
 .tc12 a{height:20rem;background-position:center bottom -4rem}
+  
+/* collection detail topic */
+.tc13 .thumb{margin-bottom:0.5rem}
+.tc13 .thumb img{display:block}
+.tc13 .info{position:static;padding:0;margin-left:10px}
+.tc13 .info em{line-height:1.4rem;display:block}
+  
+/* collection detail description */
+.tc14 p{line-height:1.5rem}
 
 /* 서브페이지 제목 */
 .th01{margin-bottom:1rem}
@@ -578,6 +601,8 @@ header.hd02{padding:0 40px}
 .con02 .unit01{padding-bottom:25rem}
 .con02 .unit02{padding-bottom:17rem}
 .con02 .unit03 .type03 dd{margin-bottom:1.5rem}
+.tc13 .info{position:absolute;bottom:0;left:40px;margin-left:0;display:block}
+
 }
 
 @media all and (min-width:1281px) and (max-width:1440px){
@@ -650,8 +675,11 @@ header.hd01.searchMode .cf02{margin-bottom:4em}
 .cf02 .ui-selectmenu-button{height:3em;font-size:1.4em}
 .cf02 .ui-selectmenu-button span.ui-selectmenu-text{height:3em;line-height:3em}
 
+
 }
 
 @media all and (min-height:841px) {
+
+
 
 }

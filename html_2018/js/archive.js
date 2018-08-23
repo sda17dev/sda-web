@@ -414,6 +414,15 @@ $(document).ready(function() {
 		$('.fc11 .leftA #print_img_area').remove();
 		return false;
 	});
+	//이미지 가로-세로 비율
+	$('img').each(function() {
+		$(this).load(function(){
+		  var fillClass = ($(this).height() > $(this).width()) 
+		    ? 'fillheight'
+		    : 'fillwidth';
+		  $(this).addClass(fillClass);
+	  });
+	});
 	
 });
 
