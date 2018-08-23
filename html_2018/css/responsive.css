@@ -19,7 +19,7 @@ html{font-size:11px}
 .inner{margin:0 10px}
 #main-content{padding-top:0 !important}
 body.mobile header .inner2{display:block;padding:0}
-body.mobile header .mobileHeader{height:68px;background-color:#fff}
+body.mobile header .mobileHeader{height:67px;background-color:#fff}
 body.mobile header .mobileMenuOpen{float:right;display:block;height:25px;line-height:25px;margin:21px 10px 0 0;text-decoration:none}
 body.mobile header .mobileMenuOpen i{font-size:25px;color:#333}
 body.mobile header .mobileMenuOpen:active i{color:#1e5eff}
@@ -141,7 +141,8 @@ footer address span{display:block}
 .fc12 .btn04 i{font-size:16px;line-height:2.625rem;margin-right:0}
 
 .fc15{padding:0 0 10rem}
-.fc15 .btnA a{margin:0 1rem}
+  .fc15 .btnA{text-align:center}
+.fc15 .btnA a{margin:0 1rem 1rem;display:block}
 
 /* introduce page */
 .con01{margin-bottom:6rem}
@@ -381,10 +382,15 @@ footer address span{display:block}
 .lc09{margin-bottom:3rem}
 .lc09 ul{overflow:hidden}
 .lc09 ul li{float:none;width:auto;margin-right:0;margin-bottom:3rem}
+.lc09 ul li .thumb{height:auto}
+.lc09 ul li .thumb img{display:block;margin:0 auto}
+.lc09 ul li .thumb img.fillheight{max-height:19rem}
 
 .lc10{margin-bottom:3rem;background-color:#eee;padding:1rem 0}
 .lc10 ul li{float:none;width:auto;margin-left:0;margin-bottom:2rem}
-.lc10 ul li .thumb{height:20rem}
+.lc10 ul li .thumb{height:auto}
+.lc10 ul li .thumb img{display:block;margin:0 auto}
+.lc10 ul li .thumb img.fillheight{max-height:19rem}
 
 
 /* logo */

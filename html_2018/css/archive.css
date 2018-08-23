@@ -177,8 +177,8 @@ footer .tc11.closed{right:1px}
 .fc14 .outer{width:1440px;margin:0 auto}
 
 .fc15{padding:5rem 0 10rem}
-.fc15 .btnA{text-align:center}
-.fc15 .btnA a{margin:0 10px}
+.fc15 .btnA{text-align:right}
+.fc15 .btnA a{margin-left:10px}
 
 /* buttons */
 .btn01{display:inline-block;height:3.125rem;line-height:3.125rem;text-align:center;background-color:#1e5eff;border:none;box-sizing:border-box;color:#fff;font-size:1.125rem;cursor:pointer;padding:0 2rem;}
@@ -385,8 +385,7 @@ footer .tc11.closed{right:1px}
 .cf03 fieldset input{width:21rem;height:3.125rem;text-indent:10px;border:none;margin-right:0.5rem;vertical-align:top;font-size:1.125rem}
 .cf03 fieldset button,.cf03 fieldset .btn.link{padding:0 2.4rem;height:3.125rem;border:none;background-color:#1e5eff;color:#fff;font-size:1.125rem;cursor:pointer;vertical-align:top}
 .cf03 fieldset .btn.link {display:inline-block; line-height:2.5;}
-.cf03_01{padding-top:2.2em}
-.cf03_01 dl{margin-bottom:1rem}
+.cf03_01{padding-top:3.5em}
 /* search facet option*/
 .cf04 dl{border:1px solid #e6e6e6;background-color:#f1f3f5;padding:1.25rem 1.25rem;margin-bottom:0.625rem}
 .cf04 dl dt{margin-bottom:0.625rem;font-weight:bold}
@@ -754,7 +753,7 @@ footer .tc11.closed{right:1px}
 .lc09 ul{overflow:hidden}
 .lc09 ul li{float:left;width:48%;margin-right:4%;margin-bottom:3rem}
 .lc09 ul li.l2, .lc09 ul li.l4, .lc09 ul li.l6, .lc09 ul li.l8{margin-right:0}
-.lc09 ul li .thumb{display:block;width:100%;overflow:hidden;height:20rem;margin-bottom:0.4rem;background-color:#000;text-align:center}
+.lc09 ul li .thumb{display:block;width:100%;overflow:hidden;height:19rem;margin-bottom:0.4rem;background-color:#000;text-align:center}
 .lc09 ul li .thumb img{display:inline-block}
 .lc09 ul li .thumb img.fillwidth{width:100%}
 .lc09 ul li .thumb img.fillheight{height:100%}
@@ -1093,7 +1092,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc13{margin-bottom:2rem;position:relative}
 .tc13 .thumb{background-color:#000;display:block;text-align:center}
 .tc13 .thumb img{max-width:100%}
-.tc13 .info{position:absolute;bottom:0;left:50%;margin-left:-570px;display:block;background-color:#fff;padding:1.5rem 2.3rem 0;box-sizing:border-box}
+.tc13 .info{position:absolute;bottom:0;left:50%;margin-left:-570px;display:block;background-color:#fff;padding:1.2rem 2.3rem 1.2rem;box-sizing:border-box}
 .tc13 .info strong{font-size:1.5rem;line-height:2rem;font-weight:300;display:block;color:#333}
 .tc13 .info i{color:#999;display:block;margin-bottom:1rem}
 /* collection detail description */
