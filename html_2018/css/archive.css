@@ -385,7 +385,8 @@ footer .tc11.closed{right:1px}
 .cf03 fieldset input{width:21rem;height:3.125rem;text-indent:10px;border:none;margin-right:0.5rem;vertical-align:top;font-size:1.125rem}
 .cf03 fieldset button,.cf03 fieldset .btn.link{padding:0 2.4rem;height:3.125rem;border:none;background-color:#1e5eff;color:#fff;font-size:1.125rem;cursor:pointer;vertical-align:top}
 .cf03 fieldset .btn.link {display:inline-block; line-height:2.5;}
-.cf03_01{padding-top:3.5em}
+.cf03_01{padding-top:2.2em}
+.cf03_01 dl{margin-bottom:1rem}
 /* search facet option*/
 .cf04 dl{border:1px solid #e6e6e6;background-color:#f1f3f5;padding:1.25rem 1.25rem;margin-bottom:0.625rem}
 .cf04 dl dt{margin-bottom:0.625rem;font-weight:bold}
