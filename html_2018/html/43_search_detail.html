@@ -90,16 +90,39 @@ window.onload = function() {
 				<form class="cf09 searchDetail" method="post">
 					<fieldset>
 						<dl class="check">
-							<dt>주요구분</dt>
+							<dt>주요구분<em>※ 사용자의 편의를 위해 제공하는 구분</em></dt>
 							<dd>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">전체</label></span>
 								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">온라인열람 가능 자료만 보기</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">사진아카이브</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">웹아카이브</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">소셜미디어 아카이브</label></span>
 							</dd>
 						</dl>
+						<dl class="check">
+							<dt>기록<em>※서울기록원의 전체 기록물 분류 </em></dt>
+							<dd>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">전체</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">시정기록</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">시민수집기록</label></span>	
+							</dd>
+						</dl>
+						<dl class="check">
+							<dt>기술계층<em>※ 중복선택 가능합니다.</em></dt>
+							<dd>
+								<span><input type="checkbox" name="search_d_eng" id="search_d_eng1"/><label for="search_d_eng1">전체</label></span>
+								<span><input type="checkbox" name="search_d_eng" id="search_d_eng2"/><label for="search_d_eng2">레코드그룹</label></span>
+								<span><input type="checkbox" name="search_d_eng" id="search_d_eng3"/><label for="search_d_eng3">시리즈</label></span>
+								<span><input type="checkbox" name="search_d_eng" id="search_d_eng4"/><label for="search_d_eng4">파일</label></span>
+								<span><input type="checkbox" name="search_d_eng" id="search_d_eng5"/><label for="search_d_eng5">아이템</label></span>
+								<!-- <span><input type="checkbox" name="search_d_eng" id="search_d_eng6"/><label for="search_d_eng6">아이템</label></span> -->
+							</dd>
+						</dl>						
 						<dl class="keyword">
-							<dt>검색<em>※ 포함되어야 할 단어나 키워드를 작성하세요.</em></dt>
+							<dt>필드검색<em>※ 포함되어야 할 단어나 키워드를 작성하세요. 추가한 키워드의 And(포함) Or(또는) 조건을 사용할 수 있습니다. </em></dt>
 							<dd>
 								<div class="keywords">
-									<label>제목</label>
+									<label>제목(Title)</label>
 									<ul>
 										<li class="l1"><input type="text" name="search_d_keyword11"/></li>
 										<li class="l2"><input type="text" name="search_d_keyword12"/></li>
@@ -110,7 +133,7 @@ window.onload = function() {
 									</ul>
 								</div>
 								<div class="keywords">
-									<label>분류기술</label>
+									<label>생산부서(Author)</label>
 									<ul>
 										<li class="l1"><input type="text" name="search_d_keyword21"/></li>
 										<li class="l2"><input type="text" name="search_d_keyword22"/></li>
@@ -120,19 +143,68 @@ window.onload = function() {
 										<li class="add"><button type="button">추가</button></li>
 									</ul>
 								</div>
+								<div class="keywords">
+									<label>필드(Field)</label>
+									<ul>
+										<li class="l1"><input type="text" name="search_d_keyword21"/></li>
+										<li class="l2"><input type="text" name="search_d_keyword22"/></li>
+										<li class="l3"><input type="text" name="search_d_keyword23"/></li>
+										<li class="l4"><input type="text" name="search_d_keyword24"/></li>
+										<li class="l5"><input type="text" name="search_d_keyword25"/></li>
+										<li class="add"><button type="button">추가</button></li>
+									</ul>
+								</div>
+								<div class="keywords">
+									<label>설명(Descirption)</label>
+									<ul>
+										<li class="l1"><input type="text" name="search_d_keyword26"/></li>
+										<li class="l2"><input type="text" name="search_d_keyword27"/></li>
+										<li class="l3"><input type="text" name="search_d_keyword28"/></li>
+										<li class="l4"><input type="text" name="search_d_keyword29"/></li>
+										<li class="l5"><input type="text" name="search_d_keyword30"/></li>
+										<li class="add"><button type="button">추가</button></li>
+									</ul>
+								</div>
+								<div class="keywords">
+									<label>필드(Field)</label>
+									<ul>
+										<li class="l1"><input type="text" name="search_d_keyword21"/></li>
+										<li class="l2"><input type="text" name="search_d_keyword22"/></li>
+										<li class="l3"><input type="text" name="search_d_keyword23"/></li>
+										<li class="l4"><input type="text" name="search_d_keyword24"/></li>
+										<li class="l5"><input type="text" name="search_d_keyword25"/></li>
+										<li class="add"><button type="button">추가</button></li>
+									</ul>
+								</div>
+
 							</dd>
 						</dl>
-						<dl class="check">
-							<dt>기술계층<em>※ 중복선택 가능합니다.</em></dt>
+						<!-- 생산시작년도와 생산종료년도를 입력해 결과값의 날짜를 필터링한다. -->						
+						<dl class="keyword">
+							<dt>생산년도<em>※서울기록원의 전체 기록물 분류 </em></dt>
 							<dd>
-								<span><input type="checkbox" name="search_d_eng" id="search_d_eng1"/><label for="search_d_eng1">레코드그룹</label></span>
-								<span><input type="checkbox" name="search_d_eng" id="search_d_eng2"/><label for="search_d_eng2">서브-레코드그룹</label></span>
-								<span><input type="checkbox" name="search_d_eng" id="search_d_eng3"/><label for="search_d_eng3">시리즈</label></span>
-								<span><input type="checkbox" name="search_d_eng" id="search_d_eng4"/><label for="search_d_eng4">서브-시리즈</label></span>
-								<span><input type="checkbox" name="search_d_eng" id="search_d_eng5"/><label for="search_d_eng5">파일</label></span>
-								<span><input type="checkbox" name="search_d_eng" id="search_d_eng6"/><label for="search_d_eng6">아이템</label></span>
+								<label>생산시작년도</label>
+								<ul>
+									<li class="l1"><input type="text" name="search_d_keyword26"/></li>
+									<li class="l2"><input type="text" name="search_d_keyword27"/></li>
+								</ul>
+								<label>생산종료년도</label>
+								<ul>
+									<li class="l1"><input type="text" name="search_d_keyword26"/></li>
+									<li class="l2"><input type="text" name="search_d_keyword27"/></li>
+								</ul>
 							</dd>
 						</dl>
+						<!-- 기록관련 외부 API 접근시 소장처 연결 및 구분 -->
+						<dl class="check">
+							<dt>기록보존소별<em>※서울기록원 외의 소장처 검색 </em></dt>
+							<dd>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">전체</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">서울기록원에 소장된 기록</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">서울기록원 외 소장처</label></span>	
+							</dd>
+						</dl>
+						<div class="submit"><button class="btn01" type="submit">Clear Form</button></div>
 						<div class="submit"><button class="btn01" type="submit">검색</button></div>
 					</fieldset>
 				</form>
