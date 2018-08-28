@@ -750,7 +750,7 @@ footer .tc11.closed{right:1px}
 
 /* collection detail featured */
 .lc09{margin-bottom:3rem}
-.lc09 h2{font-size:1.5rem;line-height:2rem;margin-bottom:0.6rem;color:#333;font-weight:300}
+.lc09 h2{font-size:1.5rem;line-height:2rem;margin-bottom:0.6rem;color:#333;font-weight:400}
 .lc09 ul{overflow:hidden}
 .lc09 ul li{float:left;width:48%;margin-right:4%;margin-bottom:3rem}
 .lc09 ul li.l2, .lc09 ul li.l4, .lc09 ul li.l6, .lc09 ul li.l8{margin-right:0}
@@ -758,12 +758,12 @@ footer .tc11.closed{right:1px}
 .lc09 ul li .thumb img{display:inline-block}
 .lc09 ul li .thumb img.fillwidth{width:100%}
 .lc09 ul li .thumb img.fillheight{height:100%}
-.lc09 ul li strong{font-size:1.4rem;line-height:1.8rem;color:#333;font-weight:300;display:block;max-height:3.8rem;display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
-.lc09 ul li i{display:block;margin-bottom:1rem}
+.lc09 ul li strong{font-size:1.4rem;line-height:2rem;margin-bottom:0.6rem;color:#333;font-weight:300;display:block;max-height:3.8rem;display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+.lc09 ul li i{display:block;margin-bottom:1rem;font-size:0.875rem;color:#999;margin-bottom:1rem;}
 .lc09 ul li em{line-height:1.6rem;display:block;max-height:6.2rem;display:block;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
 
 .lc10{margin-bottom:3rem;background-color:#eee;padding:1rem 0}
-.lc10 h2{font-size:1.5rem;line-height:2rem;margin-bottom:0.6rem;color:#333;font-weight:300}
+.lc10 h2{font-size:1.5rem;line-height:2rem;margin-bottom:0.6rem;color:#333;font-weight:400}
 .lc10 ul{overflow:hidden}
 .lc10 ul li{float:left;width:31%;margin-left:3.5%}
 .lc10 ul li:first-child{margin-left:0}
@@ -1098,7 +1098,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc13 .info i{color:#999;display:block;margin-bottom:1rem}
 /* collection detail description */
 .tc14{margin-bottom:3rem !important}
-.tc14 h2{font-size:1.5rem;line-height:2rem;margin-bottom:0.6rem;color:#333;font-weight:300}
+.tc14 h2{font-size:1.5rem;line-height:2rem;margin-bottom:0.6rem;color:#333;font-weight:400}
 
 
 .td01{height:2.125rem;line-height:2.125rem}
