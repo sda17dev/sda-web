@@ -30,6 +30,32 @@ window.onload = function() {
     Yjs.Gnb.init('G188', 'seoul-common-gnb');
 };
 </script>
+
+
+  <style>
+  .ui-tooltip {
+    max-width: 350px;
+  }
+  </style>
+  <script>
+  $( function() {
+    $(".pt01").tooltip({
+      items: "[target-id], [title]",
+      content: function() {
+        var element = $( this );
+        if ( element.is( "[target-id]" ) ) {
+          var target_id = element.attr("target-id");
+          return $("#"+target_id).html();
+        }
+        if ( element.is( "[title]" ) ) {
+          return element.attr( "title" );
+        }
+      }
+    });
+  } );
+  </script>
+  
+  
 </head>
 <body>
 <div id="main_wrap" class="subPage">
@@ -149,8 +175,12 @@ window.onload = function() {
 						<dd>
 							<ul>
 								<li>국가기록원이 보유하고 있는 소장 세운상가 관련 기록물</li>
-								<li><a href="#">http://www.naver.com</a></li>
+								<li><a class="pt01" href="#" target-id="tooltip_data01">http://www.naver.com</a></li>
 							</ul>
+							<div id="tooltip_data01" style="display:none">
+								<h3>안녕하세요</h3>
+								<p>반갑습니다.</p>
+							</div>
 						</dd>
 					</dl>
 					<dl>
