@@ -80,11 +80,23 @@ $(document).ready(function() {
 			}
 		}
 	});
+	//$(".cf09 .fields select").selectmenu().selectmenu( "menuWidget" ).addClass( "fieldSearch" );
+	
 	/* jquery ui init */
 	$(".tkg01").buttonset();
 	$(".ng07 select").selectmenu();
 	$(".cf10 select").selectmenu();
-	$( ".fc13" ).tabs();
+	$(".fc13").tabs();
+	$(".cf09 .dates input").datepicker({
+		dateFormat: "yy-mm-dd",
+		showMonthAfterYear: true,
+		changeMonth: true,
+		changeYear: true,
+		monthNames: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+		monthNamesShort: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+		dayNames: [ "일", "월", "화", "수", "목", "금", "토" ],
+		dayNamesMin: [ "일", "월", "화", "수", "목", "금", "토" ]
+	});
 	
 	//입력폼 파일 선택
    $("form .fake a").bind('click', function() {
@@ -325,7 +337,7 @@ $(document).ready(function() {
 		return false;
    });
 	
-	//상세검색폼 키워드 입력란 추가
+	//상세검색폼
 	$('.cf09 .keywords ul li.add button').on('click', function(event) {
 		var ul = $(this).parents(".keywords ul");
 		var index = ul.find("li").length;
@@ -334,6 +346,22 @@ $(document).ready(function() {
 		$('li.add',ul).before('<li class="l'+index+'"><input type="text" name="search_d_keyword'+group+index+'"/></li>');
 		return false;
 	});
+	$('.cf09 .fields .keyword button').on('click', function(event) {
+		var ul = $(this).siblings("ul");
+		var index = ul.find("li").length+1;
+		var group = ul.attr("group-index");
+		var first_child = $("li",ul).first();
+		var label_text = first_child.find("label").text();
+		ul.append('<li class="l'+index+'"><label for="search_d_keyword'+group+index+'">'+label_text+'</label><input type="text" name="search_d_keyword'+group+index+'" id="search_d_keyword'+group+index+'"/><select name="search_d_andor'+group+index+'"><option value="">AND / OR</option><option value="and">AND</option><option value="or">OR</option></select></li>');
+		return false;
+	});
+   $(".cf09 .dates a").bind('click', function() {
+       $(this).siblings('input').focus();
+		 return false;
+   });
+	
+	
+	
    //검색가이드
    $('.lc06 li dt a').bind("click",function(event){
        $(this).parents(".lc06 ul").find("li").removeClass("on");

@@ -118,7 +118,7 @@ footer .tc11.closed{right:1px}
 .fc04_01 .header{border-bottom:none}
 .fc04_01 .conBody .leftA{float:left;width:73%}
 .fc04_01 .conBody .rightA{float:right;width:25%}
-.fc04_02 .conBody{padding:2.5rem 0}
+.fc04_02 .conBody{padding:2.5rem 0;overflow:visible}
 .fc04_03 .header{padding-bottom:0;overflow:visible}
 .fc04_03 .header .th01{float:none;margin-top:3rem}
 .fc04_03 .lowerA{padding-bottom:3.875rem}
@@ -127,6 +127,7 @@ footer .tc11.closed{right:1px}
 .fc04_04 .th01 > dt{margin-bottom:2rem}
 .fc04_04 .conBody{/*! background:url(../images/bg_fc04_04.jpg) repeat-y; background-position:right 0 top*/}
 .fc04_05 .lowerA{padding:2.5rem 0 0}
+
 /* 관리자 프레임 */
 .fc05{height:100%}
 .fc05 .inner{overflow:hidden;padding:0 0 10rem}
@@ -477,7 +478,9 @@ footer .tc11.closed{right:1px}
 .cf08_01 .file .fake a{width:28%;height:2.125rem;line-height:2rem;margin-left:-4px;font-size:1rem;padding:0}
 
 /* detail search form */
-.cf09{background-color:#f1f3f5;border:1px solid #e6e6e6}
+.cf09{background-color:#f1f3f5;border:1px solid #e6e6e6;position:relative}
+.cf09 .btnA{position:absolute;right:0;top:-6.5rem}
+.cf09 .btnA .btn01{margin-left:10px;height:2.5rem;line-height:2.5rem}
 .cf09 dl{padding:2.5rem;border-bottom:1px solid #e6e6e6}
 .cf09 dl dt{font-size:1.5rem;line-height:1.5rem;color:#333;font-weight:500;border-bottom:1px solid #ccc;padding-bottom:1.5rem}
 .cf09 dl dt em{font-size:0.875rem;color:#999;margin-left:3.75rem;font-weight:300}
@@ -485,6 +488,9 @@ footer .tc11.closed{right:1px}
 .cf09 dd input[type=checkbox]{margin-right:0.625rem}
 .cf09 dd span{margin-right:1.5rem}
 .cf09 dd span label{font-size:0.875rem}
+.cf09 dl.check{padding:1.5rem 2.5rem;border-bottom:1px solid #e6e6e6}
+.cf09 dl.check dt{padding-bottom:0.6rem}
+.cf09 dl.check dd{padding:0.5rem 0 0}
 .cf09 dl.keyword dd{overflow:hidden}
 .cf09 dl.keyword dd label{width:9.8%;float:left}
 .cf09 dl.keyword dd ul{width:90.2%;float:left;overflow:hidden}
@@ -494,8 +500,22 @@ footer .tc11.closed{right:1px}
 .cf09 dl.keyword dd ul li.add{width:auto}
 .cf09 dl.keyword dd ul li.add button{height:2.125rem;width:2.125rem;text-indent:-9999px;border: 1px solid #e6e6e6;box-sizing: border-box;background:#fff url(../images/bl_plus01.png) no-repeat center center;cursor:pointer}
 .cf09 dl.keyword dd ul li.add button:hover{background-color:#eee}
+.cf09 dl.fields .keyword{overflow:hidden;position:relative}
+.cf09 dl.fields .keyword ul{width:95%}
+.cf09 dl.fields .keyword button{position:absolute;top:0;right:0;height:2.125rem;width:2.125rem;text-indent:-9999px;border: 1px solid #e6e6e6;box-sizing: border-box;background:#fff url(../images/bl_plus01.png) no-repeat center center;cursor:pointer}
+.cf09 dl.fields .keyword button:hover{background-color:#eee}
+.cf09 dl.fields ul li{margin-bottom:0.8rem;overflow:hidden}
+.cf09 dl.fields ul li label{width:20%;margin-right:2%;float:left}
+.cf09 dl.fields ul li input{width:55%;margin-right:2%;float:left}
+.cf09 dl.fields ul li select{width:15%;height:2.215rem;float:left;font-size:0.8rem}
+.cf09 dl.dates{overflow:hidden}
+.cf09 dl.dates .date{float:left;width:50%}
+.cf09 dl.dates .date label{float:left;margin-right:0.5rem;line-height:2.215rem}
+.cf09 dl.dates .date input{float:left;width:50%}
+.cf09 dl.dates .date a{float:left;height:2.125rem;line-height:2.125rem;width:2rem;text-align:center;background-color:#e2e2e2;border:1px solid #e6e6e6;box-sizing:border-box;text-decoration:none}
+
 .cf09 .submit{padding:1.5rem;text-align:center}
-.cf09 .submit .btn01{padding:0 4rem}
+.cf09 .submit .btn01{padding:0 4rem;margin:0 0.5rem}
 
 /* list sort form */
 .cf10 label{margin-right:0.5rem;vertical-align:middle}
@@ -1191,6 +1211,8 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 /* etc */
 #seoul-gnb-plugin .seoul-gnb-holder{max-width:none !important;margin: 0 40px !important}
 #print_img_area{display:none}
+.ui-datepicker{background-color:#fff}
+
 /* print style */
 @media print{
 #seoul-common-gnb{display:none}

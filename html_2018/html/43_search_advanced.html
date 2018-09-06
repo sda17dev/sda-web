@@ -89,22 +89,23 @@ window.onload = function() {
 			<div class="conBody">
 				<form class="cf09 searchDetail" method="post">
 					<fieldset>
+						<div class="btnA"><button class="btn01" type="submit">검색</button><button class="btn01" type="reset">초기화</button></div>
 						<dl class="check">
 							<dt>주요구분<em>※ 사용자의 편의를 위해 제공하는 구분</em></dt>
 							<dd>
-								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">전체</label></span>
-								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">온라인열람 가능 자료만 보기</label></span>
-								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">사진아카이브</label></span>
-								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">웹아카이브</label></span>
-								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">소셜미디어 아카이브</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div11"/><label for="search_d_div11">전체</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div12"/><label for="search_d_div12">온라인열람 가능 자료만 보기</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div13"/><label for="search_d_div13">사진아카이브</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div14"/><label for="search_d_div14">웹아카이브</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div15"/><label for="search_d_div15">소셜미디어 아카이브</label></span>
 							</dd>
 						</dl>
 						<dl class="check">
 							<dt>기록<em>※서울기록원의 전체 기록물 분류 </em></dt>
 							<dd>
-								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">전체</label></span>
-								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">시정기록</label></span>
-								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">시민수집기록</label></span>	
+								<span><input type="checkbox" name="search_d_div" id="search_d_div21"/><label for="search_d_div21">전체</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div22"/><label for="search_d_div22">시정기록</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div23"/><label for="search_d_div23">시민수집기록</label></span>	
 							</dd>
 						</dl>
 						<dl class="check">
@@ -118,94 +119,93 @@ window.onload = function() {
 								<!-- <span><input type="checkbox" name="search_d_eng" id="search_d_eng6"/><label for="search_d_eng6">아이템</label></span> -->
 							</dd>
 						</dl>						
-						<dl class="keyword">
+						<dl class="fields">
 							<dt>필드검색<em>※ 포함되어야 할 단어나 키워드를 작성하세요. 추가한 키워드의 And(포함) Or(또는) 조건을 사용할 수 있습니다. </em></dt>
 							<dd>
-								<div class="keywords">
-									<label>제목(Title)</label>
-									<ul>
-										<li class="l1"><input type="text" name="search_d_keyword11"/></li>
-										<li class="l2"><input type="text" name="search_d_keyword12"/></li>
-										<li class="l3"><input type="text" name="search_d_keyword13"/></li>
-										<li class="l4"><input type="text" name="search_d_keyword14"/></li>
-										<li class="l5"><input type="text" name="search_d_keyword15"/></li>
-										<li class="add"><button type="button">추가</button></li>
+								<div class="keyword">
+									<ul group-index="1">
+										<li class="l1">
+											<label for="search_d_keyword11">제목(Title)</label>
+											<input type="text" name="search_d_keyword11" id="search_d_keyword11"/>
+											<select name="search_d_andor11">
+												<option value="">AND / OR</option>
+												<option value="and">AND</option>
+												<option value="or">OR</option>
+											</select>
+										</li>
 									</ul>
+									<button type="button">추가</button>
 								</div>
-								<div class="keywords">
-									<label>생산부서(Author)</label>
-									<ul>
-										<li class="l1"><input type="text" name="search_d_keyword21"/></li>
-										<li class="l2"><input type="text" name="search_d_keyword22"/></li>
-										<li class="l3"><input type="text" name="search_d_keyword23"/></li>
-										<li class="l4"><input type="text" name="search_d_keyword24"/></li>
-										<li class="l5"><input type="text" name="search_d_keyword25"/></li>
-										<li class="add"><button type="button">추가</button></li>
+								<div class="keyword">
+									<ul group-index="2">
+										<li class="l1">
+											<label for="search_d_keyword21">생산부서(Author)</label>
+											<input type="text" name="search_d_keyword21" id="search_d_keyword21"/>
+											<select name="search_d_andor21">
+												<option value="">AND / OR</option>
+												<option value="and">AND</option>
+												<option value="or">OR</option>
+											</select>
+										</li>
 									</ul>
+									<button type="button">추가</button>
 								</div>
-								<div class="keywords">
-									<label>필드(Field)</label>
-									<ul>
-										<li class="l1"><input type="text" name="search_d_keyword21"/></li>
-										<li class="l2"><input type="text" name="search_d_keyword22"/></li>
-										<li class="l3"><input type="text" name="search_d_keyword23"/></li>
-										<li class="l4"><input type="text" name="search_d_keyword24"/></li>
-										<li class="l5"><input type="text" name="search_d_keyword25"/></li>
-										<li class="add"><button type="button">추가</button></li>
+								<div class="keyword">
+									<ul group-index="3">
+										<li class="l1">
+											<label for="search_d_keyword31">설명(Description)</label>
+											<input type="text" name="search_d_keyword31" id="search_d_keyword31"/>
+											<select name="search_d_andor31">
+												<option value="">AND / OR</option>
+												<option value="and">AND</option>
+												<option value="or">OR</option>
+											</select>
+										</li>
 									</ul>
+									<button type="button">추가</button>
 								</div>
-								<div class="keywords">
-									<label>설명(Descirption)</label>
-									<ul>
-										<li class="l1"><input type="text" name="search_d_keyword26"/></li>
-										<li class="l2"><input type="text" name="search_d_keyword27"/></li>
-										<li class="l3"><input type="text" name="search_d_keyword28"/></li>
-										<li class="l4"><input type="text" name="search_d_keyword29"/></li>
-										<li class="l5"><input type="text" name="search_d_keyword30"/></li>
-										<li class="add"><button type="button">추가</button></li>
+								<div class="keyword">
+									<ul group-index="4">
+										<li class="l1">
+											<label for="search_d_keyword41">매우긴 필드명인 경우(long long logn field)</label>
+											<input type="text" name="search_d_keyword41" id="search_d_keyword41"/>
+											<select name="search_d_andor41">
+												<option value="">AND / OR</option>
+												<option value="and">AND</option>
+												<option value="or">OR</option>
+											</select>
+										</li>
 									</ul>
+									<button type="button">추가</button>
 								</div>
-								<div class="keywords">
-									<label>필드(Field)</label>
-									<ul>
-										<li class="l1"><input type="text" name="search_d_keyword21"/></li>
-										<li class="l2"><input type="text" name="search_d_keyword22"/></li>
-										<li class="l3"><input type="text" name="search_d_keyword23"/></li>
-										<li class="l4"><input type="text" name="search_d_keyword24"/></li>
-										<li class="l5"><input type="text" name="search_d_keyword25"/></li>
-										<li class="add"><button type="button">추가</button></li>
-									</ul>
-								</div>
-
 							</dd>
 						</dl>
 						<!-- 생산시작년도와 생산종료년도를 입력해 결과값의 날짜를 필터링한다. -->						
-						<dl class="keyword">
+						<dl class="dates">
 							<dt>생산년도<em>※서울기록원의 전체 기록물 분류 </em></dt>
 							<dd>
-								<label>생산시작년도</label>
-								<ul>
-									<li class="l1"><input type="text" name="search_d_keyword26"/></li>
-									<li class="l2"><input type="text" name="search_d_keyword27"/></li>
-								</ul>
-								<label>생산종료년도</label>
-								<ul>
-									<li class="l1"><input type="text" name="search_d_keyword26"/></li>
-									<li class="l2"><input type="text" name="search_d_keyword27"/></li>
-								</ul>
+								<div class="date startdate">
+									<label for="search_d_date01">시작년도</label>
+									<input type="text" name="search_d_date01" id="search_d_date01"/>
+									<a href="#search_d_date01"><i class="xi-calendar-list"></i></a>
+								</div>
+								<div class="date enddate">
+									<label for="search_d_date02">종료년도</label>
+									<input type="text" name="search_d_date02" id="search_d_date02"/>
+									<a href="#search_d_date02"><i class="xi-calendar-list"></i></a>
+								</div>
 							</dd>
 						</dl>
 						<!-- 기록관련 외부 API 접근시 소장처 연결 및 구분 -->
 						<dl class="check">
 							<dt>기록보존소별<em>※서울기록원 외의 소장처 검색 </em></dt>
 							<dd>
-								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">전체</label></span>
-								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">서울기록원에 소장된 기록</label></span>
-								<span><input type="checkbox" name="search_d_div" id="search_d_div"/><label for="search_d_div">서울기록원 외 소장처</label></span>	
+								<span><input type="checkbox" name="search_d_div" id="search_d_div1"/><label for="search_d_div1">전체</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div2"/><label for="search_d_div2">서울기록원에 소장된 기록</label></span>
+								<span><input type="checkbox" name="search_d_div" id="search_d_div3"/><label for="search_d_div3">서울기록원 외 소장처</label></span>	
 							</dd>
 						</dl>
-						<div class="submit"><button class="btn01" type="submit">Clear Form</button></div>
-						<div class="submit"><button class="btn01" type="submit">검색</button></div>
+						<div class="submit"><button class="btn01" type="submit">검색</button><button class="btn01" type="reset">초기화</button></div>
 					</fieldset>
 				</form>
 			</div>
