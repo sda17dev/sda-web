@@ -10,7 +10,7 @@ header.hd02{margin:0;padding:0 15px}
 .tc11 .pp01 .popupBox{left:100% !important;width:24rem !important}
 .fc04_04 .conBody{background:none}
 .fc14 .outer{width:auto;margin:0}
-.tc13 .info{position:absolute;bottom:15px;left:15px;margin-left:0;display:block}
+.tc13 .info{position:absolute;bottom:15px;left:15px;margin-left:0;padding-bottom:20px;display:block}
 
 }
 
@@ -607,7 +607,7 @@ header.hd02{padding:0 40px}
 .con02 .unit01{padding-bottom:25rem}
 .con02 .unit02{padding-bottom:17rem}
 .con02 .unit03 .type03 dd{margin-bottom:1.5rem}
-.tc13 .info{position:absolute;bottom:40px;left:40px;margin-left:0;display:block}
+.tc13 .info{position:absolute;bottom:40px;left:40px;margin-left:0;padding-bottom:20px;display:block}
 
 }
 
