@@ -1011,6 +1011,8 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tbl03 table caption{position:absolute;left:-9999px}
 .tbl03 table th{background-color:#f1f3f5;text-align:right;padding:0.85rem;width:20%;font-weight:normal;color:#808080;font-size:1.125rem}
 .tbl03 table td{font-size:1.125rem;padding:1rem 1.5rem}
+.tbl03 table td a{color:#1e5eff;font-weight:600}
+.tbl03 table td a:hover{color:#1e5eff}
 .tbl03 table td.ccl img{height:30px;vertical-align:middle;margin-right:5px}
 .tbl03.collectionView{padding:1.875rem 0;margin-bottom:1.5rem;overflow:hidden}
 .tbl03.collectionView table{width:68%;padding:0;float:left}
