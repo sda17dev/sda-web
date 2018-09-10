@@ -1184,7 +1184,32 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 
 .th07{font-size:1.875rem;color:#333;line-height:1.875rem;font-weight:500}
 
+.tt01{position:relative;cursor:pointer;text-decoration:underline}
+.tt01 .tooltip{position:absolute;display:none;top:-10px;right:-255px;background:#f1f3f5;border: 1px solid #b2b2b2;width:240px;box-sizing:border-box;padding:15px;box-shadow:10px 10px 5px rgba(0,0,0,0.3);z-index:10;font-size:14px;line-height:18px}
+.tt01 .tooltip:after, .tt01 .tooltip:before {
+	right: 100%;
+	top: 20px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
 
+.tt01 .tooltip:after {
+	border-color: rgba(241, 243, 245, 0);
+	border-right-color: #f1f3f5;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.tt01 .tooltip:before {
+	border-color: rgba(178, 178, 178, 0);
+	border-right-color: #b2b2b2;
+	border-width: 11px;
+	margin-top: -11px;
+}
+.tt01 .tooltip a{color:#333}
 /* post */
 .postA img{max-width:100%}
 .postA p{font-size:1rem;line-height:1.8rem;margin-bottom:1.25rem}

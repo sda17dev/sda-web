@@ -560,7 +560,25 @@ function init_pc(){
 		
 //		return false;
 	});
-	
+	var on_tooltip = false;
+	$(".tt01").mouseover(function(){
+		$(".tooltip",$(this)).fadeIn();
+	});
+	$(".tt01").mouseleave(function(){
+		var $this = $(this);
+		setTimeout(function() {
+			if(!on_tooltip)	$(".tooltip",$this).fadeOut();
+		}, 300);
+		
+	});
+	$(".tt01 .tooltip").mousemove(function(){
+		$(".tooltip",$(this)).fadeIn();
+		on_tooltip = true;
+	});
+	$(".tt01 .tooltip").mouseleave(function(){
+		$(this).fadeOut();
+		on_tooltip = false;
+	});
 }
 //모바일 버젼 초기화
 function init_mobile(){
