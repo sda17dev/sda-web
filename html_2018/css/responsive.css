@@ -539,6 +539,11 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 .tbl03.collectionView table{width:100%;float:none;margin-bottom:1rem;border-bottom:1px solid #ccc}
 .tbl03.collectionView .rightC{width:auto;float:none}
 .tbl03.collectionView .flexible *{min-height:0}
+  
+.tbl03.collectionView2 table{width:100%;float:none;margin-bottom:1rem;border-bottom:1px solid #ccc}
+.tbl03.collectionView2 .rightC{width:auto;float:none;height:200px !important;margin-bottom:2rem}
+.tbl03.collectionView2 .flexible *{min-height:0}
+
 
 /* main headline*/
 .tc01 a.more{top:20px;background-size:5.2px 8px}
