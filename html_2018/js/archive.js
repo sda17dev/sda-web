@@ -395,6 +395,9 @@ $(document).ready(function() {
 		  $grid03.masonry('layout');
 		});
 	}	
+	$('.tbl03.collectionView2 .rightC').css({
+		height : $('.tbl03.collectionView2 table').height()
+	});
    //콜렉션 뷰, 오른쪽 이미지 갤러리 선택
    $('.fc13 .lc08 li a').bind("click",function(event){
 		$(this).parents(".lc08").find("li").removeClass("on");

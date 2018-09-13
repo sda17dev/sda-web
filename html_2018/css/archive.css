@@ -959,6 +959,9 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .ng14 dl li a{display:block;padding:0 1rem;height:3rem;line-height:3rem;background-color:#e4e4e4;font-size:1rem;color:#333}
 .ng14 dl li a:hover{text-decoration:none;background-color:#666;color:#fff}
 
+/* sns share buttons */
+.ng15 li{display:inline-block}
+
 /* pagination */
 .pg01{text-align:center}
 .pg01 a{padding:0 0.25rem}
@@ -1040,6 +1043,14 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tbl03.collectionView table{width:68%;padding:0;float:left}
 .tbl03.collectionView .rightC{width:31.5789%;padding:0;float:right}
 .tbl03.collectionView .flexible *{vertical-align:top;min-height:30rem}
+.tbl03.collectionView2{padding:1.875rem 0;margin-bottom:1.5rem;overflow:hidden}
+.tbl03.collectionView2 table{width:68%;padding:0;float:left;margin-bottom:3rem}
+.tbl03.collectionView2 .rightC{width:31.5789%;padding:0;float:right;text-align:center;background-color:#eee}
+.tbl03.collectionView2 .rightC img.fillheight{height:100%}
+.tbl03.collectionView2 .rightC img.fillwidth{width:100%}
+.tbl03.collectionView2 .flexible *{vertical-align:top;min-height:30rem}
+.tbl03.collectionView2 .imageA{clear:both;}
+.tbl03.collectionView2 .imageA dt{margin-bottom:1rem}
 
 /* main headline*/
 .tc01{position:relative}
