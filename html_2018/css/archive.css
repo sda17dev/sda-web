@@ -356,6 +356,28 @@ footer .tc11.closed{right:1px}
 .con03  .picForm form button{width:18%;height:2.125rem;border:none;background-color:#333;color:#fff;vertical-align:top;border-radius:2px}
 .con03  .picForm h4{background-color:transparent;color:#808080;font-size:1.125rem;padding:0;margin-bottom:0.5rem}
 
+/* organization page */
+.con04{margin-bottom:6rem}
+.con04 .banner{position:relative;max-height:24.3125rem;overflow:hidden;margin-bottom:2.5rem}
+.con04 .banner:before{content:"";width:100%;height:100%;opacity:0.2;background-color:#000;position:absolute;top:0;left:0}
+.con04 .banner img{display:block;width:100%}
+.con04 .banner dl{position:absolute;bottom:3.125rem;left:3.125rem;color:#fff}
+.con04 .banner dl dt{font-size:2.25rem;font-weight:500;line-height:3rem;letter-spacing:-1px;margin-bottom:10px}
+.con04 .banner dl dd{font-size:2.25rem;letter-spacing:-1px}
+.con04 .unit{margin-bottom:4rem;overflow:hidden;position:relative}
+.con04 .unit dt{float:left;width:24%;margin-right:3%;padding-top:2rem;border-top:4px solid #ccc}
+.con04 .unit dt h2{font-size:2rem;font-weight:500;line-height:2.5rem;color:#333;margin-bottom:1.6rem}
+.con04 .unit dd{float:left;width:73%}
+.con04 .unit dd>ul>li{margin-bottom:3rem;overflow:hidden}
+.con04 .unit dd .name{float:left;width:20%;margin-right:4%;font-size:1.5rem;font-weight:500;color:#1a1a1a}
+.con04 .unit dd .tel{float:left;width:20%;margin-right:4%;font-size:1.5rem;font-weight:500;color:#1a1a1a}
+.con04 .unit dd .task{float:left;width:52%}
+.con04 .unit dd li:first-child .name{border-top:4px solid #ccc;padding-top:2rem}
+.con04 .unit dd li:first-child .tel{;border-top:4px solid #ccc;padding-top:2rem}
+.con04 .unit dd li:first-child .task{border-top:4px solid #ccc;padding-top:2rem}
+.con04 .unit dd .task li{position:relative;padding-left:10px;color:#4c4c4c;font-size:1.125rem;line-height:1.8rem}
+.con04 .unit dd .task li:before{content:".";font-weight:800;position:absolute;left:0;top:-5px}
+
 /* header search form */
 .cf02 fieldset label{display:none}
 .cf02 fieldset input{display:inline-block;height:4.9375rem;width:43%;vertical-align:top;border:none;margin-right:2.5%;margin-left:-4px;font-size:1.75rem;background-color:transparent;border-bottom:3px solid #fff;box-sizing:border-box;color:#fff}

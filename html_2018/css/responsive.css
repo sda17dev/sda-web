@@ -233,6 +233,25 @@ footer address span{display:block}
 .con03 .unit01 .leftA{padding:1.5rem 0 0rem}
 .con03 .links ul li a i{top:1rem}
 .con03 .unit04 .links.list{margin-bottom:1rem}
+  
+/* organization page */
+.con04{margin-bottom:6rem}
+.con04 .banner dl{bottom:15px;left:15px}
+.con04 .banner dl dd{font-size:2rem}
+.con04 .unit{margin-bottom:2rem}
+.con04 .unit dt{float:none;width:auto;margin-right:0;padding-top:0;border-top:none}
+.con04 .unit dt h2{margin-bottom:1rem;font-size:1.6rem}
+.con04 .unit dt p{display:none}
+.con04 .unit dd{float:none;width:auto}
+.con04 .unit dd>ul>li{margin-bottom:1.5rem;overflow:hidden}
+.con04 .unit dd .name{width:22%;margin-right:2%;font-size:1rem}
+.con04 .unit dd .tel{width:22%;margin-right:2%;font-size:1rem}
+.con04 .unit dd .task{width:52%}
+.con04 .unit dd li:first-child .name{border-top:3px solid #ccc;padding-top:1rem}
+.con04 .unit dd li:first-child .tel{;border-top:3px solid #ccc;padding-top:1rem}
+.con04 .unit dd li:first-child .task{border-top:3px solid #ccc;padding-top:1.2rem}
+.con04 .unit dd .task li:before{top:-4px}
+
 
 /* header search form */
 .cf02 fieldset{position:relative}
