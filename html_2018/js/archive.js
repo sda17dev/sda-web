@@ -84,8 +84,10 @@ $(document).ready(function() {
 	
 	/* jquery ui init */
 	$(".tkg01").buttonset();
+	$(".trg01").buttonset();
 	$(".ng07 select").selectmenu();
 	$(".cf10 select").selectmenu();
+	$(".cf08_02 select").selectmenu();
 	$(".fc13").tabs();
 	$(".cf09 .dates input").datepicker({
 		dateFormat: "yy-mm-dd",
@@ -336,6 +338,16 @@ $(document).ready(function() {
 		$(this).parent(".input").remove();
 		return false;
    });
+	// 팝업 - 커뮤니티 등록
+	$("#community_add").bind('click', function() {
+		open_popup("#popup_community_add");
+		return false;
+	});
+	$("#popup_community_add .submit .btn02").click(function() {
+		$('.pp01').hide();
+		return false;
+   });
+	
 	
 	//상세검색폼
 	$('.cf09 .keywords ul li.add button').on('click', function(event) {
