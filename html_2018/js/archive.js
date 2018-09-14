@@ -666,7 +666,7 @@ function init_mobile(){
 //폼 유효성 검사
 function form_validation(){
 	//헤더 검색창
-	$(".cf02").bind('submit', function() {
+	$(".cf02, .cf12 form, .cf13").bind('submit', function() {
 		var input = $("input",$(this));
 		if(input.val().trim() == ""){
 			alert("검색어를 입력해 주세요");
@@ -793,6 +793,14 @@ function form_validation(){
 		messages: {
 			error_email: "",
 			error_desc: ""
+		}
+	});
+	$("#popup_community_add .cf08").validate({
+		rules: {
+			q_content: "required"
+		},
+		messages: {
+			q_content: ""
 		}
 	});
 }
