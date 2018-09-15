@@ -77,10 +77,10 @@ window.onload = function() {
 			<div class="header">
 				<ul class="ng06">
 					<li class="home"><i class="xi-home"></i><a href="#">Home</a></li>
-					<li class="current"><a href="#">고객문의 커뮤니티</a></li>
+					<li class="current"><a href="#">사용자 커뮤니티</a></li>
 				</ul>
 				<dl class="th01">
-					<dt><h1>고객문의 커뮤니티</h1></dt>
+					<dt><h1>사용자 커뮤니티</h1></dt>
 				</dl>
 			</div>
 			<!-- //list header -->
@@ -95,26 +95,26 @@ window.onload = function() {
 					<ul>
 						<li><a href="#">기록 조사/연구자를 위한 도움말</a></li>
 						<li><a href="#">기록물을 이관한 공무원, 기록연구사를 위한 도움말</a></li>
-						<li><a href="#">텐츠 생산자를 위한 도움말</a></li>
+						<li><a href="#">기록물을 기증한 민간 단체, 개인을 위한 도움말</a></li>
 						<li><a href="#">서울의 공공기록물에 관심있는 모든 사람을 위한 도움말</a></li>
 					</ul>
 				</div>
 				<div class="tc15">
-					<p>고객문의 커뮤니티는 서울기록원의 운영과 관련된 질의 응답을 보다 찾기 쉽도록 모아놓은 공간입니다. <br/>
-기본적인 도움말은 공지글 위 링크를 확인하세요. <br/>
-기록 검색이나 웹사이트 검색과 달리 질의응답  내용만 검색 적용됩니다.  고객문의는 로그인 없이 작성할 수 없습니다. <br/>
-로그인 없이 기관에 대한 질문은 일반문의, 기능 오류에 대한 신고는 사이트 하단에 있는 오류신고를 통해 가능합니다.</p>
-					<a class="btn01" href="#">문의하기</a>
+					<p>사용자 커뮤니티는 서울기록원 디지털 아카이브를 사용하는 사용자를 위한 열린공간입니다.<br/>
+로그인 후 사용할 수 있고, 사용자를 위한 안내와 질문은 도움말 메뉴에서 확인하세요. <br/>
+기타 기록원에 대한 문의는 로그인 없이 <a href="#">[i]일반문의</a>를 통해 작성할 수 있습니다.  <br/>
+단, 비방과 욕설은 관리자에 의해 글이 내려질 수 있습니다. 시범적으로 운영되는 중입니다. (2018년 9월 ~ 12월)					
+				<div class="alignCenter"><a class="btn01" id="community_add" href="#">글쓰기</a></div>
 				</div>
 				<ul class="ng16">
 					<li class="on"><a href="#">전체</a></li>
 					<li><a href="#">연구/조사</a></li>
 					<li><a href="#">서울시행정기록</a></li>
-					<li><a href="#">사진기록물</a></li>
+					<li><a href="#">사진기록</a></li>
 					<li><a href="#">시민수집기록</a></li>
-					<li><a href="#">일반문의</a></li>
+					<!-- <li><a href="#">일반문의</a></li>
 					<li><a href="#">기능오류신고</a></li>
-					<li><a href="#">기록정보오류</a></li>
+					<li><a href="#">기록정보오류</a></li> -->
 				</ul>
 				<div class="m_ng16">
 					<label for="mobile_ng16">카테고리 선택</label>
@@ -124,15 +124,42 @@ window.onload = function() {
 						<option>서울시행정기록</option>
 						<option>사진기록물</option>
 						<option>시민수집기록</option>
-						<option>일반문의</option>
+						<!-- <option>일반문의</option>
 						<option>기능오류신고</option>
-						<option>기록정보오류</option>
+						<option>기록정보오류</option> -->
 					</select>
 				</div>
 				<ul class="lc11">
 					<li class="question">
 						<dl>
 							<dt>
+								<strong><em>[연구/조사]</em><a href="">“인터뷰 텍스트 텍스트 텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트”</a></strong>
+								<i>2018년2월23일</i>
+							</dt>
+							<dd>서울기록원 홍길동</dd>
+						</dl>
+					</li>
+					<li class="answer">
+						<dl>
+							<dt>
+								<strong><em>[시민수집기록]</em><a href="">“인터뷰 텍스트 텍스트 텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트”</a></strong>
+								<i>2018년2월23일</i>
+							</dt>
+							<dd>email@email.com</dd>
+						</dl>
+					</li>
+					<li class="answer">
+						<dl>
+							<dt>
+								<strong><em>[시민수집기록]</em><a href="">“인터뷰 텍스트 텍스트 텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트”</a></strong>
+								<i>2018년2월23일</i>
+							</dt>
+							<dd>email@email.com</dd>
+						</dl>
+					</li>
+					<li class="answer">
+						<dl>
+							<dt>
 								<strong><em>[연구/조사]</em>“인터뷰 텍스트 텍스트 텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트”</strong>
 								<i>2018년2월23일</i>
 							</dt>
@@ -142,48 +169,66 @@ window.onload = function() {
 					<li class="answer">
 						<dl>
 							<dt>
-								<strong><em>[시민수집기록]</em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</strong>
+								<strong><em>[시민수집기록]</em><a href="">“인터뷰 텍스트 텍스트 텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트”</a></strong>
 								<i>2018년2월23일</i>
 							</dt>
-							<dd>woongjjang*****</dd>
+							<dd>email@email.com</dd>
 						</dl>
 					</li>
 					<li class="answer">
 						<dl>
 							<dt>
-								<strong><em>[시민수집기록]</em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</strong>
+								<strong><em>[시민수집기록]</em><a href="">“인터뷰 텍스트 텍스트 텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트”</a></strong>
 								<i>2018년2월23일</i>
 							</dt>
-							<dd>woongjjang*****</dd>
+							<dd>email@email.com</dd>
 						</dl>
 					</li>
 					<li class="answer">
 						<dl>
 							<dt>
-								<strong><em>[연구/조사]</em>“인터뷰 텍스트 텍스트 텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트”</strong>
+								<strong><em>[시민수집기록]</em><a href="">“인터뷰 텍스트 텍스트 텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트”</a></strong>
 								<i>2018년2월23일</i>
 							</dt>
-							<dd>서울기록원 홍길동</dd>
+							<dd>email@email.com</dd>
 						</dl>
 					</li>
 					<li class="answer">
 						<dl>
 							<dt>
-								<strong><em>[시민수집기록]</em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</strong>
+								<strong><em>[시민수집기록]</em><a href="">“인터뷰 텍스트 텍스트 텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트”</a></strong>
 								<i>2018년2월23일</i>
 							</dt>
-							<dd>woongjjang*****</dd>
+							<dd>email@email.com</dd>
 						</dl>
-					</li>
+					</li>	
 					<li class="answer">
 						<dl>
 							<dt>
-								<strong><em>[시민수집기록]</em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</strong>
+								<strong><em>[시민수집기록]</em><a href="">“인터뷰 텍스트 텍스트 텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트”</a></strong>
 								<i>2018년2월23일</i>
 							</dt>
-							<dd>woongjjang*****</dd>
+							<dd>email@email.com</dd>
 						</dl>
-					</li>
+					</li>	
+					<li class="answer">
+						<dl>
+							<dt>
+								<strong><em>[시민수집기록]</em><a href="">“인터뷰 텍스트 텍스트 텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트”</a></strong>
+								<i>2018년2월23일</i>
+							</dt>
+							<dd>email@email.com</dd>
+						</dl>
+					</li>	
+					<li class="answer">
+						<dl>
+							<dt>
+								<strong><em>[시민수집기록]</em><a href="">“인터뷰 텍스트 텍스트 텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트”</a></strong>
+								<i>2018년2월23일</i>
+							</dt>
+							<dd>email@email.com</dd>
+						</dl>
+					</li>																										
 				</ul>
 				<div class="pg01 rightF">
 					<a class="first" href="#" title="첫페이지"><i class="xi-angle-left"></i><i class="xi-angle-left"></i></a>
@@ -296,5 +341,32 @@ window.onload = function() {
 	</footer>
 </div>
 <!-- //main_wrap -->
+<!-- popup -->
+<div id="popup_community_add" class="pp01" style="display:none">
+	<div class="popupBox">
+		<form class="cf08 cf08_02 content">
+			<div class="selA">
+				<div class="trg01">
+					<input type="radio" class="tr01" checked="checked" id="q_type01" name="q_type"/><label for="q_type01">글쓰기</label>
+					<input type="radio" class="tr01" id="q_type02" name="q_type"/><label for="q_type02">질문</label>
+				</div>
+				<div class="tsg01">
+					<label for="q_category">email@email.com</label>
+					<select id="q_category" name="q_category">
+						<option value="전체">전체</option>
+						<option value="연구/조사">연구/조사</option>
+						<option value="서울시행정기록 사진기록물">서울시행정기록 사진기록</option>
+						<option value="시민수집기록">시민수집기록</option>
+						<!-- <option value="일반문의">일반문의</option>
+						<option value="기능오류신고">기능오류신고</option>
+						<option value="기록정보오류">기록정보오류</option> -->
+					</select>
+				</div>
+			</div>
+			<textarea id="q_content" name="q_content"></textarea>
+			<div class="submit"><button type="submit" class="btn01 btn01_01">저장</button> <button type="button" class="btn02 btn02_01">닫기</button></div>
+		</form>
+	</div>
+</div>
 </body>
 </html>
