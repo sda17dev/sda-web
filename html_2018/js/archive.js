@@ -84,7 +84,13 @@ $(document).ready(function() {
 	
 	/* jquery ui init */
 	$(".tkg01").buttonset();
-	$(".trg01").buttonset();
+	$(".cf08_02 .trg01").buttonset();
+	$(".cf08_02 .trg01 #q_type01").on("change",function(){
+		$(this).parent().removeClass("question").addClass("answer");
+	});
+	$(".cf08_02 .trg01 #q_type02").on("change",function(){
+		$(this).parent().removeClass("answer").addClass("question");
+	});
 	$(".ng07 select").selectmenu();
 	$(".cf10 select").selectmenu();
 	$(".cf08_02 select").selectmenu();
