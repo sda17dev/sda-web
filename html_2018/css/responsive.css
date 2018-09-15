@@ -517,6 +517,10 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 .ng14 dl li a{display:block;padding:0 1rem;height:3rem;line-height:3rem;background-color:#e4e4e4;font-size:1rem;color:#333}
 .ng14 dl li a:hover{text-decoration:none;background-color:#666;color:#fff}
 
+/* sns share buttons */
+.ng15 li a i{width:20px;height:20px;line-height:20px;border-radius:10.5px;font-size:1.4rem}
+.ng15 li a:active i{background-color:#333;color:#fff}
+
 .ng16{display:none}
 .m_ng16{display:block;margin-bottom:2rem;overflow:hidden;padding:2rem 1rem;border-top:1px solid #ddd;border-bottom:1px solid #ddd}
 .m_ng16 label{float:left;width:30%;color:#333;font-size:1.125rem}
@@ -634,6 +638,7 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 .th01_02 > dt h1{margin-right:7rem}
 .th01_02 > dt .link .btn01{padding:0 10px}
 .th01_02 .tc10{clear:both;border-top:1px solid #ccc;padding-top:1.2rem}
+.th01_03 > dt .link{bottom:-3.2rem}
 
 
 /* browse view headline */
@@ -644,7 +649,14 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 .td03{border-radius:0}
 
 /* post */
+.postA ol{margin:0.8rem 0 0.8rem 1rem;list-style-type:decimal}
+.postA ol>li{position:relative;padding-left:0.3rem;line-height:1.4rem}
+.postA ol>li>em{position:absolute;left:0;top:0}
+
+.postA ul{margin:0 0 1rem 0.9375rem}
 .postA ul>li:before{top:0.9rem}
+.postA ul>li{line-height:1.6rem}
+.postA ul>li>ul>li:before{top:0.5rem}
 
 /* etc */
 #seoul-gnb-plugin .seoul-gnb-holder{margin: 0 10px !important}
