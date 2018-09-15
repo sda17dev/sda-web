@@ -426,10 +426,21 @@ $(document).ready(function() {
    });
 	//연구가이드 링크이동 효과
 	$(".ng13 li a").click(function(event){     
-		// event.preventDefault();
-		console.log("clicked!");
 		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500,"linear");
 	});
+	//탐색 메인 유형열기
+	$(".fcs02 dt a").click(function(event){
+		var obj = $(this).parent().parent();
+		if(obj.hasClass("close")){
+			obj.removeClass("close");
+			$("dd",obj).slideDown();
+		}else{
+			obj.addClass("close");
+			$("dd",obj).slideUp();
+		}
+		return false;
+	});
+	
 	
 	//입력폼 유효성 검사
 	form_validation();

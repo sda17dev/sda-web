@@ -74,7 +74,7 @@ header.hd02 menu li{float:left;margin-left:3rem;position:relative;background:url
 header.hd02 menu li:first-child{margin-left:0;background:none;padding-left:0}
 header.hd02 menu li a{display:block;font-size:1.125rem;font-weight:600;color:#333;text-decoration:none}
 header.hd02 menu li a:hover{text-decoration:none;color:#999}
-header.hd02 menu li.on a{color:#1e5eff}
+header.hd02 menu li.on a{color:#1e5eff;}
 
 .scrolling header.hd02{position:fixed;left:0;top:0;z-index:10;opacity:0.95;width:100%;box-sizing:border-box}
 .scrolling header.hd02 .td03{display:none}
@@ -185,6 +185,17 @@ footer .tc11.closed{right:1px}
 .fc15 .btnA{text-align:right;margin-bottom:2rem}
 .fc15 .btnA02{text-align:center}
 .fc15 .btnA a{margin-left:10px}
+
+.fcs01{margin-bottom:2rem}
+.fcs01 .menuA{padding-left:1.5rem}
+.fcs02{margin-bottom:1rem}
+.fcs02 dt{margin-bottom:0.5rem}
+.fcs02 dt a{display:inline-block;font-size:1rem;font-weight:500;border:1px solid #ccc;padding:0.5rem 1rem;text-decoration:none}
+.fcs02 dt a:after{content:"\e944";font-family:xeicon;margin-left:1rem}
+.fcs02.close dt a:after{content:"\e941"}
+.fcs02 dt a:hover{color:#1e5eff;border-color:#1e5eff}
+.fcs02 dd{padding:0.5rem 0}
+.fcs02 dd .ng03_01{margin-bottom:0.5rem}
 
 /* buttons */
 .btn01{display:inline-block;height:3.125rem;line-height:3.125rem;text-align:center;background-color:#1e5eff;border:none;box-sizing:border-box;color:#fff;font-size:1.125rem;cursor:pointer;padding:0 2rem;}
@@ -897,11 +908,13 @@ header.hd02 .lg01 a{background-image:url(../images/logo@2x.png)}
 .ng02 dl ul li a{font-size:1rem;color:#666}
 
 /* footer menu2 */
-.ng03{display:inline-block;overflow:hidden;border:1px solid #cbcbcb;}
-.ng03 li{float:left;border-left:1px solid #cbcbcb}
-.ng03 li:first-child{border-left:none}
+.ng03{display:inline-block;overflow:hidden}
+.ng03 li{float:left;border:1px solid #cbcbcb;border-left:none}
+.ng03 li:first-child{border-left:1px solid #cbcbcb}
 .ng03 li a{display:block;padding:0 2rem;height:2rem;line-height:2rem;background-color:#e4e4e4;font-size:0.875rem;color:#333}
 .ng03 li a:hover{text-decoration:none;background-color:#666;color:#fff}
+.ng03_01{display:block}
+.ng03_01 li{margin-bottom:0.4rem}
 
 /* 헤더 lnb메뉴 */
 .ng04 li{margin-top:1.7rem}
@@ -1047,7 +1060,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .ng17 ul{border-bottom:1px solid #ccc;border-right:1px solid #ccc}
 .ng17 ul li{border-top:1px solid #ccc;border-left:1px solid #ccc}
 .ng17 ul li a{display:block;padding:0.5rem 1.2rem;background-color:#f1f3f5;position:relative;font-size:0.875rem;color:#333;font-weight:500}
-.ng17 ul li a:after{content:"\e93e";font-family:xeicon;position:absolute;right:1rem;top:0.6rem;font-size:0.875rem}
+.ng17 ul li a:after{content:"\e93e";font-family:xeicon;position:absolute;right:1rem;top:0.5rem;font-size:0.875rem}
 .ng17 ul li a:hover{text-decoration:none;background-color:#fff}
 
 /* pagination */
@@ -1311,6 +1324,10 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .th06.file{background-image:url(../images/icon_file.png)}
 
 .th07{font-size:1.875rem;color:#333;line-height:1.875rem;font-weight:500}
+
+.th08{margin-bottom:0.8rem;overflow:hidden}
+.th08 dt{float:left;font-size:1.6rem;font-weight:500;color:#333;margin-right:1rem}
+.th08 dd{float:left;line-height:2.2rem;color:#666}
 
 .tt01{position:relative;cursor:pointer;text-decoration:underline}
 .tt01 .tooltip{position:absolute;display:none;top:-10px;right:-255px;background:#f1f3f5;border: 1px solid #b2b2b2;width:240px;box-sizing:border-box;padding:15px;box-shadow:10px 10px 5px rgba(0,0,0,0.3);z-index:10;font-size:14px;line-height:18px}
