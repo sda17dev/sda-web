@@ -964,7 +964,7 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 .tc02.toc ul>li{position:relative;padding-left:1.25rem;font-size:1rem;margin-bottom:0.625rem}
 .tc02.toc ul>li>em{position:absolute;left:0;top:0;color:#000;font-weight:500}
 
-.tc03{clear:both;border:1px solid #ccc;padding:1.875rem;border-radius:0.3125rem;background-color:#eee}
+.tc03{clear:both;border:1px solid #ccc;padding:1.875rem;background-color:#eee}
 .tc03 dt{color:#333;font-weight:bold;margin-bottom:0.625rem;font-size:1.2rem;line-height:1.6rem}
 
 .tc04{padding:2.5rem 1.25rem;border-bottom:1px solid #ccc}
