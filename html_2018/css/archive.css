@@ -1103,6 +1103,16 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 #popup_report_data_error .input a.close{position:absolute;top:0.6rem;right:0.6rem;display:block;width:0.8rem;height:0.8rem;background:url(../images/btn_close03.png) no-repeat 0 0;text-indent:-9999px;background-size:cover}
 #popup_report_data_error .textarea label{font-size:1rem;display:block;margin-bottom:0.4rem}
 
+.pp01 .auOr{overflow:hidden}
+.pp01 .auOr .th05 dt{padding-left:0}
+.pp01 .auOr .th05 dt em{background:none;padding-left:0}
+.pp01 .auOr .leftA{float:left;width:75%}
+.pp01 .auOr .leftA .tbl03{border-bottom:none}
+.pp01 .auOr .rightA{float:right;width:22%}
+.pp01 .auOr .tc09.list dt{padding-bottom:0.5rem;margin-bottom:0.5rem}
+.pp01 .auOr .tc09.list ol{list-style-type:none;margin-left:0}
+
+
 /* common list */
 .tbl01{border-top:2px solid #ccc;border-bottom:1px solid #ccc;padding-top:2px}
 .tbl01 table{border-spacing:0;border-collapse:collapse;width:100%}

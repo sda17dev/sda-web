@@ -547,6 +547,12 @@ header.hd02 .ng04 li a{display:block;height:auto;font-size:18px;font-weight:400;
 #popup_report_data_error .input a.close{top:0.8rem;right:0.8rem}
 #popup_report_error .popupBox{margin-top:0 !important}
 .pg01.rightF{text-align:center}
+
+.pp01 .auOr{padding-top:1rem}
+.pp01 .auOr .th05 dt{width:auto}
+.pp01 .auOr .leftA{float:none;width:auto;margin-bottom:1.5rem}
+.pp01 .auOr .leftA .tbl03{border-bottom:3px solid #ddd;padding-bottom:1rem}
+.pp01 .auOr .rightA{float:none;width:auto}
   
 /* common list */
 .tbl01 thead th{padding:0.5rem}

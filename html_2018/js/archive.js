@@ -353,7 +353,11 @@ $(document).ready(function() {
 		$('.pp01').hide();
 		return false;
    });
-	
+	// 팝업 - 전거레코
+	$("#open_authority_organization").bind('click', function() {
+		open_popup("#popup_authority_organization");
+		return false;
+	});
 	
 	//상세검색폼
 	$('.cf09 .keywords ul li.add button').on('click', function(event) {
@@ -377,8 +381,6 @@ $(document).ready(function() {
        $(this).siblings('input').focus();
 		 return false;
    });
-	
-	
 	
    //검색가이드
    $('.lc06 li dt a').bind("click",function(event){
