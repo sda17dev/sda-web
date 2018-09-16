@@ -674,6 +674,7 @@ footer .tc11.closed{right:1px}
 
 /* collection main slider */
 .ib04{margin-bottom:1.75rem}
+.ib04 .slide li{position:relative}
 .ib04 .slide li a{display:block;position:relative;width:100%}
 .ib04 .slide li a:before{ content:"";display:block;padding-top:42.98%; /* 1:1 비율 */}
 .ib04 .slide li a b{position:absolute;bottom:0;left:0;padding:3.125rem 3.125rem 4rem;color:#fff;font-size:2.25rem;line-height:2.8rem}
@@ -1355,6 +1356,22 @@ header.hd02 .ng04 li a{display:inline;font-size:0.875rem;line-height:0.875rem;fo
 	margin-top: -11px;
 }
 .tt01 .tooltip a{color:#333}
+
+.tt02{position:absolute;right:1rem;top:1rem;cursor:pointer}
+.tt02 .icon{cursor:pointer;font-size:1.2rem;display:block;width:1.875rem;height:1.875rem;line-height:1.875rem;text-align:center;border-radius:0.9375rem;background-color:#333;color:#fff}
+.tt02 .icon:before{content:"\e900";font-family:xeicon}
+.tt02.document .icon:before{content:"\eb1e"}
+.tt02.document:hover .icon:before{content:"\eb1f"}
+.tt02.photo .icon:before{content:"\ea4b"}
+.tt02.photo:hover .icon:before{content:"\ea4a"}
+.tt02.photo-record .icon:before{content:"\ea50"}
+.tt02.photo-record:hover .icon:before{content:"\ea4e"}
+.tt02.video .icon:before{content:"\ea4d"}
+.tt02.video:hover .icon:before{content:"\ea4c"}
+.tt02 .tooltip{position:absolute;display:none;top:2rem;right:0;background:#000;opacity:0.7;width:15rem;box-sizing:border-box;padding:1rem;z-index:10;font-size:0.825rem;color:#fff;line-height:1rem}
+.tt02 .tooltip a{color:yellow;display:inline !important}
+.tt02 .tooltip a:before{content:none !important}
+
 /* post */
 .postA img{max-width:100%}
 .postA p{font-size:1rem;line-height:1.8rem;margin-bottom:1.25rem}

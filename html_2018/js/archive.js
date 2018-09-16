@@ -519,6 +519,7 @@ function init_pc(){
 	$(".ng05>li>a").unbind();
 	$(".ng05>li>dl li a").unbind();
 	$(".cf04 dl dt a.mobileToggle").unbind();
+	$(".tt01, .tt02").unbind();
 	$(".ng05").show();
 
 	//메인 배너 화면 꽉채우기
@@ -592,22 +593,23 @@ function init_pc(){
 		
 //		return false;
 	});
+	//툴팁 오브제 효과
 	var on_tooltip = false;
-	$(".tt01").mouseover(function(){
+	$(".tt01, .tt02").mouseover(function(){
 		$(".tooltip",$(this)).fadeIn();
 	});
-	$(".tt01").mouseleave(function(){
+	$(".tt01, .tt02").mouseleave(function(){
 		var $this = $(this);
 		setTimeout(function() {
 			if(!on_tooltip)	$(".tooltip",$this).fadeOut();
 		}, 300);
 		
 	});
-	$(".tt01 .tooltip").mousemove(function(){
+	$(".tt01 .tooltip, .tt02 .tooltip").mousemove(function(){
 		$(".tooltip",$(this)).fadeIn();
 		on_tooltip = true;
 	});
-	$(".tt01 .tooltip").mouseleave(function(){
+	$(".tt01 .tooltip, .tt02 .tooltip").mouseleave(function(){
 		$(this).fadeOut();
 		on_tooltip = false;
 	});
@@ -621,7 +623,9 @@ function init_mobile(){
 	$(".cf02 .closeBtn").unbind();
 	$(".ng05>li>a").unbind();
 	$(".ng05>li>dl li a").unbind();
-
+	$(".tt01, .tt02").unbind();
+	$(".tt01 .tooltip, .tt02 .tooltip").unbind();
+	
 	$("header.hd01").height(340);
 	
 	//헤더 LNB 메뉴(mobile)
@@ -678,6 +682,13 @@ function init_mobile(){
 		else dl.addClass("mobileClosed");
 		return false;
 	});
+	//툴팁 오브제 효과
+	$(".tt01, .tt02").click(function(){
+		if($(".tooltip",$(this)).css("display") == "block")
+			$(".tooltip",$(this)).fadeOut();
+		else
+			$(".tooltip",$(this)).fadeIn();
+	});	
 }
 
 //폼 유효성 검사
